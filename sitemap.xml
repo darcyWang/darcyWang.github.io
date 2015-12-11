@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2015/12/02/Python-Learning/</loc>
+    <lastmod>2015-12-11T15:42:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2015/12/11/English-to-My-Career/</loc>
+    <lastmod>2015-12-11T15:40:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    <lastmod>2015-12-11T15:38:53.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    <lastmod>2015-12-11T15:38:45.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     <lastmod>2015-12-11T14:30:52.000Z</lastmod>
   </url>
@@ -9,11 +29,6 @@
   <url>
     <loc>http://yoursite.com/2015/12/11/Darcy/</loc>
     <lastmod>2015-12-11T14:19:48.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2015/12/11/English-to-My-Career/</loc>
-    <lastmod>2015-12-11T10:21:53.000Z</lastmod>
   </url>
   
   <url>
@@ -42,11 +57,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2015/12/02/Python-Learning/</loc>
-    <lastmod>2015-12-10T23:22:59.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2015/12/10/Flexbox-%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2015-12-10T08:04:33.000Z</lastmod>
   </url>
@@ -69,16 +79,6 @@
   <url>
     <loc>http://yoursite.com/2015/11/27/H5-Resources/</loc>
     <lastmod>2015-12-02T07:53:58.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    <lastmod>2015-11-29T08:06:52.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
-    <lastmod>2015-11-27T05:54:30.000Z</lastmod>
   </url>
   
   <url>
