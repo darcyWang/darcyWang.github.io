@@ -961,7 +961,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #770457;
+  background: #ff7967;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -1534,7 +1534,7 @@ body {
   }
 }
 .comments {
-  margin: 60px 20px 0;
+  margin: 20px 20px 0;
 }
 .tag-cloud {
   text-align: center;
@@ -1815,8 +1815,7 @@ body {
   border-color: #4cae4c !important;
 }
 .post-spread {
-  margin-top: 20px;
-  text-align: center;
+  display: none;
 }
 .jiathis_style {
   display: inline-block;
