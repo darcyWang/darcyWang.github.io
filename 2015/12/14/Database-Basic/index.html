@@ -63,7 +63,7 @@
 所以自己在闲暇时也会去看看到底是怎么回事。
 数据库顾名思义就是存储数据的，但是你选择那种数据库是最重要的，现在比较流行的数据库是MySQL, MongDB, PostgreSQL等等之类的。在国内现在常用的是MySQL，所以就先看看这个数据库的操作是怎么回事的。
 首先是数据库的名字，你会新建一个database，数据库里面会包">
-<meta property="og:updated_time" content="2015-12-16T02:24:35.000Z">
+<meta property="og:updated_time" content="2015-12-16T06:32:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Database Basic">
 <meta name="twitter:description" content="和PHP相互配合的时候，经常会听到说建一个表吧，导数据咯，等等之类的。
@@ -319,7 +319,54 @@ The example here was the items table, which had items, their locations, and the 
 
 4. Tables shouldn&apos;t imply relationships that don&apos;t exist. 
 The example here was the job_skills table, where a single row listed one of a person&apos;s technology skills (like &apos;Linux&apos;) and one of their language skills (like &apos;French&apos;). This made it look like their Linux knowledge was specific to French, or vice versa ... when that isn&apos;t the case in the real world. Normalizing this involved splitting the tech skills and job skills into separate tables.
-</code></pre></span>
+</code></pre><p>然后来讲一下简单的SQL查询语句<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">QUERY = &#34;select max(name) from animals;&#34;&#10;&#10;QUERY = &#34;select * from animals limit 10;&#34;&#10;&#10;QUERY = &#34;select * from animals where species = &#39;orangutan&#39; order by birthdate;&#34;&#10;&#10;QUERY = &#34;select name from animals where species = &#39;orangutan&#39; order by birthdate desc;&#34;&#10;&#10;QUERY = &#34;select name, birthdate from animals order by name limit 10 offset 20;&#34;&#10;&#10;QUERY = &#34;select species, min(birthdate) from animals group by species;&#34;&#10;&#10;QUERY = &#39;&#39;&#39;&#10;select name, count(*) as num from animals&#10;group by name&#10;order by num desc&#10;limit 5;&#10;&#39;&#39;&#39;</span><br></pre></td></tr></table></figure></p>
+<p>这些语句有一些相同的地方，可以来分析一下啊</p>
+<pre><code>where
+
+The where clause expresses restrictions — filtering a table for rows that follow a particular rule. where supports equalities, inequalities, and boolean operators (among other things):
+
+where species = &apos;gorilla&apos; — return only rows that have &apos;gorilla&apos; as the value of the species column.
+where name &gt;= &apos;George&apos; — return only rows where the name column is alphabetically after &apos;George&apos;.
+where species != &apos;gorilla&apos; and name != &apos;George&apos; — return only rows where species isn&apos;t &apos;gorilla&apos; and name isn&apos;t &apos;George&apos;.
+limit / offset
+
+The limit clause sets a limit on how many rows to return in the result table. The optional offset clause says how far to skip ahead into the results. So limit 10 offset 100 will return 10 results starting with the 101st.
+
+order by
+
+The order by clause tells the database how to sort the results — usually according to one or more columns. So order by species, name says to sort results first by the species column, then by name within each species.
+
+Ordering happens before limit/offset, so you can use them together to extract pages of alphabetized results. (Think of the pages of a dictionary.)
+
+The optional desc modifier tells the database to order results in descending order — for instance from large numbers to small ones, or from Z to A.
+
+group by
+
+The group by clause is only used with aggregations, such as max or sum. Without a group by clause, a select statement with an aggregation will aggregate over the whole selected table(s), returning only one row. With a group by clause, it will return one row for each distinct value of the column or expression in the group by clause.
+
+insert into table ( column1, column2, ... ) values ( val1, val2, ... );
+
+If the values are in the same order as the table&apos;s columns (starting with the first column), you don&apos;t have to specify the columns in the insert statement:
+
+insert into table values ( val1, val2, ... );
+
+For instance, if a table has three columns (a, b, c) and you want to insert into a and b, you can leave off the column names from the insert statement. But if you want to insert into b and c, or a and c, you have to specify the columns.
+
+A single insert statement can only insert into a single table. (Contrast this with the select statement, which can pull data from several tables using a join.)
+
+select products.name, products.sku, count(*) as num
+  from products join sales
+    on products.sku = sales.sku
+  group by products.sku;
+
+select products.name, products.sku, count(sales.sku) as num
+  from products left join sales
+    on products.sku = sales.sku
+  group by products.sku;
+This query will give us a row for every product in the products table, even the ones that have no sales in the sales table.
+</code></pre><p>最后就是怎么去创建一个数据库了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">create table programs (</span><br><span class="line">   name text,</span><br><span class="line">   filename text</span><br><span class="line">);</span><br><span class="line">create table bugs (</span><br><span class="line">   filename text,</span><br><span class="line">   description text,</span><br><span class="line">   id serial primary key</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">QUERY = <span class="string">''</span><span class="string">'</span><br><span class="line">select programs.name, count(bugs.filename) as num</span><br><span class="line">       from programs left join bugs</span><br><span class="line">         on programs.filename = bugs.filename</span><br><span class="line">       group by programs.name</span><br><span class="line">       order by num;</span><br><span class="line">'</span><span class="string">''</span></span><br></pre></td></tr></table></figure></p>
+<p>一段完整的Python代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import sqlite3</span><br><span class="line"></span><br><span class="line"><span class="comment"># Fetch some student records from the database.</span></span><br><span class="line">db = sqlite3.connect(<span class="string">"students"</span>)</span><br><span class="line">c = db.cursor()</span><br><span class="line">query = <span class="string">"select name, id from students order by name asc;"</span></span><br><span class="line">c.execute(query)</span><br><span class="line">rows = c.fetchall()</span><br><span class="line"></span><br><span class="line"><span class="comment"># First, what data structure did we get?</span></span><br><span class="line"><span class="built_in">print</span> <span class="string">"Row data:"</span></span><br><span class="line"><span class="built_in">print</span> rows</span><br><span class="line"></span><br><span class="line"><span class="comment"># And let's loop over it too:</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span> <span class="string">"Student names:"</span></span><br><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> rows:</span><br><span class="line">  <span class="built_in">print</span> <span class="string">"  "</span>, row[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">db.close()</span><br></pre></td></tr></table></figure></p>
+</span>
       
     </div>
 
