@@ -4,8 +4,38 @@
 
     
   <url>
+    <loc>http://yoursite.com/2015/12/04/Python-Basic-2/</loc>
+    <lastmod>2015-12-16T12:06:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python Basic 2</title>
+        <pubTime>2015-12-04T09:00:34.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2015/12/11/Darcy/</loc>
+    <lastmod>2015-12-16T08:57:36.000Z</lastmod>
+    <data>
+        <display>
+        <title>Darcy</title>
+        <pubTime>2015-12-11T14:19:48.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2015/12/13/Shell-Commands/</loc>
-    <lastmod>2015-12-16T08:32:49.000Z</lastmod>
+    <lastmod>2015-12-16T08:50:49.000Z</lastmod>
     <data>
         <display>
         <title>Shell Commands</title>
@@ -20,7 +50,7 @@
     
   <url>
     <loc>http://yoursite.com/2015/12/14/Database-Basic/</loc>
-    <lastmod>2015-12-16T06:32:42.000Z</lastmod>
+    <lastmod>2015-12-16T06:33:01.000Z</lastmod>
     <data>
         <display>
         <title>Database Basic</title>
@@ -224,21 +254,6 @@
     
     
   <url>
-    <loc>http://yoursite.com/2015/12/11/Darcy/</loc>
-    <lastmod>2015-12-11T14:19:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>Darcy</title>
-        <pubTime>2015-12-11T14:19:48.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2015/12/11/GRE-and-TOEFL/</loc>
     <lastmod>2015-12-10T23:45:22.000Z</lastmod>
     <data>
@@ -260,21 +275,6 @@
         <display>
         <title>About Self-Learning</title>
         <pubTime>2015-12-10T23:44:02.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2015/12/04/Python-Basic-2/</loc>
-    <lastmod>2015-12-10T23:38:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>Python Basic 2</title>
-        <pubTime>2015-12-04T09:00:34.000Z</pubTime>
         
          
            
