@@ -4,8 +4,53 @@
 
     
   <url>
+    <loc>http://yoursite.com/2015/12/17/CSS-3/</loc>
+    <lastmod>2015-12-16T23:04:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>CSS 3</title>
+        <pubTime>2015-12-16T23:04:37.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2015/12/17/HTML-5/</loc>
+    <lastmod>2015-12-16T23:04:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>HTML 5</title>
+        <pubTime>2015-12-16T23:04:26.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2015/12/17/Javascript-Tricks/</loc>
+    <lastmod>2015-12-16T23:03:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript Tricks</title>
+        <pubTime>2015-12-16T23:03:27.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2015/12/04/Python-Basic-2/</loc>
-    <lastmod>2015-12-16T12:06:51.000Z</lastmod>
+    <lastmod>2015-12-16T23:00:44.000Z</lastmod>
     <data>
         <display>
         <title>Python Basic 2</title>
@@ -20,7 +65,7 @@
     
   <url>
     <loc>http://yoursite.com/2015/12/11/Darcy/</loc>
-    <lastmod>2015-12-16T08:57:36.000Z</lastmod>
+    <lastmod>2015-12-16T08:57:51.000Z</lastmod>
     <data>
         <display>
         <title>Darcy</title>
@@ -35,7 +80,7 @@
     
   <url>
     <loc>http://yoursite.com/2015/12/13/Shell-Commands/</loc>
-    <lastmod>2015-12-16T08:50:49.000Z</lastmod>
+    <lastmod>2015-12-16T08:51:17.000Z</lastmod>
     <data>
         <display>
         <title>Shell Commands</title>
