@@ -4,8 +4,42 @@
 
     
   <url>
+    <loc>http://yoursite.com/2015/12/18/Django-for-Webapp/</loc>
+    <lastmod>2015-12-18T13:02:50.000Z</lastmod>
+    <data>
+        <display>
+        <title>Django for Webapp</title>
+        <pubTime>2015-12-18T01:42:33.000Z</pubTime>
+        
+        <tag>Django</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2015/12/08/Mac%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</loc>
+    <lastmod>2015-12-18T12:21:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>Mac使用心得</title>
+        <pubTime>2015-12-08T09:04:37.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2015/12/04/Python-Basic-2/</loc>
-    <lastmod>2015-12-18T12:10:50.000Z</lastmod>
+    <lastmod>2015-12-18T12:18:56.000Z</lastmod>
     <data>
         <display>
         <title>Python Basic 2</title>
@@ -25,36 +59,6 @@
         <display>
         <title>我所理解的前端</title>
         <pubTime>2015-12-09T08:33:31.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2015/12/09/%E6%B5%85%E6%9E%90-%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2015-12-18T02:40:45.000Z</lastmod>
-    <data>
-        <display>
-        <title>我所理解的前端</title>
-        <pubTime>2015-12-09T08:33:31.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2015/12/18/Django-for-Webapp/</loc>
-    <lastmod>2015-12-18T01:42:33.000Z</lastmod>
-    <data>
-        <display>
-        <title>Django for Webapp</title>
-        <pubTime>2015-12-18T01:42:33.000Z</pubTime>
         
          
            
@@ -395,21 +399,6 @@
         <display>
         <title>Flexbox 学习</title>
         <pubTime>2015-12-10T02:17:36.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2015/12/08/Mac%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2015-12-08T13:23:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>Mac使用心得</title>
-        <pubTime>2015-12-08T09:04:37.000Z</pubTime>
         
          
            
