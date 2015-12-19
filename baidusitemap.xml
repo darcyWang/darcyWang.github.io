@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>http://yoursite.com/2015/12/17/Javascript-Tricks/</loc>
+    <lastmod>2015-12-19T08:19:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript Tricks</title>
+        <pubTime>2015-12-16T23:03:27.000Z</pubTime>
+        
+        <tag>Coding</tag>
+         
+        <tag>Javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="Techniques" url="http://yoursite.com/categories/Techniques/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2015/12/02/Python-Learning/</loc>
+    <lastmod>2015-12-19T07:00:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python Learning</title>
+        <pubTime>2015-12-02T07:33:19.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Techniques" url="http://yoursite.com/categories/Techniques/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2015/12/19/Zero-To-Hero/</loc>
     <lastmod>2015-12-19T06:58:56.000Z</lastmod>
     <data>
@@ -135,21 +177,6 @@
         <display>
         <title>HTML 5</title>
         <pubTime>2015-12-16T23:04:26.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2015/12/17/Javascript-Tricks/</loc>
-    <lastmod>2015-12-16T23:03:27.000Z</lastmod>
-    <data>
-        <display>
-        <title>Javascript Tricks</title>
-        <pubTime>2015-12-16T23:03:27.000Z</pubTime>
         
          
            
@@ -333,26 +360,6 @@
         
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2015/12/02/Python-Learning/</loc>
-    <lastmod>2015-12-11T15:42:40.000Z</lastmod>
-    <data>
-        <display>
-        <title>Python Learning</title>
-        <pubTime>2015-12-02T07:33:19.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="programming" url="http://yoursite.com/categories/programming/"/>
-          
         </display>
     </data>
     </url>
