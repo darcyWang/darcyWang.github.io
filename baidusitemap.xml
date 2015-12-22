@@ -4,6 +4,43 @@
 
     
   <url>
+    <loc>http://darcywang.github.io/2015/12/17/CSS-3/</loc>
+    <lastmod>2015-12-21T12:27:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>CSS 3</title>
+        <pubTime>2015-12-16T23:04:37.000Z</pubTime>
+        
+        <tag>CSS3</tag>
+         
+         
+           
+             
+              <breadCrumb title="Techniques" url="http://darcywang.github.io/categories/Techniques/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://darcywang.github.io/2015/11/27/H5-Resources/</loc>
+    <lastmod>2015-12-21T09:55:50.000Z</lastmod>
+    <data>
+        <display>
+        <title>H5 Resources</title>
+        <pubTime>2015-11-27T04:33:12.000Z</pubTime>
+        
+        <tag>HTML5</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://darcywang.github.io/2015/12/21/Django-Advanced/</loc>
     <lastmod>2015-12-21T01:48:43.000Z</lastmod>
     <data>
@@ -186,21 +223,6 @@
     
     
   <url>
-    <loc>http://darcywang.github.io/2015/12/17/CSS-3/</loc>
-    <lastmod>2015-12-16T23:04:37.000Z</lastmod>
-    <data>
-        <display>
-        <title>CSS 3</title>
-        <pubTime>2015-12-16T23:04:37.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://darcywang.github.io/2015/12/17/HTML-5/</loc>
     <lastmod>2015-12-16T23:04:26.000Z</lastmod>
     <data>
@@ -357,21 +379,6 @@
         <display>
         <title>Python Basic</title>
         <pubTime>2015-12-03T09:00:28.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://darcywang.github.io/2015/11/27/H5-Resources/</loc>
-    <lastmod>2015-12-14T03:57:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>H5 Resources</title>
-        <pubTime>2015-11-27T04:33:12.000Z</pubTime>
         
          
            
