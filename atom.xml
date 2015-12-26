@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Mr' Darcy]]></title>
+  <subtitle><![CDATA[hello]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://www.darcywang.com/"/>
+  <updated>2015-12-26T13:57:12.000Z</updated>
+  <id>http://www.darcywang.com/</id>
+  
+  <author>
+    <name><![CDATA[Mr' Darcy]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[AWS Basic]]></title>
+    <link href="http://www.darcywang.com/2015/12/26/AWS-Basic/"/>
+    <id>http://www.darcywang.com/2015/12/26/AWS-Basic/</id>
+    <published>2015-12-26T13:57:12.000Z</published>
+    <updated>2015-12-26T13:57:12.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[jQuery Plugin]]></title>
+    <link href="http://www.darcywang.com/2015/12/26/jQuery-Plugin/"/>
+    <id>http://www.darcywang.com/2015/12/26/jQuery-Plugin/</id>
+    <published>2015-12-26T13:56:27.000Z</published>
+    <updated>2015-12-26T13:56:27.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[移动端开发]]></title>
+    <link href="http://www.darcywang.com/2015/12/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <id>http://www.darcywang.com/2015/12/22/移动端开发/</id>
+    <published>2015-12-22T03:14:17.000Z</published>
+    <updated>2015-12-22T03:14:17.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[在路上]]></title>
+    <link href="http://www.darcywang.com/2015/12/22/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
+    <id>http://www.darcywang.com/2015/12/22/在路上/</id>
+    <published>2015-12-22T03:11:24.000Z</published>
+    <updated>2015-12-22T06:26:11.000Z</updated>
+    <content type="html"><![CDATA[<p>当nodejs没出来之前，我会感觉从一枚小小的前端转全栈是需要漫长的路程，但是，nodejs已经出来了，我的全栈之路也就在路上了</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>当nodejs没出来之前，我会感觉从一枚小小的前端转全栈是需要漫长的路程，但是，nodejs已经出来了，我的全栈之路也就在路上了</p>
+]]>
+    </summary>
+    
+      <category term="fullstack" scheme="http://www.darcywang.com/tags/fullstack/"/>
+    
+      <category term="life" scheme="http://www.darcywang.com/tags/life/"/>
+    
+      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Django Advanced]]></title>
+    <link href="http://www.darcywang.com/2015/12/21/Django-Advanced/"/>
+    <id>http://www.darcywang.com/2015/12/21/Django-Advanced/</id>
+    <published>2015-12-21T01:48:43.000Z</published>
+    <updated>2015-12-21T01:48:43.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Django Components]]></title>
+    <link href="http://www.darcywang.com/2015/12/21/Django-Components/"/>
+    <id>http://www.darcywang.com/2015/12/21/Django-Components/</id>
+    <published>2015-12-21T01:46:05.000Z</published>
+    <updated>2015-12-21T01:46:05.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Zero To Hero]]></title>
+    <link href="http://www.darcywang.com/2015/12/19/Zero-To-Hero/"/>
+    <id>http://www.darcywang.com/2015/12/19/Zero-To-Hero/</id>
+    <published>2015-12-19T06:58:56.000Z</published>
+    <updated>2015-12-19T06:58:56.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[JS learned]]></title>
+    <link href="http://www.darcywang.com/2015/12/19/JS-learned/"/>
+    <id>http://www.darcywang.com/2015/12/19/JS-learned/</id>
+    <published>2015-12-19T06:55:27.000Z</published>
+    <updated>2015-12-19T06:55:27.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Django for Webapp]]></title>
+    <link href="http://www.darcywang.com/2015/12/18/Django-for-Webapp/"/>
+    <id>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</id>
+    <published>2015-12-18T01:42:33.000Z</published>
+    <updated>2015-12-18T13:42:32.000Z</updated>
+    <content type="html"><![CDATA[<p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一看名字Django Unchained，还真的是一样的啊。</p>
+<p>Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于<strong> Django 1.7 </strong>上的。首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个<a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank" rel="external">web框架</a>, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不多咯。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一]]>
+    </summary>
+    
+      <category term="Django" scheme="http://www.darcywang.com/tags/Django/"/>
+    
+      <category term="Python" scheme="http://www.darcywang.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Python and Django]]></title>
+    <link href="http://www.darcywang.com/2015/12/18/Python-and-Django/"/>
+    <id>http://www.darcywang.com/2015/12/18/Python-and-Django/</id>
+    <published>2015-12-18T01:41:02.000Z</published>
+    <updated>2015-12-18T01:41:02.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[CSS 3]]></title>
+    <link href="http://www.darcywang.com/2015/12/17/CSS-3/"/>
+    <id>http://www.darcywang.com/2015/12/17/CSS-3/</id>
+    <published>2015-12-16T23:04:37.000Z</published>
+    <updated>2015-12-22T07:50:13.000Z</updated>
+    <content type="html"><![CDATA[<p>CSS3有非常多的新属性，特别是在移动端的使用，不仅能够加速CPU渲染效果，而且还能够省去一大堆的javascript。</p>
+<p>下面我会介绍一些CSS3的专业技巧，如果你需要考虑IE浏览器，那就请掠过此篇文章，因为这些特性只能兼容到IE11。</p>
+<h3 id="3Anot_28_29_u4F7F_u7528"><a href="#3Anot_28_29_u4F7F_u7528" class="headerlink" title=":not()使用"></a>:not()使用</h3><p>经常在布局导航栏或者多个div时，考虑到最后一个元素的border、margin什么之类<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* add border */</span></span><br><span class="line"><span class="class">.nav</span> <span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#666</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* remove border */</span></span><br><span class="line"><span class="class">.nav</span> <span class="tag">li</span><span class="pseudo">:last-child</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>但当你使用:not()伪类时，就可以应用到想作用的元素<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.nav</span> <span class="tag">li</span><span class="pseudo">:not(</span><span class="pseudo">:last-child)</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#666</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>当然你也可以使用.nav li + li，甚至是.nav li:first-child ~ li，但是:not()伪类字面意思清晰明了，当然符合现流行的语义化咯</p>
+<h3 id="Line-Height"><a href="#Line-Height" class="headerlink" title="Line-Height"></a>Line-Height</h3><p>你不必对每一个h标签，p标签分别添加line-height属性，相反的，你只需要在body上添加就可以了，因为文本元素会简简单单的继承这一属性。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">1</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="u795E_u9A6C_u90FD_u5782_u76F4_u5C45_u4E2D"><a href="#u795E_u9A6C_u90FD_u5782_u76F4_u5C45_u4E2D" class="headerlink" title="神马都垂直居中"></a>神马都垂直居中</h3><p>对，这不是变魔术，你真的可以垂直居中任何元素<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span>, <span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-align-items</span>:<span class="value"> center</span></span>;  </span><br><span class="line">  <span class="rule"><span class="attribute">-ms-flex-align</span>:<span class="value"> center</span></span>;  </span><br><span class="line">  <span class="rule"><span class="attribute">align-items</span>:<span class="value"> center</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> -webkit-flex</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> flex</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>还想让什么东西放在正中心么？垂直的、水平的，任何元素，任何时间，任何地点，请参考<a href="https://css-tricks.com/centering-css-complete-guide/" target="_blank" rel="external">牛人</a><br>注意在IE11下，flexbox可能有些<a href="https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items" target="_blank" rel="external">问题</a></p>
+<h3 id="nth-child_u53CD_u9009"><a href="#nth-child_u53CD_u9009" class="headerlink" title="nth-child反选"></a>nth-child反选</h3><p>通过使用-nth-child选择从1到n<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 选择前三个元素，让它们显示 */</span></span><br><span class="line"><span class="tag">li</span><span class="pseudo">:nth-child(-n+3)</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>或者你还可以这么做<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 同上 */</span></span><br><span class="line"><span class="tag">li</span><span class="pseudo">:not(</span><span class="pseudo">:nth-child(-n+3))</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="SVG_u6309_u94AE"><a href="#SVG_u6309_u94AE" class="headerlink" title="SVG按钮"></a>SVG按钮</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.logo</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">url</span>(<span class="string">"logo.svg"</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="comment">/* 当SVG没有加载出来时，用下面代码就行了 */</span></span><br><span class="line"><span class="class">.no-svg</span> <span class="class">.icon-only</span><span class="pseudo">:after</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="function">attr</span>(aria-label)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>参考资源<br><a href="https://github.com/AllThingsSmitty/css-protips" target="_blank" rel="external">https://github.com/AllThingsSmitty/css-protips</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>CSS3有非常多的新属性，特别是在移动端的使用，不仅能够加速CPU渲染效果，而且还能够省去一大堆的javascript。</p>
+<p>下面我会介绍一些CSS3的专业技巧，如果你需要考虑IE浏览器，那就请掠过此篇文章，因为这些特性只能兼容到IE11。</p>
+<h3 id=]]>
+    </summary>
+    
+      <category term="CSS3" scheme="http://www.darcywang.com/tags/CSS3/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[HTML 5]]></title>
+    <link href="http://www.darcywang.com/2015/12/17/HTML-5/"/>
+    <id>http://www.darcywang.com/2015/12/17/HTML-5/</id>
+    <published>2015-12-16T23:04:26.000Z</published>
+    <updated>2015-12-22T09:06:21.000Z</updated>
+    <content type="html"><![CDATA[<p>Set a cookie<br>$.cookie(“example”, “foo”); // Sample 1<br>$.cookie(“example”, “foo”, { expires: 7 }); // Sample 2<br>$.cookie(“example”, “foo”, { path: ‘/admin’, expires: 7 }); // Sample 3<br>Get a cookie<br>alert( $.cookie(“example”) );<br>Delete the cookie<br>$.removeCookie(“example”);</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Set a cookie<br>$.cookie(“example”, “foo”); // Sample 1<br>$.cookie(“example”, “foo”, { expires: 7 }); // Sample 2<br>$.cookie(“example”,]]>
+    </summary>
+    
+      <category term="HTML5" scheme="http://www.darcywang.com/tags/HTML5/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Javascript Tricks]]></title>
+    <link href="http://www.darcywang.com/2015/12/17/Javascript-Tricks/"/>
+    <id>http://www.darcywang.com/2015/12/17/Javascript-Tricks/</id>
+    <published>2015-12-16T23:03:27.000Z</published>
+    <updated>2015-12-19T08:19:26.000Z</updated>
+    <content type="html"><![CDATA[<p>最开始学习JS的资料是JavaScript高级程序设计，非常厚的一本书，当然，我没有看完，工作中需要什么东西我就学什么东西，所以有很多地方并不了解实现的原理，所以就填了很多坑咯。一边填坑一边快乐的编程。</p>
+<p>正如标题所说，我介绍一下自己常用的一些javascript小技巧。</p>
+<h3 id="URL_u53D6_u76F8_u5E94_u7684_u5B57_u6BB5"><a href="#URL_u53D6_u76F8_u5E94_u7684_u5B57_u6BB5" class="headerlink" title="URL取相应的字段"></a>URL取相应的字段</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取URL参数，这个是从当前页面取得连接</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">GetQueryString</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"(^|&amp;)"</span> + name + <span class="string">"=([^&amp;]*)(&amp;|$)"</span>);</span><br><span class="line">    <span class="keyword">var</span> r = <span class="built_in">window</span>.location.search.substr(<span class="number">1</span>).match(reg);</span><br><span class="line">    <span class="keyword">if</span> (r != <span class="literal">null</span>) <span class="keyword">return</span> <span class="built_in">unescape</span>(r[<span class="number">2</span>]);</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//获取URL一组参数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">parseURL</span>(<span class="params">url</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> a =  <span class="built_in">document</span>.createElement(<span class="string">'a'</span>);</span><br><span class="line">    a.href = url;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        source: url,</span><br><span class="line">        protocol: a.protocol.replace(<span class="string">':'</span>,<span class="string">''</span>),</span><br><span class="line">        host: a.hostname,</span><br><span class="line">        port: a.port,</span><br><span class="line">        query: a.search,</span><br><span class="line">        params: (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> ret = &#123;&#125;,</span><br><span class="line">                seg = a.search.replace(<span class="regexp">/^\?/</span>,<span class="string">''</span>).split(<span class="string">'&amp;'</span>),</span><br><span class="line">                len = seg.length, i = <span class="number">0</span>, s;</span><br><span class="line">            <span class="keyword">for</span> (;i&lt;len;i++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (!seg[i]) &#123; <span class="keyword">continue</span>; &#125;</span><br><span class="line">                s = seg[i].split(<span class="string">'='</span>);</span><br><span class="line">                ret[s[<span class="number">0</span>]] = s[<span class="number">1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> ret;</span><br><span class="line">        &#125;)(),</span><br><span class="line">        file: (a.pathname.match(<span class="regexp">/\/([^\/?#]+)$/i</span>) || [,<span class="string">''</span>])[<span class="number">1</span>],</span><br><span class="line">        hash: a.hash.replace(<span class="string">'#'</span>,<span class="string">''</span>),</span><br><span class="line">        path: a.pathname.replace(<span class="regexp">/^([^/])/</span>,<span class="string">'/$1'</span>),</span><br><span class="line">        relative: (a.href.match(<span class="regexp">/tps?:\/\/[^/]+(.+)/</span>) || [,<span class="string">''</span>])[<span class="number">1</span>],</span><br><span class="line">        segments: a.pathname.replace(<span class="regexp">/^\//</span>,<span class="string">''</span>).split(<span class="string">'/'</span>)</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> testURL = parseURL(<span class="string">'http://yangcongtao.com/h5/product?product_id=374&amp;method=info&amp;app_ver=1.3&amp;platform=3&amp;uid=0&amp;channel_num=wx351'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(testURL.params);</span><br></pre></td></tr></table></figure>
+<h3 id="u6574_u6570_u7684_u64CD_u4F5C"><a href="#u6574_u6570_u7684_u64CD_u4F5C" class="headerlink" title="整数的操作"></a>整数的操作</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = (<span class="number">12.4</span> / <span class="number">4.13</span>) | <span class="number">0</span>; <span class="comment">//结果为3</span></span><br><span class="line"><span class="keyword">var</span> bar = ~~(<span class="number">12.4</span> / <span class="number">4.13</span>); <span class="comment">//结果为3</span></span><br></pre></td></tr></table></figure>
+<h3 id="u7981_u6B62_u522B_u4EBA_u4EE5iframe_u52A0_u8F7D_u4F60_u7684_u9875_u9762"><a href="#u7981_u6B62_u522B_u4EBA_u4EE5iframe_u52A0_u8F7D_u4F60_u7684_u9875_u9762" class="headerlink" title="禁止别人以iframe加载你的页面"></a>禁止别人以iframe加载你的页面</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="built_in">window</span>.location != <span class="built_in">window</span>.parent.location) <span class="built_in">window</span>.parent.location = <span class="built_in">window</span>.location;</span><br></pre></td></tr></table></figure>
+<h3 id="JS_u751F_u6210_u968F_u673A_u5B57_u7B26_u4E32"><a href="#JS_u751F_u6210_u968F_u673A_u5B57_u7B26_u4E32" class="headerlink" title="JS生成随机字符串"></a>JS生成随机字符串</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">generateRandomAlphaNum</span>(<span class="params">len</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> rdmString = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">for</span> (; rdmString.length &lt; len; rdmString += <span class="built_in">Math</span>.random().toString(<span class="number">36</span>).substr(<span class="number">2</span>));</span><br><span class="line">        <span class="keyword">return</span> rdmString.substr(<span class="number">0</span>, len);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">generateRandomAlphaNum(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getCategory</span>(<span class="params">age</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> category = <span class="string">""</span>;</span><br><span class="line">        <span class="keyword">switch</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="built_in">isNaN</span>(age):</span><br><span class="line">                        category = <span class="string">"not an age"</span>;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> (age &gt;= <span class="number">50</span>):</span><br><span class="line">                        category = <span class="string">"Old"</span>;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> (age &lt;= <span class="number">20</span>):</span><br><span class="line">                        category = <span class="string">"Baby"</span>;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">default</span>:</span><br><span class="line">                        category = <span class="string">"Young"</span>;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">return</span> category;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getCategory(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span>  numbers = [<span class="number">5</span>, <span class="number">458</span> , <span class="number">120</span> , -<span class="number">215</span> , <span class="number">228</span> , <span class="number">400</span> , <span class="number">122205</span>, -<span class="number">85411</span>];</span><br><span class="line"><span class="keyword">var</span> maxInNumbers = <span class="built_in">Math</span>.max.apply(<span class="built_in">Math</span>, numbers);</span><br><span class="line"><span class="keyword">var</span> minInNumbers = <span class="built_in">Math</span>.min.apply(<span class="built_in">Math</span>, numbers);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(maxInNumbers);</span><br><span class="line"><span class="built_in">console</span>.log(minInNumbers);</span><br><span class="line"></span><br><span class="line">判断非空</span><br><span class="line"><span class="keyword">var</span> hello;</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">typeof</span> hello !== <span class="string">"undefined"</span> &amp;&amp; hello !== <span class="literal">null</span>) &#123;</span><br><span class="line">  alert(<span class="string">"hello isn't a null object!"</span>);</span><br><span class="line">&#125;</span><br><span class="line">判断是否是数字</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isNumber</span>(<span class="params">n</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> !<span class="built_in">isNaN</span>(<span class="built_in">parseFloat</span>(n)) &amp;&amp; <span class="built_in">isFinite</span>(n);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="JS_u5BF9_u6570_u7EC4_u7684_u64CD_u4F5C"><a href="#JS_u5BF9_u6570_u7EC4_u7684_u64CD_u4F5C" class="headerlink" title="JS对数组的操作"></a>JS对数组的操作</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> argArray = <span class="built_in">Array</span>.prototype.slice.call(<span class="string">"hello world"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(argArray);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> array1 = [<span class="number">12</span> , <span class="string">"foo"</span> , &#123;name: <span class="string">"Joe"</span>&#125; , -<span class="number">2458</span>];</span><br><span class="line"><span class="keyword">var</span> array2 = [<span class="string">"Doe"</span> , <span class="number">555</span> , <span class="number">100</span>];</span><br><span class="line"><span class="built_in">Array</span>.prototype.push.apply(array1, array2);</span><br><span class="line"><span class="built_in">console</span>.log(array1);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"c"</span>];</span><br><span class="line"><span class="keyword">typeof</span> arr;   <span class="comment">// return "object"</span></span><br><span class="line">arr  <span class="keyword">instanceof</span> <span class="built_in">Array</span> <span class="comment">// true</span></span><br><span class="line">arr.constructor();  <span class="comment">//[]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">String</span>.prototype.trim = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="regexp">/^s+|s+$/g</span>, <span class="string">""</span>);&#125;;</span><br><span class="line"></span><br><span class="line"><span class="string">"  fgdsg gfdgfd a ds "</span>.prototype.trim = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="regexp">/^s+|s+$/g</span>, <span class="string">""</span>);&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"  fgdsg gfdgfd a ds "</span>.trim())</span><br></pre></td></tr></table></figure>
+<p>typeof : a JavaScript unary operator used to  return a string that represents the primitive type of a variable,  don’t forget that typeof null will return “object”, and for the majority of object types (Array, Date, and others) will return also “object”.<br>constructor : is a property of the internal prototype property, which could be overridden by code.<br>instanceof : is another JavaScript operator that check in all the prototypes chain the constructor it returns true if it’s found and false if not.</p>
+<h3 id="BACK_TO_TOP"><a href="#BACK_TO_TOP" class="headerlink" title="BACK TO TOP"></a>BACK TO TOP</h3><p>回到顶部按钮通过使用 jQuery 中的 animate 和 scrollTop方法，你无需插件便可创建一个简单地回到顶部动画,将 scrollTop 的值改为你想要 scrollbar 停止的地方。需要做的就是，设置在800毫秒内回到顶部。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Back to top</span></span><br><span class="line">$(<span class="string">'.top'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  e.preventDefault();</span><br><span class="line">  $(<span class="string">'html, body'</span>).animate(&#123;scrollTop: <span class="number">0</span>&#125;, <span class="number">800</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Create an anchor tag --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"top"</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Back to top<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>预加载图片如果你的页面使用了大量不能初始可见的图片（例如绑定在 hover 上），预加载它们是十分有用的。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$.preloadImages = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">arguments</span>.length; i++) &#123;</span><br><span class="line">    $(<span class="string">'&lt;img&gt;'</span>).attr(<span class="string">'src'</span>, <span class="built_in">arguments</span>[i]);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">$.preloadImages(<span class="string">'img/hover-on.png'</span>, <span class="string">'img/hover-off.png'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>检查图片是否加载完毕有时你或许要检查图片是否完全加载完毕，才能在脚本中进行后续操作,也可以通过把 img 标签替换成 ID 或 class，来检查特定图片是否加载完成。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'img'</span>).load(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'image load successful'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>自动修复损坏的图片如果你发现自己网站的图片链接挂了，一个一个替换很麻烦。这段简单的代码可以帮上大忙，即使你没有任何损坏的链接，增加这段代码也不会有什么影响。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'img'</span>).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(!$(<span class="keyword">this</span>).hasClass(<span class="string">'broken-image'</span>)) &#123;</span><br><span class="line">    $(<span class="keyword">this</span>).prop(<span class="string">'src'</span>, <span class="string">'img/broken.png'</span>).addClass(<span class="string">'broken-image'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>Hover上的Class切换如果用户的鼠标悬停在页面上某个可点击元素时，你想要改变这个元素的视觉表现。可以使用下面这段代码，当用户悬停时，为该元素增加一个class；当用户鼠标离开后移除这个class，如果你仅需增加必须的 CSS。如果需要更简单的方式，还可以使用 toggleClass 方法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'.btn'</span>).hover(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  $(<span class="keyword">this</span>).addClass(<span class="string">'hover'</span>);</span><br><span class="line">&#125;, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  $(<span class="keyword">this</span>).removeClass(<span class="string">'hover'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">$(<span class="string">'.btn'</span>).hover(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  $(<span class="keyword">this</span>).toggleClass(<span class="string">'hover'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h3 id="u7981_u7528_u5B57_u6BB5"><a href="#u7981_u7528_u5B57_u6BB5" class="headerlink" title="禁用字段"></a>禁用字段</h3><p>禁用input字段,有时你也许想让表单的提交按钮或其文本输入框变得不可用，直到用户执行了一个特定行为（例如确认 “我已经阅读该条款” 的复选框）。增加 disabled attribute 到你的 input，就可以实现自己想要的效果，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'input[type="submit"]'</span>).prop(<span class="string">'disabled'</span>, <span class="literal">true</span>);</span><br></pre></td></tr></table></figure></p>
+<p>当你想把 disabled 的值改为 false 时，仅需在该 input 上再运行一次 prop 方法。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'input[type="submit"]'</span>).prop(<span class="string">'disabled'</span>, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure></p>
+<p>停止链接加载有时你不想链接跳转到某个页面或重加载该页面，而希望可以做一些其他事情，比如触发其他脚本。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'a.no-link'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  e.preventDefault();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>选择器缓存，在每次使用jquery都会先来这么几个$(‘.element’)，为了使DOM性能更佳，可以先缓存元素<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var blocks = $(<span class="string">'#blocks'</span>).find(<span class="string">'li'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>OK了，现在你可以任意使用blocks了，从而避免每次去查询这些节点<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#hideBlocks'</span>).click(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  blocks.fadeOut();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">$(<span class="string">'#showBlocks'</span>).click(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">  blocks.fadeIn();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>淡入淡出与滑动是我们经常使用jQuery做成的动画效果。或许你只是想在用户点击某物时展现一个元素，使用fadeIn和 slideDown 都很棒。但如果想让该元素在第一次点击时显现，第二次点击时消失，下面的代码可以很好地完成这件事情。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Fade</span></span><br><span class="line">$(<span class="string">'.btn'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  $(<span class="string">'.element'</span>).fadeToggle(<span class="string">'slow'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Toggle</span></span><br><span class="line">$(<span class="string">'.btn'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  $(<span class="string">'.element'</span>).slideToggle(<span class="string">'slow'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h3 id="u624B_u98CE_u7434_u6548_u679C"><a href="#u624B_u98CE_u7434_u6548_u679C" class="headerlink" title="手风琴效果"></a>手风琴效果</h3><p>简单的手风琴效果，增加这段脚本后，你所需做的所有事就是，查看脚本是否在必须的 HTML 中正常工作。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Close all panels</span></span><br><span class="line">$(<span class="string">'#accordion'</span>).find(<span class="string">'.content'</span>).hide();</span><br><span class="line"></span><br><span class="line"><span class="comment">// Accordion</span></span><br><span class="line">$(<span class="string">'#accordion'</span>).find(<span class="string">'.accordion-header'</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> next = $(<span class="keyword">this</span>).next();</span><br><span class="line">  next.slideToggle(<span class="string">'fast'</span>);</span><br><span class="line">  $(<span class="string">'.content'</span>).not(next).slideUp(<span class="string">'fast'</span>);</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>使两个Div高度一样，有时你也许想让两个 div 拥有同样高度，不管它们里面有什么内容：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'.div'</span>).css(<span class="string">'min-height'</span>, $(<span class="string">'.main-div'</span>).height());</span><br></pre></td></tr></table></figure></p>
+<p>该例设置了 min-height，意味着它可以比主要 div 更大，但永远不能更小。但有一个更加灵活的方法是遍历一组元素的设置，然后将高度设为元素中的最高值：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var $columns = $(&#39;.column&#39;);&#10;var height = 0;&#10;$columns.each(function () &#123;&#10;  if ($(this).height() &#62; height) &#123;&#10;    height = $(this).height();&#10;  &#125;&#10;&#125;);&#10;$columns.height(height);</span><br></pre></td></tr></table></figure></p>
+<p>如果你想让所有列都有相同高度<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $rows = $(<span class="string">'.same-height-columns'</span>);</span><br><span class="line">$rows.each(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  $(<span class="keyword">this</span>).find(<span class="string">'.column'</span>).height($(<span class="keyword">this</span>).height());</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>在新标签/窗口打开站外链接，在一个新标签或者新窗口中打开外置链接，并确保站内链接会在相同的标签或窗口中打开，注意：window.location.origin 在 IE 10 中不可用，该 issue 的<a href="http://tosbourn.com/a-fix-for-window-location-origin-in-internet-explorer/" target="_blank" rel="external">修复方法</a>。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'a[href^="http"]'</span>).attr(<span class="string">'target'</span>, <span class="string">'_blank'</span>);</span><br><span class="line">$(<span class="string">'a[href^="//"]'</span>).attr(<span class="string">'target'</span>, <span class="string">'_blank'</span>);</span><br><span class="line">$(<span class="string">'a[href^="'</span> + <span class="built_in">window</span>.location.origin + <span class="string">'"]'</span>).attr(<span class="string">'target'</span>, <span class="string">'_self'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>通过文本找到元素,通过使用jQuery中的contains()选择器，你可以找到某个元素中的文本。如果文本不存在，该元素将会隐藏<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> search = $(<span class="string">'#search'</span>).val();</span><br><span class="line">$(<span class="string">'div:not(:contains("'</span> + search + <span class="string">'"))'</span>).hide();</span><br></pre></td></tr></table></figure></p>
+<p>视觉改变触发，当用户焦点在另外一个标签上，或重新回到标签时，触发JavaScript<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).on(<span class="string">'visibilitychange'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (e.target.visibilityState === <span class="string">'visible'</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Tab is now in view!'</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> (e.target.visibilityState === <span class="string">'hidden'</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Tab is now hidden!'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h3 id="Ajax_u8C03_u7528"><a href="#Ajax_u8C03_u7528" class="headerlink" title="Ajax调用"></a>Ajax调用</h3><p>Ajax调用的错误处理，当某次 Ajax 调用返回 404 或 500 错误，就会执行错误处理。但如果没有定义该处理，其他 jQuery 代码或许会停止工作。可以通过下面这段代码定义一个全局 Ajax 错误处理：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$loading;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dataLoad</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $loading.show();</span><br><span class="line">    $.ajax(&#123;</span><br><span class="line">        url: your_url,</span><br><span class="line">        dataType: <span class="string">'json'</span>,</span><br><span class="line">        type: <span class="string">'get'</span>,</span><br><span class="line">        success: <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">            $loading.hide();</span><br><span class="line">        &#125;,</span><br><span class="line">        error: <span class="function"><span class="keyword">function</span> (<span class="params">xhr, status, msg</span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(msg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">$(<span class="built_in">document</span>).ajaxError(<span class="function"><span class="keyword">function</span> (<span class="params">e, xhr, settings, error</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(error);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>插件链式调用，jQuery 支持链式调用插件，以减缓反复查询 DOM，并创建多个 jQuery 对象。看下面示例代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#elem'</span>).show();</span><br><span class="line">$(<span class="string">'#elem'</span>).html(<span class="string">'bla'</span>);</span><br><span class="line">$(<span class="string">'#elem'</span>).otherStuff();</span><br></pre></td></tr></table></figure></p>
+<p>上面这段代码，可以通过链式操作大大改进，或者是把元素缓存在变量中（前缀是  $ ）：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#elem'</span>)</span><br><span class="line">  .show()</span><br><span class="line">  .html(<span class="string">'bla'</span>)</span><br><span class="line">  .otherStuff();</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $elem = $(<span class="string">'#elem'</span>);</span><br><span class="line">$elem.hide();</span><br><span class="line">$elem.html(<span class="string">'bla'</span>);</span><br><span class="line">$elem.otherStuff();</span><br></pre></td></tr></table></figure>
+<p>参考文献<br><a href="https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know" target="_blank" rel="external">https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最开始学习JS的资料是JavaScript高级程序设计，非常厚的一本书，当然，我没有看完，工作中需要什么东西我就学什么东西，所以有很多地方并不了解实现的原理，所以就填了很多坑咯。一边填坑一边快乐的编程。</p>
+<p>正如标题所说，我介绍一下自己常用的一些javascrip]]>
+    </summary>
+    
+      <category term="Coding" scheme="http://www.darcywang.com/tags/Coding/"/>
+    
+      <category term="Javascript" scheme="http://www.darcywang.com/tags/Javascript/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Database Basic 2]]></title>
+    <link href="http://www.darcywang.com/2015/12/16/Database-Basic-2/"/>
+    <id>http://www.darcywang.com/2015/12/16/Database-Basic-2/</id>
+    <published>2015-12-16T01:37:53.000Z</published>
+    <updated>2015-12-16T01:37:53.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Yueyang --Hometown]]></title>
+    <link href="http://www.darcywang.com/2015/12/15/Yueyang-Hometown/"/>
+    <id>http://www.darcywang.com/2015/12/15/Yueyang-Hometown/</id>
+    <published>2015-12-15T02:58:19.000Z</published>
+    <updated>2015-12-15T02:58:19.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Database 简单操作]]></title>
+    <link href="http://www.darcywang.com/2015/12/15/Database-%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/"/>
+    <id>http://www.darcywang.com/2015/12/15/Database-简单操作/</id>
+    <published>2015-12-15T02:57:22.000Z</published>
+    <updated>2015-12-15T02:57:22.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[AWS 配置]]></title>
+    <link href="http://www.darcywang.com/2015/12/14/AWS-%E9%85%8D%E7%BD%AE/"/>
+    <id>http://www.darcywang.com/2015/12/14/AWS-配置/</id>
+    <published>2015-12-14T10:19:31.000Z</published>
+    <updated>2015-12-14T10:19:31.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[What I Wanted]]></title>
+    <link href="http://www.darcywang.com/2015/12/14/What-I-Wanted/"/>
+    <id>http://www.darcywang.com/2015/12/14/What-I-Wanted/</id>
+    <published>2015-12-14T03:17:40.000Z</published>
+    <updated>2015-12-16T01:47:46.000Z</updated>
+    <content type="html"><![CDATA[<p>一直很想找个时间出去玩一下，    </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一直很想找个时间出去玩一下，    </p>
+]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Python Basic 2b]]></title>
+    <link href="http://www.darcywang.com/2015/12/14/Python-Basic-2b/"/>
+    <id>http://www.darcywang.com/2015/12/14/Python-Basic-2b/</id>
+    <published>2015-12-14T03:01:31.000Z</published>
+    <updated>2015-12-14T03:01:31.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Database Basic]]></title>
+    <link href="http://www.darcywang.com/2015/12/14/Database-Basic/"/>
+    <id>http://www.darcywang.com/2015/12/14/Database-Basic/</id>
+    <published>2015-12-14T01:51:29.000Z</published>
+    <updated>2015-12-16T06:33:01.000Z</updated>
+    <content type="html"><![CDATA[<p>和PHP相互配合的时候，经常会听到说建一个表吧，导数据咯，等等之类的。</p>
+<p>所以自己在闲暇时也会去看看到底是怎么回事。</p>
+<p>数据库顾名思义就是存储数据的，但是你选择那种数据库是最重要的，现在比较流行的数据库是MySQL, MongDB, PostgreSQL等等之类的。在国内现在常用的是MySQL，所以就先看看这个数据库的操作是怎么回事的。</p>
+<p>首先是数据库的名字，你会新建一个database，数据库里面会包含很多张表tables，表里面又包含表头table header和表的主体table body。那么我们可以思考一下，表跟表是怎么联系的，表里面又会有什么特别的地方么。</p>
+<pre><code>Rules for normalized tables:
+
+1. Every row has the same number of columns. 
+In practice, the database system won&apos;t let us literally have different numbers of columns in different rows. But if we have columns that are sometimes empty (null) and sometimes not, or if we stuff multiple values into a single field, we&apos;re bending this rule.
+
+The example to keep in mind here is the diet table from the zoo database. Instead of trying to stuff multiple foods for a species into a single row about that species, we separate them out. This makes it much easier to do aggregations and comparisons.
+
+2. There is a unique key and everything in a row says something about the key. 
+The key may be one column or more than one. It may even be the whole row, as in the diet table. But we don&apos;t have duplicate rows in a table.
+
+More importantly, if we are storing non-unique facts — such as people&apos;s names — we distinguish them using a unique identifier such as a serial number. This makes sure that we don&apos;t combine two people&apos;s grades or parking tickets just because they have the same name.
+
+3. Facts that don&apos;t relate to the key belong in different tables. 
+The example here was the items table, which had items, their locations, and the location&apos;s street addresses in it. The address isn&apos;t a fact about the item; it&apos;s a fact about the location. Moving it to a separate table saves space and reduces ambiguity, and we can always reconstitute the original table using a join.
+
+4. Tables shouldn&apos;t imply relationships that don&apos;t exist. 
+The example here was the job_skills table, where a single row listed one of a person&apos;s technology skills (like &apos;Linux&apos;) and one of their language skills (like &apos;French&apos;). This made it look like their Linux knowledge was specific to French, or vice versa ... when that isn&apos;t the case in the real world. Normalizing this involved splitting the tech skills and job skills into separate tables.
+</code></pre><p>然后来讲一下简单的SQL查询语句<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">QUERY = &#34;select max(name) from animals;&#34;&#10;&#10;QUERY = &#34;select * from animals limit 10;&#34;&#10;&#10;QUERY = &#34;select * from animals where species = &#39;orangutan&#39; order by birthdate;&#34;&#10;&#10;QUERY = &#34;select name from animals where species = &#39;orangutan&#39; order by birthdate desc;&#34;&#10;&#10;QUERY = &#34;select name, birthdate from animals order by name limit 10 offset 20;&#34;&#10;&#10;QUERY = &#34;select species, min(birthdate) from animals group by species;&#34;&#10;&#10;QUERY = &#39;&#39;&#39;&#10;select name, count(*) as num from animals&#10;group by name&#10;order by num desc&#10;limit 5;&#10;&#39;&#39;&#39;</span><br></pre></td></tr></table></figure></p>
+<p>这些语句有一些相同的地方，可以来分析一下啊</p>
+<pre><code>where
+
+The where clause expresses restrictions — filtering a table for rows that follow a particular rule. where supports equalities, inequalities, and boolean operators (among other things):
+
+where species = &apos;gorilla&apos; — return only rows that have &apos;gorilla&apos; as the value of the species column.
+where name &gt;= &apos;George&apos; — return only rows where the name column is alphabetically after &apos;George&apos;.
+where species != &apos;gorilla&apos; and name != &apos;George&apos; — return only rows where species isn&apos;t &apos;gorilla&apos; and name isn&apos;t &apos;George&apos;.
+limit / offset
+
+The limit clause sets a limit on how many rows to return in the result table. The optional offset clause says how far to skip ahead into the results. So limit 10 offset 100 will return 10 results starting with the 101st.
+
+order by
+
+The order by clause tells the database how to sort the results — usually according to one or more columns. So order by species, name says to sort results first by the species column, then by name within each species.
+
+Ordering happens before limit/offset, so you can use them together to extract pages of alphabetized results. (Think of the pages of a dictionary.)
+
+The optional desc modifier tells the database to order results in descending order — for instance from large numbers to small ones, or from Z to A.
+
+group by
+
+The group by clause is only used with aggregations, such as max or sum. Without a group by clause, a select statement with an aggregation will aggregate over the whole selected table(s), returning only one row. With a group by clause, it will return one row for each distinct value of the column or expression in the group by clause.
+
+insert into table ( column1, column2, ... ) values ( val1, val2, ... );
+
+If the values are in the same order as the table&apos;s columns (starting with the first column), you don&apos;t have to specify the columns in the insert statement:
+
+insert into table values ( val1, val2, ... );
+
+For instance, if a table has three columns (a, b, c) and you want to insert into a and b, you can leave off the column names from the insert statement. But if you want to insert into b and c, or a and c, you have to specify the columns.
+
+A single insert statement can only insert into a single table. (Contrast this with the select statement, which can pull data from several tables using a join.)
+
+select products.name, products.sku, count(*) as num
+  from products join sales
+    on products.sku = sales.sku
+  group by products.sku;
+
+select products.name, products.sku, count(sales.sku) as num
+  from products left join sales
+    on products.sku = sales.sku
+  group by products.sku;
+This query will give us a row for every product in the products table, even the ones that have no sales in the sales table.
+</code></pre><p>最后就是怎么去创建一个数据库了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">create table programs (</span><br><span class="line">   name text,</span><br><span class="line">   filename text</span><br><span class="line">);</span><br><span class="line">create table bugs (</span><br><span class="line">   filename text,</span><br><span class="line">   description text,</span><br><span class="line">   id serial primary key</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">QUERY = <span class="string">''</span><span class="string">'</span><br><span class="line">select programs.name, count(bugs.filename) as num</span><br><span class="line">       from programs left join bugs</span><br><span class="line">         on programs.filename = bugs.filename</span><br><span class="line">       group by programs.name</span><br><span class="line">       order by num;</span><br><span class="line">'</span><span class="string">''</span></span><br></pre></td></tr></table></figure></p>
+<p>一段完整的Python代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import sqlite3</span><br><span class="line"></span><br><span class="line"><span class="comment"># Fetch some student records from the database.</span></span><br><span class="line">db = sqlite3.connect(<span class="string">"students"</span>)</span><br><span class="line">c = db.cursor()</span><br><span class="line">query = <span class="string">"select name, id from students order by name asc;"</span></span><br><span class="line">c.execute(query)</span><br><span class="line">rows = c.fetchall()</span><br><span class="line"></span><br><span class="line"><span class="comment"># First, what data structure did we get?</span></span><br><span class="line"><span class="built_in">print</span> <span class="string">"Row data:"</span></span><br><span class="line"><span class="built_in">print</span> rows</span><br><span class="line"></span><br><span class="line"><span class="comment"># And let's loop over it too:</span></span><br><span class="line"><span class="built_in">print</span></span><br><span class="line"><span class="built_in">print</span> <span class="string">"Student names:"</span></span><br><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> rows:</span><br><span class="line">  <span class="built_in">print</span> <span class="string">"  "</span>, row[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">db.close()</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>和PHP相互配合的时候，经常会听到说建一个表吧，导数据咯，等等之类的。</p>
+<p>所以自己在闲暇时也会去看看到底是怎么回事。</p>
+<p>数据库顾名思义就是存储数据的，但是你选择那种数据库是最重要的，现在比较流行的数据库是MySQL, MongDB, PostgreS]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
