@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.darcywang.com/2015/12/26/AWS-Basic/</loc>
+    <lastmod>2015-12-26T13:57:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.darcywang.com/2015/12/26/jQuery-Plugin/</loc>
+    <lastmod>2015-12-26T13:56:27.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.darcywang.com/2015/12/17/HTML-5/</loc>
     <lastmod>2015-12-22T09:06:21.000Z</lastmod>
   </url>
