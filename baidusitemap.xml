@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>http://www.darcywang.com/2015/12/17/CSS-3/</loc>
+    <lastmod>2015-12-30T10:12:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>CSS 3</title>
+        <pubTime>2015-12-16T23:04:37.000Z</pubTime>
+        
+        <tag>CSS3</tag>
+         
+         
+           
+             
+              <breadCrumb title="Techniques" url="http://www.darcywang.com/categories/Techniques/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.darcywang.com/2015/12/17/HTML-5/</loc>
-    <lastmod>2015-12-30T09:04:25.000Z</lastmod>
+    <lastmod>2015-12-30T09:41:03.000Z</lastmod>
     <data>
         <display>
         <title>HTML 5</title>
@@ -87,26 +107,6 @@
         <pubTime>2015-12-02T07:33:19.000Z</pubTime>
         
         <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Techniques" url="http://www.darcywang.com/categories/Techniques/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2015/12/17/CSS-3/</loc>
-    <lastmod>2015-12-22T07:50:13.000Z</lastmod>
-    <data>
-        <display>
-        <title>CSS 3</title>
-        <pubTime>2015-12-16T23:04:37.000Z</pubTime>
-        
-        <tag>CSS3</tag>
          
          
            
