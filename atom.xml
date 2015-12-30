@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2015-12-29T02:01:44.000Z</updated>
+  <updated>2015-12-29T02:01:45.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.darcywang.com/2015/12/26/AWS-Basic/"/>
     <id>http://www.darcywang.com/2015/12/26/AWS-Basic/</id>
     <published>2015-12-26T13:57:12.000Z</published>
-    <updated>2015-12-29T02:01:44.000Z</updated>
+    <updated>2015-12-29T02:01:45.000Z</updated>
     <content type="html"><![CDATA[<h3 id="AWS_u662F_u4EC0_u4E48"><a href="#AWS_u662F_u4EC0_u4E48" class="headerlink" title="AWS是什么"></a>AWS是什么</h3><p><a href="http://aws.amazon.com/cn/" target="_blank" rel="external">AWS</a>是一种服务，阿里云和新浪云跟它类型差不多，但其实差很多。事实是AWS从06年就开始做这方面的服务了，而国内的几乎都是近几年才开始，这并不是说不支持国货，现实是人家确实做得非常好，而且已经开始打入中国这个巨大的市场。</p>
 <p>AWS的服务非常多，现在一般创业需要用的服务是EC2和S3。Amazon EC2是一个IaaS云服务，主要提供弹性的计算资源。通俗的讲，就是提供多种类型的虚拟机。EC2也是整个AWS最核心的组成部分，AWS中有许多的服务需要依赖它。在EC2环境中，虚拟机被称为实例，实例的镜像被称为AMI。任何的企业和个人都可以选择不同的类型和大小的实例，在很短的时间内创建、启动和运行。主要是根据类型和使用时间收费，即使用多少收多少的费用。</p>
 <p><a href="http://s3.amazonaws.com/awsdocs/gettingstarted/latest/awsgsg-intro-zh_cn.pdf" target="_blank" rel="external">Amazon S3</a>是可以提供安全、耐久且扩展性高的对象存储。它也是根据实际使用的存储量付费。没有最低费用和准备成本。提供一系列的存储类别，可用于不同的用例，包括用于频繁访问数据的通用存储的、用于长期但非频繁访问数据的，以及用于长期档案的。Amazon S3 还提供可配置生命周期政策，以便在你数据的生命周期内对其进行管理。一旦设置了政策，你的数据便会自动迁移到最合适的存储类别，而你的应用程序无需任何更改。<br>Amazon S3 可单独使用，或与Amazon EC2和IAM等AWS服务以及第三方存储库和网关结合使用。</p>
@@ -41,7 +41,7 @@
     <link href="http://www.darcywang.com/2015/12/26/jQuery-Plugin/"/>
     <id>http://www.darcywang.com/2015/12/26/jQuery-Plugin/</id>
     <published>2015-12-26T13:56:27.000Z</published>
-    <updated>2015-12-29T05:40:45.000Z</updated>
+    <updated>2015-12-29T05:43:05.000Z</updated>
     <content type="html"><![CDATA[<p>jQuery插件对于80后的前端开发来说，实在是再熟悉不过了。在工作中的同事大部分还是80后，每次看到他们收集这些插件的时候就像是捡到宝一样，幸福满满。对于自己来说，用过的插件好像就是lazyload和validation，但是后来发现国外牛逼的人才早就写出更好更轻巧的js，完全可以忽略这些过时的插件。</p>
 <p>首先先说一下jquery.validate.js，这个曾经叱诧风云的第三方插件。现在可以取代的是<a href="http://parsleyjs.org/" target="_blank" rel="external">Parsley.js</a>，首先说的是大小问题，<a href="https://github.com/guillaumepotier/Parsley.js/blob/master/dist/parsley.min.js" target="_blank" rel="external">parsley.min.js</a>只有36kb大小，然后两个插件都对jQuery有依赖。最主要推荐的理由是github上parsley的点赞要比validate多。</p>
 <p>其次说一下关于jquery.lazyload.js，推荐的是<a href="http://callmecavs.github.io/layzr.js/" target="_blank" rel="external">layzr.js</a>，它只有<a href="https://github.com/callmecavs/layzr.js/blob/master/dist/layzr.min.js" target="_blank" rel="external">3kb</a>大小，最主要的是不依赖jQuery。用法也是非常的简单，可以<a href="https://github.com/callmecavs/layzr.js" target="_blank" rel="external">参照</a></p>
@@ -206,11 +206,19 @@
     <link href="http://www.darcywang.com/2015/12/17/HTML-5/"/>
     <id>http://www.darcywang.com/2015/12/17/HTML-5/</id>
     <published>2015-12-16T23:04:26.000Z</published>
-    <updated>2015-12-22T09:06:21.000Z</updated>
-    <content type="html"><![CDATA[<p>Set a cookie<br>$.cookie(“example”, “foo”); // Sample 1<br>$.cookie(“example”, “foo”, { expires: 7 }); // Sample 2<br>$.cookie(“example”, “foo”, { path: ‘/admin’, expires: 7 }); // Sample 3<br>Get a cookie<br>alert( $.cookie(“example”) );<br>Delete the cookie<br>$.removeCookie(“example”);</p>
+    <updated>2015-12-30T09:04:25.000Z</updated>
+    <content type="html"><![CDATA[<p>这篇文章主要讲的是HTML5的一些新特性和相应的探索。</p>
+<h3 id="HTML5_u8BED_u4E49_u5316"><a href="#HTML5_u8BED_u4E49_u5316" class="headerlink" title="HTML5语义化"></a>HTML5语义化</h3><p>不知道大家有没有这么一个习惯，在参加面试前会先提前查看相应公司的网站，如果他们家连官网都没有，那建议就不要去了。要么是太垃圾了，要么是这家公司非常需要你的帮助。</p>
+<p>打开网站首页，我会迫不及待的F12查看页面元素。如果当我看了所有的文本元素除了div还是div的话，我理所当然的认为逼格太TM low了，我不管你是不是markdown生成与否，首先这个网站的首页就能体现出公司的前端水平。</p>
+<p>新时代的HTML页面应该有nav，section，article等等新出现的标签，之所以会有这些标签，是因为他们都非常的语义化，不仅工程师能快速阅读，也更有利于SEO。如果你还需要考虑到神奇的IE，那就需要加上一个<a href="https://github.com/aFarkas/html5shiv" target="_blank" rel="external">html5.shiv.js</a>.</p>
+<h3 id="HTML5_u5B58_u50A8"><a href="#HTML5_u5B58_u50A8" class="headerlink" title="HTML5存储"></a>HTML5存储</h3><p>由于HTML4时代Cookie的大小、格式、存储数据格式等限制，网站应用如果想在浏览器端存储用户的部分信息，那么只能借助于Cookie。但是Cookie的限制较多，比如cookie最多只能有4k，每个网站只能存放30或者50个cookie，但是随着网站的复杂性升级，HTML5存储是大势所趋。</p>
+<p>先说说cookie的一些用法吧<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// &#35774;&#32622;cookie&#10;$.cookie(&#34;example&#34;, &#34;foo&#34;); // Sample 1&#10;$.cookie(&#34;example&#34;, &#34;foo&#34;, &#123; expires: 7 &#125;); // Sample 2&#10;$.cookie(&#34;example&#34;, &#34;foo&#34;, &#123; path: &#39;/admin&#39;, expires: 7 &#125;); // Sample 3&#10;$.cookie(&#34;basket-data&#34;, JSON.stringify($(&#34;#ArticlesHolder&#34;).data()));&#10;// &#33719;&#21462;cookie&#10;$.cookie(&#34;example&#34;);&#10;$(&#34;#ArticlesHolder&#34;).data(JSON.parse($.cookie(&#34;basket-data&#34;)));&#10;// &#21024;&#38500;cookie&#10;$.removeCookie(&#34;example&#34;);</span><br></pre></td></tr></table></figure></p>
+<p>cookie普及的程度也是蛮高的，要完全的停用也是需要一段时间的。毕竟每一项技术都有它存在的理由吧，你可以在这里继续<a href="https://github.com/carhartl/jquery-cookie" target="_blank" rel="external">研究</a></p>
+<h4 id="u6C38_u4E45_u6027_u7684_u672C_u5730_u5B58_u50A8_uFF08localStorage_uFF09"><a href="#u6C38_u4E45_u6027_u7684_u672C_u5730_u5B58_u50A8_uFF08localStorage_uFF09" class="headerlink" title="永久性的本地存储（localStorage）"></a>永久性的本地存储（localStorage）</h4><h4 id="u4F1A_u8BDD_u7EA7_u522B_u7684_u672C_u5730_u5B58_u50A8_uFF08sessionStorage_uFF09"><a href="#u4F1A_u8BDD_u7EA7_u522B_u7684_u672C_u5730_u5B58_u50A8_uFF08sessionStorage_uFF09" class="headerlink" title="会话级别的本地存储（sessionStorage）"></a>会话级别的本地存储（sessionStorage）</h4><h4 id="u4F7F_u7528_u6CE8_u610F_u4E8B_u9879"><a href="#u4F7F_u7528_u6CE8_u610F_u4E8B_u9879" class="headerlink" title="使用注意事项"></a>使用注意事项</h4><p>不要存放敏感信息。<br>选择合适的域存放合适的信息，比如一次过期的信息就放在sessionstorage中。<br>对存放在其中的信息最好能够在服务端进行加密。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Set a cookie<br>$.cookie(“example”, “foo”); // Sample 1<br>$.cookie(“example”, “foo”, { expires: 7 }); // Sample 2<br>$.cookie(“example”,]]>
+    <![CDATA[<p>这篇文章主要讲的是HTML5的一些新特性和相应的探索。</p>
+<h3 id="HTML5_u8BED_u4E49_u5316"><a href="#HTML5_u8BED_u4E49_u5316" class="headerlink" title="HTML5语义化"><]]>
     </summary>
     
       <category term="HTML5" scheme="http://www.darcywang.com/tags/HTML5/"/>

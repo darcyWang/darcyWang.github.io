@@ -53,16 +53,22 @@
 
 
 
-<meta name="description" content="Set a cookie$.cookie(“example”, “foo”); // Sample 1$.cookie(“example”, “foo”, { expires: 7 }); // Sample 2$.cookie(“example”, “foo”, { path: ‘/admin’, expires: 7 }); // Sample 3Get a cookiealert( $.co">
+<meta name="description" content="这篇文章主要讲的是HTML5的一些新特性和相应的探索。
+HTML5语义化不知道大家有没有这么一个习惯，在参加面试前会先提前查看相应公司的网站，如果他们家连官网都没有，那建议就不要去了。要么是太垃圾了，要么是这家公司非常需要你的帮助。
+打开网站首页，我会迫不及待的F12查看页面元素。如果当我看了所有的文本元素除了div还是div的话，我理所当然的认为逼格太TM low了，我不管你是不是markdow">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTML 5">
 <meta property="og:url" content="http://www.darcywang.com/2015/12/17/HTML-5/index.html">
 <meta property="og:site_name" content="Mr' Darcy">
-<meta property="og:description" content="Set a cookie$.cookie(“example”, “foo”); // Sample 1$.cookie(“example”, “foo”, { expires: 7 }); // Sample 2$.cookie(“example”, “foo”, { path: ‘/admin’, expires: 7 }); // Sample 3Get a cookiealert( $.co">
-<meta property="og:updated_time" content="2015-12-22T09:06:21.000Z">
+<meta property="og:description" content="这篇文章主要讲的是HTML5的一些新特性和相应的探索。
+HTML5语义化不知道大家有没有这么一个习惯，在参加面试前会先提前查看相应公司的网站，如果他们家连官网都没有，那建议就不要去了。要么是太垃圾了，要么是这家公司非常需要你的帮助。
+打开网站首页，我会迫不及待的F12查看页面元素。如果当我看了所有的文本元素除了div还是div的话，我理所当然的认为逼格太TM low了，我不管你是不是markdow">
+<meta property="og:updated_time" content="2015-12-30T09:04:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML 5">
-<meta name="twitter:description" content="Set a cookie$.cookie(“example”, “foo”); // Sample 1$.cookie(“example”, “foo”, { expires: 7 }); // Sample 2$.cookie(“example”, “foo”, { path: ‘/admin’, expires: 7 }); // Sample 3Get a cookiealert( $.co">
+<meta name="twitter:description" content="这篇文章主要讲的是HTML5的一些新特性和相应的探索。
+HTML5语义化不知道大家有没有这么一个习惯，在参加面试前会先提前查看相应公司的网站，如果他们家连官网都没有，那建议就不要去了。要么是太垃圾了，要么是这家公司非常需要你的帮助。
+打开网站首页，我会迫不及待的F12查看页面元素。如果当我看了所有的文本元素除了div还是div的话，我理所当然的认为逼格太TM low了，我不管你是不是markdow">
 
 
 
@@ -306,7 +312,14 @@
       
 
       
-        <span itemprop="articleBody"><p>Set a cookie<br>$.cookie(“example”, “foo”); // Sample 1<br>$.cookie(“example”, “foo”, { expires: 7 }); // Sample 2<br>$.cookie(“example”, “foo”, { path: ‘/admin’, expires: 7 }); // Sample 3<br>Get a cookie<br>alert( $.cookie(“example”) );<br>Delete the cookie<br>$.removeCookie(“example”);</p>
+        <span itemprop="articleBody"><p>这篇文章主要讲的是HTML5的一些新特性和相应的探索。</p>
+<h3 id="HTML5_u8BED_u4E49_u5316"><a href="#HTML5_u8BED_u4E49_u5316" class="headerlink" title="HTML5语义化"></a>HTML5语义化</h3><p>不知道大家有没有这么一个习惯，在参加面试前会先提前查看相应公司的网站，如果他们家连官网都没有，那建议就不要去了。要么是太垃圾了，要么是这家公司非常需要你的帮助。</p>
+<p>打开网站首页，我会迫不及待的F12查看页面元素。如果当我看了所有的文本元素除了div还是div的话，我理所当然的认为逼格太TM low了，我不管你是不是markdown生成与否，首先这个网站的首页就能体现出公司的前端水平。</p>
+<p>新时代的HTML页面应该有nav，section，article等等新出现的标签，之所以会有这些标签，是因为他们都非常的语义化，不仅工程师能快速阅读，也更有利于SEO。如果你还需要考虑到神奇的IE，那就需要加上一个<a href="https://github.com/aFarkas/html5shiv" target="_blank" rel="external">html5.shiv.js</a>.</p>
+<h3 id="HTML5_u5B58_u50A8"><a href="#HTML5_u5B58_u50A8" class="headerlink" title="HTML5存储"></a>HTML5存储</h3><p>由于HTML4时代Cookie的大小、格式、存储数据格式等限制，网站应用如果想在浏览器端存储用户的部分信息，那么只能借助于Cookie。但是Cookie的限制较多，比如cookie最多只能有4k，每个网站只能存放30或者50个cookie，但是随着网站的复杂性升级，HTML5存储是大势所趋。</p>
+<p>先说说cookie的一些用法吧<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// &#35774;&#32622;cookie&#10;$.cookie(&#34;example&#34;, &#34;foo&#34;); // Sample 1&#10;$.cookie(&#34;example&#34;, &#34;foo&#34;, &#123; expires: 7 &#125;); // Sample 2&#10;$.cookie(&#34;example&#34;, &#34;foo&#34;, &#123; path: &#39;/admin&#39;, expires: 7 &#125;); // Sample 3&#10;$.cookie(&#34;basket-data&#34;, JSON.stringify($(&#34;#ArticlesHolder&#34;).data()));&#10;// &#33719;&#21462;cookie&#10;$.cookie(&#34;example&#34;);&#10;$(&#34;#ArticlesHolder&#34;).data(JSON.parse($.cookie(&#34;basket-data&#34;)));&#10;// &#21024;&#38500;cookie&#10;$.removeCookie(&#34;example&#34;);</span><br></pre></td></tr></table></figure></p>
+<p>cookie普及的程度也是蛮高的，要完全的停用也是需要一段时间的。毕竟每一项技术都有它存在的理由吧，你可以在这里继续<a href="https://github.com/carhartl/jquery-cookie" target="_blank" rel="external">研究</a></p>
+<h4 id="u6C38_u4E45_u6027_u7684_u672C_u5730_u5B58_u50A8_uFF08localStorage_uFF09"><a href="#u6C38_u4E45_u6027_u7684_u672C_u5730_u5B58_u50A8_uFF08localStorage_uFF09" class="headerlink" title="永久性的本地存储（localStorage）"></a>永久性的本地存储（localStorage）</h4><h4 id="u4F1A_u8BDD_u7EA7_u522B_u7684_u672C_u5730_u5B58_u50A8_uFF08sessionStorage_uFF09"><a href="#u4F1A_u8BDD_u7EA7_u522B_u7684_u672C_u5730_u5B58_u50A8_uFF08sessionStorage_uFF09" class="headerlink" title="会话级别的本地存储（sessionStorage）"></a>会话级别的本地存储（sessionStorage）</h4><h4 id="u4F7F_u7528_u6CE8_u610F_u4E8B_u9879"><a href="#u4F7F_u7528_u6CE8_u610F_u4E8B_u9879" class="headerlink" title="使用注意事项"></a>使用注意事项</h4><p>不要存放敏感信息。<br>选择合适的域存放合适的信息，比如一次过期的信息就放在sessionstorage中。<br>对存放在其中的信息最好能够在服务端进行加密。</p>
 </span>
       
     </div>
@@ -492,7 +505,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML5_u8BED_u4E49_u5316"><span class="nav-number">1.</span> <span class="nav-text">HTML5语义化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML5_u5B58_u50A8"><span class="nav-number">2.</span> <span class="nav-text">HTML5存储</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u6C38_u4E45_u6027_u7684_u672C_u5730_u5B58_u50A8_uFF08localStorage_uFF09"><span class="nav-number">2.1.</span> <span class="nav-text">永久性的本地存储（localStorage）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4F1A_u8BDD_u7EA7_u522B_u7684_u672C_u5730_u5B58_u50A8_uFF08sessionStorage_uFF09"><span class="nav-number">2.2.</span> <span class="nav-text">会话级别的本地存储（sessionStorage）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4F7F_u7528_u6CE8_u610F_u4E8B_u9879"><span class="nav-number">2.3.</span> <span class="nav-text">使用注意事项</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
