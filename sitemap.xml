@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.darcywang.com/2015/12/10/Flexbox-%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2016-01-05T08:15:10.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.darcywang.com/2015/12/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2016-01-04T02:45:31.000Z</lastmod>
+    <lastmod>2016-01-05T01:46:19.000Z</lastmod>
   </url>
   
   <url>
@@ -179,11 +184,6 @@
   <url>
     <loc>http://www.darcywang.com/2015/12/11/About-Self-Learning/</loc>
     <lastmod>2015-12-10T23:44:02.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.darcywang.com/2015/12/10/Flexbox-%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2015-12-10T08:04:33.000Z</lastmod>
   </url>
   
 </urlset>
