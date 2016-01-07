@@ -34,7 +34,7 @@
     <link href="http://www.darcywang.com/2016/01/05/Back-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Back-end-技能梳理/</id>
     <published>2016-01-05T08:19:15.000Z</published>
-    <updated>2016-01-06T06:56:26.000Z</updated>
+    <updated>2016-01-06T07:03:01.000Z</updated>
     <content type="html"><![CDATA[<p>在过去当谈到开发时，通常是是指后台开发。</p>
 ]]></content>
     <summary type="html">
@@ -107,7 +107,7 @@
     <link href="http://www.darcywang.com/2015/12/22/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
     <id>http://www.darcywang.com/2015/12/22/在路上/</id>
     <published>2015-12-22T03:11:24.000Z</published>
-    <updated>2016-01-06T06:18:14.000Z</updated>
+    <updated>2016-01-06T06:18:16.000Z</updated>
     <content type="html"><![CDATA[<p>当nodejs没出来之前，我会感觉从一枚小小的前端转全栈是需要漫长的路程，但是，nodejs已经出来了，我的全栈之路也就在路上了</p>
 <p>HTML、CSS 和 JavaScript</p>
 <p>前端 Web 界面框架与工具</p>
@@ -148,10 +148,12 @@
     <link href="http://www.darcywang.com/2015/12/21/Django-Components/"/>
     <id>http://www.darcywang.com/2015/12/21/Django-Components/</id>
     <published>2015-12-21T01:46:05.000Z</published>
-    <updated>2015-12-21T01:46:05.000Z</updated>
-    <content type="html"></content>
+    <updated>2016-01-07T06:37:02.000Z</updated>
+    <content type="html"><![CDATA[<p>Django的第三方组件也是非常丰富的，比如说Django rest framework，Gunicore等等之类，接下来会介绍几个自己常用的组件，希望能对你有所帮助。</p>
+<h3 id="django-rest-framework"><a href="#django-rest-framework" class="headerlink" title="django-rest-framework"></a>django-rest-framework</h3><h3 id="django-allauth"><a href="#django-allauth" class="headerlink" title="django-allauth"></a>django-allauth</h3><h3 id="django-crispy-forms"><a href="#django-crispy-forms" class="headerlink" title="django-crispy-forms"></a>django-crispy-forms</h3><h3 id="u63A5_u4E0B_u6765_u7684_u540E_u7EED_u7684"><a href="#u63A5_u4E0B_u6765_u7684_u540E_u7EED_u7684" class="headerlink" title="接下来的后续的"></a>接下来的后续的</h3>]]></content>
     <summary type="html">
-    
+    <![CDATA[<p>Django的第三方组件也是非常丰富的，比如说Django rest framework，Gunicore等等之类，接下来会介绍几个自己常用的组件，希望能对你有所帮助。</p>
+<h3 id="django-rest-framework"><a href="#django-]]>
     </summary>
     
   </entry>
@@ -187,15 +189,19 @@
     <link href="http://www.darcywang.com/2015/12/18/Django-for-Webapp/"/>
     <id>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</id>
     <published>2015-12-18T01:42:33.000Z</published>
-    <updated>2016-01-07T02:39:13.000Z</updated>
+    <updated>2016-01-07T07:18:29.000Z</updated>
     <content type="html"><![CDATA[<p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一看名字Django Unchained，还真的是一样的啊。</p>
-<p>Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于<strong> Django 1.7 </strong>上的。首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个<a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank" rel="external">web框架</a>, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不多咯。</p>
+<p>Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于<strong> Django 1.7 </strong>上的。重要的事情说3遍，看文档，看文档，看文档首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个<a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank" rel="external">web框架</a>, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不多咯。</p>
 <p>OK，Let’s get our hands dirty。</p>
-<p>在最开始先说明自己是用的Linux系统，已经安装好了Python 2.7</p>
+<p>在最开始先说明自己是用的Linux系统，已经安装好了Python 2.7，<a href="https://docs.djangoproject.com/en/1.7/" target="_blank" rel="external">Django 1.7</a></p>
 <p>先介绍一个神奇的东西–<a href="https://virtualenv.readthedocs.org/en/latest/" target="_blank" rel="external">virtualenv</a>，它的作用是可以给你一个独立的开发环境。简单说一下，比如你用Django 1.7版本，然后你又想用Django 1.8版本试一下手，这个时候就是virtualenv的用武之地，它可以让你在电脑上建N多个开发环境，它们都互不干扰。安装也是非常简单<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ [sudo] pip install virtualenv</span><br></pre></td></tr></table></figure></p>
 <p>使用起来也是灰常简单，最先开始你得先给你的环境起一个非常有逼格的名字，记住是环境的名字。环境造好以后就是启动环境，接着就是造项目了，项目的名字可以和环境的名字一样，因为这样就可以让你搞不明白是什么意思，装逼一下啊。事实是无论你项目名字是什么，接下来都会把它修改为src。因为src文件名称在你脑海里面就有那么一种意思，对，就是那个作用。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ virtualenv YourProjectName</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> YourProjectName</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">source</span> bin/activate</span><br><span class="line"></span><br><span class="line">$ django-admin.py startproject YourProjectName</span><br></pre></td></tr></table></figure></p>
-<p>完成上面几个步骤以后有几点你需要注意的，启动环境以后你会看到$符号前面包含你环境名字的双括号，另外关闭环境就是deactivate，是不是非常easy。最后你看到的目录是 bin/ include/ lib/ src/<br>在以后的开发中会经常用到以下的命令行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ pip freeze 查看当前环境里面都安装了些什么东东</span><br><span class="line"></span><br><span class="line">$ python manage.py startapp NewAppName 安装新的App</span><br><span class="line"></span><br><span class="line">$ python manage.py runserver</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ [sudo] pip install virtualenv</span><br></pre></td></tr></table></figure>
+<p>完成上面几个步骤以后有几点你需要注意的，启动环境以后你会看到$符号前面包含你环境名字的双括号，另外关闭环境就是deactivate，是不是非常easy。最后你看到的目录是 bin/ include/ lib/ src/<br>还有几点优化可以做，比如说可以添加一个start.sh文件，然后你就每次直接 . ./start。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span><br><span class="line"></span></span><br><span class="line"><span class="built_in">source</span> bin/activate</span><br><span class="line"><span class="built_in">cd</span> src</span><br></pre></td></tr></table></figure></p>
+<p>在以后的开发中会经常用到以下的命令行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ pip freeze 查看当前环境里面都安装了些什么东东</span><br><span class="line"></span><br><span class="line">$ python manage.py startapp NewAppName 安装新的App</span><br><span class="line"></span><br><span class="line">$ python manage.py runserver <span class="number">12344</span></span><br></pre></td></tr></table></figure></p>
+<p>现在可以放下手中的代码，一起来想想这个问题。当一个开发环境搭好，可以开始做项目了，需要注意什么，从什么地方开始呢？<br>当你用Django新创建好一个新项目的时候，它就自己带好了一个admin的模块。里面有4个python文件，<strong>init</strong>.py  settings.py  urls.py  wsgi.py，一个一个来分析一下。</p>
+<h4 id="init-py"><a href="#init-py" class="headerlink" title="<strong>init</strong>.py"></a><strong>init</strong>.py</h4><p>任何时候只要新建了一个app，就一定会带有这个文件。它的作用是相当于class中的def <strong>init</strong>(self):函数，用来初始化模块。并且把所在目录当作一个package处理，还有from-import 语句导入子包时需要用到它。 如果没有用到, 他们可以是空文件。就比如package.module下的所有模块from package.module import * </p>
+<h4 id="settings-py"><a href="#settings-py" class="headerlink" title="settings.py"></a>settings.py</h4><p>它是整个Django的核心文件，任何重要的配置都需要在这里面进行修改。但是记得不搞乱搞它哦</p>
+<h4 id="urls-py"><a href="#urls-py" class="headerlink" title="urls.py"></a>urls.py</h4><h4 id="wsgi-py"><a href="#wsgi-py" class="headerlink" title="wsgi.py"></a>wsgi.py</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一]]>
