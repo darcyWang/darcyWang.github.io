@@ -61,7 +61,7 @@ Django有很多版本，我自己学习并使用在项目里面的是1.7.11，�
 <meta property="og:site_name" content="Mr' Darcy">
 <meta property="og:description" content="刚刚开始接触Django时让我想到了一部电影《被解救的姜戈》，一看名字Django Unchained，还真的是一样的啊。
 Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于 Django 1.7 上的。首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个web框架, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不">
-<meta property="og:updated_time" content="2015-12-18T13:42:32.000Z">
+<meta property="og:updated_time" content="2016-01-07T02:39:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Django for Webapp">
 <meta name="twitter:description" content="刚刚开始接触Django时让我想到了一部电影《被解救的姜戈》，一看名字Django Unchained，还真的是一样的啊。
@@ -296,6 +296,12 @@ Django有很多版本，我自己学习并使用在项目里面的是1.7.11，�
       
         <span itemprop="articleBody"><p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一看名字Django Unchained，还真的是一样的啊。</p>
 <p>Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于<strong> Django 1.7 </strong>上的。首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个<a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank" rel="external">web框架</a>, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不多咯。</p>
+<p>OK，Let’s get our hands dirty。</p>
+<p>在最开始先说明自己是用的Linux系统，已经安装好了Python 2.7</p>
+<p>先介绍一个神奇的东西–<a href="https://virtualenv.readthedocs.org/en/latest/" target="_blank" rel="external">virtualenv</a>，它的作用是可以给你一个独立的开发环境。简单说一下，比如你用Django 1.7版本，然后你又想用Django 1.8版本试一下手，这个时候就是virtualenv的用武之地，它可以让你在电脑上建N多个开发环境，它们都互不干扰。安装也是非常简单<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ [sudo] pip install virtualenv</span><br></pre></td></tr></table></figure></p>
+<p>使用起来也是灰常简单，最先开始你得先给你的环境起一个非常有逼格的名字，记住是环境的名字。环境造好以后就是启动环境，接着就是造项目了，项目的名字可以和环境的名字一样，因为这样就可以让你搞不明白是什么意思，装逼一下啊。事实是无论你项目名字是什么，接下来都会把它修改为src。因为src文件名称在你脑海里面就有那么一种意思，对，就是那个作用。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ virtualenv YourProjectName</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> YourProjectName</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">source</span> bin/activate</span><br><span class="line"></span><br><span class="line">$ django-admin.py startproject YourProjectName</span><br></pre></td></tr></table></figure></p>
+<p>完成上面几个步骤以后有几点你需要注意的，启动环境以后你会看到$符号前面包含你环境名字的双括号，另外关闭环境就是deactivate，是不是非常easy。最后你看到的目录是 bin/ include/ lib/ src/<br>在以后的开发中会经常用到以下的命令行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ pip freeze 查看当前环境里面都安装了些什么东东</span><br><span class="line"></span><br><span class="line">$ python manage.py startapp NewAppName 安装新的App</span><br><span class="line"></span><br><span class="line">$ python manage.py runserver</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ [sudo] pip install virtualenv</span><br></pre></td></tr></table></figure>
 </span>
       
     </div>

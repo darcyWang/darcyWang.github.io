@@ -4,13 +4,17 @@
 
     
   <url>
-    <loc>http://www.darcywang.com/2015/12/10/Flexbox-%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2016-01-05T09:23:55.000Z</lastmod>
+    <loc>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</loc>
+    <lastmod>2016-01-07T02:39:13.000Z</lastmod>
     <data>
         <display>
-        <title>Flexbox 学习</title>
-        <pubTime>2015-12-10T02:17:36.000Z</pubTime>
+        <title>Django for Webapp</title>
+        <pubTime>2015-12-18T01:42:33.000Z</pubTime>
         
+        <tag>Django</tag>
+         
+        <tag>Python</tag>
+         
          
            
         </display>
@@ -20,7 +24,7 @@
     
   <url>
     <loc>http://www.darcywang.com/2016/01/05/Front-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/</loc>
-    <lastmod>2016-01-05T08:21:18.000Z</lastmod>
+    <lastmod>2016-01-06T07:03:24.000Z</lastmod>
     <data>
         <display>
         <title>Front-end  技能梳理</title>
@@ -35,11 +39,48 @@
     
   <url>
     <loc>http://www.darcywang.com/2016/01/05/Back-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/</loc>
-    <lastmod>2016-01-05T08:19:15.000Z</lastmod>
+    <lastmod>2016-01-06T06:56:26.000Z</lastmod>
     <data>
         <display>
         <title>Back-end  技能梳理</title>
         <pubTime>2016-01-05T08:19:15.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.darcywang.com/2015/12/22/%E5%9C%A8%E8%B7%AF%E4%B8%8A/</loc>
+    <lastmod>2016-01-06T06:18:14.000Z</lastmod>
+    <data>
+        <display>
+        <title>在路上</title>
+        <pubTime>2015-12-22T03:11:24.000Z</pubTime>
+        
+        <tag>fullstack</tag>
+         
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="FullStack" url="http://www.darcywang.com/categories/FullStack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.darcywang.com/2015/12/10/Flexbox-%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2016-01-06T05:35:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>Flexbox 学习</title>
+        <pubTime>2015-12-10T02:17:36.000Z</pubTime>
         
          
            
@@ -181,28 +222,6 @@
 
     
   <url>
-    <loc>http://www.darcywang.com/2015/12/22/%E5%9C%A8%E8%B7%AF%E4%B8%8A/</loc>
-    <lastmod>2015-12-22T06:26:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>在路上</title>
-        <pubTime>2015-12-22T03:11:24.000Z</pubTime>
-        
-        <tag>fullstack</tag>
-         
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="FullStack" url="http://www.darcywang.com/categories/FullStack/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.darcywang.com/2015/12/08/Mac%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2015-12-22T03:26:16.000Z</lastmod>
     <data>
@@ -316,25 +335,6 @@
         <title>JS learned</title>
         <pubTime>2015-12-19T06:55:27.000Z</pubTime>
         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</loc>
-    <lastmod>2015-12-18T13:42:32.000Z</lastmod>
-    <data>
-        <display>
-        <title>Django for Webapp</title>
-        <pubTime>2015-12-18T01:42:33.000Z</pubTime>
-        
-        <tag>Django</tag>
-         
-        <tag>Python</tag>
-         
          
            
         </display>
