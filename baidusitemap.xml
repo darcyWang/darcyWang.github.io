@@ -4,8 +4,23 @@
 
     
   <url>
+    <loc>http://www.darcywang.com/2015/12/21/Django-Components/</loc>
+    <lastmod>2016-01-08T02:44:32.000Z</lastmod>
+    <data>
+        <display>
+        <title>Django Components</title>
+        <pubTime>2015-12-21T01:46:05.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</loc>
-    <lastmod>2016-01-07T07:18:29.000Z</lastmod>
+    <lastmod>2016-01-07T07:39:21.000Z</lastmod>
     <data>
         <display>
         <title>Django for Webapp</title>
@@ -15,21 +30,6 @@
          
         <tag>Python</tag>
          
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2015/12/21/Django-Components/</loc>
-    <lastmod>2016-01-07T06:37:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>Django Components</title>
-        <pubTime>2015-12-21T01:46:05.000Z</pubTime>
-        
          
            
         </display>

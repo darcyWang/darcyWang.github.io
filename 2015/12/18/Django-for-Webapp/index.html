@@ -61,7 +61,7 @@ Django有很多版本，我自己学习并使用在项目里面的是1.7.11，�
 <meta property="og:site_name" content="Mr' Darcy">
 <meta property="og:description" content="刚刚开始接触Django时让我想到了一部电影《被解救的姜戈》，一看名字Django Unchained，还真的是一样的啊。
 Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于 Django 1.7 上的。重要的事情说3遍，看文档，看文档，看文档首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个web框架, 它只是一个被人做好的一个工具">
-<meta property="og:updated_time" content="2016-01-07T07:18:29.000Z">
+<meta property="og:updated_time" content="2016-01-07T07:39:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Django for Webapp">
 <meta name="twitter:description" content="刚刚开始接触Django时让我想到了一部电影《被解救的姜戈》，一看名字Django Unchained，还真的是一样的啊。
@@ -305,7 +305,8 @@ Django有很多版本，我自己学习并使用在项目里面的是1.7.11，�
 <p>现在可以放下手中的代码，一起来想想这个问题。当一个开发环境搭好，可以开始做项目了，需要注意什么，从什么地方开始呢？<br>当你用Django新创建好一个新项目的时候，它就自己带好了一个admin的模块。里面有4个python文件，<strong>init</strong>.py  settings.py  urls.py  wsgi.py，一个一个来分析一下。</p>
 <h4 id="init-py"><a href="#init-py" class="headerlink" title="<strong>init</strong>.py"></a><strong>init</strong>.py</h4><p>任何时候只要新建了一个app，就一定会带有这个文件。它的作用是相当于class中的def <strong>init</strong>(self):函数，用来初始化模块。并且把所在目录当作一个package处理，还有from-import 语句导入子包时需要用到它。 如果没有用到, 他们可以是空文件。就比如package.module下的所有模块from package.module import * </p>
 <h4 id="settings-py"><a href="#settings-py" class="headerlink" title="settings.py"></a>settings.py</h4><p>它是整个Django的核心文件，任何重要的配置都需要在这里面进行修改。但是记得不搞乱搞它哦</p>
-<h4 id="urls-py"><a href="#urls-py" class="headerlink" title="urls.py"></a>urls.py</h4><h4 id="wsgi-py"><a href="#wsgi-py" class="headerlink" title="wsgi.py"></a>wsgi.py</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="urls-py"><a href="#urls-py" class="headerlink" title="urls.py"></a>urls.py</h4><p>在Django中，每一个request都通过urls.py指向一个view。这种松散的耦合有着非常大的灵活性，但是需要注意的是设置路径</p>
+<h4 id="wsgi-py"><a href="#wsgi-py" class="headerlink" title="wsgi.py"></a>wsgi.py</h4><p>wsgi(Python Web Server Gateway Interface)服务器网关接口，是Python语言定义的web服务器和web服务程序或者框架之间的一种简单而通用的接口。说得简单一点，就是服务器配置的文件，你可以在这个<a href="http://epicserve-docs.readthedocs.org/en/latest/django/ubuntu-server-django-guide.html" target="_blank" rel="external">demo</a>里面用到它</p>
 </span>
       
     </div>
