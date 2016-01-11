@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2016-01-06T07:03:24.000Z</updated>
+  <updated>2016-01-08T06:12:10.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -19,9 +19,10 @@
     <link href="http://www.darcywang.com/2016/01/05/Front-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Front-end-技能梳理/</id>
     <published>2016-01-05T08:21:18.000Z</published>
-    <updated>2016-01-06T07:03:24.000Z</updated>
+    <updated>2016-01-08T06:12:10.000Z</updated>
     <content type="html"><![CDATA[<p>在过去当谈到前端时，很多人潜意识里面就会想到一个切页面的。但是最近几年确实发生非常大的变化，前端不仅仅是拿着Photoshop切图，用CSS和HTML做出静态页面。更需要使用javascript和jQuery来实现复杂的交互和动画效果，这就对一个新时代的前端所掌握的技能提出了新的要求。</p>
-<p><a href="https://teamtreehouse.com/tracks/front-end-web-development" target="_blank" rel="external">https://teamtreehouse.com/tracks/front-end-web-development</a></p>
+<p>前端通常指的是可以在浏览器里面看到的网站，一般也称为客户端。它是包含呈现内容的方式，一位前端工程师需要花大量的时间研究HTML CSS Javascript等浏览器能认识的语言。</p>
+<p>参考资料<br><a href="https://teamtreehouse.com/tracks/front-end-web-development" target="_blank" rel="external">https://teamtreehouse.com/tracks/front-end-web-development</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>在过去当谈到前端时，很多人潜意识里面就会想到一个切页面的。但是最近几年确实发生非常大的变化，前端不仅仅是拿着Photoshop切图，用CSS和HTML做出静态页面。更需要使用javascript和jQuery来实现复杂的交互和动画效果，这就对一个新时代的前端所掌握的技能提出]]>
@@ -34,11 +35,11 @@
     <link href="http://www.darcywang.com/2016/01/05/Back-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Back-end-技能梳理/</id>
     <published>2016-01-05T08:19:15.000Z</published>
-    <updated>2016-01-06T07:03:01.000Z</updated>
-    <content type="html"><![CDATA[<p>在过去当谈到开发时，通常是是指后台开发。</p>
+    <updated>2016-01-08T06:18:38.000Z</updated>
+    <content type="html"><![CDATA[<p>在过去当谈到开发时，通常是是指后台开发。后台一般与数据打交道比较多，所以也会称为服务器端。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>在过去当谈到开发时，通常是是指后台开发。</p>
+    <![CDATA[<p>在过去当谈到开发时，通常是是指后台开发。后台一般与数据打交道比较多，所以也会称为服务器端。</p>
 ]]>
     </summary>
     
@@ -148,10 +149,11 @@
     <link href="http://www.darcywang.com/2015/12/21/Django-Components/"/>
     <id>http://www.darcywang.com/2015/12/21/Django-Components/</id>
     <published>2015-12-21T01:46:05.000Z</published>
-    <updated>2016-01-08T02:44:32.000Z</updated>
+    <updated>2016-01-11T08:18:12.000Z</updated>
     <content type="html"><![CDATA[<p>Django的第三方组件也是非常丰富的，比如说Django rest framework，Gunicore等等之类，接下来会介绍几个自己常用的组件，希望能对你有所帮助。<br>你可以在这里查看所有的<a href="https://www.djangopackages.com/" target="_blank" rel="external">Django Package</a>，使用方法是在输入框中输入关键字，下面就会展现搜索结果，看Search Weight为100%，点击进去，然后在右边中间的Documentation。</p>
 <h3 id="django-rest-framework"><a href="#django-rest-framework" class="headerlink" title="django-rest-framework"></a>django-rest-framework</h3><p>首当其冲介绍Django Rest Framework(DRF)是有原因的，现在前后端一般通过api进行交互，这是一个什么概念呢，如果能够DRF掌握好，那后台其实就差不多了。还是老样子，我们先去<a href="http://www.django-rest-framework.org/" target="_blank" rel="external">官方文档</a>上看看，把上面的quickstart和6个部分都过一遍。在这里就不重复造轮子了，不过可以<a href="https://gitcafe.com/darcywang/Django-rest-framework" target="_blank" rel="external">在这里</a>找到我之前做的代码，参考一下。<br>DRF有几个非常好的特性，对于resource，serializer，renderer/parser, view 和 response的定义很清晰，又很符合Django的MTV模式（比如，它的view就是包装了Django的View实现的）。对于认证和授权有很好的支持，内置了一系列的Mixin，可以随意组装。最终用它来构建简单的一站式API构架，并且做出复杂的ReST结构。其Serializer，可以把model映射到其对应的一般化表示（JSON, XML之类的），其基于类的视图的扩展集也正符合API接口（endpoint）的需要。Serializer和基于类的视图扩展的清晰的分离是其精妙之处。同时，你也可以自定义URL而无需依赖自动生成，这也是DRF和其他构架（比如Tastypie或者是Piston）不同的地方。这些框架model到API接口的转换基本上都是自动的，这也就造成了灵活性的降低，限制了其在不同情况的使用（尤其是在认证和嵌套资源(nested resources)方面。</p>
-<h3 id="django-debug-toolbar"><a href="#django-debug-toolbar" class="headerlink" title="django-debug-toolbar"></a>django-debug-toolbar</h3><h3 id="django-allauth"><a href="#django-allauth" class="headerlink" title="django-allauth"></a>django-allauth</h3><h3 id="django-crispy-forms"><a href="#django-crispy-forms" class="headerlink" title="django-crispy-forms"></a>django-crispy-forms</h3><h3 id="u63A5_u4E0B_u6765_u7684_u540E_u7EED"><a href="#u63A5_u4E0B_u6765_u7684_u540E_u7EED" class="headerlink" title="接下来的后续"></a>接下来的后续</h3><p>[1]: </p>
+<h3 id="django-debug-toolbar"><a href="#django-debug-toolbar" class="headerlink" title="django-debug-toolbar"></a>django-debug-toolbar</h3><p>Django本身自带了非常友好的报错信息提示，但是如能加上<a href="https://django-debug-toolbar.readthedocs.org/en/1.4/installation.html" target="_blank" rel="external">django-debug-toolbar</a>，就好像剑圣配上一把短刀，武功更加无敌。看过《剑雨》的朋友都知道，里面最牛逼的武器是剑配上短刀。<a href="http://stackoverflow.com/questions/6390310/how-do-i-see-the-django-debug-toolbar" target="_blank" rel="external">安装配置</a>都非常简单，还需要提到一点，这个工具在SQL查询时特别有用，</p>
+<h3 id="django-allauth"><a href="#django-allauth" class="headerlink" title="django-allauth"></a>django-allauth</h3><h3 id="django-crispy-forms"><a href="#django-crispy-forms" class="headerlink" title="django-crispy-forms"></a>django-crispy-forms</h3><h3 id="u63A5_u4E0B_u6765_u7684_u540E_u7EED"><a href="#u63A5_u4E0B_u6765_u7684_u540E_u7EED" class="headerlink" title="接下来的后续"></a>接下来的后续</h3><p>[1]: </p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Django的第三方组件也是非常丰富的，比如说Django rest framework，Gunicore等等之类，接下来会介绍几个自己常用的组件，希望能对你有所帮助。<br>你可以在这里查看所有的<a href="https://www.djangopackages.co]]>
@@ -190,7 +192,7 @@
     <link href="http://www.darcywang.com/2015/12/18/Django-for-Webapp/"/>
     <id>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</id>
     <published>2015-12-18T01:42:33.000Z</published>
-    <updated>2016-01-07T07:39:21.000Z</updated>
+    <updated>2016-01-07T07:41:50.000Z</updated>
     <content type="html"><![CDATA[<p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一看名字Django Unchained，还真的是一样的啊。</p>
 <p>Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于<strong> Django 1.7 </strong>上的。重要的事情说3遍，看文档，看文档，看文档首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个<a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank" rel="external">web框架</a>, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不多咯。</p>
 <p>OK，Let’s get our hands dirty。</p>
@@ -368,7 +370,7 @@
     <link href="http://www.darcywang.com/2015/12/15/Yueyang-Hometown/"/>
     <id>http://www.darcywang.com/2015/12/15/Yueyang-Hometown/</id>
     <published>2015-12-15T02:58:19.000Z</published>
-    <updated>2015-12-15T02:58:19.000Z</updated>
+    <updated>2016-01-11T08:17:23.000Z</updated>
     <content type="html"></content>
     <summary type="html">
     
