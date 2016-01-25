@@ -4,8 +4,40 @@
 
     
   <url>
+    <loc>http://www.darcywang.com/2015/12/26/jQuery-Plugin/</loc>
+    <lastmod>2016-01-25T08:27:42.000Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery Plugin</title>
+        <pubTime>2015-12-26T13:56:27.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.darcywang.com/2015/11/27/H5-Resources/</loc>
+    <lastmod>2016-01-25T08:06:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>H5 Resources</title>
+        <pubTime>2015-11-27T04:33:12.000Z</pubTime>
+        
+        <tag>HTML5</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.darcywang.com/2015/12/17/CSS-3/</loc>
-    <lastmod>2016-01-25T07:55:09.000Z</lastmod>
+    <lastmod>2016-01-25T07:56:10.000Z</lastmod>
     <data>
         <display>
         <title>CSS 3</title>
@@ -18,23 +50,6 @@
              
               <breadCrumb title="Techniques" url="http://www.darcywang.com/categories/Techniques/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2015/11/27/H5-Resources/</loc>
-    <lastmod>2016-01-25T07:52:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>H5 Resources</title>
-        <pubTime>2015-11-27T04:33:12.000Z</pubTime>
-        
-        <tag>HTML5</tag>
-         
-         
-           
         </display>
     </data>
     </url>
@@ -274,21 +289,6 @@
              
               <breadCrumb title="Techniques" url="http://www.darcywang.com/categories/Techniques/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2015/12/26/jQuery-Plugin/</loc>
-    <lastmod>2015-12-29T05:43:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>jQuery Plugin</title>
-        <pubTime>2015-12-26T13:56:27.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
