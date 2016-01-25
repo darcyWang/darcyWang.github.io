@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://www.darcywang.com/2015/11/27/H5-Resources/</loc>
-    <lastmod>2016-01-22T08:16:17.000Z</lastmod>
+    <lastmod>2016-01-25T07:49:00.000Z</lastmod>
     <data>
         <display>
         <title>H5 Resources</title>
@@ -13,6 +13,43 @@
         
         <tag>HTML5</tag>
          
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.darcywang.com/2015/12/08/Mac%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</loc>
+    <lastmod>2016-01-25T06:54:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>Mac使用心得</title>
+        <pubTime>2015-12-08T09:04:37.000Z</pubTime>
+        
+        <tag>idea</tag>
+         
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="Life" url="http://www.darcywang.com/categories/Life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.darcywang.com/2015/12/11/About-Self-Learning/</loc>
+    <lastmod>2016-01-25T06:48:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>About Self-Learning</title>
+        <pubTime>2015-12-10T23:44:02.000Z</pubTime>
+        
          
            
         </display>
@@ -318,28 +355,6 @@
 
     
   <url>
-    <loc>http://www.darcywang.com/2015/12/08/Mac%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2015-12-22T03:26:16.000Z</lastmod>
-    <data>
-        <display>
-        <title>Mac使用心得</title>
-        <pubTime>2015-12-08T09:04:37.000Z</pubTime>
-        
-        <tag>idea</tag>
-         
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="Life" url="http://www.darcywang.com/categories/Life/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.darcywang.com/2015/12/17/Javascript-Tricks/</loc>
     <lastmod>2015-12-19T08:19:26.000Z</lastmod>
     <data>
@@ -580,21 +595,6 @@
         <display>
         <title>GRE and TOEFL</title>
         <pubTime>2015-12-10T23:45:22.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2015/12/11/About-Self-Learning/</loc>
-    <lastmod>2015-12-10T23:44:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>About Self-Learning</title>
-        <pubTime>2015-12-10T23:44:02.000Z</pubTime>
         
          
            
