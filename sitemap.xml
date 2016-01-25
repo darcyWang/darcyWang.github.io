@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.darcywang.com/2015/12/17/CSS-3/</loc>
+    <lastmod>2016-01-25T07:55:09.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.darcywang.com/2015/11/27/H5-Resources/</loc>
-    <lastmod>2016-01-25T07:49:00.000Z</lastmod>
+    <lastmod>2016-01-25T07:52:34.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://www.darcywang.com/2015/12/08/Mac%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</loc>
-    <lastmod>2016-01-25T06:54:07.000Z</lastmod>
+    <lastmod>2016-01-25T06:56:30.000Z</lastmod>
   </url>
   
   <url>
@@ -84,11 +89,6 @@
   <url>
     <loc>http://www.darcywang.com/2015/12/17/HTML-5/</loc>
     <lastmod>2015-12-31T02:05:31.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.darcywang.com/2015/12/17/CSS-3/</loc>
-    <lastmod>2015-12-30T10:12:21.000Z</lastmod>
   </url>
   
   <url>
