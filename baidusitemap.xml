@@ -4,6 +4,38 @@
 
     
   <url>
+    <loc>http://www.darcywang.com/2015/11/27/H5-Resources/</loc>
+    <lastmod>2016-01-22T08:16:17.000Z</lastmod>
+    <data>
+        <display>
+        <title>H5 Resources</title>
+        <pubTime>2015-11-27T04:33:12.000Z</pubTime>
+        
+        <tag>HTML5</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.darcywang.com/2015/12/21/Django-Advanced/</loc>
+    <lastmod>2016-01-18T03:18:32.000Z</lastmod>
+    <data>
+        <display>
+        <title>Django Advanced</title>
+        <pubTime>2015-12-21T01:48:43.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.darcywang.com/2015/12/11/Darcy/</loc>
     <lastmod>2016-01-18T03:18:29.000Z</lastmod>
     <data>
@@ -302,38 +334,6 @@
              
               <breadCrumb title="Life" url="http://www.darcywang.com/categories/Life/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2015/11/27/H5-Resources/</loc>
-    <lastmod>2015-12-21T09:55:50.000Z</lastmod>
-    <data>
-        <display>
-        <title>H5 Resources</title>
-        <pubTime>2015-11-27T04:33:12.000Z</pubTime>
-        
-        <tag>HTML5</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2015/12/21/Django-Advanced/</loc>
-    <lastmod>2015-12-21T01:48:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>Django Advanced</title>
-        <pubTime>2015-12-21T01:48:43.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
