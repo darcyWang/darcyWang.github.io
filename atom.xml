@@ -72,7 +72,7 @@
     <link href="http://www.darcywang.com/2015/12/26/jQuery-Plugin/"/>
     <id>http://www.darcywang.com/2015/12/26/jQuery-Plugin/</id>
     <published>2015-12-26T13:56:27.000Z</published>
-    <updated>2016-01-25T08:27:42.000Z</updated>
+    <updated>2016-01-25T08:30:24.000Z</updated>
     <content type="html"><![CDATA[<p>jQuery插件对于80后的前端开发来说，实在是再熟悉不过了。在工作中的同事大部分还是80后，每次看到他们收集这些插件的时候就像是捡到宝一样，幸福满满。对于自己来说，用过的插件好像就是lazyload和validation，但是后来发现国外牛逼的人才早就写出更好更轻巧的js，完全可以忽略这些过时的插件。</p>
 <p>首先先说一下jquery.validate.js，这个曾经叱诧风云的第三方插件。现在可以取代的是<a href="http://parsleyjs.org/" target="_blank" rel="external">Parsley.js</a>，首先说的是大小问题，<a href="https://github.com/guillaumepotier/Parsley.js/blob/master/dist/parsley.min.js" target="_blank" rel="external">parsley.min.js</a>只有36kb大小，然后两个插件都对jQuery有依赖。最主要推荐的理由是github上parsley的点赞要比validate多。</p>
 <p>其次说一下关于jquery.lazyload.js，推荐的是<a href="http://callmecavs.github.io/layzr.js/" target="_blank" rel="external">layzr.js</a>，它只有<a href="https://github.com/callmecavs/layzr.js/blob/master/dist/layzr.min.js" target="_blank" rel="external">3kb</a>大小，最主要的是不依赖jQuery。用法也是非常的简单，可以<a href="https://github.com/callmecavs/layzr.js" target="_blank" rel="external">参照</a></p>
