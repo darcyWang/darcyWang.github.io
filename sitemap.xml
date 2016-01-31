@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.darcywang.com/2016/01/05/Front-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/</loc>
+    <lastmod>2016-01-27T05:10:35.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.darcywang.com/2015/12/26/jQuery-Plugin/</loc>
-    <lastmod>2016-01-25T08:30:24.000Z</lastmod>
+    <lastmod>2016-01-25T13:31:16.000Z</lastmod>
   </url>
   
   <url>
@@ -69,11 +74,6 @@
   <url>
     <loc>http://www.darcywang.com/2016/01/05/Back-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/</loc>
     <lastmod>2016-01-08T06:18:38.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.darcywang.com/2016/01/05/Front-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/</loc>
-    <lastmod>2016-01-08T06:12:10.000Z</lastmod>
   </url>
   
   <url>
