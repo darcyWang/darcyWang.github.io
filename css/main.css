@@ -942,7 +942,7 @@ body {
 .feed-link a:hover i {
   color: #fff;
 }
-.tianbao-modified {
+.tianbao-modified a {
   display: block !important;
 }
 .links-of-author {
@@ -964,7 +964,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #34393b;
+  background: #2bff04;
 }
 .sidebar-nav {
   margin: 0 0 20px;
