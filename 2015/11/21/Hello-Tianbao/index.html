@@ -62,7 +62,7 @@
 <meta property="og:site_name" content="Mr' Darcy">
 <meta property="og:description" content="做移动开发一年多了，自己也会有一些关于移动端的思考。装逼一下啊···最开始着手移动端开发让人头疼的是适配这一块儿，从iOS到Android各种机型和操作系统让你欲罢不能，关于样式这一块是用sass+compass，所以我会最开始在utilities里面定义好使用的媒体查询。
 12345@media screen and ( max-device-height: 480px)&amp;#123;&amp;#125;">
-<meta property="og:updated_time" content="2015-12-16T01:47:40.000Z">
+<meta property="og:updated_time" content="2016-02-23T09:28:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello Tianbao">
 <meta name="twitter:description" content="做移动开发一年多了，自己也会有一些关于移动端的思考。装逼一下啊···最开始着手移动端开发让人头疼的是适配这一块儿，从iOS到Android各种机型和操作系统让你欲罢不能，关于样式这一块是用sass+compass，所以我会最开始在utilities里面定义好使用的媒体查询。
@@ -312,6 +312,8 @@
 <p>Besides: bower是项目依赖的插件进行管理</p>
 <p>1.bower cache: bower缓存管理<br>2.bower help: 显示Bower命令的帮助信息<br>3.bower home: 通过浏览器打开一个包的github发布页<br>4.bower info: 查看包的信息<br>5.bower init: 创建bower.json文件<br>6.bower install: 安装包到项目<br>7.bower link： 在本地bower库建立一个项目链接<br>8.bower list: 列出项目已安装的包<br>9.bower lookup: 根据包名查询包的URL<br>10.bower prune: 删除项目无关的包<br>11.bower register: 注册一个包<br>12.bower search: 搜索包<br>13.bower update: 更新项目的包<br>14.bower uninstall: 删除项目的包</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>. bower init //填写相应的信息</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>. 将开源项目推送到git上面,在相应的文件目录下进行操作</span><br><span class="line"></span><br><span class="line">     git init</span><br><span class="line"></span><br><span class="line">     git status</span><br><span class="line"></span><br><span class="line">     git add -A</span><br><span class="line"></span><br><span class="line">     git commit <span class="operator">-a</span> -m <span class="string">"first version"</span></span><br><span class="line"></span><br><span class="line">     //接下来的几步比较重要</span><br><span class="line">     git tag <span class="number">0.1</span>.<span class="number">0</span> //版本号可以自己设置</span><br><span class="line"></span><br><span class="line">     git remote add origin git@github.com:darcyWang/tianbao.git</span><br><span class="line"></span><br><span class="line">     git push origin master</span><br><span class="line"></span><br><span class="line">     git push origin <span class="number">0.1</span>.<span class="number">0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    bower register &lt;项目名字&gt; &lt;项目在git上面的地址&gt;</span><br><span class="line">    bower register tianbao https://github.com/darcyWang/tianbao</span><br></pre></td></tr></table></figure>
+<p>这篇博文会不断地更新，post一些自己遇到好的工具</p>
+<p>先介绍一下关于video play的使用，现在的网站都开始使用一个简短的视频放在首页上作为背景，是不是非常的炫酷，<br>有一种可以下实现的方法叫做<a href="https://flowplayer.org/" target="_blank" rel="external">flowplayer</a>。</p>
 </span>
       
     </div>
@@ -415,7 +417,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -543,7 +545,11 @@
   ga('send', 'pageview');
 
 </script>
-
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
       </div>
     </footer>
 
