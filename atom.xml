@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2016-02-29T12:07:09.000Z</updated>
+  <updated>2016-02-29T12:07:10.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.darcywang.com/2016/02/23/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8BCSS%E9%83%A8%E5%88%86/"/>
     <id>http://www.darcywang.com/2016/02/23/性能优化之CSS部分/</id>
     <published>2016-02-23T09:40:54.000Z</published>
-    <updated>2016-02-29T12:07:09.000Z</updated>
+    <updated>2016-02-29T12:07:10.000Z</updated>
     <content type="html"></content>
     <summary type="html">
     
@@ -36,7 +36,7 @@
     <link href="http://www.darcywang.com/2016/02/23/Chrome%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     <id>http://www.darcywang.com/2016/02/23/Chrome调试工具/</id>
     <published>2016-02-23T09:36:54.000Z</published>
-    <updated>2016-02-29T12:55:21.000Z</updated>
+    <updated>2016-02-29T12:59:57.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://www.google.com/chrome/browser/desktop/" target="_blank" rel="external">Chrome Developer Tools</a>是一件非常棒的艺术品。</p>
 <h3 id="Chrome_DevTools_Overview"><a href="#Chrome_DevTools_Overview" class="headerlink" title="Chrome DevTools Overview"></a>Chrome DevTools Overview</h3><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/panl.png" alt=""><br>Elements：查看和编辑当前页面中的 HTML 和 CSS 元素。标签页的左侧就是对页面HTML结构的查看与编辑，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以直接在某个元素上双击修改元素的属性，右侧可以对元素的CSS进行查看与编辑修改。<br>Console：用于显示异常错误信息，脚本中所输出的调试信息，或运行测试脚本等。<br>Sources：查看和调试当前页面所加载的脚本的源文件。<br>Network：监控当前网页所有的http请求的面版，主体部分展示每个http请求，每个字段表示着该请求的不同属性<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;和状态，当点击某一个具体请求URL，可以看到该请求的详细HTTP请求情况：</p>
 <pre><code>1. Headers:  请求头信息和响应头信息
@@ -101,12 +101,20 @@
     <link href="http://www.darcywang.com/2016/01/05/Front-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Front-end-技能梳理/</id>
     <published>2016-01-05T08:21:18.000Z</published>
-    <updated>2016-02-29T13:01:13.000Z</updated>
+    <updated>2016-03-01T03:01:41.000Z</updated>
     <content type="html"><![CDATA[<p>当今这个技术变幻莫测的年代，任何技术都有可能被迅速的替代甚至丢弃。</p>
 <p>这篇博客主要讲的前端体系中生态构建和HTML、CSS框架，如有不足，还请留言指正。</p>
 <h4 id="u751F_u6001_u5DE5_u5177"><a href="#u751F_u6001_u5DE5_u5177" class="headerlink" title="生态工具"></a>生态工具</h4><p>现在一般常用的grunt/gulp开发环境，都是需要建立在node环境里面。工程师们在github上会经常看到某一个很火的前端项目都会包含Gruntfile.j、gulpfile.js、bower.json其中一个或者是两个的。而且会提示下载后进入到项目目录里面进行npm install的指令。</p>
-<h5 id="npm_install"><a href="#npm_install" class="headerlink" title="npm install"></a>npm install</h5><h5 id="gulp"><a href="#gulp" class="headerlink" title="gulp"></a>gulp</h5><h5 id="grunt"><a href="#grunt" class="headerlink" title="grunt"></a>grunt</h5><h5 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h5><h5 id="bower"><a href="#bower" class="headerlink" title="bower"></a>bower</h5><h4 id="HTML_u3001CSS_u6846_u67B6"><a href="#HTML_u3001CSS_u6846_u67B6" class="headerlink" title="HTML、CSS框架"></a>HTML、CSS框架</h4><h5 id="Bootstrap"><a href="#Bootstrap" class="headerlink" title="Bootstrap"></a>Bootstrap</h5><h5 id="Foundation"><a href="#Foundation" class="headerlink" title="Foundation"></a>Foundation</h5><h5 id="Skeleton"><a href="#Skeleton" class="headerlink" title="Skeleton"></a>Skeleton</h5><h4 id="u524D_u7AEF_u6846_u67B6"><a href="#u524D_u7AEF_u6846_u67B6" class="headerlink" title="前端框架"></a>前端框架</h4><h5 id="express-js"><a href="#express-js" class="headerlink" title="express.js"></a>express.js</h5><h5 id="angular-js"><a href="#angular-js" class="headerlink" title="angular.js"></a>angular.js</h5><h5 id="vue-js"><a href="#vue-js" class="headerlink" title="vue.js"></a>vue.js</h5><h5 id="react-js"><a href="#react-js" class="headerlink" title="react.js"></a>react.js</h5><h4 id="Native/Hybird_u5F00_u53D1"><a href="#Native/Hybird_u5F00_u53D1" class="headerlink" title="Native/Hybird开发"></a>Native/Hybird开发</h4><p>#####</p>
-<p>#####</p>
+<h5 id="Nodejs"><a href="#Nodejs" class="headerlink" title="Nodejs"></a>Nodejs</h5><p><a href="https://www.npmjs.com/" target="_blank" rel="external">nodejs</a>的出现彻底改变了前端的概念</p>
+<h5 id="Gulp"><a href="#Gulp" class="headerlink" title="Gulp"></a>Gulp</h5><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/gulp.png?imageView2/2/h/400" alt=""></p>
+<h5 id="Grunt"><a href="#Grunt" class="headerlink" title="Grunt"></a>Grunt</h5><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/grunt.png?imageView2/2/h/400" alt=""></p>
+<h5 id="Webpack"><a href="#Webpack" class="headerlink" title="Webpack"></a>Webpack</h5><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/webpack.png?imageView2/2/h/400" alt=""></p>
+<h5 id="Bower"><a href="#Bower" class="headerlink" title="Bower"></a>Bower</h5><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/bower.png?imageView2/2/h/400" alt=""></p>
+<h4 id="HTML_u3001CSS_u6846_u67B6"><a href="#HTML_u3001CSS_u6846_u67B6" class="headerlink" title="HTML、CSS框架"></a>HTML、CSS框架</h4><p>框架的出现主要避免了重复造轮子，再好的框架也会有它鸡肋的一面，所以在选择哪种框架适合自己实际项目时一定需要权衡清楚。自己也会使用一些流行的前端框架，但后面感觉做出来的产品根本没有自己的调性，所有的按钮排版都千篇一律，感觉更是PHP工程师们写出来的东西。</p>
+<h5 id="Bootstrap"><a href="#Bootstrap" class="headerlink" title="Bootstrap"></a>Bootstrap</h5><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/bootstrap.png?imageView2/2/h/400" alt=""></p>
+<h5 id="Foundation"><a href="#Foundation" class="headerlink" title="Foundation"></a>Foundation</h5><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/foundain.png?imageView2/2/h/400" alt=""></p>
+<h5 id="Skeleton"><a href="#Skeleton" class="headerlink" title="Skeleton"></a>Skeleton</h5><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/skeleton.png?imageView2/2/h/400" alt=""></p>
+<h4 id="u524D_u7AEF_u6846_u67B6"><a href="#u524D_u7AEF_u6846_u67B6" class="headerlink" title="前端框架"></a>前端框架</h4><h5 id="express-js"><a href="#express-js" class="headerlink" title="express.js"></a>express.js</h5><h5 id="angular-js"><a href="#angular-js" class="headerlink" title="angular.js"></a>angular.js</h5><h5 id="vue-js"><a href="#vue-js" class="headerlink" title="vue.js"></a>vue.js</h5><h5 id="react-js"><a href="#react-js" class="headerlink" title="react.js"></a>react.js</h5><h4 id="Native/Hybird_u5F00_u53D1"><a href="#Native/Hybird_u5F00_u53D1" class="headerlink" title="Native/Hybird开发"></a>Native/Hybird开发</h4><h5 id="ironic"><a href="#ironic" class="headerlink" title="ironic"></a>ironic</h5><p>#####</p>
 <p>#####</p>
 <p>在过去当谈到前端时，很多人潜意识里面就会想到一个切页面的。但是最近几年确实发生非常大的变化，前端不仅仅是拿着Photoshop切图，用CSS和HTML做出静态页面。更需要使用javascript和jQuery来实现复杂的交互和动画效果，这就对一个新时代的前端所掌握的技能提出了新的要求。</p>
 <p>前端通常指的是可以在浏览器里面看到的网站，一般也称为客户端。它是包含呈现内容的方式，一位前端工程师需要花大量的时间研究HTML CSS Javascript等浏览器能认识的语言。</p>
@@ -472,7 +480,7 @@
     <link href="http://www.darcywang.com/2015/12/15/Yueyang-Hometown/"/>
     <id>http://www.darcywang.com/2015/12/15/Yueyang-Hometown/</id>
     <published>2015-12-15T02:58:19.000Z</published>
-    <updated>2016-02-24T09:34:30.000Z</updated>
+    <updated>2016-02-29T12:55:54.000Z</updated>
     <content type="html"><![CDATA[<p>岳阳，我生活了19年的地方。很难想象的能在一个地方呆那么长的时间······</p>
 <p><img src="http://7xqzeg.com1.z0.glb.clouddn.com/IMG_1514.JPG" alt=""><br><img src="http://7xqzeg.com1.z0.glb.clouddn.com/IMG_1498.JPG" alt=""><br><img src="http://7xqzeg.com1.z0.glb.clouddn.com/IMG_1496.JPG" alt=""><br><img src="http://7xqzeg.com1.z0.glb.clouddn.com/IMG_1420.JPG?imageMogr2/rotate/180" alt=""></p>
 ]]></content>
