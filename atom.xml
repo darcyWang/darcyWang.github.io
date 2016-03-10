@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2016-03-10T08:35:44.000Z</updated>
+  <updated>2016-03-10T08:35:50.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.darcywang.com/2016/02/23/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8BCSS%E9%83%A8%E5%88%86/"/>
     <id>http://www.darcywang.com/2016/02/23/性能优化之CSS部分/</id>
     <published>2016-02-23T09:40:54.000Z</published>
-    <updated>2016-03-10T08:35:44.000Z</updated>
+    <updated>2016-03-10T08:35:50.000Z</updated>
     <content type="html"><![CDATA[<p>在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。</p>
 <p>从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。</p>
 <p>这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CSS都有哪几点。</p>
@@ -150,7 +150,7 @@
     <link href="http://www.darcywang.com/2016/01/05/Back-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Back-end-技能梳理/</id>
     <published>2016-01-05T08:19:15.000Z</published>
-    <updated>2016-03-10T08:37:36.000Z</updated>
+    <updated>2016-03-10T08:37:37.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待<br>在过去当谈到开发时，通常是是指后台开发。后台一般与数据打交道比较多，所以也会称为服务器端。</p>
 ]]></content>
@@ -210,7 +210,7 @@
     <link href="http://www.darcywang.com/2015/12/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     <id>http://www.darcywang.com/2015/12/22/移动端开发/</id>
     <published>2015-12-22T03:14:17.000Z</published>
-    <updated>2016-03-10T08:36:04.000Z</updated>
+    <updated>2016-03-10T08:36:05.000Z</updated>
     <content type="html"><![CDATA[<p>首先需要明确的是移动端开发是建立在PC端的基础上的。为什么这么说，最开始是笔记本的普及，随着技术的更新和迭代，配置一般的上网本价格都是大众消费能力以内，所以每个人都可以轻松的通过笔记本电脑阅读，购物。但就是最近几年，得益于国内某些”知名”手机制造商，让一部4英寸的智能机在1000元以内就能到手，所以可以想象的是国内智能手机普及是多么的吓人，更不用说潜在的群体学生和老人也加入到其中。</p>
 <p>从笔记本电脑到移动智能设备的过渡是如此之快，以至于商家有些猝不及防，自己的产品不仅能在PC端能很好地展示，相应的在手机上也是正常展示，这就催生了移动端开发。</p>
 <p>自己一开始就是做的移动端，所以对PC端开发不是那么的熟悉，不能很好的说出两者的区别和相似点，如果你有好的建议和意见可以在下面留言给我。</p>
@@ -299,7 +299,7 @@
     <link href="http://www.darcywang.com/2015/12/19/Zero-To-Hero/"/>
     <id>http://www.darcywang.com/2015/12/19/Zero-To-Hero/</id>
     <published>2015-12-19T06:58:56.000Z</published>
-    <updated>2016-03-10T08:39:05.000Z</updated>
+    <updated>2016-03-10T08:39:06.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
 ]]></content>
@@ -365,7 +365,7 @@
     <link href="http://www.darcywang.com/2015/12/18/Python-and-Django/"/>
     <id>http://www.darcywang.com/2015/12/18/Python-and-Django/</id>
     <published>2015-12-18T01:41:02.000Z</published>
-    <updated>2016-03-10T08:38:39.000Z</updated>
+    <updated>2016-03-10T08:38:40.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
 ]]></content>
@@ -539,7 +539,7 @@
     <link href="http://www.darcywang.com/2015/12/15/Database-%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/"/>
     <id>http://www.darcywang.com/2015/12/15/Database-简单操作/</id>
     <published>2015-12-15T02:57:22.000Z</published>
-    <updated>2016-03-10T08:37:45.000Z</updated>
+    <updated>2016-03-10T08:37:46.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
 ]]></content>
