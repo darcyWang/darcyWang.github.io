@@ -54,16 +54,22 @@
 
 
 
-<meta name="description" content="Stay Hungry Stay Foolish">
+<meta name="description" content="在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。
+从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。
+这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="性能优化之CSS部分">
 <meta property="og:url" content="http://www.darcywang.com/2016/02/23/性能优化之CSS部分/index.html">
 <meta property="og:site_name" content="Mr' Darcy">
-<meta property="og:description" content="Stay Hungry Stay Foolish">
-<meta property="og:updated_time" content="2016-03-01T12:38:50.000Z">
+<meta property="og:description" content="在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。
+从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。
+这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CS">
+<meta property="og:updated_time" content="2016-03-10T08:35:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="性能优化之CSS部分">
-<meta name="twitter:description" content="Stay Hungry Stay Foolish">
+<meta name="twitter:description" content="在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。
+从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。
+这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CS">
 
 
 
@@ -307,7 +313,16 @@
       
 
       
-        <span itemprop="articleBody"></span>
+        <span itemprop="articleBody"><p>在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。</p>
+<p>从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。</p>
+<p>这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CSS都有哪几点。</p>
+<h3 id="u5C5E_u6027_u7684_u4F7F_u7528"><a href="#u5C5E_u6027_u7684_u4F7F_u7528" class="headerlink" title="属性的使用"></a>属性的使用</h3><p>有个网站<a href="https://csstriggers.com/" target="_blank" rel="external">CSSTrigger</a>已经非常详细的介绍了每一个属性会不会触发layout事件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 不建议, 造成页面布局两次.</span></span><br><span class="line"><span class="keyword">var</span> newWidth = aDiv.offsetWidth + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line">aDiv.style.width = newWidth + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br><span class="line"><span class="keyword">var</span> newHeight = aDiv.offsetHeight + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line">aDiv.style.height = newHeight + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 建议, 只有一次页面布局.</span></span><br><span class="line"><span class="keyword">var</span> newWidth = aDiv.offsetWidth + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line"><span class="keyword">var</span> newHeight = aDiv.offsetHeight + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line">aDiv.style.width = newWidth + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br><span class="line">aDiv.style.height = newHeight + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br></pre></td></tr></table></figure>
+<h3 id="u9009_u62E9_u5668_u7684_u9009_u53D6"><a href="#u9009_u62E9_u5668_u7684_u9009_u53D6" class="headerlink" title="选择器的选取"></a>选择器的选取</h3><h3 id="u5DE5_u5177_u7684_u4F7F_u7528"><a href="#u5DE5_u5177_u7684_u4F7F_u7528" class="headerlink" title="工具的使用"></a>工具的使用</h3><p>一本书叫做<a href="http://chimera.labs.oreilly.com/books/1230000000545/index.html" target="_blank" rel="external">High Performance Browser Networking</a>，大家有时间可以去看一看，免费的</p>
+<p>浏览器优化的一些demo地址<br><a href="https://github.com/udacity/web-workers-demo" target="_blank" rel="external">https://github.com/udacity/web-workers-demo</a><br><a href="http://udacity.github.io/news-aggregator/" target="_blank" rel="external">http://udacity.github.io/news-aggregator/</a><br><a href="http://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/" target="_blank" rel="external">http://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/</a><br><a href="http://udacity.github.io/60fps/lesson6/willChange/index.html" target="_blank" rel="external">http://udacity.github.io/60fps/lesson6/willChange/index.html</a><br><a href="https://gist.github.com/paulirish/1579671" target="_blank" rel="external">https://gist.github.com/paulirish/1579671</a><br><a href="http://www.html5rocks.com/static/demos/parallax/demo-1a/demo.html" target="_blank" rel="external">http://www.html5rocks.com/static/demos/parallax/demo-1a/demo.html</a><br><a href="https://github.com/udacity/news-aggregator/tree/gh-pages/hints" target="_blank" rel="external">https://github.com/udacity/news-aggregator/tree/gh-pages/hints</a><br><a href="https://github.com/udacity/news-aggregator" target="_blank" rel="external">https://github.com/udacity/news-aggregator</a><br><a href="https://github.com/udacity/news-aggregator/blob/gh-pages/hints/all-bugs.md" target="_blank" rel="external">https://github.com/udacity/news-aggregator/blob/gh-pages/hints/all-bugs.md</a><br><a href="https://github.com/udacity/news-aggregator/tree/solution" target="_blank" rel="external">https://github.com/udacity/news-aggregator/tree/solution</a><br><a href="https://dl.dropboxusercontent.com/u/2272348/codez/udacity/box-recalc-style-slow.html" target="_blank" rel="external">https://dl.dropboxusercontent.com/u/2272348/codez/udacity/box-recalc-style-slow.html</a><br><a href="https://github.com/udacity/frontend-nanodegree-mobile-portfolio" target="_blank" rel="external">https://github.com/udacity/frontend-nanodegree-mobile-portfolio</a></p>
+<p><a href="https://github.com/google/ios-webkit-debug-proxy" target="_blank" rel="external">https://github.com/google/ios-webkit-debug-proxy</a></p>
+<p>API的使用<a href="https://github.com/HackerNews/API" target="_blank" rel="external">https://github.com/HackerNews/API</a></p>
+</span>
       
     </div>
 
@@ -488,7 +503,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5C5E_u6027_u7684_u4F7F_u7528"><span class="nav-number">1.</span> <span class="nav-text">属性的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u9009_u62E9_u5668_u7684_u9009_u53D6"><span class="nav-number">2.</span> <span class="nav-text">选择器的选取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5DE5_u5177_u7684_u4F7F_u7528"><span class="nav-number">3.</span> <span class="nav-text">工具的使用</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

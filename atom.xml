@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2016-03-01T12:38:50.000Z</updated>
+  <updated>2016-03-10T08:35:44.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -19,10 +19,20 @@
     <link href="http://www.darcywang.com/2016/02/23/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8BCSS%E9%83%A8%E5%88%86/"/>
     <id>http://www.darcywang.com/2016/02/23/性能优化之CSS部分/</id>
     <published>2016-02-23T09:40:54.000Z</published>
-    <updated>2016-03-01T12:38:50.000Z</updated>
-    <content type="html"></content>
+    <updated>2016-03-10T08:35:44.000Z</updated>
+    <content type="html"><![CDATA[<p>在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。</p>
+<p>从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。</p>
+<p>这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CSS都有哪几点。</p>
+<h3 id="u5C5E_u6027_u7684_u4F7F_u7528"><a href="#u5C5E_u6027_u7684_u4F7F_u7528" class="headerlink" title="属性的使用"></a>属性的使用</h3><p>有个网站<a href="https://csstriggers.com/" target="_blank" rel="external">CSSTrigger</a>已经非常详细的介绍了每一个属性会不会触发layout事件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 不建议, 造成页面布局两次.</span></span><br><span class="line"><span class="keyword">var</span> newWidth = aDiv.offsetWidth + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line">aDiv.style.width = newWidth + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br><span class="line"><span class="keyword">var</span> newHeight = aDiv.offsetHeight + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line">aDiv.style.height = newHeight + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 建议, 只有一次页面布局.</span></span><br><span class="line"><span class="keyword">var</span> newWidth = aDiv.offsetWidth + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line"><span class="keyword">var</span> newHeight = aDiv.offsetHeight + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line">aDiv.style.width = newWidth + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br><span class="line">aDiv.style.height = newHeight + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br></pre></td></tr></table></figure>
+<h3 id="u9009_u62E9_u5668_u7684_u9009_u53D6"><a href="#u9009_u62E9_u5668_u7684_u9009_u53D6" class="headerlink" title="选择器的选取"></a>选择器的选取</h3><h3 id="u5DE5_u5177_u7684_u4F7F_u7528"><a href="#u5DE5_u5177_u7684_u4F7F_u7528" class="headerlink" title="工具的使用"></a>工具的使用</h3><p>一本书叫做<a href="http://chimera.labs.oreilly.com/books/1230000000545/index.html" target="_blank" rel="external">High Performance Browser Networking</a>，大家有时间可以去看一看，免费的</p>
+<p>浏览器优化的一些demo地址<br><a href="https://github.com/udacity/web-workers-demo" target="_blank" rel="external">https://github.com/udacity/web-workers-demo</a><br><a href="http://udacity.github.io/news-aggregator/" target="_blank" rel="external">http://udacity.github.io/news-aggregator/</a><br><a href="http://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/" target="_blank" rel="external">http://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/</a><br><a href="http://udacity.github.io/60fps/lesson6/willChange/index.html" target="_blank" rel="external">http://udacity.github.io/60fps/lesson6/willChange/index.html</a><br><a href="https://gist.github.com/paulirish/1579671" target="_blank" rel="external">https://gist.github.com/paulirish/1579671</a><br><a href="http://www.html5rocks.com/static/demos/parallax/demo-1a/demo.html" target="_blank" rel="external">http://www.html5rocks.com/static/demos/parallax/demo-1a/demo.html</a><br><a href="https://github.com/udacity/news-aggregator/tree/gh-pages/hints" target="_blank" rel="external">https://github.com/udacity/news-aggregator/tree/gh-pages/hints</a><br><a href="https://github.com/udacity/news-aggregator" target="_blank" rel="external">https://github.com/udacity/news-aggregator</a><br><a href="https://github.com/udacity/news-aggregator/blob/gh-pages/hints/all-bugs.md" target="_blank" rel="external">https://github.com/udacity/news-aggregator/blob/gh-pages/hints/all-bugs.md</a><br><a href="https://github.com/udacity/news-aggregator/tree/solution" target="_blank" rel="external">https://github.com/udacity/news-aggregator/tree/solution</a><br><a href="https://dl.dropboxusercontent.com/u/2272348/codez/udacity/box-recalc-style-slow.html" target="_blank" rel="external">https://dl.dropboxusercontent.com/u/2272348/codez/udacity/box-recalc-style-slow.html</a><br><a href="https://github.com/udacity/frontend-nanodegree-mobile-portfolio" target="_blank" rel="external">https://github.com/udacity/frontend-nanodegree-mobile-portfolio</a></p>
+<p><a href="https://github.com/google/ios-webkit-debug-proxy" target="_blank" rel="external">https://github.com/google/ios-webkit-debug-proxy</a></p>
+<p>API的使用<a href="https://github.com/HackerNews/API" target="_blank" rel="external">https://github.com/HackerNews/API</a></p>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<p>在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。</p>
+<p>从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模]]>
     </summary>
     
       <category term="CSS3" scheme="http://www.darcywang.com/tags/CSS3/"/>
@@ -140,11 +150,13 @@
     <link href="http://www.darcywang.com/2016/01/05/Back-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Back-end-技能梳理/</id>
     <published>2016-01-05T08:19:15.000Z</published>
-    <updated>2016-01-08T06:18:38.000Z</updated>
-    <content type="html"><![CDATA[<p>在过去当谈到开发时，通常是是指后台开发。后台一般与数据打交道比较多，所以也会称为服务器端。</p>
+    <updated>2016-03-10T08:37:36.000Z</updated>
+    <content type="html"><![CDATA[<p>持续更新中······· </p>
+<p>敬请期待<br>在过去当谈到开发时，通常是是指后台开发。后台一般与数据打交道比较多，所以也会称为服务器端。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>在过去当谈到开发时，通常是是指后台开发。后台一般与数据打交道比较多，所以也会称为服务器端。</p>
+    <![CDATA[<p>持续更新中······· </p>
+<p>敬请期待<br>在过去当谈到开发时，通常是是指后台开发。后台一般与数据打交道比较多，所以也会称为服务器端。</p>
 ]]>
     </summary>
     
@@ -198,14 +210,13 @@
     <link href="http://www.darcywang.com/2015/12/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     <id>http://www.darcywang.com/2015/12/22/移动端开发/</id>
     <published>2015-12-22T03:14:17.000Z</published>
-    <updated>2016-01-13T06:04:00.000Z</updated>
+    <updated>2016-03-10T08:36:04.000Z</updated>
     <content type="html"><![CDATA[<p>首先需要明确的是移动端开发是建立在PC端的基础上的。为什么这么说，最开始是笔记本的普及，随着技术的更新和迭代，配置一般的上网本价格都是大众消费能力以内，所以每个人都可以轻松的通过笔记本电脑阅读，购物。但就是最近几年，得益于国内某些”知名”手机制造商，让一部4英寸的智能机在1000元以内就能到手，所以可以想象的是国内智能手机普及是多么的吓人，更不用说潜在的群体学生和老人也加入到其中。</p>
 <p>从笔记本电脑到移动智能设备的过渡是如此之快，以至于商家有些猝不及防，自己的产品不仅能在PC端能很好地展示，相应的在手机上也是正常展示，这就催生了移动端开发。</p>
 <p>自己一开始就是做的移动端，所以对PC端开发不是那么的熟悉，不能很好的说出两者的区别和相似点，如果你有好的建议和意见可以在下面留言给我。</p>
 <p>现在一个成功的互联网产品离不开3个部分的开发，PC、Android、iOS。移动APP的开发有两种不同的路线，NativeAPP和Web APP。这两种路线的区别类似于PC时代开发应用程序时的C/S架构和 B/S架构。更流行一些的是hybrid app开发，这是一个什么概念呢？后台提供API接口可以给三方使用，在原生的APP内嵌套H5页面，安卓和iOS都可以使用。</p>
 <p>Native APP，即所有的程序都由本地组件渲染完成。这类APP优点是显而易见的，渲染速度快、用户体验好；缺点同时也十分突出：出现了错误一定要等待下一次用户进行APP更新才能够修复，而且开发成本高。Web APP的优点恰好就是Native APP的缺点所在，其页面全部采用H5撰写并存放在服务器端。每次进行页面渲染时都从服务器请求最新的页面。一旦页面有错误，服务器端进行更新便能立刻解决。不过其弊端也容易窥见：每次页面都需要请求服务器，造成渲染时等待时间过长，从而导致的用户体验不够完美，并且性能上较Native APP慢了1-2个数量级；与此同时还会导致更多的用户流量消耗。另一个缺点则在于，Web APP在移动端上调用本地的硬件设备存在一定的不便。不过这些弊端也都有相应的解决方案，如PhoneGap将网页提前打包在本地以减少网络的请求时间；同时也提供一系列的插件来访问本地的硬件设备。然而，尽管如此，其渲染速度上还是存在一定的差距。</p>
 <p>Hybrid APP则是综合了二者优缺点的解决方案。饿了么移动对于此二类APP的观点在于，纯粹展示性的模块会更适合使用Web页面来达到渲染的目的；而更多的数据操作性、动画渲染性的模块则更适合采用Native的方式。</p>
-<p>一个合理的团队配置是</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>首先需要明确的是移动端开发是建立在PC端的基础上的。为什么这么说，最开始是笔记本的普及，随着技术的更新和迭代，配置一般的上网本价格都是大众消费能力以内，所以每个人都可以轻松的通过笔记本电脑阅读，购物。但就是最近几年，得益于国内某些”知名”手机制造商，让一部4英寸的智能机在1]]>
@@ -220,8 +231,10 @@
     <link href="http://www.darcywang.com/2015/12/22/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
     <id>http://www.darcywang.com/2015/12/22/在路上/</id>
     <published>2015-12-22T03:11:24.000Z</published>
-    <updated>2016-01-06T06:18:16.000Z</updated>
-    <content type="html"><![CDATA[<p>当nodejs没出来之前，我会感觉从一枚小小的前端转全栈是需要漫长的路程，但是，nodejs已经出来了，我的全栈之路也就在路上了</p>
+    <updated>2016-03-10T08:37:03.000Z</updated>
+    <content type="html"><![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+<p>当nodejs没出来之前，我会感觉从一枚小小的前端转全栈是需要漫长的路程，但是，nodejs已经出来了，我的全栈之路也就在路上了</p>
 <p>HTML、CSS 和 JavaScript</p>
 <p>前端 Web 界面框架与工具</p>
 <p>前端 JavaScript 框架：AngularJS</p>
@@ -229,10 +242,11 @@
 <p>使用 NodeJS 进行服务器端开发</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>当nodejs没出来之前，我会感觉从一枚小小的前端转全栈是需要漫长的路程，但是，nodejs已经出来了，我的全栈之路也就在路上了</p>
+    <![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+<p>当nodejs没出来之前，我会感觉从一枚小小的前端转全栈是需要漫长的路程，但是，nodejs已经出来了，我的全栈之路也就在路上了</p>
 <p>HTML、CSS 和 JavaScript</p>
-<p>前端 Web 界面框架与工具</p>
-<p>前端 JavaScript ]]>
+<p>前端 ]]>
     </summary>
     
       <category term="fullstack" scheme="http://www.darcywang.com/tags/fullstack/"/>
@@ -285,10 +299,14 @@
     <link href="http://www.darcywang.com/2015/12/19/Zero-To-Hero/"/>
     <id>http://www.darcywang.com/2015/12/19/Zero-To-Hero/</id>
     <published>2015-12-19T06:58:56.000Z</published>
-    <updated>2015-12-19T06:58:56.000Z</updated>
-    <content type="html"></content>
+    <updated>2016-03-10T08:39:05.000Z</updated>
+    <content type="html"><![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+]]>
     </summary>
     
   </entry>
@@ -298,10 +316,14 @@
     <link href="http://www.darcywang.com/2015/12/19/JS-learned/"/>
     <id>http://www.darcywang.com/2015/12/19/JS-learned/</id>
     <published>2015-12-19T06:55:27.000Z</published>
-    <updated>2015-12-19T06:55:27.000Z</updated>
-    <content type="html"></content>
+    <updated>2016-03-10T08:38:34.000Z</updated>
+    <content type="html"><![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+]]>
     </summary>
     
   </entry>
@@ -343,10 +365,14 @@
     <link href="http://www.darcywang.com/2015/12/18/Python-and-Django/"/>
     <id>http://www.darcywang.com/2015/12/18/Python-and-Django/</id>
     <published>2015-12-18T01:41:02.000Z</published>
-    <updated>2015-12-18T01:41:02.000Z</updated>
-    <content type="html"></content>
+    <updated>2016-03-10T08:38:39.000Z</updated>
+    <content type="html"><![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+]]>
     </summary>
     
   </entry>
@@ -478,10 +504,14 @@
     <link href="http://www.darcywang.com/2015/12/16/Database-Basic-2/"/>
     <id>http://www.darcywang.com/2015/12/16/Database-Basic-2/</id>
     <published>2015-12-16T01:37:53.000Z</published>
-    <updated>2015-12-16T01:37:53.000Z</updated>
-    <content type="html"></content>
+    <updated>2016-03-10T08:37:49.000Z</updated>
+    <content type="html"><![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+]]>
     </summary>
     
   </entry>
@@ -509,10 +539,14 @@
     <link href="http://www.darcywang.com/2015/12/15/Database-%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/"/>
     <id>http://www.darcywang.com/2015/12/15/Database-简单操作/</id>
     <published>2015-12-15T02:57:22.000Z</published>
-    <updated>2015-12-15T02:57:22.000Z</updated>
-    <content type="html"></content>
+    <updated>2016-03-10T08:37:45.000Z</updated>
+    <content type="html"><![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<p>持续更新中······· </p>
+<p>敬请期待</p>
+]]>
     </summary>
     
   </entry>
