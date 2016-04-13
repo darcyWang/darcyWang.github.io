@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.darcywang.com/about/index.html</loc>
+    <lastmod>2016-04-13T08:19:32.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.darcywang.com/2015/12/22/%E5%9C%A8%E8%B7%AF%E4%B8%8A/</loc>
     <lastmod>2016-03-27T12:35:11.000Z</lastmod>
   </url>
@@ -9,11 +14,6 @@
   <url>
     <loc>http://www.darcywang.com/2015/12/11/Darcy/</loc>
     <lastmod>2016-03-27T12:29:37.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.darcywang.com/about/index.html</loc>
-    <lastmod>2016-03-27T12:09:56.000Z</lastmod>
   </url>
   
   <url>
