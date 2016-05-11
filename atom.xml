@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2016-03-24T09:28:21.000Z</updated>
+  <updated>2016-03-24T09:28:20.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -18,8 +18,8 @@
     <title><![CDATA[性能优化之CSS部分]]></title>
     <link href="http://www.darcywang.com/2016/02/23/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8BCSS%E9%83%A8%E5%88%86/"/>
     <id>http://www.darcywang.com/2016/02/23/性能优化之CSS部分/</id>
-    <published>2016-02-23T09:40:54.000Z</published>
-    <updated>2016-03-24T09:28:21.000Z</updated>
+    <published>2016-02-23T08:40:54.000Z</published>
+    <updated>2016-03-24T09:28:20.000Z</updated>
     <content type="html"><![CDATA[<p>在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。</p>
 <p>从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。</p>
 <p>这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CSS都有哪几点。</p>
@@ -56,8 +56,8 @@
     <title><![CDATA[Chrome调试工具]]></title>
     <link href="http://www.darcywang.com/2016/02/23/Chrome%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     <id>http://www.darcywang.com/2016/02/23/Chrome调试工具/</id>
-    <published>2016-02-23T09:36:54.000Z</published>
-    <updated>2016-02-29T12:59:57.000Z</updated>
+    <published>2016-02-23T08:36:54.000Z</published>
+    <updated>2016-02-29T12:59:56.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://www.google.com/chrome/browser/desktop/" target="_blank" rel="external">Chrome Developer Tools</a>是一件非常棒的艺术品。</p>
 <h3 id="Chrome_DevTools_Overview"><a href="#Chrome_DevTools_Overview" class="headerlink" title="Chrome DevTools Overview"></a>Chrome DevTools Overview</h3><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/panl.png" alt=""><br>Elements：查看和编辑当前页面中的 HTML 和 CSS 元素。标签页的左侧就是对页面HTML结构的查看与编辑，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以直接在某个元素上双击修改元素的属性，右侧可以对元素的CSS进行查看与编辑修改。<br>Console：用于显示异常错误信息，脚本中所输出的调试信息，或运行测试脚本等。<br>Sources：查看和调试当前页面所加载的脚本的源文件。<br>Network：监控当前网页所有的http请求的面版，主体部分展示每个http请求，每个字段表示着该请求的不同属性<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;和状态，当点击某一个具体请求URL，可以看到该请求的详细HTTP请求情况：</p>
 <pre><code>1. Headers:  请求头信息和响应头信息
@@ -121,7 +121,7 @@
     <title><![CDATA[Front-end  技能梳理]]></title>
     <link href="http://www.darcywang.com/2016/01/05/Front-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Front-end-技能梳理/</id>
-    <published>2016-01-05T08:21:18.000Z</published>
+    <published>2016-01-05T07:21:18.000Z</published>
     <updated>2016-03-08T02:20:38.000Z</updated>
     <content type="html"><![CDATA[<p>当今这个技术变幻莫测的年代，任何技术都有可能被迅速的替代甚至丢弃。</p>
 <p>这篇博客主要讲的前端体系中生态构建和HTML、CSS框架，如有不足，还请留言指正。</p>
@@ -160,8 +160,8 @@
     <title><![CDATA[Back-end  技能梳理]]></title>
     <link href="http://www.darcywang.com/2016/01/05/Back-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Back-end-技能梳理/</id>
-    <published>2016-01-05T08:19:15.000Z</published>
-    <updated>2016-03-10T08:37:37.000Z</updated>
+    <published>2016-01-05T07:19:15.000Z</published>
+    <updated>2016-03-10T08:37:36.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待<br>在过去当谈到开发时，通常是是指后台开发。后台一般与数据打交道比较多，所以也会称为服务器端。</p>
 ]]></content>
@@ -177,7 +177,7 @@
     <title><![CDATA[AWS Basic]]></title>
     <link href="http://www.darcywang.com/2015/12/26/AWS-Basic/"/>
     <id>http://www.darcywang.com/2015/12/26/AWS-Basic/</id>
-    <published>2015-12-26T13:57:12.000Z</published>
+    <published>2015-12-26T12:57:12.000Z</published>
     <updated>2016-02-23T09:52:34.000Z</updated>
     <content type="html"><![CDATA[<h3 id="AWS_u662F_u4EC0_u4E48"><a href="#AWS_u662F_u4EC0_u4E48" class="headerlink" title="AWS是什么"></a>AWS是什么</h3><p><a href="http://aws.amazon.com/cn/" target="_blank" rel="external">AWS</a>是一种服务，阿里云和新浪云跟它类型差不多，但其实差很多。事实是AWS从06年就开始做这方面的服务了，而国内的几乎都是近几年才开始，这并不是说不支持国货，现实是人家确实做得非常好，而且已经开始打入中国这个巨大的市场。</p>
 <p>AWS的服务非常多，现在一般创业需要用的服务是EC2和S3。Amazon EC2是一个IaaS云服务，主要提供弹性的计算资源。通俗的讲，就是提供多种类型的虚拟机。EC2也是整个AWS最核心的组成部分，AWS中有许多的服务需要依赖它。在EC2环境中，虚拟机被称为实例，实例的镜像被称为AMI。任何的企业和个人都可以选择不同的类型和大小的实例，在很短的时间内创建、启动和运行。主要是根据类型和使用时间收费，即使用多少收多少的费用。</p>
@@ -203,7 +203,7 @@
     <title><![CDATA[jQuery Plugin]]></title>
     <link href="http://www.darcywang.com/2015/12/26/jQuery-Plugin/"/>
     <id>http://www.darcywang.com/2015/12/26/jQuery-Plugin/</id>
-    <published>2015-12-26T13:56:27.000Z</published>
+    <published>2015-12-26T12:56:27.000Z</published>
     <updated>2016-01-25T13:31:16.000Z</updated>
     <content type="html"><![CDATA[<p>jQuery插件对于80后的前端开发来说，实在是再熟悉不过了。在工作中的同事大部分还是80后，每次看到他们收集这些插件的时候就像是捡到宝一样，幸福满满。对于自己来说，用过的插件好像就是lazyload和validation，但是后来发现国外牛逼的人才早就写出更好更轻巧的js，完全可以忽略这些过时的插件。</p>
 <p>首先先说一下jquery.validate.js，这个曾经叱诧风云的第三方插件。现在可以取代的是<a href="http://parsleyjs.org/" target="_blank" rel="external">Parsley.js</a>，首先说的是大小问题，<a href="https://github.com/guillaumepotier/Parsley.js/blob/master/dist/parsley.min.js" target="_blank" rel="external">parsley.min.js</a>只有36kb大小，然后两个插件都对jQuery有依赖。最主要推荐的理由是github上parsley的点赞要比validate多。</p>
@@ -220,7 +220,7 @@
     <title><![CDATA[移动端开发]]></title>
     <link href="http://www.darcywang.com/2015/12/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     <id>http://www.darcywang.com/2015/12/22/移动端开发/</id>
-    <published>2015-12-22T03:14:17.000Z</published>
+    <published>2015-12-22T02:14:17.000Z</published>
     <updated>2016-04-17T10:27:16.000Z</updated>
     <content type="html"><![CDATA[<p>首先需要明确的是移动端开发是建立在PC端的基础上的。为什么这么说，最开始是笔记本的普及，随着技术的更新和迭代，配置一般的上网本价格都是大众消费能力以内，所以每个人都可以轻松的通过笔记本电脑阅读，购物。但就是最近几年，得益于国内某些”知名”手机制造商，让一部4英寸的智能机在1000元以内就能到手，所以可以想象的是国内智能手机普及是多么的吓人，更不用说潜在的群体学生和老人也加入到其中。</p>
 <p>从笔记本电脑到移动智能设备的过渡是如此之快，以至于商家有些猝不及防，自己的产品不仅能在PC端能很好地展示，相应的在手机上也是正常展示，这就催生了移动端开发。</p>
@@ -243,8 +243,8 @@
     <title><![CDATA[在路上]]></title>
     <link href="http://www.darcywang.com/2015/12/22/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
     <id>http://www.darcywang.com/2015/12/22/在路上/</id>
-    <published>2015-12-22T03:11:24.000Z</published>
-    <updated>2016-03-27T12:35:11.000Z</updated>
+    <published>2015-12-22T02:11:24.000Z</published>
+    <updated>2016-03-27T12:35:10.000Z</updated>
     <content type="html"><![CDATA[<p>现在的计划大的框架用Django，然后前台展示的页面嵌入自己前端框架，使用node.js为环境加上gulp实现工作流，后端API使用Django的restframework。</p>
 <p>在走向全栈的道路上要不断的学习新的知识和勇于去探索。</p>
 ]]></content>
@@ -266,7 +266,7 @@
     <title><![CDATA[Django Advanced]]></title>
     <link href="http://www.darcywang.com/2015/12/21/Django-Advanced/"/>
     <id>http://www.darcywang.com/2015/12/21/Django-Advanced/</id>
-    <published>2015-12-21T01:48:43.000Z</published>
+    <published>2015-12-21T00:48:43.000Z</published>
     <updated>2016-02-17T02:39:36.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······</p>
 ]]></content>
@@ -281,8 +281,8 @@
     <title><![CDATA[Django Components]]></title>
     <link href="http://www.darcywang.com/2015/12/21/Django-Components/"/>
     <id>http://www.darcywang.com/2015/12/21/Django-Components/</id>
-    <published>2015-12-21T01:46:05.000Z</published>
-    <updated>2016-03-09T07:58:41.000Z</updated>
+    <published>2015-12-21T00:46:05.000Z</published>
+    <updated>2016-03-09T07:58:40.000Z</updated>
     <content type="html"><![CDATA[<p>Django的第三方组件也是非常丰富的，比如说Django rest framework，Gunicore等等之类，接下来会介绍几个自己常用的组件，希望能对你有所帮助。<br>你可以在这里查看所有的<a href="https://www.djangopackages.com/" target="_blank" rel="external">Django Package</a>，使用方法是在输入框中输入关键字，下面就会展现搜索结果，看Search Weight为100%，点击进去，然后在右边中间的Documentation。</p>
 <h3 id="django-rest-framework"><a href="#django-rest-framework" class="headerlink" title="django-rest-framework"></a>django-rest-framework</h3><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/reset.png?imageView2/2/h/400" alt=""><br>首当其冲介绍Django Rest Framework(DRF)是有原因的，现在前后端一般通过api进行交互，这是一个什么概念呢，如果能够DRF掌握好，那后台其实就差不多了。还是老样子，我们先去<a href="http://www.django-rest-framework.org/" target="_blank" rel="external">官方文档</a>上看看，把上面的quickstart和6个部分都过一遍。在这里就不重复造轮子了，不过可以<a href="https://gitcafe.com/darcywang/Django-rest-framework" target="_blank" rel="external">在这里</a>找到我之前做的代码，参考一下。<br>DRF有几个非常好的特性，对于resource，serializer，renderer/parser, view 和 response的定义很清晰，又很符合Django的MTV模式（比如，它的view就是包装了Django的View实现的）。对于认证和授权有很好的支持，内置了一系列的Mixin，可以随意组装。最终用它来构建简单的一站式API构架，并且做出复杂的ReST结构。其Serializer，可以把model映射到其对应的一般化表示（JSON, XML之类的），其基于类的视图的扩展集也正符合API接口（endpoint）的需要。Serializer和基于类的视图扩展的清晰的分离是其精妙之处。同时，你也可以自定义URL而无需依赖自动生成，这也是DRF和其他构架（比如Tastypie或者是Piston）不同的地方。这些框架model到API接口的转换基本上都是自动的，这也就造成了灵活性的降低，限制了其在不同情况的使用（尤其是在认证和嵌套资源(nested resources)方面。构建REST API的优秀框架，可管理内容协商、序列化、分页等，开发者可以在浏览器中浏览构建的API</p>
 <h3 id="django-debug-toolbar"><a href="#django-debug-toolbar" class="headerlink" title="django-debug-toolbar"></a>django-debug-toolbar</h3><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/toolbar.png?imageView2/2/h/400" alt=""><br>Django本身自带了非常友好的报错信息提示，但是如能加上<a href="https://django-debug-toolbar.readthedocs.org/en/1.4/installation.html" target="_blank" rel="external">django-debug-toolbar</a>，就好像剑圣配上一把短刀，武功更加无敌。看过《剑雨》的朋友都知道，里面最牛逼的武器是剑配上短刀。<a href="http://stackoverflow.com/questions/6390310/how-do-i-see-the-django-debug-toolbar" target="_blank" rel="external">安装配置</a>都非常简单，还需要提到一点，这个工具在SQL查询时特别有用，DDT可以查询到每个特定的页面渲染所需要的时间，</p>
@@ -303,7 +303,7 @@
     <title><![CDATA[Zero To Hero]]></title>
     <link href="http://www.darcywang.com/2015/12/19/Zero-To-Hero/"/>
     <id>http://www.darcywang.com/2015/12/19/Zero-To-Hero/</id>
-    <published>2015-12-19T06:58:56.000Z</published>
+    <published>2015-12-19T05:58:56.000Z</published>
     <updated>2016-03-10T08:39:06.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
@@ -320,7 +320,7 @@
     <title><![CDATA[JS learned]]></title>
     <link href="http://www.darcywang.com/2015/12/19/JS-learned/"/>
     <id>http://www.darcywang.com/2015/12/19/JS-learned/</id>
-    <published>2015-12-19T06:55:27.000Z</published>
+    <published>2015-12-19T05:55:27.000Z</published>
     <updated>2016-03-10T08:38:34.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
@@ -337,8 +337,8 @@
     <title><![CDATA[Django for Webapp]]></title>
     <link href="http://www.darcywang.com/2015/12/18/Django-for-Webapp/"/>
     <id>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</id>
-    <published>2015-12-18T01:42:33.000Z</published>
-    <updated>2016-03-01T12:42:11.000Z</updated>
+    <published>2015-12-18T00:42:33.000Z</published>
+    <updated>2016-03-01T12:42:10.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xr8la.com1.z0.glb.clouddn.com/djangoIcon.png?imageView2/2/h/400" alt=""></p>
 <p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一看名字Django Unchained，还真的是一样的啊。</p>
 <p>Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于<strong> Django 1.7 </strong>上的。重要的事情说3遍，看文档，看文档，看文档首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个<a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank" rel="external">web框架</a>, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不多咯。</p>
@@ -369,7 +369,7 @@
     <title><![CDATA[Python and Django]]></title>
     <link href="http://www.darcywang.com/2015/12/18/Python-and-Django/"/>
     <id>http://www.darcywang.com/2015/12/18/Python-and-Django/</id>
-    <published>2015-12-18T01:41:02.000Z</published>
+    <published>2015-12-18T00:41:02.000Z</published>
     <updated>2016-03-10T08:38:40.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
@@ -386,8 +386,8 @@
     <title><![CDATA[CSS 3]]></title>
     <link href="http://www.darcywang.com/2015/12/17/CSS-3/"/>
     <id>http://www.darcywang.com/2015/12/17/CSS-3/</id>
-    <published>2015-12-16T23:04:37.000Z</published>
-    <updated>2016-03-01T12:38:45.000Z</updated>
+    <published>2015-12-16T22:04:37.000Z</published>
+    <updated>2016-03-01T12:38:44.000Z</updated>
     <content type="html"><![CDATA[<p>CSS3有非常多的新属性，特别是在移动端的使用，不仅能够加速CPU渲染效果，而且还能够省去一大堆的javascript。</p>
 <p>下面我会介绍一些CSS3的专业技巧，如果你需要考虑IE浏览器，那就请掠过此篇文章，因为这些特性只能兼容到IE11。</p>
 <h3 id="3Anot_28_29_u4F7F_u7528"><a href="#3Anot_28_29_u4F7F_u7528" class="headerlink" title=":not()使用"></a>:not()使用</h3><p>经常在布局导航栏或者多个div时，考虑到最后一个元素的border、margin什么之类<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* add border */</span></span><br><span class="line"><span class="class">.nav</span> <span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#666</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* remove border */</span></span><br><span class="line"><span class="class">.nav</span> <span class="tag">li</span><span class="pseudo">:last-child</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
@@ -422,8 +422,8 @@
     <title><![CDATA[HTML 5]]></title>
     <link href="http://www.darcywang.com/2015/12/17/HTML-5/"/>
     <id>http://www.darcywang.com/2015/12/17/HTML-5/</id>
-    <published>2015-12-16T23:04:26.000Z</published>
-    <updated>2015-12-31T02:05:31.000Z</updated>
+    <published>2015-12-16T22:04:26.000Z</published>
+    <updated>2015-12-31T02:05:30.000Z</updated>
     <content type="html"><![CDATA[<p>这篇文章主要讲的是HTML5的一些新特性和相应的探索。</p>
 <h3 id="HTML5_u8BED_u4E49_u5316"><a href="#HTML5_u8BED_u4E49_u5316" class="headerlink" title="HTML5语义化"></a>HTML5语义化</h3><p>不知道大家有没有这么一个习惯，在参加面试前会先提前查看相应公司的网站，如果他们家连官网都没有，那建议就不要去了。要么是太垃圾了，要么是这家公司非常需要你的帮助。</p>
 <p>打开网站首页，我会迫不及待的F12查看页面元素。如果当我看了所有的文本元素除了div还是div的话，我理所当然的认为逼格太TM low了，我不管你是不是markdown生成与否，首先这个网站的首页就能体现出公司的前端水平。</p>
@@ -456,7 +456,7 @@
     <title><![CDATA[Javascript Tricks]]></title>
     <link href="http://www.darcywang.com/2015/12/17/Javascript-Tricks/"/>
     <id>http://www.darcywang.com/2015/12/17/Javascript-Tricks/</id>
-    <published>2015-12-16T23:03:27.000Z</published>
+    <published>2015-12-16T22:03:27.000Z</published>
     <updated>2015-12-19T08:19:26.000Z</updated>
     <content type="html"><![CDATA[<p>最开始学习JS的资料是JavaScript高级程序设计，非常厚的一本书，当然，我没有看完，工作中需要什么东西我就学什么东西，所以有很多地方并不了解实现的原理，所以就填了很多坑咯。一边填坑一边快乐的编程。</p>
 <p>正如标题所说，我介绍一下自己常用的一些javascript小技巧。</p>
@@ -508,8 +508,8 @@
     <title><![CDATA[Database Basic 2]]></title>
     <link href="http://www.darcywang.com/2015/12/16/Database-Basic-2/"/>
     <id>http://www.darcywang.com/2015/12/16/Database-Basic-2/</id>
-    <published>2015-12-16T01:37:53.000Z</published>
-    <updated>2016-03-10T08:37:49.000Z</updated>
+    <published>2015-12-16T00:37:53.000Z</published>
+    <updated>2016-03-10T08:37:48.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
 ]]></content>
@@ -525,7 +525,7 @@
     <title><![CDATA[Yueyang --Hometown]]></title>
     <link href="http://www.darcywang.com/2015/12/15/Yueyang-Hometown/"/>
     <id>http://www.darcywang.com/2015/12/15/Yueyang-Hometown/</id>
-    <published>2015-12-15T02:58:19.000Z</published>
+    <published>2015-12-15T01:58:19.000Z</published>
     <updated>2016-02-29T12:55:54.000Z</updated>
     <content type="html"><![CDATA[<p>岳阳，我生活了19年的地方。很难想象的能在一个地方呆那么长的时间······</p>
 <p><img src="http://7xqzeg.com1.z0.glb.clouddn.com/IMG_1514.JPG" alt=""><br><img src="http://7xqzeg.com1.z0.glb.clouddn.com/IMG_1498.JPG" alt=""><br><img src="http://7xqzeg.com1.z0.glb.clouddn.com/IMG_1496.JPG" alt=""><br><img src="http://7xqzeg.com1.z0.glb.clouddn.com/IMG_1420.JPG?imageMogr2/rotate/180" alt=""></p>
@@ -543,7 +543,7 @@
     <title><![CDATA[Database 简单操作]]></title>
     <link href="http://www.darcywang.com/2015/12/15/Database-%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/"/>
     <id>http://www.darcywang.com/2015/12/15/Database-简单操作/</id>
-    <published>2015-12-15T02:57:22.000Z</published>
+    <published>2015-12-15T01:57:22.000Z</published>
     <updated>2016-03-10T08:37:46.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
