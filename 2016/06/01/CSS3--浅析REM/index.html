@@ -36,7 +36,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="CSS3," />
 
 
 
@@ -54,19 +54,22 @@
 
 
 
-<meta name="description" content="以下部分都是搬砖的节奏，也是我自己常用的常常去查的基本资料。在网上一搜一大把的，所以有什么不足的地方，记得留言给我咯
-Shell命令对于一位全栈工程师,shell commands是最基本的一项技能，很多时候我们都只需要记住一些最常用的mv,cp之类的简单命令，需要复杂一点的就自己上Google查一下就行。就比如说只想copy以html文件类型的，或者是想拷贝以png,jpg格式的图片12345c">
+<meta name="description" content="CSS开发中，时常会遇到em、rem、vh等等一些单位，在项目实践里却由于对它们的不熟悉以及不确定性而没有经常地的使用，今天有机会和大家一起认识其中的REM。
+初识 REM
+In Cascading Style Sheets, the em unit is the height of the font in nominal points or inches. The actual, physica">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Shell Commands">
-<meta property="og:url" content="http://www.darcywang.com/2015/12/13/Shell-Commands/index.html">
+<meta property="og:title" content="CSS3--浅析REM">
+<meta property="og:url" content="http://www.darcywang.com/2016/06/01/CSS3--浅析REM/index.html">
 <meta property="og:site_name" content="Mr' Darcy">
-<meta property="og:description" content="以下部分都是搬砖的节奏，也是我自己常用的常常去查的基本资料。在网上一搜一大把的，所以有什么不足的地方，记得留言给我咯
-Shell命令对于一位全栈工程师,shell commands是最基本的一项技能，很多时候我们都只需要记住一些最常用的mv,cp之类的简单命令，需要复杂一点的就自己上Google查一下就行。就比如说只想copy以html文件类型的，或者是想拷贝以png,jpg格式的图片12345c">
-<meta property="og:updated_time" content="2016-02-23T09:03:28.000Z">
+<meta property="og:description" content="CSS开发中，时常会遇到em、rem、vh等等一些单位，在项目实践里却由于对它们的不熟悉以及不确定性而没有经常地的使用，今天有机会和大家一起认识其中的REM。
+初识 REM
+In Cascading Style Sheets, the em unit is the height of the font in nominal points or inches. The actual, physica">
+<meta property="og:updated_time" content="2016-06-02T08:44:32.680Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shell Commands">
-<meta name="twitter:description" content="以下部分都是搬砖的节奏，也是我自己常用的常常去查的基本资料。在网上一搜一大把的，所以有什么不足的地方，记得留言给我咯
-Shell命令对于一位全栈工程师,shell commands是最基本的一项技能，很多时候我们都只需要记住一些最常用的mv,cp之类的简单命令，需要复杂一点的就自己上Google查一下就行。就比如说只想copy以html文件类型的，或者是想拷贝以png,jpg格式的图片12345c">
+<meta name="twitter:title" content="CSS3--浅析REM">
+<meta name="twitter:description" content="CSS开发中，时常会遇到em、rem、vh等等一些单位，在项目实践里却由于对它们的不熟悉以及不确定性而没有经常地的使用，今天有机会和大家一起认识其中的REM。
+初识 REM
+In Cascading Style Sheets, the em unit is the height of the font in nominal points or inches. The actual, physica">
 
 
 
@@ -78,7 +81,7 @@ Shell命令对于一位全栈工程师,shell commands是最基本的一项技能
   };
 </script>
 
-  <title> Shell Commands | Mr' Darcy </title>
+  <title> CSS3--浅析REM | Mr' Darcy </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -249,7 +252,7 @@ Shell命令对于一位全栈工程师,shell commands是最基本的一项技能
             
             
               
-                Shell Commands
+                CSS3--浅析REM
               
             
           </h1>
@@ -258,8 +261,8 @@ Shell命令对于一位全栈工程师,shell commands是最基本的一项技能
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-12-13T19:54:38+09:00" content="2015-12-13">
-              2015-12-13
+            <time itemprop="dateCreated" datetime="2016-06-01T15:08:45+09:00" content="2016-06-01">
+              2016-06-01
             </time>
           </span>
 
@@ -269,8 +272,8 @@ Shell命令对于一位全栈工程师,shell commands是最基本的一项技能
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/12/13/Shell-Commands/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/13/Shell-Commands/" itemprop="commentsCount"></span>
+                <a href="/2016/06/01/CSS3--浅析REM/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/01/CSS3--浅析REM/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -295,46 +298,50 @@ Shell命令对于一位全栈工程师,shell commands是最基本的一项技能
       
 
       
-        <span itemprop="articleBody"><p>以下部分都是搬砖的节奏，也是我自己常用的常常去查的基本资料。在网上一搜一大把的，所以有什么不足的地方，记得留言给我咯</p>
-<h3 id="Shell_u547D_u4EE4"><a href="#Shell_u547D_u4EE4" class="headerlink" title="Shell命令"></a>Shell命令</h3><p>对于一位全栈工程师,shell commands是最基本的一项技能，很多时候我们都只需要记住一些最常用的mv,cp之类的简单命令，需要复杂一点的就自己上Google查一下就行。就比如说只想copy以html文件类型的，或者是想拷贝以png,jpg格式的图片<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cp www/*html backup</span><br><span class="line"></span><br><span class="line">ls *&#123;jpg,png&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> Short names: ?</span><br></pre></td></tr></table></figure></p>
-<p>虚拟机跑起来以后还需要对firewall进行配置，命令如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw status</span><br><span class="line"></span><br><span class="line">sudo ufw default deny incoming</span><br><span class="line"></span><br><span class="line">sudo ufw default allow outgoing</span><br><span class="line"></span><br><span class="line">sudo ufw allow ssh</span><br><span class="line"></span><br><span class="line">sudo ufw allow <span class="number">2222</span>/tcp</span><br><span class="line"></span><br><span class="line">sudo ufw allow www</span><br><span class="line"></span><br><span class="line">sudo ufw <span class="built_in">enable</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="u4E00_u4E9B_u5E38_u7528_u7684_u547D_u4EE4_u53CA_u76F8_u5E94_u7684_u89E3_u91CA"><a href="#u4E00_u4E9B_u5E38_u7528_u7684_u547D_u4EE4_u53CA_u76F8_u5E94_u7684_u89E3_u91CA" class="headerlink" title="一些常用的命令及相应的解释"></a>一些常用的命令及相应的解释</h3><p>$ cp source dest            ### 将 source 复制到 dest<br>$ cp folder/*  dest         ### 将 folder 下所有文件(不含子文件夹中的文件)复制到 dest<br>$ cp -r folder  dest        ### 将 folder 下所有文件（包含子文件夹中的所有文件）复制到 dest</p>
-<p>$ mv source  folder        ### 将 source 移动到 folder 下，完成后则为  folder/source<br>$ mv -i source folder      ### 在移动时，若文件已存在则提示 <strong>是否覆盖</strong><br>$ mv source dest           ### 在 dest 不为目录的前提下，重命名 source 为 dest</p>
-<p>$ cat /etc/locale.gen     ### 输出 locale.gen 的内容<br>$ cat -n /etc/locale.gen  ### 输出 locale.gen 的内容并显示行号</p>
-<p>more 与 cat 相似，都可以查看文件内容，所不同的是，当一个文档太长时， cat 只能展示最后布满屏幕的内容，前面的内容是不可见的。这时候可用 more 逐行显示内容。<br>less 与 more 相似，不过 less 支持上下滚动查看内容，而 more 只支持逐行显示。</p>
-<p>$ more /etc/locale.gen<br>$ more +100 /etc/locale.gen       ### 从 100 行开始显示<br>$ less /etc/locale.gen<br>$ less +100 /etc/locale.gen</p>
-<p>tar 主要用于创建归档文件，和解压归档文件，其本身是没有压缩功能的，但可以调用 gzip 、 bzip2 进行压缩处理。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">参数解释：</span><br><span class="line">    -c 创建归档</span><br><span class="line">    -x 解压归档</span><br><span class="line">    -v 显示处理过程</span><br><span class="line">    <span class="operator">-f</span> 目标文件，其后必须紧跟 目标文件</span><br><span class="line">    -j 调用 bzip2 进行解压缩</span><br><span class="line">    -z 调用 gzip 进行解压缩</span><br><span class="line">    -t 列出归档中的文件</span><br><span class="line"></span><br><span class="line">$ tar -cvf filename.tar .       <span class="comment">### 将当前目录所有文件归档，但不压缩，注意后面有个 ’.‘ ，不可省略，代表当前目录的意思 </span></span><br><span class="line">$ tar -xvf filename.tar         <span class="comment">### 解压 filename.tar 到当前文件夹</span></span><br><span class="line">$ tar -cvjf filename.tar.bz2 .  <span class="comment">### 使用 bzip2 压缩</span></span><br><span class="line">$ tar -xvjf  filename.tar.bz2   <span class="comment">### 解压 filename.tar.bz2 到当前文件夹</span></span><br><span class="line">$ tar -cvzf filename.tar.gz     <span class="comment">### 使用 gzip  压缩</span></span><br><span class="line">$ tar -xvzf filename.tar.gz     <span class="comment">### 解压 filename.tar.gz 到当前文件夹</span></span><br><span class="line">$ tar -tf   filename            <span class="comment">### 只查看 filename 归档中的文件，不解压</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="chown_and_chmod"><a href="#chown_and_chmod" class="headerlink" title="chown and chmod"></a>chown and chmod</h3><p>chown 用于改变一个文件的所有者及所在的组。</p>
-<p>chown user filename        改变 filename 的所有者为 user<br>chown user:group filename  改变 filename 的所有者为 user，组为 group<br>chown -R root folder      改变 folder 文件夹及其子文件的所有者为 root</p>
-<p>chmod 永远更改一个文件的权限，主要有 读取 、 写入 、 执行 ，三种权限，其中 所有者 、 用户组 、 其他 各占三个，因此 ls -l 可以看到如下的信息</p>
-<p>-rwxr–r– 1 locez users   154 Aug 30 18:09 filename</p>
-<p>其中 r=read=4 ， w=write=2 ， x=execute=1</p>
-<p>chmod +x filename        为 user ，group ，others 添加执行权限<br>chmod -x filename        取消 user ， group ，others 的执行权限<br>chmod +w filename        为 user 添加写入权限<br>chmod ugo=rwx filename   设置 user ，group ，others 具有 读取、写入、执行权限<br>chmod ug=rw filename     设置 user ，group 添加 读取、写入权限<br>chmod ugo=— filename   取消所有权限</p>
-<p>还有比如说修改可写的权限  chmod 766 文件名称  chmod 400 文件名称<br>就可以进行写操作了</p>
-<p>自己由于学习需要，在Mac上配置了好几个虚拟机<br>ssh darcy@127.0.0.1 -p 2222 -i ~/.ssh/id_rsa</p>
-<p>另外大家还可以参考一下<a href="http://freeengineer.org/learnUNIXin10minutes.html" target="_blank" rel="external">这位童鞋</a>写的东西，非常的实用</p>
+        <span itemprop="articleBody"><p>CSS开发中，时常会遇到em、rem、vh等等一些单位，在项目实践里却由于对它们的不熟悉以及不确定性而没有经常地的使用，今天有机会和大家一起认识其中的REM。</p>
+<h3 id="u521D_u8BC6_REM"><a href="#u521D_u8BC6_REM" class="headerlink" title="初识 REM"></a>初识 REM</h3><blockquote>
+<p>In Cascading Style Sheets, the em unit is the height of the font in nominal points or inches. The actual, physical height of any given portion of the font depends on the user-defined DPI setting, current element font-size, and the particular font being used.</p>
+<p>To make style rules that depend only on the default font size, another unit was developed: the rem. The rem, or root em, is the font size of the root element of the document. Unlike the em, which may be different for each element, the rem is constant throughout the document.</p>
+</blockquote>
+<p>先看一下维基百科对CSS中的REM定义，在CSS样式表中，单位em是作为字体高度的单位来使用的，但实际字体大小的高度显示是用户对DPI的定义来决定的。为了改善这种样式规则，单位rem则是直接取决于文档根元素字体默认大小，也可以理解为root em，跟em有所不同的是使用rem单位的字体大小在整个文档中都是恒定不变的</p>
+<blockquote>
+<p><strong>Font-relative lengths: the em, ex, ch, rem units</strong><br>Aside from rem (which refers to the font-size of the root element), the font-relative lengths refer to the font metrics of the element on which they are used. The exception is when they occur in the value of the font-size property itself, in which case they refer to the computed font metrics of the parent element (or the computed font metrics corresponding to the initial values of the font property, if the element has no parent).</p>
+</blockquote>
+<p>看看W3C的定义，rem指的是根元素的字体大小，MDN对rem的解释也是一样。REM在CSS中基本概念是字体相对大小的长度单位，同EM、PX相似，但又有着千丝万缕的关系</p>
+<h3 id="REM_u4F7F_u7528_u53CA_u6CE8_u610F_u4E8B_u9879"><a href="#REM_u4F7F_u7528_u53CA_u6CE8_u610F_u4E8B_u9879" class="headerlink" title="REM使用及注意事项"></a>REM使用及注意事项</h3><p>在rem使用之前，先得屡清楚单位em、rem和px之间的关系，特别是每一个单位的使用跟代码块和继承之间的关系。<br>A. <a href="http://codepen.io/jeremychurch/pen/rCcIh" target="_blank" rel="external">http://codepen.io/jeremychurch/pen/rCcIh</a><br>b. <a href="http://codepen.io/jeremychurch/pen/dlyqw" target="_blank" rel="external">http://codepen.io/jeremychurch/pen/dlyqw</a><br>两个简单的栗子，第一个里面的字体大小依次在减小，而第二个里面的字体却恒定没有变化，相对比会发现只是单位使用不一样的但效果是截然不同的。rem和em都是相对单位，px则不是。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">body</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">62.5%</span></span></span>; &#125;</span>  <span class="comment">/* =10px */</span></span><br><span class="line"><span class="tag">h1</span>   <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">2.4em</span></span></span>; &#125;</span> <span class="comment">/* =24px */</span></span><br><span class="line"><span class="tag">p</span>    <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1.4em</span></span></span>; &#125;</span> <span class="comment">/* =14px */</span></span><br><span class="line"><span class="tag">li</span>   <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1.4em</span></span></span>; &#125;</span> <span class="comment">/* =14px */</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">62.5%</span></span></span>; &#125;</span>  <span class="comment">/* =10px */</span></span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1.4rem</span></span></span>; &#125;</span> <span class="comment">/* =14px */</span></span><br><span class="line"><span class="tag">h1</span>   <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">2.4rem</span></span></span>; &#125;</span> <span class="comment">/* =24px */</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">62.5%</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">14px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1.4rem</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">h1</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">24px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">2.4rem</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="REM__u6DF1_u5165"><a href="#REM__u6DF1_u5165" class="headerlink" title="REM 深入"></a>REM 深入</h3><p>使用em的好处，响应式布局下的字体大小变化<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* Only px units */</span></span><br><span class="line"><span class="tag">html</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">16px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h1</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">33px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h2</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">28px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h3</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">23px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h4</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">19px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">small</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">13px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.box</span> <span class="rules">&#123; <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">20px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="at_rule">@<span class="keyword">media</span> screen and (min-width: <span class="number">1400px</span>) </span>&#123;</span><br><span class="line"><span class="tag">html</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">20px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h1</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">41px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h2</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">35px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h3</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">29px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h4</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">24px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">small</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">17px</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.box</span> <span class="rules">&#123; <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">25px</span></span></span>; &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* Use em units */</span></span><br><span class="line"><span class="tag">html</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1em</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h1</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">2.074em</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h2</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1.728em</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h3</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1.44em</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">h4</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1.2em</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">small</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0.833em</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.box</span> <span class="rules">&#123; <span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">1.25em</span></span></span>; &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="at_rule">@<span class="keyword">media</span> screen and (min-width: <span class="number">1400px</span>) </span>&#123;</span><br><span class="line">  <span class="tag">html</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">1.25em</span></span></span>; &#125;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面展示了单位em在媒体查询中的使用，代码量相当于单位px的一半啊！用到的是单位em的继承和<br>相对父级(例子里面的html)字体大小。<br>当单位em字体大小是相对直接或者是最近的父级，但单位rem的大小则是相对于html(根元素)字体大小。<br>你也可以把它理解为一种样式重置。</p>
+<p>个人推荐多使用单位em，可以用px来写border，rem则可以用margin或者padding之类的，不过还是需要慎用</p>
+<p>IE9,10都不完全支持rem，</p>
+<p>这次和大家探讨一下CSS中的REM，如有什么不足之处，还请不吝赐教</p>
+<p></p><p data-height="265" data-theme-id="dark" data-slug-hash="XKJxxY" data-default-tab="html" data-user="darcyWang" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/darcyWang/pen/XKJxxY/" target="_blank" rel="external">CSS rem</a> by TianbaoWang (<a href="http://codepen.io/darcyWang" target="_blank" rel="external">@darcyWang</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
+<p><script async src="//assets.codepen.io/assets/embed/ei.js"></script></p>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/CSS3/" rel="tag">#CSS3</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/11/Darcy/" rel="next" title="Darcy">
-                <i class="fa fa-chevron-left"></i> Darcy
+              <a href="/2016/05/25/H5与原生交互那点事儿/" rel="next" title="H5与原生交互那点事儿">
+                <i class="fa fa-chevron-left"></i> H5与原生交互那点事儿
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/14/Database-Basic/" rel="prev" title="Database Basic">
-                Database Basic <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -361,8 +368,8 @@ Shell命令对于一位全栈工程师,shell commands是最基本的一项技能
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/12/13/Shell-Commands/"
-           data-title="Shell Commands" data-url="http://www.darcywang.com/2015/12/13/Shell-Commands/">
+      <div class="ds-thread" data-thread-key="2016/06/01/CSS3--浅析REM/"
+           data-title="CSS3--浅析REM" data-url="http://www.darcywang.com/2016/06/01/CSS3--浅析REM/">
       </div>
     
   </div>
@@ -492,7 +499,7 @@ Shell命令对于一位全栈工程师,shell commands是最基本的一项技能
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell_u547D_u4EE4"><span class="nav-number">1.</span> <span class="nav-text">Shell命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E00_u4E9B_u5E38_u7528_u7684_u547D_u4EE4_u53CA_u76F8_u5E94_u7684_u89E3_u91CA"><span class="nav-number">2.</span> <span class="nav-text">一些常用的命令及相应的解释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chown_and_chmod"><span class="nav-number">3.</span> <span class="nav-text">chown and chmod</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u521D_u8BC6_REM"><span class="nav-number">1.</span> <span class="nav-text">初识 REM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#REM_u4F7F_u7528_u53CA_u6CE8_u610F_u4E8B_u9879"><span class="nav-number">2.</span> <span class="nav-text">REM使用及注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#REM__u6DF1_u5165"><span class="nav-number">3.</span> <span class="nav-text">REM 深入</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
