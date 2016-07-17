@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2016-06-05T10:16:14.377Z</updated>
+  <updated>2016-06-23T11:00:24.993Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -13,6 +13,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[前端开发之入门工具箱]]></title>
+    <link href="http://www.darcywang.com/2016/06/17/React/"/>
+    <id>http://www.darcywang.com/2016/06/17/React/</id>
+    <published>2016-06-17T06:52:48.000Z</published>
+    <updated>2016-06-23T11:00:24.993Z</updated>
+    <content type="html"><![CDATA[<p>在开始任何项目时候，我们先需要列这样一个清单。你需要将代码压缩，捆绑打包，这就意味着你需要生成sourcemap来debug，当然你想自动化测试，想知道代码覆盖率，想检查JavaScript语法，不要忘了编译你的Sass或者是PostCSS中的toss。快速的重新加载是非常棒的，但，不要期望你们团队来手动处理这些，我们需要所有以上的优点只需要一行命令就能实现，而且每次Ctrl+s时都能重新运转。(此处应该有掌声…..)</p>
+<p>同时，这里似乎有着许多的的库、框架和模式来处理不一样的事情。选择第一</p>
+<p>是不是有一种被淹没的赶脚，我们现在正式步入JavaScript<a href="https://en.wikipedia.org/wiki/Decision_fatigue" target="_blank" rel="external">选择疲劳</a>时代</p>
+<p>每次开始新的项目都会为了选择某一种打包工具，测试框架，组件库而头痛不已。</p>
+<p>参考我的解决办法： 常用工具箱</p>
+<p>为什么需要常用工具箱/模板/生成器？<br>一个项目的起始工具箱应该有着很多的目的</p>
+<ol>
+<li>一系列的决定、最佳实践以及踩过的坑整理后</li>
+<li>防止重要细节的疏漏</li>
+<li>推崇可一致性</li>
+<li>避免重复工作</li>
+<li>保证质量的前提下，正确的事情永远是自动化的</li>
+</ol>
+<p>现在有非常多的最佳实践文章，但对于每个人的实际情况是不同的。</p>
+<p>现在将介绍一下这个工具箱的由来，首先作者还是非常牛逼的，他自己看过很多的材料和经历过非常多的实际项目实践，</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在开始任何项目时候，我们先需要列这样一个清单。你需要将代码压缩，捆绑打包，这就意味着你需要生成sourcemap来debug，当然你想自动化测试，想知道代码覆盖率，想检查JavaScript语法，不要忘了编译你的Sass或者是PostCSS中的toss。快速的重新加载是非常]]>
+    </summary>
+    
+      <category term="React" scheme="http://www.darcywang.com/tags/React/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[CSS3--浅析REM]]></title>
@@ -555,23 +587,6 @@
       <category term="Javascript" scheme="http://www.darcywang.com/tags/Javascript/"/>
     
       <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Database Basic 2]]></title>
-    <link href="http://www.darcywang.com/2015/12/16/Database-Basic-2/"/>
-    <id>http://www.darcywang.com/2015/12/16/Database-Basic-2/</id>
-    <published>2015-12-16T00:37:53.000Z</published>
-    <updated>2016-03-10T08:37:48.000Z</updated>
-    <content type="html"><![CDATA[<p>持续更新中······· </p>
-<p>敬请期待</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>持续更新中······· </p>
-<p>敬请期待</p>
-]]>
-    </summary>
     
   </entry>
   
