@@ -62,8 +62,8 @@
 <meta property="og:site_name" content="Mr' Darcy">
 <meta property="og:description" content="做移动开发一年多了，自己也会有一些关于移动端的思考。装逼一下啊···最开始着手移动端开发让人头疼的是适配这一块儿，从iOS到Android各种机型和操作系统让你欲罢不能，关于样式这一块是用sass+compass，所以我会最开始在utilities里面定义好使用的媒体查询。
 12345@media screen and ( max-device-height: 480px)&amp;#123;&amp;#125;">
-<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/owl_1.png?imageView2/2/w/300">
-<meta property="og:updated_time" content="2016-08-22T10:35:13.610Z">
+<meta property="og:image" content="http://7xuach.com1.z0.glb.clouddn.com/sprite.png?imageView2/2/w/300">
+<meta property="og:updated_time" content="2016-08-22T10:38:09.289Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello Tianbao">
 <meta name="twitter:description" content="做移动开发一年多了，自己也会有一些关于移动端的思考。装逼一下啊···最开始着手移动端开发让人头疼的是适配这一块儿，从iOS到Android各种机型和操作系统让你欲罢不能，关于样式这一块是用sass+compass，所以我会最开始在utilities里面定义好使用的媒体查询。
@@ -324,7 +324,7 @@
 </ol>
 <p>说一下前端的雪碧图怎么玩？<br>首先确保你的电脑上已经安装好了compass和sass，可以使用命令行 compass -v和sass -v。<br>然后使用 compass create newprojectname创建一个新的compass项目，其实实际上我们只是用来做一个壳儿，完成以后进入这个项目，你会看到里面有文件夹sass、文件夹stylesheets和一个config.rb配置文件，你可以先打开配置文件看一下，里面很明确的写了一句images_dir = “images”，相信一看就知道这个图片的根目录叫images，所以你就马上新建一个名字为images的文件夹，接着在sass文件里面创建一个新的darcy.scss文件，里面放上这段代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@import "compass/utilities/sprites";</span><br><span class="line">@import "icon/*.png";</span><br><span class="line">@include all-icon-sprites;</span><br><span class="line"></span><br><span class="line">$setting-sprite-dimensions: true;</span><br></pre></td></tr></table></figure></p>
 <p>你还可以自己定制化咯，<a href="http://compass-style.org/help/tutorials/spriting/customization-options/" target="_blank" rel="external">在这里</a>可以找到<br>参照一下这个<a href="https://gist.github.com/729507" target="_blank" rel="external">哥们的</a>写法。自己最喜欢生成雪碧图后会有一个css文件，里面把所有的图标名字和位置都已经写出来了，这是非常酷的一个地方。</p>
-<p>最后贴上一张图片，大家可以看看<br><img src="http://7xpb8g.com1.z0.glb.clouddn.com/owl_1.png?imageView2/2/w/300" alt=""></p>
+<p>最后贴上一张图片，大家可以看看<br><img src="http://7xuach.com1.z0.glb.clouddn.com/sprite.png?imageView2/2/w/300" alt=""></p>
 <p>这篇博文会不断地更新，post一些自己遇到好的工具</p>
 <p>先介绍一下关于video play的使用，现在的网站都开始使用一个简短的视频放在首页上作为背景，是不是非常的炫酷，<br>有一种可以下实现的方法叫做<a href="https://flowplayer.org/" target="_blank" rel="external">flowplayer</a>。</p>
 </span>
