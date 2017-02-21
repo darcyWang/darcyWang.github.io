@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2016-11-04T10:44:42.155Z</updated>
+  <updated>2016-11-09T03:14:38.270Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -18,11 +18,13 @@
     <title><![CDATA[GRE and Toefl]]></title>
     <link href="http://www.darcywang.com/2016/11/04/GRE-and-Toefl-0/"/>
     <id>http://www.darcywang.com/2016/11/04/GRE-and-Toefl-0/</id>
-    <published>2016-11-04T10:44:42.000Z</published>
-    <updated>2016-11-04T10:44:42.155Z</updated>
-    <content type="html"></content>
+    <published>2016-11-04T11:44:42.000Z</published>
+    <updated>2016-11-09T03:14:38.270Z</updated>
+    <content type="html"><![CDATA[<p>已经很久没有开始写博客了，一直都没有时间维护。非常的蛋疼，现在我还没有把TOEFL考试完成，这个是非常让人头疼的</p>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<p>已经很久没有开始写博客了，一直都没有时间维护。非常的蛋疼，现在我还没有把TOEFL考试完成，这个是非常让人头疼的</p>
+]]>
     </summary>
     
   </entry>
@@ -31,7 +33,7 @@
     <title><![CDATA[前端开发之入门工具箱]]></title>
     <link href="http://www.darcywang.com/2016/06/17/React/"/>
     <id>http://www.darcywang.com/2016/06/17/React/</id>
-    <published>2016-06-17T06:52:48.000Z</published>
+    <published>2016-06-17T07:52:48.000Z</published>
     <updated>2016-06-23T11:00:24.993Z</updated>
     <content type="html"><![CDATA[<p>在开始任何项目时候，我们先需要列这样一个清单。你需要将代码压缩，捆绑打包，这就意味着你需要生成sourcemap来debug，当然你想自动化测试，想知道代码覆盖率，想检查JavaScript语法，不要忘了编译你的Sass或者是PostCSS中的toss。快速的重新加载是非常棒的，但，不要期望你们团队来手动处理这些，我们需要所有以上的优点只需要一行命令就能实现，而且每次Ctrl+s时都能重新运转。(此处应该有掌声…..)</p>
 <p>同时，这里似乎有着许多的的库、框架和模式来处理不一样的事情。选择第一</p>
@@ -63,7 +65,7 @@
     <title><![CDATA[CSS3--浅析REM]]></title>
     <link href="http://www.darcywang.com/2016/06/01/CSS3--%E6%B5%85%E6%9E%90REM/"/>
     <id>http://www.darcywang.com/2016/06/01/CSS3--浅析REM/</id>
-    <published>2016-06-01T06:08:45.000Z</published>
+    <published>2016-06-01T07:08:45.000Z</published>
     <updated>2016-06-05T10:16:14.377Z</updated>
     <content type="html"><![CDATA[<p>CSS开发中，时常会遇到em、rem、vh等等一些单位，在项目实践里却由于对它们的不熟悉以及不确定性而没有经常地的使用，今天有机会和大家一起认识其中的REM。</p>
 <h3 id="u521D_u8BC6_REM"><a href="#u521D_u8BC6_REM" class="headerlink" title="初识 REM"></a>初识 REM</h3><blockquote>
@@ -98,7 +100,7 @@
     <title><![CDATA[H5与原生交互那点事儿]]></title>
     <link href="http://www.darcywang.com/2016/05/25/H5%E4%B8%8E%E5%8E%9F%E7%94%9F%E4%BA%A4%E4%BA%92%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
     <id>http://www.darcywang.com/2016/05/25/H5与原生交互那点事儿/</id>
-    <published>2016-05-25T03:22:26.000Z</published>
+    <published>2016-05-25T04:22:26.000Z</published>
     <updated>2016-06-06T02:37:35.503Z</updated>
     <content type="html"><![CDATA[<p>聊一下关于H5、Android和iOS的交互。</p>
 <p>支付宝支付需要参数的传递，问题的解决<br>首先是iOS需要建立一个UIWebView，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#import "webview.h"</span></span><br><span class="line"><span class="comment">#import &lt;javascriptcore javascriptcore.h=""&gt;</span></span><br><span class="line">@implementation webview</span><br><span class="line"></span><br><span class="line">-(id)initWithFrame:(CGRect)frame</span><br><span class="line">&#123;</span><br><span class="line">    self=[super initWithFrame:frame];</span><br><span class="line">     </span><br><span class="line">    <span class="keyword">if</span>( self )&#123;</span><br><span class="line">        self.webview=[[UIWebView alloc]initWithFrame:CGRectMake(<span class="number">0</span>, <span class="number">310</span>, self.bounds.size.width, <span class="number">300</span>)];</span><br><span class="line">        self.webview.backgroundColor=[UIColor lightGrayColor];</span><br><span class="line">        NSString *htmlPath=[[NSBundle mainBundle] resourcePath];</span><br><span class="line">        htmlPath=[htmlPath stringByAppendingPathComponent:@<span class="string">"html/index.html"</span>];</span><br><span class="line">        NSURL *<span class="built_in">local</span>URL=[[NSURL alloc]initFileURLWithPath:htmlPath];</span><br><span class="line">        [self.webview loadRequest:[NSURLRequest requestWithURL:<span class="built_in">local</span>URL]];</span><br><span class="line">        [self addSubview:self.webview];</span><br><span class="line"> </span><br><span class="line">        JSContext *context = [self.webview valueForKeyPath:@<span class="string">"documentView.webView.mainFrame.javaScriptContext"</span>];</span><br><span class="line">        // 这个全是objective-c代码写的，下面会有详解</span><br><span class="line">        context[@<span class="string">"appointment"</span>] = ^() &#123;</span><br><span class="line">            NSLog(@<span class="string">"+++++++start Log+++++++"</span>);</span><br><span class="line">            NSArray *args = [JSContext currentArguments];</span><br><span class="line">            <span class="keyword">for</span> (JSValue *jsVal <span class="keyword">in</span> args) &#123;</span><br><span class="line">                NSLog(@<span class="string">"%@"</span>, jsVal);</span><br><span class="line">            &#125;</span><br><span class="line">            JSValue *this = [JSContext currentThis];</span><br><span class="line">            NSLog(@<span class="string">"this: %@"</span>,this);</span><br><span class="line">            NSLog(@<span class="string">"-------finish Log-------"</span>);</span><br><span class="line">        &#125;;    </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> self;</span><br><span class="line">&#125;</span><br><span class="line">@end&lt;/javascriptcore&gt;</span><br></pre></td></tr></table></figure></p>
@@ -117,7 +119,7 @@
     <title><![CDATA[性能优化之CSS部分]]></title>
     <link href="http://www.darcywang.com/2016/02/23/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8BCSS%E9%83%A8%E5%88%86/"/>
     <id>http://www.darcywang.com/2016/02/23/性能优化之CSS部分/</id>
-    <published>2016-02-23T08:40:54.000Z</published>
+    <published>2016-02-23T09:40:54.000Z</published>
     <updated>2016-03-24T09:28:20.000Z</updated>
     <content type="html"><![CDATA[<p>在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。</p>
 <p>从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。</p>
@@ -155,7 +157,7 @@
     <title><![CDATA[Chrome调试工具]]></title>
     <link href="http://www.darcywang.com/2016/02/23/Chrome%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     <id>http://www.darcywang.com/2016/02/23/Chrome调试工具/</id>
-    <published>2016-02-23T08:36:54.000Z</published>
+    <published>2016-02-23T09:36:54.000Z</published>
     <updated>2016-02-29T12:59:56.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://www.google.com/chrome/browser/desktop/" target="_blank" rel="external">Chrome Developer Tools</a>是一件非常棒的艺术品。</p>
 <h3 id="Chrome_DevTools_Overview"><a href="#Chrome_DevTools_Overview" class="headerlink" title="Chrome DevTools Overview"></a>Chrome DevTools Overview</h3><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/panl.png" alt=""><br>Elements：查看和编辑当前页面中的 HTML 和 CSS 元素。标签页的左侧就是对页面HTML结构的查看与编辑，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以直接在某个元素上双击修改元素的属性，右侧可以对元素的CSS进行查看与编辑修改。<br>Console：用于显示异常错误信息，脚本中所输出的调试信息，或运行测试脚本等。<br>Sources：查看和调试当前页面所加载的脚本的源文件。<br>Network：监控当前网页所有的http请求的面版，主体部分展示每个http请求，每个字段表示着该请求的不同属性<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;和状态，当点击某一个具体请求URL，可以看到该请求的详细HTTP请求情况：</p>
@@ -220,7 +222,7 @@
     <title><![CDATA[Front-end  技能梳理]]></title>
     <link href="http://www.darcywang.com/2016/01/05/Front-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Front-end-技能梳理/</id>
-    <published>2016-01-05T07:21:18.000Z</published>
+    <published>2016-01-05T08:21:18.000Z</published>
     <updated>2016-03-08T02:20:38.000Z</updated>
     <content type="html"><![CDATA[<p>当今这个技术变幻莫测的年代，任何技术都有可能被迅速的替代甚至丢弃。</p>
 <p>这篇博客主要讲的前端体系中生态构建和HTML、CSS框架，如有不足，还请留言指正。</p>
@@ -259,7 +261,7 @@
     <title><![CDATA[Back-end  技能梳理]]></title>
     <link href="http://www.darcywang.com/2016/01/05/Back-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Back-end-技能梳理/</id>
-    <published>2016-01-05T07:19:15.000Z</published>
+    <published>2016-01-05T08:19:15.000Z</published>
     <updated>2016-03-10T08:37:36.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待<br>在过去当谈到开发时，通常是是指后台开发。后台一般与数据打交道比较多，所以也会称为服务器端。</p>
@@ -276,7 +278,7 @@
     <title><![CDATA[AWS Basic]]></title>
     <link href="http://www.darcywang.com/2015/12/26/AWS-Basic/"/>
     <id>http://www.darcywang.com/2015/12/26/AWS-Basic/</id>
-    <published>2015-12-26T12:57:12.000Z</published>
+    <published>2015-12-26T13:57:12.000Z</published>
     <updated>2016-02-23T09:52:34.000Z</updated>
     <content type="html"><![CDATA[<h3 id="AWS_u662F_u4EC0_u4E48"><a href="#AWS_u662F_u4EC0_u4E48" class="headerlink" title="AWS是什么"></a>AWS是什么</h3><p><a href="http://aws.amazon.com/cn/" target="_blank" rel="external">AWS</a>是一种服务，阿里云和新浪云跟它类型差不多，但其实差很多。事实是AWS从06年就开始做这方面的服务了，而国内的几乎都是近几年才开始，这并不是说不支持国货，现实是人家确实做得非常好，而且已经开始打入中国这个巨大的市场。</p>
 <p>AWS的服务非常多，现在一般创业需要用的服务是EC2和S3。Amazon EC2是一个IaaS云服务，主要提供弹性的计算资源。通俗的讲，就是提供多种类型的虚拟机。EC2也是整个AWS最核心的组成部分，AWS中有许多的服务需要依赖它。在EC2环境中，虚拟机被称为实例，实例的镜像被称为AMI。任何的企业和个人都可以选择不同的类型和大小的实例，在很短的时间内创建、启动和运行。主要是根据类型和使用时间收费，即使用多少收多少的费用。</p>
@@ -302,7 +304,7 @@
     <title><![CDATA[jQuery Plugin]]></title>
     <link href="http://www.darcywang.com/2015/12/26/jQuery-Plugin/"/>
     <id>http://www.darcywang.com/2015/12/26/jQuery-Plugin/</id>
-    <published>2015-12-26T12:56:27.000Z</published>
+    <published>2015-12-26T13:56:27.000Z</published>
     <updated>2016-01-25T13:31:16.000Z</updated>
     <content type="html"><![CDATA[<p>jQuery插件对于80后的前端开发来说，实在是再熟悉不过了。在工作中的同事大部分还是80后，每次看到他们收集这些插件的时候就像是捡到宝一样，幸福满满。对于自己来说，用过的插件好像就是lazyload和validation，但是后来发现国外牛逼的人才早就写出更好更轻巧的js，完全可以忽略这些过时的插件。</p>
 <p>首先先说一下jquery.validate.js，这个曾经叱诧风云的第三方插件。现在可以取代的是<a href="http://parsleyjs.org/" target="_blank" rel="external">Parsley.js</a>，首先说的是大小问题，<a href="https://github.com/guillaumepotier/Parsley.js/blob/master/dist/parsley.min.js" target="_blank" rel="external">parsley.min.js</a>只有36kb大小，然后两个插件都对jQuery有依赖。最主要推荐的理由是github上parsley的点赞要比validate多。</p>
@@ -319,7 +321,7 @@
     <title><![CDATA[移动端开发]]></title>
     <link href="http://www.darcywang.com/2015/12/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     <id>http://www.darcywang.com/2015/12/22/移动端开发/</id>
-    <published>2015-12-22T02:14:17.000Z</published>
+    <published>2015-12-22T03:14:17.000Z</published>
     <updated>2016-11-04T10:39:09.747Z</updated>
     <content type="html"><![CDATA[<p>首先需要明确的是移动端开发是建立在PC端的基础上的。为什么这么说，最开始是笔记本的普及，随着技术的更新和迭代，配置一般的上网本价格都是大众消费能力以内，所以每个人都可以轻松的通过笔记本电脑阅读，购物。但就是最近几年，得益于国内某些”知名”手机制造商，让一部4英寸的智能机在1000元以内就能到手，所以可以想象的是国内智能手机普及是多么的吓人，更不用说潜在的群体学生和老人也加入到其中。</p>
 <p>从笔记本电脑到移动智能设备的过渡是如此之快，以至于商家有些猝不及防，自己的产品不仅能在PC端能很好地展示，相应的在手机上也是正常展示，这就催生了移动端开发。</p>
@@ -341,7 +343,7 @@
     <title><![CDATA[在路上]]></title>
     <link href="http://www.darcywang.com/2015/12/22/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
     <id>http://www.darcywang.com/2015/12/22/在路上/</id>
-    <published>2015-12-22T02:11:24.000Z</published>
+    <published>2015-12-22T03:11:24.000Z</published>
     <updated>2016-03-27T12:35:10.000Z</updated>
     <content type="html"><![CDATA[<p>现在的计划大的框架用Django，然后前台展示的页面嵌入自己前端框架，使用node.js为环境加上gulp实现工作流，后端API使用Django的restframework。</p>
 <p>在走向全栈的道路上要不断的学习新的知识和勇于去探索。</p>
@@ -364,7 +366,7 @@
     <title><![CDATA[Django Advanced]]></title>
     <link href="http://www.darcywang.com/2015/12/21/Django-Advanced/"/>
     <id>http://www.darcywang.com/2015/12/21/Django-Advanced/</id>
-    <published>2015-12-21T00:48:43.000Z</published>
+    <published>2015-12-21T01:48:43.000Z</published>
     <updated>2016-02-17T02:39:36.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······</p>
 ]]></content>
@@ -379,7 +381,7 @@
     <title><![CDATA[Django Components]]></title>
     <link href="http://www.darcywang.com/2015/12/21/Django-Components/"/>
     <id>http://www.darcywang.com/2015/12/21/Django-Components/</id>
-    <published>2015-12-21T00:46:05.000Z</published>
+    <published>2015-12-21T01:46:05.000Z</published>
     <updated>2016-03-09T07:58:40.000Z</updated>
     <content type="html"><![CDATA[<p>Django的第三方组件也是非常丰富的，比如说Django rest framework，Gunicore等等之类，接下来会介绍几个自己常用的组件，希望能对你有所帮助。<br>你可以在这里查看所有的<a href="https://www.djangopackages.com/" target="_blank" rel="external">Django Package</a>，使用方法是在输入框中输入关键字，下面就会展现搜索结果，看Search Weight为100%，点击进去，然后在右边中间的Documentation。</p>
 <h3 id="django-rest-framework"><a href="#django-rest-framework" class="headerlink" title="django-rest-framework"></a>django-rest-framework</h3><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/reset.png?imageView2/2/h/400" alt=""><br>首当其冲介绍Django Rest Framework(DRF)是有原因的，现在前后端一般通过api进行交互，这是一个什么概念呢，如果能够DRF掌握好，那后台其实就差不多了。还是老样子，我们先去<a href="http://www.django-rest-framework.org/" target="_blank" rel="external">官方文档</a>上看看，把上面的quickstart和6个部分都过一遍。在这里就不重复造轮子了，不过可以<a href="https://gitcafe.com/darcywang/Django-rest-framework" target="_blank" rel="external">在这里</a>找到我之前做的代码，参考一下。<br>DRF有几个非常好的特性，对于resource，serializer，renderer/parser, view 和 response的定义很清晰，又很符合Django的MTV模式（比如，它的view就是包装了Django的View实现的）。对于认证和授权有很好的支持，内置了一系列的Mixin，可以随意组装。最终用它来构建简单的一站式API构架，并且做出复杂的ReST结构。其Serializer，可以把model映射到其对应的一般化表示（JSON, XML之类的），其基于类的视图的扩展集也正符合API接口（endpoint）的需要。Serializer和基于类的视图扩展的清晰的分离是其精妙之处。同时，你也可以自定义URL而无需依赖自动生成，这也是DRF和其他构架（比如Tastypie或者是Piston）不同的地方。这些框架model到API接口的转换基本上都是自动的，这也就造成了灵活性的降低，限制了其在不同情况的使用（尤其是在认证和嵌套资源(nested resources)方面。构建REST API的优秀框架，可管理内容协商、序列化、分页等，开发者可以在浏览器中浏览构建的API</p>
@@ -401,7 +403,7 @@
     <title><![CDATA[Zero To Hero]]></title>
     <link href="http://www.darcywang.com/2015/12/19/Zero-To-Hero/"/>
     <id>http://www.darcywang.com/2015/12/19/Zero-To-Hero/</id>
-    <published>2015-12-19T05:58:56.000Z</published>
+    <published>2015-12-19T06:58:56.000Z</published>
     <updated>2016-03-10T08:39:06.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
@@ -418,7 +420,7 @@
     <title><![CDATA[JS learned]]></title>
     <link href="http://www.darcywang.com/2015/12/19/JS-learned/"/>
     <id>http://www.darcywang.com/2015/12/19/JS-learned/</id>
-    <published>2015-12-19T05:55:27.000Z</published>
+    <published>2015-12-19T06:55:27.000Z</published>
     <updated>2016-03-10T08:38:34.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
@@ -435,7 +437,7 @@
     <title><![CDATA[Django for Webapp]]></title>
     <link href="http://www.darcywang.com/2015/12/18/Django-for-Webapp/"/>
     <id>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</id>
-    <published>2015-12-18T00:42:33.000Z</published>
+    <published>2015-12-18T01:42:33.000Z</published>
     <updated>2016-03-01T12:42:10.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xr8la.com1.z0.glb.clouddn.com/djangoIcon.png?imageView2/2/h/400" alt=""></p>
 <p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一看名字Django Unchained，还真的是一样的啊。</p>
@@ -467,7 +469,7 @@
     <title><![CDATA[Python and Django]]></title>
     <link href="http://www.darcywang.com/2015/12/18/Python-and-Django/"/>
     <id>http://www.darcywang.com/2015/12/18/Python-and-Django/</id>
-    <published>2015-12-18T00:41:02.000Z</published>
+    <published>2015-12-18T01:41:02.000Z</published>
     <updated>2016-03-10T08:38:40.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······· </p>
 <p>敬请期待</p>
@@ -484,7 +486,7 @@
     <title><![CDATA[CSS 3]]></title>
     <link href="http://www.darcywang.com/2015/12/17/CSS-3/"/>
     <id>http://www.darcywang.com/2015/12/17/CSS-3/</id>
-    <published>2015-12-16T22:04:37.000Z</published>
+    <published>2015-12-16T23:04:37.000Z</published>
     <updated>2016-03-01T12:38:44.000Z</updated>
     <content type="html"><![CDATA[<p>CSS3有非常多的新属性，特别是在移动端的使用，不仅能够加速CPU渲染效果，而且还能够省去一大堆的javascript。</p>
 <p>下面我会介绍一些CSS3的专业技巧，如果你需要考虑IE浏览器，那就请掠过此篇文章，因为这些特性只能兼容到IE11。</p>
@@ -520,7 +522,7 @@
     <title><![CDATA[HTML 5]]></title>
     <link href="http://www.darcywang.com/2015/12/17/HTML-5/"/>
     <id>http://www.darcywang.com/2015/12/17/HTML-5/</id>
-    <published>2015-12-16T22:04:26.000Z</published>
+    <published>2015-12-16T23:04:26.000Z</published>
     <updated>2015-12-31T02:05:30.000Z</updated>
     <content type="html"><![CDATA[<p>这篇文章主要讲的是HTML5的一些新特性和相应的探索。</p>
 <h3 id="HTML5_u8BED_u4E49_u5316"><a href="#HTML5_u8BED_u4E49_u5316" class="headerlink" title="HTML5语义化"></a>HTML5语义化</h3><p>不知道大家有没有这么一个习惯，在参加面试前会先提前查看相应公司的网站，如果他们家连官网都没有，那建议就不要去了。要么是太垃圾了，要么是这家公司非常需要你的帮助。</p>
