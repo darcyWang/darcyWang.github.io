@@ -1,0 +1,823 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="google-site-verification" content="2WfwINbSNgFbq0lAyqN3oy6v0auX_hLupya9lf4HCec" />
+<meta name="baidu-site-verification" content="auH4iF8chc" />
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.lug.ustc.edu.cn/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CSS3," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Mr' Darcy" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/darcy.png?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。
+从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。
+这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="性能优化之CSS部分">
+<meta property="og:url" content="http://www.darcywang.com/2016/02/23/性能优化之CSS部分/index.html">
+<meta property="og:site_name" content="Mr' Darcy">
+<meta property="og:description" content="在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。
+从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。
+这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CS">
+<meta property="og:updated_time" content="2016-03-24T09:28:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="性能优化之CSS部分">
+<meta name="twitter:description" content="在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。
+从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。
+这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CS">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> 性能优化之CSS部分 | Mr' Darcy </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?68305a1aadd39258f47a7c572fe6fb54";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Mr' Darcy</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">hello</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'WukmDiq9jLUFQmmoNG6Y','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                性能优化之CSS部分
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-02-23T17:40:54+08:00" content="2016-02-23">
+              2016-02-23
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Techniques/" itemprop="url" rel="index">
+                    <span itemprop="name">Techniques</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/23/性能优化之CSS部分/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/23/性能优化之CSS部分/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          <span>&nbsp; | &nbsp;
+          <span id="busuanzi_value_page_pv" ></span>次阅读
+          </span>    
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。</p>
+<p>从最原始的CSS代码到CSS3，后来的LESS、Sass、Stylus到现在的PostCSS，这门语言已经远远不是那么简单的。但也许有人会说，只要写出的CSS达到UI设计图一模一样的样式不就行了么，答案是肯定的，没有人会去关心产品是怎么实现的，除了你自己。</p>
+<p>这里就不再教大家怎么去写CSS了，而是一起讨论一下专业CSS都有哪几点。</p>
+<h3 id="u5C5E_u6027_u7684_u4F7F_u7528"><a href="#u5C5E_u6027_u7684_u4F7F_u7528" class="headerlink" title="属性的使用"></a>属性的使用</h3><p>CSS常用属性不是特别多，所以上手也非常快。随着CSS3新增的一些动画属性，可能在低版本浏览器不识别，但现在都什么年代了，不需要担心太多。<br>有个网站<a href="https://csstriggers.com/" target="_blank" rel="external">CSSTrigger</a>已经非常详细的介绍了每一个属性会不会触发layout事件，还有一些相应的注意事项。之前听说过有些公司的前端样式书写需要遵循先定位然后是字体颜色之类的，但现实是没有几个人会真的按照这上面去做，原因很简单，每个工程师都会有自己的习惯，再说现在CSS的伪类已经非常强大。</p>
+<p>如何对属性来进行优化呢，答案是多种多样的。这里举一个优化绘制的例子，</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">/* The bad way */</span><br><span class="line">.normal_way &#123;</span><br><span class="line">  box-shadow: 0 1px 2px rgba(0,0,0,0.15);</span><br><span class="line">  transition: box-shadow 0.3s ease-in-out:</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 鼠标悬停实现更大阴影的过渡 */</span><br><span class="line">.normal_way:hover &#123;</span><br><span class="line">  box-shadow: 0 5px 15px rgba(0,0,0,0.3);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* The alternate way */</span><br><span class="line">.better_way &#123;</span><br><span class="line">  box-shadow: 0 1px 2px rgba(0,0,0,0.15);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 设置更大的阴影并将之隐藏 */</span><br><span class="line">.better_way::after &#123;</span><br><span class="line">  box-shadow: 0 5px 15px rgba(0,0,0,0.3);</span><br><span class="line">  opacity: 0;</span><br><span class="line">  transition: opacity 0.3s ease-in-out:</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 鼠标悬停时实现更大阴影的过渡显示 */</span><br><span class="line">.make-it-fast:hover::after &#123;</span><br><span class="line">  opacity: 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>实现最小的重新绘制，应该创建一个伪元素并对其opacity元素进行动画处理，使其以每秒60帧的动画模仿运动物体相同的效果。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 不建议, 造成页面布局两次.</span></span><br><span class="line"><span class="keyword">var</span> newWidth = aDiv.offsetWidth + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line">aDiv.style.width = newWidth + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br><span class="line"><span class="keyword">var</span> newHeight = aDiv.offsetHeight + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line">aDiv.style.height = newHeight + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 建议, 只有一次页面布局.</span></span><br><span class="line"><span class="keyword">var</span> newWidth = aDiv.offsetWidth + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line"><span class="keyword">var</span> newHeight = aDiv.offsetHeight + <span class="number">10</span>; <span class="comment">// 读</span></span><br><span class="line">aDiv.style.width = newWidth + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br><span class="line">aDiv.style.height = newHeight + <span class="string">'px'</span>; <span class="comment">// 写</span></span><br></pre></td></tr></table></figure>
+<h3 id="u9009_u62E9_u5668_u7684_u9009_u53D6"><a href="#u9009_u62E9_u5668_u7684_u9009_u53D6" class="headerlink" title="选择器的选取"></a>选择器的选取</h3><p>如果CSS的id、class名还是用拼音或者阿拉伯数字的盆友，请你先去学习英语基本3000词汇。</p>
+<p>具体可以参考我的CSS3 blog。</p>
+<h3 id="u5DE5_u5177_u7684_u4F7F_u7528"><a href="#u5DE5_u5177_u7684_u4F7F_u7528" class="headerlink" title="工具的使用"></a>工具的使用</h3><p>工欲善其事，必先利其器。选对了适合自己开发的工具，这样做起事来才能事半功倍。而且通过工具写出来的CSS代码可读性就不用说了，而且直接压缩后体积又小。这样无形中对CSS的优化又帮了一把手。</p>
+<p>下面是3中CSS的写法，通过gulp来实现。其中需要的前提条件是你对node.js和gulp有一点的了解</p>
+<h4 id="PostCSS"><a href="#PostCSS" class="headerlink" title="PostCSS"></a>PostCSS</h4><p>它将是未来取代传统CSS代码的的利器，很多的牛人写出了很牛逼的插件，比如说<a href="http://peterramsing.github.io/lost/" target="_blank" rel="external">lost</a>,<a href="http://simplaio.github.io/rucksack/docs/#" target="_blank" rel="external">rucksack</a>，使用它们比bootstrap强多了。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 测试新一代的CSS写法</span></span><br><span class="line">gulp.task(<span class="string">'styles'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> processors = [</span><br><span class="line">    lost,</span><br><span class="line">    rucksack,</span><br><span class="line">    prefixer_darcy(&#123; browsers: [<span class="string">'last 2 versions'</span>] &#125;),</span><br><span class="line">    csswring,</span><br><span class="line">  ];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./assets/scss/darcy.css'</span>)</span><br><span class="line">    .pipe(postcss(processors))</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./assets/css'</span>))</span><br><span class="line">    .pipe(reload(&#123;stream: <span class="literal">true</span>&#125;));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h4 id="PostCSS_+_Sass"><a href="#PostCSS_+_Sass" class="headerlink" title="PostCSS + Sass"></a>PostCSS + Sass</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 测试新一代未来的CSS写法</span></span><br><span class="line">gulp.task(<span class="string">'presass'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> processors = [</span><br><span class="line">    precss(&#123;&#125;),</span><br><span class="line">    autoprefixer(&#123; browsers: [<span class="string">'last 2 versions'</span>] &#125;),</span><br><span class="line">    cssnext(&#123;compress: <span class="literal">true</span>&#125;)</span><br><span class="line">  ];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'./assets/scss/presass.css'</span>)</span><br><span class="line">    .pipe(postcss(processors))</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./assets/css'</span>))</span><br><span class="line">    .pipe(notify(&#123; message: <span class="string">'presass task ok'</span> &#125;));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="Sass"><a href="#Sass" class="headerlink" title="Sass"></a>Sass</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// sass settings </span></span><br><span class="line">gulp.task(<span class="string">'sass'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> AUTOPREFIXER_BROWSERS = [</span><br><span class="line">      <span class="string">'ie &gt;= 8'</span>,</span><br><span class="line">      <span class="string">'ie_mob &gt;= 10'</span>,</span><br><span class="line">      <span class="string">'ff &gt;= 30'</span>,</span><br><span class="line">      <span class="string">'chrome &gt;= 34'</span>,</span><br><span class="line">      <span class="string">'safari &gt;= 7'</span>,</span><br><span class="line">      <span class="string">'opera &gt;= 23'</span>,</span><br><span class="line">      <span class="string">'ios &gt;= 7'</span>,</span><br><span class="line">      <span class="string">'android &gt;= 4.2'</span>,</span><br><span class="line">      <span class="string">'bb &gt;= 10'</span></span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> gulp.src(<span class="string">'assets/scss/linked.scss'</span>)</span><br><span class="line">    .pipe(sourcemaps.init())</span><br><span class="line">    .pipe(sass(&#123;outputStyle: <span class="string">'compressed'</span>&#125;)</span><br><span class="line">    .on(<span class="string">'error'</span>, errorlog))</span><br><span class="line">    .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))</span><br><span class="line">    .pipe(sourcemaps.write(<span class="string">'../maps'</span>))</span><br><span class="line">    .pipe(gulp.dest(<span class="string">'./assets/css'</span>))</span><br><span class="line">    .pipe(reload(&#123;stream:<span class="literal">true</span>&#125;));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>还有需要大家注意的是配置里面会有很多的坑，因为你要明白gulp-autoprefixer跟autoprefixer不是一回事，还有是每次npm install的时候都会遇到gulp-sass中的node-sass中一个文件搞不下来，这个时候就需要你科学上网了。</p>
+<p>一本书叫做<a href="http://chimera.labs.oreilly.com/books/1230000000545/index.html" target="_blank" rel="external">High Performance Browser Networking</a>，大家有时间可以去看一看，免费的</p>
+<p>浏览器优化的一些demo地址<br><a href="https://github.com/udacity/web-workers-demo" target="_blank" rel="external">https://github.com/udacity/web-workers-demo</a><br><a href="http://udacity.github.io/news-aggregator/" target="_blank" rel="external">http://udacity.github.io/news-aggregator/</a><br><a href="http://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/" target="_blank" rel="external">http://andydavies.me/blog/2013/10/22/how-the-browser-pre-loader-makes-pages-load-faster/</a><br><a href="http://udacity.github.io/60fps/lesson6/willChange/index.html" target="_blank" rel="external">http://udacity.github.io/60fps/lesson6/willChange/index.html</a><br><a href="https://gist.github.com/paulirish/1579671" target="_blank" rel="external">https://gist.github.com/paulirish/1579671</a><br><a href="http://www.html5rocks.com/static/demos/parallax/demo-1a/demo.html" target="_blank" rel="external">http://www.html5rocks.com/static/demos/parallax/demo-1a/demo.html</a><br><a href="https://github.com/udacity/news-aggregator/tree/gh-pages/hints" target="_blank" rel="external">https://github.com/udacity/news-aggregator/tree/gh-pages/hints</a><br><a href="https://github.com/udacity/news-aggregator" target="_blank" rel="external">https://github.com/udacity/news-aggregator</a><br><a href="https://github.com/udacity/news-aggregator/blob/gh-pages/hints/all-bugs.md" target="_blank" rel="external">https://github.com/udacity/news-aggregator/blob/gh-pages/hints/all-bugs.md</a><br><a href="https://github.com/udacity/news-aggregator/tree/solution" target="_blank" rel="external">https://github.com/udacity/news-aggregator/tree/solution</a><br><a href="https://dl.dropboxusercontent.com/u/2272348/codez/udacity/box-recalc-style-slow.html" target="_blank" rel="external">https://dl.dropboxusercontent.com/u/2272348/codez/udacity/box-recalc-style-slow.html</a><br><a href="https://github.com/udacity/frontend-nanodegree-mobile-portfolio" target="_blank" rel="external">https://github.com/udacity/frontend-nanodegree-mobile-portfolio</a></p>
+<p><a href="https://github.com/google/ios-webkit-debug-proxy" target="_blank" rel="external">https://github.com/google/ios-webkit-debug-proxy</a></p>
+<p>API的使用<a href="https://github.com/HackerNews/API" target="_blank" rel="external">https://github.com/HackerNews/API</a></p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS3/" rel="tag">#CSS3</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/02/23/Chrome调试工具/" rel="next" title="Chrome调试工具">
+                <i class="fa fa-chevron-left"></i> Chrome调试工具
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/25/H5与原生交互那点事儿/" rel="prev" title="H5与原生交互那点事儿">
+                H5与原生交互那点事儿 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+ 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/02/23/性能优化之CSS部分/"
+           data-title="性能优化之CSS部分" data-url="http://www.darcywang.com/2016/02/23/性能优化之CSS部分/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/avatar.jpg" alt="Mr' Darcy" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Mr' Darcy</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">Stay Hungry Stay Foolish</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">43</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/darcyWang" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.linkedin.com/in/tianbao-wang-67195956?trk=nav_responsive_tab_profile" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> Linkedin
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Deposit</p>
+            
+              <span class="links-of-author-item tianbao-modified">
+                <a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a>
+              </span>
+            
+              <span class="links-of-author-item tianbao-modified">
+                <a href="http://speckyboy.com/" target="_blank">Speckyboy</a>
+              </span>
+            
+              <span class="links-of-author-item tianbao-modified">
+                <a href="http://alistapart.com/" target="_blank">Alistapart</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5C5E_u6027_u7684_u4F7F_u7528"><span class="nav-number">1.</span> <span class="nav-text">属性的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u9009_u62E9_u5668_u7684_u9009_u53D6"><span class="nav-number">2.</span> <span class="nav-text">选择器的选取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5DE5_u5177_u7684_u4F7F_u7528"><span class="nav-number">3.</span> <span class="nav-text">工具的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#PostCSS"><span class="nav-number">3.1.</span> <span class="nav-text">PostCSS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PostCSS_+_Sass"><span class="nav-number">3.2.</span> <span class="nav-text">PostCSS + Sass</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Sass"><span class="nav-number">3.3.</span> <span class="nav-text">Sass</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr' Darcy</span>
+</div>
+
+<div class="powered-by">
+  致永远牛逼的Vita
+</div>
+
+<!--<div class="theme-info">
+  自己定义的 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>-->
+<br />
+<script async="" src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+本站总访问量 <span id="busuanzi_value_site_pv"></span> &nbsp;&nbsp;&nbsp;
+您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72305621-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"darcywang"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72305621-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script>
+  (function(){
+      var bp = document.createElement('script');
+      bp.src = '//push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
+  
+  
+
+  
+  
+
+</body>
+</html>

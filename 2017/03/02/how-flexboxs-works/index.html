@@ -1,0 +1,815 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="google-site-verification" content="2WfwINbSNgFbq0lAyqN3oy6v0auX_hLupya9lf4HCec" />
+<meta name="baidu-site-verification" content="auH4iF8chc" />
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.lug.ustc.edu.cn/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Mr' Darcy" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/darcy.png?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="随着各大浏览器开始支持CSS3的新属性，比如flexbox。flexbox号称可以将我们从css tricks里面解放出来，比如说垂直居中。当然，flexbox正朝着这个目标前进着，但首先是很好的使用它。在接下来的文章里面会用gif动图来解释布局，这样我们可以更好地理解和使用它。
+flexbox内置的规则可以让我们在整体布局更加的灵活跟直观，它让父容器来决定如何展示子类div，包括它们的大小以及相">
+<meta property="og:type" content="article">
+<meta property="og:title" content="聊聊CSS的Flexboxs吧">
+<meta property="og:url" content="http://www.darcywang.com/2017/03/02/how-flexboxs-works/index.html">
+<meta property="og:site_name" content="Mr' Darcy">
+<meta property="og:description" content="随着各大浏览器开始支持CSS3的新属性，比如flexbox。flexbox号称可以将我们从css tricks里面解放出来，比如说垂直居中。当然，flexbox正朝着这个目标前进着，但首先是很好的使用它。在接下来的文章里面会用gif动图来解释布局，这样我们可以更好地理解和使用它。
+flexbox内置的规则可以让我们在整体布局更加的灵活跟直观，它让父容器来决定如何展示子类div，包括它们的大小以及相">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/first.gif">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/second.gif">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/third.png">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/four.gif">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/five.gif">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/six.gif">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/third.png">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/seven.gif">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/eight.png">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/nine.gif">
+<meta property="og:image" content="http://7xpb8g.com1.z0.glb.clouddn.com/nine.gif">
+<meta property="og:updated_time" content="2017-03-02T12:35:49.168Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="聊聊CSS的Flexboxs吧">
+<meta name="twitter:description" content="随着各大浏览器开始支持CSS3的新属性，比如flexbox。flexbox号称可以将我们从css tricks里面解放出来，比如说垂直居中。当然，flexbox正朝着这个目标前进着，但首先是很好的使用它。在接下来的文章里面会用gif动图来解释布局，这样我们可以更好地理解和使用它。
+flexbox内置的规则可以让我们在整体布局更加的灵活跟直观，它让父容器来决定如何展示子类div，包括它们的大小以及相">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> 聊聊CSS的Flexboxs吧 | Mr' Darcy </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?68305a1aadd39258f47a7c572fe6fb54";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Mr' Darcy</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">hello</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'WukmDiq9jLUFQmmoNG6Y','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                聊聊CSS的Flexboxs吧
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2017-03-02T16:09:03+08:00" content="2017-03-02">
+              2017-03-02
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/02/how-flexboxs-works/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/02/how-flexboxs-works/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          <span>&nbsp; | &nbsp;
+          <span id="busuanzi_value_page_pv" ></span>次阅读
+          </span>    
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>随着各大浏览器开始支持CSS3的新属性，比如flexbox。flexbox号称可以将我们从css tricks里面解放出来，比如说垂直居中。当然，flexbox正朝着这个目标前进着，但首先是很好的使用它。在接下来的文章里面会用gif动图来解释布局，这样我们可以更好地理解和使用它。</p>
+<p>flexbox内置的规则可以让我们在整体布局更加的灵活跟直观，它让父容器来决定如何展示子类div，包括它们的大小以及相互的间距。听起来是不是很神奇，那就让我们来实操吧。</p>
+<p>在这篇文章中我们仔细讨论flexbox的5个常用属性以及属性值。</p>
+<h3 id="u5C5E_u6027_u4E00_uFF1A_Display_3A_Flex"><a href="#u5C5E_u6027_u4E00_uFF1A_Display_3A_Flex" class="headerlink" title="属性一： Display: Flex"></a>属性一： Display: Flex</h3><p><img src="http://7xpb8g.com1.z0.glb.clouddn.com/first.gif" alt=""><br>你可以发现有4个不同形状，不同颜色的div被包裹在一个灰色的container里面，每个div默认展示display:block，每个小盒子都会占据一行。</p>
+<p>现在你可以将外层包裹的container添加属性，代码如此简单<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#container</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">display</span>:<span class="value"> flex</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="http://7xpb8g.com1.z0.glb.clouddn.com/second.gif" alt=""><br>是不是很神奇，所有的小盒子都好像添加了一个display：inline-block的属性，那就对了。事实是你做的远不止这一点，你给了container一种叫做flex环境，<br>你现在可以开始操作div的位置了，相比于传统的css更少的代码。</p>
+<h3 id="u5C5E_u6027_u4E8C_uFF1A_Flex_Direction"><a href="#u5C5E_u6027_u4E8C_uFF1A_Flex_Direction" class="headerlink" title="属性二： Flex Direction"></a>属性二： Flex Direction</h3><p>一个Flexbox container有两个轴，横轴(main axis)和纵轴(cross axis)，如下图所示。<br><img src="http://7xpb8g.com1.z0.glb.clouddn.com/third.png" alt=""><br>默认情况下，div会沿着横轴排列，从左至右，这也就是为什么一开始给container添加属性后，子类div会这样排列。但是Flex-direction会让你来控制div的排列方向。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#container</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">display</span>:<span class="value"> flex</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">flex-direction</span>:<span class="value"> column</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="http://7xpb8g.com1.z0.glb.clouddn.com/four.gif" alt=""><br>非常需要注意的地方是当你使用flex-direction: column后，子类div会按照纵轴来排列，从横轴转为纵轴排列。flex-direction还有其它几个属性值，比如row-reverse和column-reverse.<br><img src="http://7xpb8g.com1.z0.glb.clouddn.com/five.gif" alt=""></p>
+<h3 id="u5C5E_u6027_u4E09_uFF1A_Justify_Content"><a href="#u5C5E_u6027_u4E09_uFF1A_Justify_Content" class="headerlink" title="属性三： Justify Content"></a>属性三： Justify Content</h3><p>Justify-content控制盒子在横轴上的展示，让我们看看下面的图片<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#container</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">display</span>:<span class="value"> flex</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">flex-direction</span>:<span class="value"> row</span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">justify-content</span>:<span class="value"> flex-start</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>justify-content:一共有5个属性值</p>
+<ul>
+<li>Flex-start</li>
+<li>Flex-end</li>
+<li>Center</li>
+<li>Space-between</li>
+<li>Space-around<br><img src="http://7xpb8g.com1.z0.glb.clouddn.com/six.gif" alt=""></li>
+</ul>
+<p>在这里需要重点强调一下space-around和space-between, 在gif图中对比我们可以理解为，当属性值为space-around时, 子类每个div的左右间距都相等, space-between的情况下, 简单来说。就是每个盒子都有自己的个性.<br>还记得justify-content是作用在横轴上面的，如果需要作用在纵轴上，你会想当然把flex-direction改成column不就完事儿了么，答案是否定的，这就是接下来我要介绍的属性</p>
+<h3 id="u5C5E_u6027_u56DB_uFF1A_Align_Items"><a href="#u5C5E_u6027_u56DB_uFF1A_Align_Items" class="headerlink" title="属性四： Align Items"></a>属性四： Align Items</h3><p>如果你掌握了justify-content的精髓，那align-items就是小菜一碟.justify-content是作用在横轴, 那么align-items就是作用在纵轴<br><img src="http://7xpb8g.com1.z0.glb.clouddn.com/third.png" alt=""><br>align-items有5个属性值</p>
+<ul>
+<li>flex-start</li>
+<li>flex-end</li>
+<li>center</li>
+<li>stretch</li>
+<li>baseline<br>相比于justify-content，还是有那么一点不一样的，仔细看下图<br><img src="http://7xpb8g.com1.z0.glb.clouddn.com/seven.gif" alt=""><br>注意align-items: stretch 我已经对所有盒子的高度设定为auto<br>对于属性值为baseline时，要注意段落标签它会以盒子的最低靠齐.<br><img src="http://7xpb8g.com1.z0.glb.clouddn.com/eight.png" alt=""><br>为了更加直观和全面的理解，请看下图<br><img src="http://7xpb8g.com1.z0.glb.clouddn.com/nine.gif" alt=""><h3 id="u5C5E_u6027_u4E94_uFF1A_Align_Self"><a href="#u5C5E_u6027_u4E94_uFF1A_Align_Self" class="headerlink" title="属性五： Align Self"></a>属性五： Align Self</h3>Align-self允许手动的对某个元素进行控制，<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#container &#123;</span><br><span class="line">    align-items: flex-start;</span><br><span class="line">&#125;</span><br><span class="line">.square#one &#123;</span><br><span class="line">    align-self: center;</span><br><span class="line">&#125;</span><br><span class="line">// Only this square will be centered.</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如下图所示，我们对前面两个盒子不做控制,后面两个设置align-items: center and flex-direction: row.<br><img src="http://7xpb8g.com1.z0.glb.clouddn.com/nine.gif" alt=""><br>结论：<br>即使你只听说过flexbox，但熟悉完这些属性跟属性值后，你将完全有能力将之付诸于实践，去实现垂直居中你的内心.</p>
+<p>参考资源<br><a href="https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35#.wtm4q2a79" target="_blank" rel="external">https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35#.wtm4q2a79</a></p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/04/GRE-and-Toefl-0/" rel="next" title="GRE and Toefl">
+                <i class="fa fa-chevron-left"></i> GRE and Toefl
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+ 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/02/how-flexboxs-works/"
+           data-title="聊聊CSS的Flexboxs吧" data-url="http://www.darcywang.com/2017/03/02/how-flexboxs-works/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/avatar.jpg" alt="Mr' Darcy" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Mr' Darcy</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">Stay Hungry Stay Foolish</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">43</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/darcyWang" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.linkedin.com/in/tianbao-wang-67195956?trk=nav_responsive_tab_profile" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> Linkedin
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Deposit</p>
+            
+              <span class="links-of-author-item tianbao-modified">
+                <a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a>
+              </span>
+            
+              <span class="links-of-author-item tianbao-modified">
+                <a href="http://speckyboy.com/" target="_blank">Speckyboy</a>
+              </span>
+            
+              <span class="links-of-author-item tianbao-modified">
+                <a href="http://alistapart.com/" target="_blank">Alistapart</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5C5E_u6027_u4E00_uFF1A_Display_3A_Flex"><span class="nav-number">1.</span> <span class="nav-text">属性一： Display: Flex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5C5E_u6027_u4E8C_uFF1A_Flex_Direction"><span class="nav-number">2.</span> <span class="nav-text">属性二： Flex Direction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5C5E_u6027_u4E09_uFF1A_Justify_Content"><span class="nav-number">3.</span> <span class="nav-text">属性三： Justify Content</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5C5E_u6027_u56DB_uFF1A_Align_Items"><span class="nav-number">4.</span> <span class="nav-text">属性四： Align Items</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5C5E_u6027_u4E94_uFF1A_Align_Self"><span class="nav-number">5.</span> <span class="nav-text">属性五： Align Self</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr' Darcy</span>
+</div>
+
+<div class="powered-by">
+  致永远牛逼的Vita
+</div>
+
+<!--<div class="theme-info">
+  自己定义的 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>-->
+<br />
+<script async="" src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+本站总访问量 <span id="busuanzi_value_site_pv"></span> &nbsp;&nbsp;&nbsp;
+您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72305621-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"darcywang"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72305621-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script>
+  (function(){
+      var bp = document.createElement('script');
+      bp.src = '//push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
+  
+  
+
+  
+  
+
+</body>
+</html>
