@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2017-03-02T12:39:12.000Z</updated>
+  <updated>2017-03-07T09:42:41.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -13,6 +13,21 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[react]]></title>
+    <link href="http://www.darcywang.com/2017/03/07/react-0/"/>
+    <id>http://www.darcywang.com/2017/03/07/react-0/</id>
+    <published>2017-03-07T09:41:41.000Z</published>
+    <updated>2017-03-07T09:42:41.000Z</updated>
+    <content type="html"><![CDATA[<p>仅仅是试验一下啊</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>仅仅是试验一下啊</p>
+]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[聊聊CSS的Flexboxs吧]]></title>
@@ -65,7 +80,7 @@
     <link href="http://www.darcywang.com/2016/11/04/GRE-and-Toefl-0/"/>
     <id>http://www.darcywang.com/2016/11/04/GRE-and-Toefl-0/</id>
     <published>2016-11-04T11:44:42.000Z</published>
-    <updated>2016-11-09T03:14:38.270Z</updated>
+    <updated>2016-11-09T03:14:40.000Z</updated>
     <content type="html"><![CDATA[<p>已经很久没有开始写博客了，一直都没有时间维护。非常的蛋疼，现在我还没有把TOEFL考试完成，这个是非常让人头疼的</p>
 ]]></content>
     <summary type="html">
@@ -80,7 +95,7 @@
     <link href="http://www.darcywang.com/2016/06/17/React/"/>
     <id>http://www.darcywang.com/2016/06/17/React/</id>
     <published>2016-06-17T07:52:48.000Z</published>
-    <updated>2016-06-23T11:00:24.993Z</updated>
+    <updated>2016-06-23T11:00:26.000Z</updated>
     <content type="html"><![CDATA[<p>在开始任何项目时候，我们先需要列这样一个清单。你需要将代码压缩，捆绑打包，这就意味着你需要生成sourcemap来debug，当然你想自动化测试，想知道代码覆盖率，想检查JavaScript语法，不要忘了编译你的Sass或者是PostCSS中的toss。快速的重新加载是非常棒的，但，不要期望你们团队来手动处理这些，我们需要所有以上的优点只需要一行命令就能实现，而且每次Ctrl+s时都能重新运转。(此处应该有掌声…..)</p>
 <p>同时，这里似乎有着许多的的库、框架和模式来处理不一样的事情。选择第一</p>
 <p>是不是有一种被淹没的赶脚，我们现在正式步入JavaScript<a href="https://en.wikipedia.org/wiki/Decision_fatigue" target="_blank" rel="external">选择疲劳</a>时代</p>
@@ -112,7 +127,7 @@
     <link href="http://www.darcywang.com/2016/06/01/CSS3--%E6%B5%85%E6%9E%90REM/"/>
     <id>http://www.darcywang.com/2016/06/01/CSS3--浅析REM/</id>
     <published>2016-06-01T07:08:45.000Z</published>
-    <updated>2016-06-05T10:16:14.377Z</updated>
+    <updated>2016-06-05T10:16:16.000Z</updated>
     <content type="html"><![CDATA[<p>CSS开发中，时常会遇到em、rem、vh等等一些单位，在项目实践里却由于对它们的不熟悉以及不确定性而没有经常地的使用，今天有机会和大家一起认识其中的REM。</p>
 <h3 id="u521D_u8BC6_REM"><a href="#u521D_u8BC6_REM" class="headerlink" title="初识 REM"></a>初识 REM</h3><blockquote>
 <p>In Cascading Style Sheets, the em unit is the height of the font in nominal points or inches. The actual, physical height of any given portion of the font depends on the user-defined DPI setting, current element font-size, and the particular font being used.</p>
@@ -147,7 +162,7 @@
     <link href="http://www.darcywang.com/2016/05/25/H5%E4%B8%8E%E5%8E%9F%E7%94%9F%E4%BA%A4%E4%BA%92%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
     <id>http://www.darcywang.com/2016/05/25/H5与原生交互那点事儿/</id>
     <published>2016-05-25T04:22:26.000Z</published>
-    <updated>2016-06-06T02:37:35.503Z</updated>
+    <updated>2016-06-06T02:37:36.000Z</updated>
     <content type="html"><![CDATA[<p>聊一下关于H5、Android和iOS的交互。</p>
 <p>支付宝支付需要参数的传递，问题的解决<br>首先是iOS需要建立一个UIWebView，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#import "webview.h"</span></span><br><span class="line"><span class="comment">#import &lt;javascriptcore javascriptcore.h=""&gt;</span></span><br><span class="line">@implementation webview</span><br><span class="line"></span><br><span class="line">-(id)initWithFrame:(CGRect)frame</span><br><span class="line">&#123;</span><br><span class="line">    self=[super initWithFrame:frame];</span><br><span class="line">     </span><br><span class="line">    <span class="keyword">if</span>( self )&#123;</span><br><span class="line">        self.webview=[[UIWebView alloc]initWithFrame:CGRectMake(<span class="number">0</span>, <span class="number">310</span>, self.bounds.size.width, <span class="number">300</span>)];</span><br><span class="line">        self.webview.backgroundColor=[UIColor lightGrayColor];</span><br><span class="line">        NSString *htmlPath=[[NSBundle mainBundle] resourcePath];</span><br><span class="line">        htmlPath=[htmlPath stringByAppendingPathComponent:@<span class="string">"html/index.html"</span>];</span><br><span class="line">        NSURL *<span class="built_in">local</span>URL=[[NSURL alloc]initFileURLWithPath:htmlPath];</span><br><span class="line">        [self.webview loadRequest:[NSURLRequest requestWithURL:<span class="built_in">local</span>URL]];</span><br><span class="line">        [self addSubview:self.webview];</span><br><span class="line"> </span><br><span class="line">        JSContext *context = [self.webview valueForKeyPath:@<span class="string">"documentView.webView.mainFrame.javaScriptContext"</span>];</span><br><span class="line">        // 这个全是objective-c代码写的，下面会有详解</span><br><span class="line">        context[@<span class="string">"appointment"</span>] = ^() &#123;</span><br><span class="line">            NSLog(@<span class="string">"+++++++start Log+++++++"</span>);</span><br><span class="line">            NSArray *args = [JSContext currentArguments];</span><br><span class="line">            <span class="keyword">for</span> (JSValue *jsVal <span class="keyword">in</span> args) &#123;</span><br><span class="line">                NSLog(@<span class="string">"%@"</span>, jsVal);</span><br><span class="line">            &#125;</span><br><span class="line">            JSValue *this = [JSContext currentThis];</span><br><span class="line">            NSLog(@<span class="string">"this: %@"</span>,this);</span><br><span class="line">            NSLog(@<span class="string">"-------finish Log-------"</span>);</span><br><span class="line">        &#125;;    </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> self;</span><br><span class="line">&#125;</span><br><span class="line">@end&lt;/javascriptcore&gt;</span><br></pre></td></tr></table></figure></p>
 <p>前端想把支付宝的参数传给iOS，问题就出在iOS怎么能拿到前端传递过来的数据，javascript直接调用oc代码而非通过改变url回调方式，最重要的地方是和H5约定好执行函数的名称。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">context[@<span class="string">"appointment"</span>] = ^() &#123;</span><br><span class="line">    NSLog(@<span class="string">"-------Start Test-------"</span>);</span><br><span class="line">    NSArray *args = [JSContext currentArguments];</span><br><span class="line">    <span class="keyword">for</span> (JSValue *jsVal <span class="keyword">in</span> args) &#123;</span><br><span class="line">        NSLog(@<span class="string">"%@"</span>, jsVal);</span><br><span class="line">    &#125;</span><br><span class="line">    JSValue *this = [JSContext currentThis];</span><br><span class="line">    NSLog(@<span class="string">"-------Finish Test-------"</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
@@ -368,7 +383,7 @@
     <link href="http://www.darcywang.com/2015/12/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
     <id>http://www.darcywang.com/2015/12/22/移动端开发/</id>
     <published>2015-12-22T03:14:17.000Z</published>
-    <updated>2016-11-04T10:39:09.747Z</updated>
+    <updated>2016-11-04T10:39:10.000Z</updated>
     <content type="html"><![CDATA[<p>首先需要明确的是移动端开发是建立在PC端的基础上的。为什么这么说，最开始是笔记本的普及，随着技术的更新和迭代，配置一般的上网本价格都是大众消费能力以内，所以每个人都可以轻松的通过笔记本电脑阅读，购物。但就是最近几年，得益于国内某些”知名”手机制造商，让一部4英寸的智能机在1000元以内就能到手，所以可以想象的是国内智能手机普及是多么的吓人，更不用说潜在的群体学生和老人也加入到其中。</p>
 <p>从笔记本电脑到移动智能设备的过渡是如此之快，以至于商家有些猝不及防，自己的产品不仅能在PC端能很好地展示，相应的在手机上也是正常展示，这就催生了移动端开发。</p>
 <p>自己一开始就是做的移动端，所以对PC端开发不是那么的熟悉，不能很好的说出两者的区别和相似点，如果你有好的建议和意见可以在下面留言给我。</p>
@@ -525,42 +540,6 @@
 <p>敬请期待</p>
 ]]>
     </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[CSS 3]]></title>
-    <link href="http://www.darcywang.com/2015/12/17/CSS-3/"/>
-    <id>http://www.darcywang.com/2015/12/17/CSS-3/</id>
-    <published>2015-12-16T23:04:37.000Z</published>
-    <updated>2016-03-01T12:38:44.000Z</updated>
-    <content type="html"><![CDATA[<p>CSS3有非常多的新属性，特别是在移动端的使用，不仅能够加速CPU渲染效果，而且还能够省去一大堆的javascript。</p>
-<p>下面我会介绍一些CSS3的专业技巧，如果你需要考虑IE浏览器，那就请掠过此篇文章，因为这些特性只能兼容到IE11。</p>
-<h3 id="3Anot_28_29_u4F7F_u7528"><a href="#3Anot_28_29_u4F7F_u7528" class="headerlink" title=":not()使用"></a>:not()使用</h3><p>经常在布局导航栏或者多个div时，考虑到最后一个元素的border、margin什么之类<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* add border */</span></span><br><span class="line"><span class="class">.nav</span> <span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#666</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* remove border */</span></span><br><span class="line"><span class="class">.nav</span> <span class="tag">li</span><span class="pseudo">:last-child</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>但当你使用:not()伪类时，就可以应用到想作用的元素<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.nav</span> <span class="tag">li</span><span class="pseudo">:not(</span><span class="pseudo">:last-child)</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#666</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>当然你也可以使用.nav li + li，甚至是.nav li:first-child ~ li，但是:not()伪类字面意思清晰明了，当然符合现流行的语义化咯</p>
-<h3 id="Line-Height"><a href="#Line-Height" class="headerlink" title="Line-Height"></a>Line-Height</h3><p>你不必对每一个h标签，p标签分别添加line-height属性，相反的，你只需要在body上添加就可以了，因为文本元素会简简单单的继承这一属性。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">1</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="u795E_u9A6C_u90FD_u5782_u76F4_u5C45_u4E2D"><a href="#u795E_u9A6C_u90FD_u5782_u76F4_u5C45_u4E2D" class="headerlink" title="神马都垂直居中"></a>神马都垂直居中</h3><p>对，这不是变魔术，你真的可以垂直居中任何元素<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span>, <span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-align-items</span>:<span class="value"> center</span></span>;  </span><br><span class="line">  <span class="rule"><span class="attribute">-ms-flex-align</span>:<span class="value"> center</span></span>;  </span><br><span class="line">  <span class="rule"><span class="attribute">align-items</span>:<span class="value"> center</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> -webkit-flex</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> flex</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>还想让什么东西放在正中心么？垂直的、水平的，任何元素，任何时间，任何地点，请参考<a href="https://css-tricks.com/centering-css-complete-guide/" target="_blank" rel="external">牛人</a><br>注意在IE11下，flexbox可能有些<a href="https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items" target="_blank" rel="external">问题</a></p>
-<h3 id="nth-child_u53CD_u9009"><a href="#nth-child_u53CD_u9009" class="headerlink" title="nth-child反选"></a>nth-child反选</h3><p>通过使用-nth-child选择从1到n<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 选择前三个元素，让它们显示 */</span></span><br><span class="line"><span class="tag">li</span><span class="pseudo">:nth-child(-n+3)</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>或者你还可以这么做<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 同上 */</span></span><br><span class="line"><span class="tag">li</span><span class="pseudo">:not(</span><span class="pseudo">:nth-child(-n+3))</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="SVG_u6309_u94AE"><a href="#SVG_u6309_u94AE" class="headerlink" title="SVG按钮"></a>SVG按钮</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.logo</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">url</span>(<span class="string">"logo.svg"</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="comment">/* 当SVG没有加载出来时，用下面代码就行了 */</span></span><br><span class="line"><span class="class">.no-svg</span> <span class="class">.icon-only</span><span class="pseudo">:after</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="function">attr</span>(aria-label)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<h3 id="Lobotomized_Owl_u9009_u62E9_u5668"><a href="#Lobotomized_Owl_u9009_u62E9_u5668" class="headerlink" title="Lobotomized Owl选择器"></a>Lobotomized Owl选择器</h3><p>名字听起来怪怪的，但确实有很牛逼的兼容性。下面这段代码的效果是(b)，如果非常有兴趣，可以继续阅读<a href="http://alistapart.com/article/axiomatic-css-and-lobotomized-owls" target="_blank" rel="external">这哥们</a>写的<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* + * <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">1.5em</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p><img src="http://7xpb8g.com1.z0.glb.clouddn.com/owl_1.png?imageView2/2/w/300" alt=""></p>
-<h3 id="max-height_u6ED1_u52A8_u6548_u679C"><a href="#max-height_u6ED1_u52A8_u6548_u679C" class="headerlink" title="max-height滑动效果"></a>max-height滑动效果</h3><p>纯CSS实现滑动效果，通过使用max-height和overflow hidden<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.slider</span> <span class="tag">ul</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">max-height</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.slider</span><span class="pseudo">:hover</span> <span class="tag">ul</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">max-height</span>:<span class="value"> <span class="number">1000px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> .<span class="number">3s</span> ease</span></span>; <span class="comment">/* animate to max-height */</span></span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="box-sizing_u7EE7_u627F"><a href="#box-sizing_u7EE7_u627F" class="headerlink" title="box-sizing继承"></a>box-sizing继承</h3><p>让box-sizing充满整个页面吧！！！<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line">*, *<span class="pseudo">:before</span>, *<span class="pseudo">:after</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> inherit</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="u201C_u94FE_u63A5_u201D_u6837_u5F0F"><a href="#u201C_u94FE_u63A5_u201D_u6837_u5F0F" class="headerlink" title="“链接”样式"></a>“链接”样式</h3><p>给默认的a链接样式，有时生成a链接不带class属性，想操作它并且又不影响其它的兄弟链接<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">a</span><span class="attr_selector">[href]</span><span class="pseudo">:not(</span><span class="attr_selector">[class]</span>) <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#008000</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">text-decoration</span>:<span class="value"> underline</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>参考资源<br><a href="https://github.com/AllThingsSmitty/css-protips" target="_blank" rel="external">https://github.com/AllThingsSmitty/css-protips</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>CSS3有非常多的新属性，特别是在移动端的使用，不仅能够加速CPU渲染效果，而且还能够省去一大堆的javascript。</p>
-<p>下面我会介绍一些CSS3的专业技巧，如果你需要考虑IE浏览器，那就请掠过此篇文章，因为这些特性只能兼容到IE11。</p>
-<h3 id=]]>
-    </summary>
-    
-      <category term="CSS3" scheme="http://www.darcywang.com/tags/CSS3/"/>
-    
-      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
     
   </entry>
   
