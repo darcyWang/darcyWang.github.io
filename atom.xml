@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2017-03-02T12:35:49.168Z</updated>
+  <updated>2017-03-02T12:39:12.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.darcywang.com/2017/03/02/how-flexboxs-works/"/>
     <id>http://www.darcywang.com/2017/03/02/how-flexboxs-works/</id>
     <published>2017-03-02T08:09:03.000Z</published>
-    <updated>2017-03-02T12:35:49.168Z</updated>
+    <updated>2017-03-02T12:39:12.000Z</updated>
     <content type="html"><![CDATA[<p>随着各大浏览器开始支持CSS3的新属性，比如flexbox。flexbox号称可以将我们从css tricks里面解放出来，比如说垂直居中。当然，flexbox正朝着这个目标前进着，但首先是很好的使用它。在接下来的文章里面会用gif动图来解释布局，这样我们可以更好地理解和使用它。</p>
 <p>flexbox内置的规则可以让我们在整体布局更加的灵活跟直观，它让父容器来决定如何展示子类div，包括它们的大小以及相互的间距。听起来是不是很神奇，那就让我们来实操吧。</p>
 <p>在这篇文章中我们仔细讨论flexbox的5个常用属性以及属性值。</p>
@@ -53,6 +53,10 @@
     <summary type="html">
     <![CDATA[<p>随着各大浏览器开始支持CSS3的新属性，比如flexbox。flexbox号称可以将我们从css tricks里面解放出来，比如说垂直居中。当然，flexbox正朝着这个目标前进着，但首先是很好的使用它。在接下来的文章里面会用gif动图来解释布局，这样我们可以更好地理解和使]]>
     </summary>
+    
+      <category term="CSS3" scheme="http://www.darcywang.com/tags/CSS3/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
     
   </entry>
   
