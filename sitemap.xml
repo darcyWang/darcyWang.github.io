@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.darcywang.com/resume.html</loc>
+    <lastmod>2017-05-18T00:36:56.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.darcywang.com/2017/03/29/react-%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2017-03-29T03:43:01.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.darcywang.com/2017/03/16/vue-learning/</loc>
+    <lastmod>2017-03-16T02:50:23.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.darcywang.com/2017/03/07/react-0/</loc>
     <lastmod>2017-03-07T09:42:41.000Z</lastmod>
   </url>
@@ -39,11 +54,6 @@
   <url>
     <loc>http://www.darcywang.com/2016/06/01/CSS3--%E6%B5%85%E6%9E%90REM/</loc>
     <lastmod>2016-06-05T10:16:16.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.darcywang.com/resume.html</loc>
-    <lastmod>2016-04-23T14:07:30.000Z</lastmod>
   </url>
   
   <url>
