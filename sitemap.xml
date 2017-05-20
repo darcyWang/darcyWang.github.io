@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.darcywang.com/cv.html</loc>
+    <lastmod>2017-05-20T02:14:43.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.darcywang.com/resume.html</loc>
     <lastmod>2017-05-18T13:38:58.000Z</lastmod>
   </url>
@@ -29,11 +34,6 @@
   <url>
     <loc>http://www.darcywang.com/2016/06/01/CSS3--%E6%B5%85%E6%9E%90REM/</loc>
     <lastmod>2016-06-05T10:16:16.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.darcywang.com/cv.html</loc>
-    <lastmod>2016-04-23T14:05:30.000Z</lastmod>
   </url>
   
   <url>
