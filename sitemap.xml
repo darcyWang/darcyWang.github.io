@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.darcywang.com/2017/06/21/myapply/</loc>
+    <lastmod>2017-07-05T02:30:31.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.darcywang.com/2015/12/19/Zero-To-Hero/</loc>
     <lastmod>2017-07-05T02:19:50.000Z</lastmod>
   </url>
@@ -39,11 +44,6 @@
   <url>
     <loc>http://www.darcywang.com/2015/12/18/Python-and-Django/</loc>
     <lastmod>2017-07-05T02:17:41.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.darcywang.com/2017/06/21/myapply/</loc>
-    <lastmod>2017-07-05T02:17:16.000Z</lastmod>
   </url>
   
   <url>
