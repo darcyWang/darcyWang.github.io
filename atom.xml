@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2017-07-05T02:00:50.000Z</updated>
+  <updated>2017-07-05T02:17:16.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.darcywang.com/2017/06/21/myapply/"/>
     <id>http://www.darcywang.com/2017/06/21/myapply/</id>
     <published>2017-06-21T12:05:28.000Z</published>
-    <updated>2017-07-05T02:00:50.000Z</updated>
+    <updated>2017-07-05T02:17:16.000Z</updated>
     <content type="html"><![CDATA[<p>考完试后也有一段时间了，我也是该自己好好梳理一下接下来的东西. 未雨绸缪嘛</p>
 <p>这里先把自己准备考试的材料整理一下啊。</p>
 <p>从2016年后开始准备的，到17年5月把两个考试考完，分数都不是很高，但是对自己来说还是一次非常有意义的一段经历吧。现在回过头来看看，有什么地方是自己之前不需要走的弯路，我GRE考了一次，在北航考点，不得不说环境对考试真的很重要，这个考点还是非常不错的。TOEFL一共考了4次，从第一次的68分到最后的86分，妈的不得不说点子真的很低啊。每次考试都只是前进几分，直到最后一次才有个长进。</p>
@@ -399,7 +399,7 @@
     <link href="http://www.darcywang.com/2015/12/26/jQuery-Plugin/"/>
     <id>http://www.darcywang.com/2015/12/26/jQuery-Plugin/</id>
     <published>2015-12-26T13:56:27.000Z</published>
-    <updated>2016-01-25T13:31:16.000Z</updated>
+    <updated>2017-07-05T02:15:20.000Z</updated>
     <content type="html"><![CDATA[<p>jQuery插件对于80后的前端开发来说，实在是再熟悉不过了。在工作中的同事大部分还是80后，每次看到他们收集这些插件的时候就像是捡到宝一样，幸福满满。对于自己来说，用过的插件好像就是lazyload和validation，但是后来发现国外牛逼的人才早就写出更好更轻巧的js，完全可以忽略这些过时的插件。</p>
 <p>首先先说一下jquery.validate.js，这个曾经叱诧风云的第三方插件。现在可以取代的是<a href="http://parsleyjs.org/" target="_blank" rel="external">Parsley.js</a>，首先说的是大小问题，<a href="https://github.com/guillaumepotier/Parsley.js/blob/master/dist/parsley.min.js" target="_blank" rel="external">parsley.min.js</a>只有36kb大小，然后两个插件都对jQuery有依赖。最主要推荐的理由是github上parsley的点赞要比validate多。</p>
 <p>其次说一下关于jquery.lazyload.js，推荐的是<a href="http://callmecavs.github.io/layzr.js/" target="_blank" rel="external">layzr.js</a>，它只有<a href="https://github.com/callmecavs/layzr.js/blob/master/dist/layzr.min.js" target="_blank" rel="external">3kb</a>大小，最主要的是不依赖jQuery。用法也是非常的简单，可以<a href="https://github.com/callmecavs/layzr.js" target="_blank" rel="external">参照</a></p>
@@ -408,6 +408,10 @@
     <summary type="html">
     <![CDATA[<p>jQuery插件对于80后的前端开发来说，实在是再熟悉不过了。在工作中的同事大部分还是80后，每次看到他们收集这些插件的时候就像是捡到宝一样，幸福满满。对于自己来说，用过的插件好像就是lazyload和validation，但是后来发现国外牛逼的人才早就写出更好更轻巧的js]]>
     </summary>
+    
+      <category term="Javascript" scheme="http://www.darcywang.com/tags/Javascript/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
     
   </entry>
   
@@ -506,7 +510,7 @@
     <link href="http://www.darcywang.com/2015/12/19/Zero-To-Hero/"/>
     <id>http://www.darcywang.com/2015/12/19/Zero-To-Hero/</id>
     <published>2015-12-19T06:58:56.000Z</published>
-    <updated>2017-06-22T09:44:03.000Z</updated>
+    <updated>2017-07-05T02:19:50.000Z</updated>
     <content type="html"><![CDATA[<p>来来来，我们来说说的关于自己的技术成长历程吧</p>
 <p><a href="https://www.youtube.com/user/DevTipsForDesigners/playlists" target="_blank" rel="external">https://www.youtube.com/user/DevTipsForDesigners/playlists</a></p>
 <p><a href="https://www.youtube.com/user/learncodeacademy/playlists?sort=dd&amp;view=1" target="_blank" rel="external">https://www.youtube.com/user/learncodeacademy/playlists?sort=dd&amp;view=1</a></p>
@@ -517,6 +521,10 @@
 <p><a href="https://www.youtube.com/user/DevTipsForDesigners/playlists" target="_blank" rel="external">https:/]]>
     </summary>
     
+      <category term="life" scheme="http://www.darcywang.com/tags/life/"/>
+    
+      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
+    
   </entry>
   
   <entry>
@@ -524,15 +532,17 @@
     <link href="http://www.darcywang.com/2015/12/19/JS-learned/"/>
     <id>http://www.darcywang.com/2015/12/19/JS-learned/</id>
     <published>2015-12-19T06:55:27.000Z</published>
-    <updated>2016-03-10T08:38:34.000Z</updated>
-    <content type="html"><![CDATA[<p>持续更新中······· </p>
-<p>敬请期待</p>
+    <updated>2017-07-05T02:16:44.000Z</updated>
+    <content type="html"><![CDATA[<p>Javascript是一门非常容易上手的语言，但是想要使用的恰到好处，还是需要费点时间。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>持续更新中······· </p>
-<p>敬请期待</p>
+    <![CDATA[<p>Javascript是一门非常容易上手的语言，但是想要使用的恰到好处，还是需要费点时间。</p>
 ]]>
     </summary>
+    
+      <category term="Javascript" scheme="http://www.darcywang.com/tags/Javascript/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
     
   </entry>
   
@@ -575,15 +585,15 @@
     <link href="http://www.darcywang.com/2015/12/18/Python-and-Django/"/>
     <id>http://www.darcywang.com/2015/12/18/Python-and-Django/</id>
     <published>2015-12-18T01:41:02.000Z</published>
-    <updated>2016-03-10T08:38:40.000Z</updated>
-    <content type="html"><![CDATA[<p>持续更新中······· </p>
-<p>敬请期待</p>
-]]></content>
+    <updated>2017-07-05T02:17:41.000Z</updated>
+    <content type="html"></content>
     <summary type="html">
-    <![CDATA[<p>持续更新中······· </p>
-<p>敬请期待</p>
-]]>
+    
     </summary>
+    
+      <category term="Data" scheme="http://www.darcywang.com/tags/Data/"/>
+    
+      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
     
   </entry>
   
