@@ -148,7 +148,7 @@
     <link href="http://www.darcywang.com/2016/06/01/CSS3--%E6%B5%85%E6%9E%90REM/"/>
     <id>http://www.darcywang.com/2016/06/01/CSS3--浅析REM/</id>
     <published>2016-06-01T07:08:45.000Z</published>
-    <updated>2016-06-05T10:16:16.000Z</updated>
+    <updated>2017-07-05T02:05:29.000Z</updated>
     <content type="html"><![CDATA[<p>CSS开发中，时常会遇到em、rem、vh等等一些单位，在项目实践里却由于对它们的不熟悉以及不确定性而没有经常地的使用，今天有机会和大家一起认识其中的REM。</p>
 <h3 id="u521D_u8BC6_REM"><a href="#u521D_u8BC6_REM" class="headerlink" title="初识 REM"></a>初识 REM</h3><blockquote>
 <p>In Cascading Style Sheets, the em unit is the height of the font in nominal points or inches. The actual, physical height of any given portion of the font depends on the user-defined DPI setting, current element font-size, and the particular font being used.</p>
@@ -176,6 +176,8 @@
     
       <category term="CSS3" scheme="http://www.darcywang.com/tags/CSS3/"/>
     
+      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
+    
   </entry>
   
   <entry>
@@ -183,7 +185,7 @@
     <link href="http://www.darcywang.com/2016/05/25/H5%E4%B8%8E%E5%8E%9F%E7%94%9F%E4%BA%A4%E4%BA%92%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
     <id>http://www.darcywang.com/2016/05/25/H5与原生交互那点事儿/</id>
     <published>2016-05-25T04:22:26.000Z</published>
-    <updated>2016-06-06T02:37:36.000Z</updated>
+    <updated>2017-07-05T02:11:23.000Z</updated>
     <content type="html"><![CDATA[<p>聊一下关于H5、Android和iOS的交互。</p>
 <p>支付宝支付需要参数的传递，问题的解决<br>首先是iOS需要建立一个UIWebView，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#import "webview.h"</span></span><br><span class="line"><span class="comment">#import &lt;javascriptcore javascriptcore.h=""&gt;</span></span><br><span class="line">@implementation webview</span><br><span class="line"></span><br><span class="line">-(id)initWithFrame:(CGRect)frame</span><br><span class="line">&#123;</span><br><span class="line">    self=[super initWithFrame:frame];</span><br><span class="line">     </span><br><span class="line">    <span class="keyword">if</span>( self )&#123;</span><br><span class="line">        self.webview=[[UIWebView alloc]initWithFrame:CGRectMake(<span class="number">0</span>, <span class="number">310</span>, self.bounds.size.width, <span class="number">300</span>)];</span><br><span class="line">        self.webview.backgroundColor=[UIColor lightGrayColor];</span><br><span class="line">        NSString *htmlPath=[[NSBundle mainBundle] resourcePath];</span><br><span class="line">        htmlPath=[htmlPath stringByAppendingPathComponent:@<span class="string">"html/index.html"</span>];</span><br><span class="line">        NSURL *<span class="built_in">local</span>URL=[[NSURL alloc]initFileURLWithPath:htmlPath];</span><br><span class="line">        [self.webview loadRequest:[NSURLRequest requestWithURL:<span class="built_in">local</span>URL]];</span><br><span class="line">        [self addSubview:self.webview];</span><br><span class="line"> </span><br><span class="line">        JSContext *context = [self.webview valueForKeyPath:@<span class="string">"documentView.webView.mainFrame.javaScriptContext"</span>];</span><br><span class="line">        // 这个全是objective-c代码写的，下面会有详解</span><br><span class="line">        context[@<span class="string">"appointment"</span>] = ^() &#123;</span><br><span class="line">            NSLog(@<span class="string">"+++++++start Log+++++++"</span>);</span><br><span class="line">            NSArray *args = [JSContext currentArguments];</span><br><span class="line">            <span class="keyword">for</span> (JSValue *jsVal <span class="keyword">in</span> args) &#123;</span><br><span class="line">                NSLog(@<span class="string">"%@"</span>, jsVal);</span><br><span class="line">            &#125;</span><br><span class="line">            JSValue *this = [JSContext currentThis];</span><br><span class="line">            NSLog(@<span class="string">"this: %@"</span>,this);</span><br><span class="line">            NSLog(@<span class="string">"-------finish Log-------"</span>);</span><br><span class="line">        &#125;;    </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> self;</span><br><span class="line">&#125;</span><br><span class="line">@end&lt;/javascriptcore&gt;</span><br></pre></td></tr></table></figure></p>
 <p>前端想把支付宝的参数传给iOS，问题就出在iOS怎么能拿到前端传递过来的数据，javascript直接调用oc代码而非通过改变url回调方式，最重要的地方是和H5约定好执行函数的名称。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">context[@<span class="string">"appointment"</span>] = ^() &#123;</span><br><span class="line">    NSLog(@<span class="string">"-------Start Test-------"</span>);</span><br><span class="line">    NSArray *args = [JSContext currentArguments];</span><br><span class="line">    <span class="keyword">for</span> (JSValue *jsVal <span class="keyword">in</span> args) &#123;</span><br><span class="line">        NSLog(@<span class="string">"%@"</span>, jsVal);</span><br><span class="line">    &#125;</span><br><span class="line">    JSValue *this = [JSContext currentThis];</span><br><span class="line">    NSLog(@<span class="string">"-------Finish Test-------"</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
@@ -194,6 +196,10 @@
     <![CDATA[<p>聊一下关于H5、Android和iOS的交互。</p>
 <p>支付宝支付需要参数的传递，问题的解决<br>首先是iOS需要建立一个UIWebView，<br><figure class="highlight bash"><table><tr><td class="gutte]]>
     </summary>
+    
+      <category term="移动端" scheme="http://www.darcywang.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
     
   </entry>
   
@@ -305,7 +311,7 @@
     <link href="http://www.darcywang.com/2016/01/05/Front-end-%E6%8A%80%E8%83%BD%E6%A2%B3%E7%90%86/"/>
     <id>http://www.darcywang.com/2016/01/05/Front-end-技能梳理/</id>
     <published>2016-01-05T08:21:18.000Z</published>
-    <updated>2016-03-08T02:20:38.000Z</updated>
+    <updated>2017-07-05T02:10:44.000Z</updated>
     <content type="html"><![CDATA[<p>当今这个技术变幻莫测的年代，任何技术都有可能被迅速的替代甚至丢弃。</p>
 <p>这篇博客主要讲的前端体系中生态构建和HTML、CSS框架，如有不足，还请留言指正。</p>
 <h4 id="u751F_u6001_u5DE5_u5177"><a href="#u751F_u6001_u5DE5_u5177" class="headerlink" title="生态工具"></a>生态工具</h4><p>现在一般常用的grunt/gulp开发环境，都是需要建立在node环境里面。工程师们在github上会经常看到某一个很火的前端项目都会包含Gruntfile.j、gulpfile.js、bower.json其中一个或者是两个的。而且会提示下载后进入到项目目录里面进行npm install的指令。</p>
@@ -335,7 +341,9 @@
 <h4 id="u751F_u6001_u5DE5_u5177"><a href="#u751F_u]]>
     </summary>
     
-      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
+      <category term="fullstack" scheme="http://www.darcywang.com/tags/fullstack/"/>
+    
+      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
     
   </entry>
   
@@ -457,13 +465,17 @@
     <link href="http://www.darcywang.com/2015/12/21/Django-Advanced/"/>
     <id>http://www.darcywang.com/2015/12/21/Django-Advanced/</id>
     <published>2015-12-21T01:48:43.000Z</published>
-    <updated>2016-02-17T02:39:36.000Z</updated>
+    <updated>2017-07-05T02:08:50.000Z</updated>
     <content type="html"><![CDATA[<p>持续更新中······</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>持续更新中······</p>
 ]]>
     </summary>
+    
+      <category term="Data" scheme="http://www.darcywang.com/tags/Data/"/>
+    
+      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
     
   </entry>
   
@@ -472,7 +484,7 @@
     <link href="http://www.darcywang.com/2015/12/21/Django-Components/"/>
     <id>http://www.darcywang.com/2015/12/21/Django-Components/</id>
     <published>2015-12-21T01:46:05.000Z</published>
-    <updated>2016-03-09T07:58:40.000Z</updated>
+    <updated>2017-07-05T02:08:55.000Z</updated>
     <content type="html"><![CDATA[<p>Django的第三方组件也是非常丰富的，比如说Django rest framework，Gunicore等等之类，接下来会介绍几个自己常用的组件，希望能对你有所帮助。<br>你可以在这里查看所有的<a href="https://www.djangopackages.com/" target="_blank" rel="external">Django Package</a>，使用方法是在输入框中输入关键字，下面就会展现搜索结果，看Search Weight为100%，点击进去，然后在右边中间的Documentation。</p>
 <h3 id="django-rest-framework"><a href="#django-rest-framework" class="headerlink" title="django-rest-framework"></a>django-rest-framework</h3><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/reset.png?imageView2/2/h/400" alt=""><br>首当其冲介绍Django Rest Framework(DRF)是有原因的，现在前后端一般通过api进行交互，这是一个什么概念呢，如果能够DRF掌握好，那后台其实就差不多了。还是老样子，我们先去<a href="http://www.django-rest-framework.org/" target="_blank" rel="external">官方文档</a>上看看，把上面的quickstart和6个部分都过一遍。在这里就不重复造轮子了，不过可以<a href="https://gitcafe.com/darcywang/Django-rest-framework" target="_blank" rel="external">在这里</a>找到我之前做的代码，参考一下。<br>DRF有几个非常好的特性，对于resource，serializer，renderer/parser, view 和 response的定义很清晰，又很符合Django的MTV模式（比如，它的view就是包装了Django的View实现的）。对于认证和授权有很好的支持，内置了一系列的Mixin，可以随意组装。最终用它来构建简单的一站式API构架，并且做出复杂的ReST结构。其Serializer，可以把model映射到其对应的一般化表示（JSON, XML之类的），其基于类的视图的扩展集也正符合API接口（endpoint）的需要。Serializer和基于类的视图扩展的清晰的分离是其精妙之处。同时，你也可以自定义URL而无需依赖自动生成，这也是DRF和其他构架（比如Tastypie或者是Piston）不同的地方。这些框架model到API接口的转换基本上都是自动的，这也就造成了灵活性的降低，限制了其在不同情况的使用（尤其是在认证和嵌套资源(nested resources)方面。构建REST API的优秀框架，可管理内容协商、序列化、分页等，开发者可以在浏览器中浏览构建的API</p>
 <h3 id="django-debug-toolbar"><a href="#django-debug-toolbar" class="headerlink" title="django-debug-toolbar"></a>django-debug-toolbar</h3><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/toolbar.png?imageView2/2/h/400" alt=""><br>Django本身自带了非常友好的报错信息提示，但是如能加上<a href="https://django-debug-toolbar.readthedocs.org/en/1.4/installation.html" target="_blank" rel="external">django-debug-toolbar</a>，就好像剑圣配上一把短刀，武功更加无敌。看过《剑雨》的朋友都知道，里面最牛逼的武器是剑配上短刀。<a href="http://stackoverflow.com/questions/6390310/how-do-i-see-the-django-debug-toolbar" target="_blank" rel="external">安装配置</a>都非常简单，还需要提到一点，这个工具在SQL查询时特别有用，DDT可以查询到每个特定的页面渲染所需要的时间，</p>
@@ -529,7 +541,7 @@
     <link href="http://www.darcywang.com/2015/12/18/Django-for-Webapp/"/>
     <id>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</id>
     <published>2015-12-18T01:42:33.000Z</published>
-    <updated>2016-03-01T12:42:10.000Z</updated>
+    <updated>2017-07-05T02:09:08.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xr8la.com1.z0.glb.clouddn.com/djangoIcon.png?imageView2/2/h/400" alt=""></p>
 <p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一看名字Django Unchained，还真的是一样的啊。</p>
 <p>Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于<strong> Django 1.7 </strong>上的。重要的事情说3遍，看文档，看文档，看文档首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个<a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank" rel="external">web框架</a>, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不多咯。</p>
@@ -553,6 +565,8 @@
       <category term="Django" scheme="http://www.darcywang.com/tags/Django/"/>
     
       <category term="Python" scheme="http://www.darcywang.com/tags/Python/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
     
   </entry>
   
