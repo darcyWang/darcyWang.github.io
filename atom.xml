@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2017-09-09T05:16:51.000Z</updated>
+  <updated>2017-10-07T02:24:45.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -15,11 +15,200 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[sphinx语法小记]]></title>
+    <link href="http://www.darcywang.com/2017/10/07/sphinx/"/>
+    <id>http://www.darcywang.com/2017/10/07/sphinx/</id>
+    <published>2017-10-07T01:47:43.000Z</published>
+    <updated>2017-10-07T02:24:45.000Z</updated>
+    <content type="html"><![CDATA[<p>在刷LeetCode的时候，发现用博客来记录太麻烦，所以选择了Python的免费文档readthedocs来记录自己的刷题记录，博客还是用来记录自己的所学和感悟。</p>
+<p>第一次接触rst语法的时候还很不习惯，毕竟以前都是用Markdown来写文章，现在突然换一种方式还是有点措手不及，写过一阵子后发现也还行，现在在这里给大家分享一下自己的认识，也方便自己以后查阅。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">.. metadata-placeholder</span><br><span class="line"></span><br><span class="line">   :DC.Title: </span><br><span class="line">      Generic links to be available in all documents</span><br><span class="line">   :DC.Creator: </span><br><span class="line">      Nery, Fernanda</span><br><span class="line">   :DC.Language:</span><br><span class="line">      en</span><br><span class="line">   :DC.Format:</span><br><span class="line">      text/x-rst </span><br><span class="line">   :DC.Description</span><br><span class="line">      This is a partial file at::</span><br><span class="line">         /docs/source/On_Documentation/Z_GenericLinks.txt</span><br><span class="line">         </span><br><span class="line">      Link it to the master file at:: </span><br><span class="line">      </span><br><span class="line">         /docs/source/Z_SharedFiles/Z_GenericLinks.txt</span><br><span class="line">         </span><br><span class="line">      with the following directive::</span><br><span class="line">      </span><br><span class="line">         .. include:: ../On_Documentation/Z_GenericLinks.txt</span><br><span class="line">         </span><br><span class="line">.. links-placeholder</span><br><span class="line"></span><br><span class="line">.. _add Distribute and Pip to the Python installation: https://python-guide.readthedocs.org/en/latest/starting/install/win.html#distribute-pip</span><br><span class="line"></span><br><span class="line">.. _Sphinx's reStructuredText Primer: http://sphinx-doc.org/_sources/rest.txt</span><br><span class="line">.. _reStructuredText User Documentation: http://docutils.sourceforge.net/rst.html</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>Install rst2pdf</p>
+<ul>
+<li>use your package manager (or)</li>
+<li>pip install rst2pdf (or)</li>
+<li>easy_install rst2pdf</li>
+</ul>
+</li>
+<li><p>Add rst2pdf to the list of extensions in conf.py</p>
+</li>
+</ol>
+<p>extensions = [‘rst2pdf.pdfbuilder’]</p>
+<p>This list will be empty if you accepted the defaults when the project was setup. If not, just append ‘rst2pdf.pdfbuilder’ to the list.</p>
+<ol>
+<li><p>Add a pdf_documents variable to conf.py</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pdf_documents = [(<span class="string">'index'</span>, u<span class="string">'rst2pdf'</span>, u<span class="string">'Sample rst2pdf doc'</span>, u<span class="string">'Your Name'</span>),]</span><br><span class="line"><span class="comment"># index - master document</span></span><br><span class="line"><span class="comment"># rst2pdf - name of the generated pdf</span></span><br><span class="line"><span class="comment"># Sample rst2pdf doc - title of the pdf</span></span><br><span class="line"><span class="comment"># Your Name - author name in the pdf</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Generate pdf</p>
+</li>
+</ol>
+<p>sphinx-build -b pdf source build/pdf</p>
+<p>   The generated pdf will be in the build/pdf directory. </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在刷LeetCode的时候，发现用博客来记录太麻烦，所以选择了Python的免费文档readthedocs来记录自己的刷题记录，博客还是用来记录自己的所学和感悟。</p>
+<p>第一次接触rst语法的时候还很不习惯，毕竟以前都是用Markdown来写文章，现在突然换一种方式]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Python-string]]></title>
     <link href="http://www.darcywang.com/2017/09/09/Python-string/"/>
     <id>http://www.darcywang.com/2017/09/09/Python-string/</id>
     <published>2017-09-09T05:16:51.000Z</published>
-    <updated>2017-09-09T05:16:51.000Z</updated>
+    <updated>2017-09-09T06:06:09.000Z</updated>
+    <content type="html"><![CDATA[<p>在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。</p>
+<p>如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参考的文章链接在底部。</p>
+<h2 id="u521B_u5EFA_u5B57_u7B26_u4E32"><a href="#u521B_u5EFA_u5B57_u7B26_u4E32" class="headerlink" title="创建字符串"></a>创建字符串</h2><p>创建字符串是非常简单的，跟js差不多，但是也让我们来看一下几种不同的创建方式，有一点需要注意的是3个双引号或者单引号是可以创建多行字符创，类似于js中的``符号</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python string examples - all assignments are identical.</span></span><br><span class="line">String_var = <span class="string">'Python'</span></span><br><span class="line">String_var = <span class="string">"Python"</span></span><br><span class="line">String_var = <span class="string">"""Python"""</span></span><br><span class="line"><span class="comment"># with Triple quotes Strings can extend to multiple lines</span></span><br><span class="line">String_var = <span class="string">""" This document will help you to</span><br><span class="line">explore all the concepts</span><br><span class="line">of Python Strings!!! """</span></span><br><span class="line"><span class="comment"># Replace "document" with "tutorial" and store in another variable</span></span><br><span class="line">substr_var = String_var.replace(<span class="string">"document"</span>, <span class="string">"tutorial"</span>)</span><br><span class="line"><span class="keyword">print</span> (substr_var)</span><br></pre></td></tr></table></figure>
+<h2 id="u904D_u5386_u5B57_u7B26_u4E32_u4E2D_u7684_u6BCF_u4E2A_u5143_u7D20"><a href="#u904D_u5386_u5B57_u7B26_u4E32_u4E2D_u7684_u6BCF_u4E2A_u5143_u7D20" class="headerlink" title="遍历字符串中的每个元素"></a>遍历字符串中的每个元素</h2><p>Python对字符串不仅支持正向索引，还会支持反向索引，什么概念，看看下面的table就知道了</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Y</th>
+<th style="text-align:center">T</th>
+<th style="text-align:center">H</th>
+<th style="text-align:center">O</th>
+<th style="text-align:center">N</th>
+<th style="text-align:center">–</th>
+<th style="text-align:center">S</th>
+<th style="text-align:center">T</th>
+<th style="text-align:center">R</th>
+<th style="text-align:center">I</th>
+<th style="text-align:center">N</th>
+<th style="text-align:center">G</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:center">-13</td>
+<td style="text-align:center">-12</td>
+<td style="text-align:center">-11</td>
+<td style="text-align:center">-10</td>
+<td style="text-align:center">-9</td>
+<td style="text-align:center">-8</td>
+<td style="text-align:center">-7</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-4</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">'Python String'</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">0</span>])       <span class="comment"># 返回首字母</span></span><br><span class="line"><span class="comment"># output: P</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[-<span class="number">1</span>])      <span class="comment"># 返回最后一个字母</span></span><br><span class="line"><span class="comment"># output: g</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[-<span class="number">2</span>])      <span class="comment"># 返回倒数第二个字母</span></span><br><span class="line"><span class="comment"># output: n</span></span><br></pre></td></tr></table></figure>
+<p>为了截取字符串，我们会用到截取操作符，就是冒号，对，你没有听错。有一点需要注意的是[a,b]，实际返回的是索引a到所以b-1，所以是不包括下标b的。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">'Python String'</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">3</span>:<span class="number">5</span>])	    <span class="comment">#return a range of character</span></span><br><span class="line"><span class="comment"># ho</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">7</span>:])      <span class="comment"># return all characters from index 7</span></span><br><span class="line"><span class="comment"># String</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[:<span class="number">6</span>])      <span class="comment"># return all characters before index 6</span></span><br><span class="line"><span class="comment"># Python</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">7</span>:-<span class="number">4</span>])</span><br><span class="line"><span class="comment"># St</span></span><br></pre></td></tr></table></figure>
+<h2 id="u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32"><a href="#u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32" class="headerlink" title="修改/删除字符串"></a>修改/删除字符串</h2><h2 id="u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26" class="headerlink" title="字符串操作符"></a>字符串操作符</h2><h2 id="u5B57_u7B26_u4E32_u683C_u5F0F_u5316"><a href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316" class="headerlink" title="字符串格式化"></a>字符串格式化</h2><p>### </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。</p>
+<p>如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[The road to USA]]></title>
+    <link href="http://www.darcywang.com/2017/06/21/myapply/"/>
+    <id>http://www.darcywang.com/2017/06/21/myapply/</id>
+    <published>2017-06-21T12:05:28.000Z</published>
+    <updated>2017-10-07T02:30:21.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="u5907_u8003_u611F_u53D7"><a href="#u5907_u8003_u611F_u53D7" class="headerlink" title="备考感受"></a>备考感受</h3><p>学校申请告一段落了，借着换工作的空挡回过头来看看自己走过的路程。</p>
+<p>从2016年后上班开始着手准备，到17年5月把两个考试考完，GRE跟TOEFL的分数都不是很高，但是对申请的学校已经足够，并且这也是再一次证明牛逼的自己。整个备考过程是一次非常有意义的一段经历，现在回过头来看看，真的是跟拍AV一样，看的人很爽，做的人很辛苦啊。GRE一次过，在北航考点，不得不说环境对考试真的很重要，这个考点还是非常不错的。TOEFL一共考了4次，前3次每次提分3分，最后一次人品爆发，提了接近10分。</p>
+<p>首先讨论的是否需要考试培训，我的建议是你可以先去知乎上看看牛人的回答，然后根据自己的实际情况要不要参加，如果你不差钱，建议可以报班，主要原因是你可以在班上看到很多漂亮的妹子跟帅哥。对我来说，参加培训只是一种手段，如果它能给你提分，那么就是有用的，如果培训后的分数跟自己准备考试成绩只相差3分的话，培训确实没有什么卵用，事实是我花了3000元就提高了3分。培训其实就是老师陪考生一起备考的过程，有些老师很优秀，你能从他们身上学到很多正能量东西，可能对你以后的人生都有不小的影响。</p>
+<p>如果现在看到博客的你还是学生的话，有机会就去考一下。因为一旦你参加工作后在准备考试，这个过程还是蛮辛苦的，一边工作一边准备考试的感觉是非常爽的。</p>
+<h3 id="u6750_u6599_u5206_u4EAB"><a href="#u6750_u6599_u5206_u4EAB" class="headerlink" title="材料分享"></a>材料分享</h3><p>接下来是分享部分，如果你觉得有用，就请笑纳吧.</p>
+<h4 id="GRE_u90E8_u5206"><a href="#GRE_u90E8_u5206" class="headerlink" title="GRE部分"></a>GRE部分</h4><p>GRE分两部分考试，通俗点来说就是语文跟数学。语文的话你就不要抱太大希望，因为里面的单词你真的不认识，数学倒是可以有几分把握。很尼玛讽刺的是我在数学部分的第一道题就不会做，当时就想着是不是有问题啊。不过方法就是第一题不会做，那就绕开直接做第二题呗，对吧。最后数学分数还是考了160分。跟平时训练的分数差不多。</p>
+<p>阅读是一个量非常大的部分，不管你在国内的阅读有多牛逼，看看GRE的阅读你就知道之前阅读都是闹着玩的。</p>
+<p>推荐几个拓宽阅读部分的网站，有些可能需要翻墙浏览。</p>
+<ul>
+<li><a href="https://www.usnews.com/" target="_blank" rel="external">美国新闻</a></li>
+<li><a href="http://www.economist.com/" target="_blank" rel="external">经济学家</a></li>
+<li><a href="http://reason.com/" target="_blank" rel="external">Reason</a></li>
+<li><a href="https://www.theatlantic.com/world/" target="_blank" rel="external">Atlantic世界</a></li>
+<li><a href="http://www.newyorker.com/" target="_blank" rel="external">纽约客</a></li>
+<li><a href="https://www.foreignaffairs.com/" target="_blank" rel="external">Foreigna Affairs</a></li>
+<li><a href="http://www.huffingtonpost.com/" target="_blank" rel="external">赫芬顿邮报</a></li>
+</ul>
+<p>自己在准备考试的时候会结合听说读写</p>
+<ul>
+<li><a href="https://www.voanews.com/z/1447" target="_blank" rel="external">VOA</a>的一个妹纸Carol Castiel，说话声音非常好听</li>
+<li><a href="http://www.bbc.co.uk/radio/categories/news" target="_blank" rel="external">BBC</a>的也还是不错的，你有时间的话，可以尽量模仿里面的语音语调，可能对以后会有所帮助</li>
+</ul>
+<p>分析性写作分为两部分，一个叫<a href="https://www.ets.org/gre/revised_general/prepare/analytical_writing/issue/pool" target="_blank" rel="external">Issue</a>，另一个叫<a href="https://www.ets.org/gre/revised_general/prepare/analytical_writing/argument/pool" target="_blank" rel="external">Argument</a>，你可以在这里找到相应的题目，有时间可以多看看，反正多多益善嘛。</p>
+<p>词汇量部分的准备</p>
+<ul>
+<li><a href="https://quizlet.com/flios" target="_blank" rel="external">baby one</a></li>
+<li><a href="https://quizlet.com/sk1225" target="_blank" rel="external">baby two</a></li>
+<li><a href="https://quizlet.com/MatRush" target="_blank" rel="external">baby three</a></li>
+<li><a href="https://quizlet.com/Yaniqueleshae/folders/magoosh-gre/sets" target="_blank" rel="external">baby four</a></li>
+<li><a href="https://quizlet.com/omour001/folders/gre/sets" target="_blank" rel="external">baby five</a></li>
+<li><a href="https://quizlet.com/saurabh_saini" target="_blank" rel="external">baby six</a></li>
+<li><a href="https://quizlet.com/aviyou" target="_blank" rel="external">baby seven</a></li>
+<li><a href="https://quizlet.com/viviawang/folders/arjeshwar/sets" target="_blank" rel="external">baby eight</a></li>
+<li><a href="https://quizlet.com/JRaimondi" target="_blank" rel="external">baby nine</a></li>
+<li><a href="https://crunchprep.com/gre/2014/101-high-frequency-gre-words" target="_blank" rel="external">baby ten</a></li>
+<li><a href="https://quizlet.com/wynace" target="_blank" rel="external">再要你命3000</a></li>
+</ul>
+<h4 id="TOEFL_u90E8_u5206"><a href="#TOEFL_u90E8_u5206" class="headerlink" title="TOEFL部分"></a>TOEFL部分</h4><p>TOEFL 准备部分</p>
+<p>托福到我考试的时候又改版了，以前都是听力加试，而且加试的题目大家都可以在网上找得到。现在不需要找了，因为听力加试都不考经典了，而且很有可能是阅读加试，我碰到的阅读加试，一下就把我搞蒙蔽了，到听力部分完全就不行了，所以建议大家在准备时候一定要考虑到自己有可能连着做4篇阅读。备考时记得使用的app有 智课斩托福，还有<del>~</del>~</p>
+<ul>
+<li><a href="https://quizlet.com/Rossteacher03" target="_blank" rel="external">love baby</a></li>
+<li><a href="https://quizlet.com/nguyen_ndk" target="_blank" rel="external">love love baby</a></li>
+</ul>
+<h3 id="u5907_u8003_u5BC4_u8BED"><a href="#u5907_u8003_u5BC4_u8BED" class="headerlink" title="备考寄语"></a>备考寄语</h3><p>无论你参加了多少次的GRE和托福考试，只要考到了你自己要的分数，其他的都是浮云。无论工作还是考试，大家都只看结果，所以你就放开了去干，因为现在自己没有什么可以失去的，所以只需要专心把手头上的事情做好就行。最后祝即将参加考试的童鞋们考到好分数，旗开得胜。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="u5907_u8003_u611F_u53D7"><a href="#u5907_u8003_u611F_u53D7" class="headerlink" title="备考感受"></a>备考感受</h3><p>学校申请告一段落了，借着换工作的空挡回过头来看看]]>
+    </summary>
+    
+      <category term="exam" scheme="http://www.darcywang.com/tags/exam/"/>
+    
+      <category term="life" scheme="http://www.darcywang.com/tags/life/"/>
+    
+      <category term="TOEFL" scheme="http://www.darcywang.com/categories/TOEFL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[NodeJS]]></title>
+    <link href="http://www.darcywang.com/2017/05/25/NodeJS/"/>
+    <id>http://www.darcywang.com/2017/05/25/NodeJS/</id>
+    <published>2017-05-25T11:43:29.000Z</published>
+    <updated>2017-10-07T02:27:10.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[vue项目实战]]></title>
+    <link href="http://www.darcywang.com/2017/03/16/vue-learning/"/>
+    <id>http://www.darcywang.com/2017/03/16/vue-learning/</id>
+    <published>2017-03-16T02:50:23.000Z</published>
+    <updated>2017-10-07T02:26:54.000Z</updated>
     <content type="html"></content>
     <summary type="html">
     
@@ -68,6 +257,64 @@
     </summary>
     
       <category term="CSS3" scheme="http://www.darcywang.com/tags/CSS3/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[GRE and Toefl]]></title>
+    <link href="http://www.darcywang.com/2016/11/04/TOEFL/"/>
+    <id>http://www.darcywang.com/2016/11/04/TOEFL/</id>
+    <published>2016-11-04T11:44:42.000Z</published>
+    <updated>2017-10-07T02:30:11.000Z</updated>
+    <content type="html"><![CDATA[<p>从2016年9月24日到2017年5月13日，一共经历了四次考试。最开始的68分到86分，这个过程还是非常艰辛的。我在这里想分享自己的几点心得。</p>
+<ol>
+<li>参加考试的时候真的不要想太多，认真考试就行了。</li>
+<li>托福考试就是强奸与被强奸，你如果准备足够充分，那没问题，就直接把托福给上了。</li>
+<li>还有一些资料可以和大家分享一下</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>从2016年9月24日到2017年5月13日，一共经历了四次考试。最开始的68分到86分，这个过程还是非常艰辛的。我在这里想分享自己的几点心得。</p>
+<ol>
+<li>参加考试的时候真的不要想太多，认真考试就行了。</li>
+<li>托福考试就是强奸与被强奸，你如果准备]]>
+    </summary>
+    
+      <category term="Self-learning" scheme="http://www.darcywang.com/tags/Self-learning/"/>
+    
+      <category term="TOEFL" scheme="http://www.darcywang.com/categories/TOEFL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[前端开发之入门工具箱]]></title>
+    <link href="http://www.darcywang.com/2016/06/17/React/"/>
+    <id>http://www.darcywang.com/2016/06/17/React/</id>
+    <published>2016-06-17T07:52:48.000Z</published>
+    <updated>2017-10-07T02:30:34.000Z</updated>
+    <content type="html"><![CDATA[<p>在开始任何项目时候，我们先需要列这样一个清单。你需要将代码压缩，捆绑打包，这就意味着你需要生成sourcemap来debug，当然你想自动化测试，想知道代码覆盖率，想检查JavaScript语法，不要忘了编译你的Sass或者是PostCSS中的toss。快速的重新加载是非常棒的，但，不要期望你们团队来手动处理这些，我们需要所有以上的优点只需要一行命令就能实现，而且每次Ctrl+s时都能重新运转。(此处应该有掌声…..)</p>
+<p>同时，这里似乎有着许多的的库、框架和模式来处理不一样的事情。选择第一</p>
+<p>是不是有一种被淹没的赶脚，我们现在正式步入JavaScript<a href="https://en.wikipedia.org/wiki/Decision_fatigue" target="_blank" rel="external">选择疲劳</a>时代</p>
+<p>每次开始新的项目都会为了选择某一种打包工具，测试框架，组件库而头痛不已。</p>
+<p>参考我的解决办法： 常用工具箱</p>
+<p>为什么需要常用工具箱/模板/生成器？<br>一个项目的起始工具箱应该有着很多的目的</p>
+<ol>
+<li>一系列的决定、最佳实践以及踩过的坑整理后</li>
+<li>防止重要细节的疏漏</li>
+<li>推崇可一致性</li>
+<li>避免重复工作</li>
+<li>保证质量的前提下，正确的事情永远是自动化的</li>
+</ol>
+<p>现在有非常多的最佳实践文章，但对于每个人的实际情况是不同的。</p>
+<p>现在将介绍一下这个工具箱的由来，首先作者还是非常牛逼的，他自己看过很多的材料和经历过非常多的实际项目实践，</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在开始任何项目时候，我们先需要列这样一个清单。你需要将代码压缩，捆绑打包，这就意味着你需要生成sourcemap来debug，当然你想自动化测试，想知道代码覆盖率，想检查JavaScript语法，不要忘了编译你的Sass或者是PostCSS中的toss。快速的重新加载是非常]]>
+    </summary>
+    
+      <category term="React" scheme="http://www.darcywang.com/tags/React/"/>
     
       <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
     
@@ -430,168 +677,6 @@
     </summary>
     
       <category term="Django" scheme="http://www.darcywang.com/tags/Django/"/>
-    
-      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Zero To Hero]]></title>
-    <link href="http://www.darcywang.com/2015/12/19/Zero-To-Hero/"/>
-    <id>http://www.darcywang.com/2015/12/19/Zero-To-Hero/</id>
-    <published>2015-12-19T06:58:56.000Z</published>
-    <updated>2017-07-05T02:19:50.000Z</updated>
-    <content type="html"><![CDATA[<p>来来来，我们来说说的关于自己的技术成长历程吧</p>
-<p><a href="https://www.youtube.com/user/DevTipsForDesigners/playlists" target="_blank" rel="external">https://www.youtube.com/user/DevTipsForDesigners/playlists</a></p>
-<p><a href="https://www.youtube.com/user/learncodeacademy/playlists?sort=dd&amp;view=1" target="_blank" rel="external">https://www.youtube.com/user/learncodeacademy/playlists?sort=dd&amp;view=1</a></p>
-<p><a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/playlists" target="_blank" rel="external">https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/playlists</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>来来来，我们来说说的关于自己的技术成长历程吧</p>
-<p><a href="https://www.youtube.com/user/DevTipsForDesigners/playlists" target="_blank" rel="external">https:/]]>
-    </summary>
-    
-      <category term="life" scheme="http://www.darcywang.com/tags/life/"/>
-    
-      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[JS learned]]></title>
-    <link href="http://www.darcywang.com/2015/12/19/JS-learned/"/>
-    <id>http://www.darcywang.com/2015/12/19/JS-learned/</id>
-    <published>2015-12-19T06:55:27.000Z</published>
-    <updated>2017-07-05T02:16:44.000Z</updated>
-    <content type="html"><![CDATA[<p>Javascript是一门非常容易上手的语言，但是想要使用的恰到好处，还是需要费点时间。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Javascript是一门非常容易上手的语言，但是想要使用的恰到好处，还是需要费点时间。</p>
-]]>
-    </summary>
-    
-      <category term="Javascript" scheme="http://www.darcywang.com/tags/Javascript/"/>
-    
-      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Django for Webapp]]></title>
-    <link href="http://www.darcywang.com/2015/12/18/Django-for-Webapp/"/>
-    <id>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</id>
-    <published>2015-12-18T01:42:33.000Z</published>
-    <updated>2017-07-05T02:09:08.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xr8la.com1.z0.glb.clouddn.com/djangoIcon.png?imageView2/2/h/400" alt=""></p>
-<p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一看名字Django Unchained，还真的是一样的啊。</p>
-<p>Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于<strong> Django 1.7 </strong>上的。重要的事情说3遍，看文档，看文档，看文档首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个<a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank" rel="external">web框架</a>, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不多咯。</p>
-<p>OK，Let’s get our hands dirty。</p>
-<p>在最开始先说明自己是用的Linux系统，已经安装好了Python 2.7，<a href="https://docs.djangoproject.com/en/1.7/" target="_blank" rel="external">Django 1.7</a></p>
-<p>先介绍一个神奇的东西–<a href="https://virtualenv.readthedocs.org/en/latest/" target="_blank" rel="external">virtualenv</a>，它的作用是可以给你一个独立的开发环境。简单说一下，比如你用Django 1.7版本，然后你又想用Django 1.8版本试一下手，这个时候就是virtualenv的用武之地，它可以让你在电脑上建N多个开发环境，它们都互不干扰。安装也是非常简单<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ [sudo] pip install virtualenv</span><br></pre></td></tr></table></figure></p>
-<p>使用起来也是灰常简单，最先开始你得先给你的环境起一个非常有逼格的名字，记住是环境的名字。环境造好以后就是启动环境，接着就是造项目了，项目的名字可以和环境的名字一样，因为这样就可以让你搞不明白是什么意思，装逼一下啊。事实是无论你项目名字是什么，接下来都会把它修改为src。因为src文件名称在你脑海里面就有那么一种意思，对，就是那个作用。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ virtualenv YourProjectName</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> YourProjectName</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">source</span> bin/activate</span><br><span class="line"></span><br><span class="line">$ django-admin.py startproject YourProjectName</span><br></pre></td></tr></table></figure></p>
-<p>完成上面几个步骤以后有几点你需要注意的，启动环境以后你会看到$符号前面包含你环境名字的双括号，另外关闭环境就是deactivate，是不是非常easy。最后你看到的目录是 bin/ include/ lib/ src/<br>还有几点优化可以做，比如说可以添加一个start.sh文件，然后你就每次直接 . ./start。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span><br><span class="line"></span></span><br><span class="line"><span class="built_in">source</span> bin/activate</span><br><span class="line"><span class="built_in">cd</span> src</span><br></pre></td></tr></table></figure></p>
-<p>在以后的开发中会经常用到以下的命令行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ pip freeze 查看当前环境里面都安装了些什么东东</span><br><span class="line"></span><br><span class="line">$ python manage.py startapp NewAppName 安装新的App</span><br><span class="line"></span><br><span class="line">$ python manage.py runserver <span class="number">12344</span></span><br></pre></td></tr></table></figure></p>
-<p>现在可以放下手中的代码，一起来想想这个问题。当一个开发环境搭好，可以开始做项目了，需要注意什么，从什么地方开始呢？<br>当你用Django新创建好一个新项目的时候，它就自己带好了一个admin的模块。里面有4个python文件，<strong>init</strong>.py  settings.py  urls.py  wsgi.py，一个一个来分析一下。</p>
-<h4 id="init-py"><a href="#init-py" class="headerlink" title="<strong>init</strong>.py"></a><strong>init</strong>.py</h4><p>任何时候只要新建了一个app，就一定会带有这个文件。它的作用是相当于class中的def <strong>init</strong>(self):函数，用来初始化模块。并且把所在目录当作一个package处理，还有from-import 语句导入子包时需要用到它。 如果没有用到, 他们可以是空文件。就比如package.module下的所有模块from package.module import * </p>
-<h4 id="settings-py"><a href="#settings-py" class="headerlink" title="settings.py"></a>settings.py</h4><p>它是整个Django的核心文件，任何重要的配置都需要在这里面进行修改。但是记得不搞乱搞它哦</p>
-<h4 id="urls-py"><a href="#urls-py" class="headerlink" title="urls.py"></a>urls.py</h4><p>在Django中，每一个request都通过urls.py指向一个view。这种松散的耦合有着非常大的灵活性，但是需要注意的是设置路径</p>
-<h4 id="wsgi-py"><a href="#wsgi-py" class="headerlink" title="wsgi.py"></a>wsgi.py</h4><p>wsgi(Python Web Server Gateway Interface)服务器网关接口，是Python语言定义的web服务器和web服务程序或者框架之间的一种简单而通用的接口。说得简单一点，就是服务器配置的文件，你可以在这个<a href="http://epicserve-docs.readthedocs.org/en/latest/django/ubuntu-server-django-guide.html" target="_blank" rel="external">demo</a>里面用到它</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xr8la.com1.z0.glb.clouddn.com/djangoIcon.png?imageView2/2/h/400" alt=""></p>
-<p>刚刚开始接触Django时让我想到了一部电影<a href="http://m]]>
-    </summary>
-    
-      <category term="Django" scheme="http://www.darcywang.com/tags/Django/"/>
-    
-      <category term="Python" scheme="http://www.darcywang.com/tags/Python/"/>
-    
-      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Python and Django]]></title>
-    <link href="http://www.darcywang.com/2015/12/18/Python-and-Django/"/>
-    <id>http://www.darcywang.com/2015/12/18/Python-and-Django/</id>
-    <published>2015-12-18T01:41:02.000Z</published>
-    <updated>2017-07-05T02:17:41.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Data" scheme="http://www.darcywang.com/tags/Data/"/>
-    
-      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[CSS 3]]></title>
-    <link href="http://www.darcywang.com/2015/12/17/CSS-3/"/>
-    <id>http://www.darcywang.com/2015/12/17/CSS-3/</id>
-    <published>2015-12-16T23:04:37.000Z</published>
-    <updated>2016-03-01T12:38:44.000Z</updated>
-    <content type="html"><![CDATA[<p>CSS3有非常多的新属性，特别是在移动端的使用，不仅能够加速CPU渲染效果，而且还能够省去一大堆的javascript。</p>
-<p>下面我会介绍一些CSS3的专业技巧，如果你需要考虑IE浏览器，那就请掠过此篇文章，因为这些特性只能兼容到IE11。</p>
-<h3 id="3Anot_28_29_u4F7F_u7528"><a href="#3Anot_28_29_u4F7F_u7528" class="headerlink" title=":not()使用"></a>:not()使用</h3><p>经常在布局导航栏或者多个div时，考虑到最后一个元素的border、margin什么之类<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* add border */</span></span><br><span class="line"><span class="class">.nav</span> <span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#666</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* remove border */</span></span><br><span class="line"><span class="class">.nav</span> <span class="tag">li</span><span class="pseudo">:last-child</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>但当你使用:not()伪类时，就可以应用到想作用的元素<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.nav</span> <span class="tag">li</span><span class="pseudo">:not(</span><span class="pseudo">:last-child)</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">border-right</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#666</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>当然你也可以使用.nav li + li，甚至是.nav li:first-child ~ li，但是:not()伪类字面意思清晰明了，当然符合现流行的语义化咯</p>
-<h3 id="Line-Height"><a href="#Line-Height" class="headerlink" title="Line-Height"></a>Line-Height</h3><p>你不必对每一个h标签，p标签分别添加line-height属性，相反的，你只需要在body上添加就可以了，因为文本元素会简简单单的继承这一属性。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">1</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="u795E_u9A6C_u90FD_u5782_u76F4_u5C45_u4E2D"><a href="#u795E_u9A6C_u90FD_u5782_u76F4_u5C45_u4E2D" class="headerlink" title="神马都垂直居中"></a>神马都垂直居中</h3><p>对，这不是变魔术，你真的可以垂直居中任何元素<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span>, <span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-align-items</span>:<span class="value"> center</span></span>;  </span><br><span class="line">  <span class="rule"><span class="attribute">-ms-flex-align</span>:<span class="value"> center</span></span>;  </span><br><span class="line">  <span class="rule"><span class="attribute">align-items</span>:<span class="value"> center</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> -webkit-flex</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> flex</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>还想让什么东西放在正中心么？垂直的、水平的，任何元素，任何时间，任何地点，请参考<a href="https://css-tricks.com/centering-css-complete-guide/" target="_blank" rel="external">牛人</a><br>注意在IE11下，flexbox可能有些<a href="https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items" target="_blank" rel="external">问题</a></p>
-<h3 id="nth-child_u53CD_u9009"><a href="#nth-child_u53CD_u9009" class="headerlink" title="nth-child反选"></a>nth-child反选</h3><p>通过使用-nth-child选择从1到n<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 选择前三个元素，让它们显示 */</span></span><br><span class="line"><span class="tag">li</span><span class="pseudo">:nth-child(-n+3)</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>或者你还可以这么做<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 同上 */</span></span><br><span class="line"><span class="tag">li</span><span class="pseudo">:not(</span><span class="pseudo">:nth-child(-n+3))</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="SVG_u6309_u94AE"><a href="#SVG_u6309_u94AE" class="headerlink" title="SVG按钮"></a>SVG按钮</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.logo</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">url</span>(<span class="string">"logo.svg"</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="comment">/* 当SVG没有加载出来时，用下面代码就行了 */</span></span><br><span class="line"><span class="class">.no-svg</span> <span class="class">.icon-only</span><span class="pseudo">:after</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="function">attr</span>(aria-label)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<h3 id="Lobotomized_Owl_u9009_u62E9_u5668"><a href="#Lobotomized_Owl_u9009_u62E9_u5668" class="headerlink" title="Lobotomized Owl选择器"></a>Lobotomized Owl选择器</h3><p>名字听起来怪怪的，但确实有很牛逼的兼容性。下面这段代码的效果是(b)，如果非常有兴趣，可以继续阅读<a href="http://alistapart.com/article/axiomatic-css-and-lobotomized-owls" target="_blank" rel="external">这哥们</a>写的<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* + * <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">1.5em</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p><img src="http://7xpb8g.com1.z0.glb.clouddn.com/owl_1.png?imageView2/2/w/300" alt=""></p>
-<h3 id="max-height_u6ED1_u52A8_u6548_u679C"><a href="#max-height_u6ED1_u52A8_u6548_u679C" class="headerlink" title="max-height滑动效果"></a>max-height滑动效果</h3><p>纯CSS实现滑动效果，通过使用max-height和overflow hidden<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.slider</span> <span class="tag">ul</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">max-height</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.slider</span><span class="pseudo">:hover</span> <span class="tag">ul</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">max-height</span>:<span class="value"> <span class="number">1000px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">transition</span>:<span class="value"> .<span class="number">3s</span> ease</span></span>; <span class="comment">/* animate to max-height */</span></span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="box-sizing_u7EE7_u627F"><a href="#box-sizing_u7EE7_u627F" class="headerlink" title="box-sizing继承"></a>box-sizing继承</h3><p>让box-sizing充满整个页面吧！！！<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> border-box</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line">*, *<span class="pseudo">:before</span>, *<span class="pseudo">:after</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">box-sizing</span>:<span class="value"> inherit</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="u201C_u94FE_u63A5_u201D_u6837_u5F0F"><a href="#u201C_u94FE_u63A5_u201D_u6837_u5F0F" class="headerlink" title="“链接”样式"></a>“链接”样式</h3><p>给默认的a链接样式，有时生成a链接不带class属性，想操作它并且又不影响其它的兄弟链接<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">a</span><span class="attr_selector">[href]</span><span class="pseudo">:not(</span><span class="attr_selector">[class]</span>) <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#008000</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">text-decoration</span>:<span class="value"> underline</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>参考资源<br><a href="https://github.com/AllThingsSmitty/css-protips" target="_blank" rel="external">https://github.com/AllThingsSmitty/css-protips</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>CSS3有非常多的新属性，特别是在移动端的使用，不仅能够加速CPU渲染效果，而且还能够省去一大堆的javascript。</p>
-<p>下面我会介绍一些CSS3的专业技巧，如果你需要考虑IE浏览器，那就请掠过此篇文章，因为这些特性只能兼容到IE11。</p>
-<h3 id=]]>
-    </summary>
-    
-      <category term="CSS3" scheme="http://www.darcywang.com/tags/CSS3/"/>
-    
-      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[HTML 5]]></title>
-    <link href="http://www.darcywang.com/2015/12/17/HTML-5/"/>
-    <id>http://www.darcywang.com/2015/12/17/HTML-5/</id>
-    <published>2015-12-16T23:04:26.000Z</published>
-    <updated>2017-07-05T02:12:03.000Z</updated>
-    <content type="html"><![CDATA[<p>这篇文章主要讲的是HTML5的一些新特性和相应的探索。</p>
-<h3 id="HTML5_u8BED_u4E49_u5316"><a href="#HTML5_u8BED_u4E49_u5316" class="headerlink" title="HTML5语义化"></a>HTML5语义化</h3><p>不知道大家有没有这么一个习惯，在参加面试前会先提前查看相应公司的网站，如果他们家连官网都没有，那建议就不要去了。要么是太垃圾了，要么是这家公司非常需要你的帮助。</p>
-<p>打开网站首页，我会迫不及待的F12查看页面元素。如果当我看了所有的文本元素除了div还是div的话，我理所当然的认为逼格太TM low了，我不管你是不是markdown生成与否，首先这个网站的首页就能体现出公司的前端水平。</p>
-<p>新时代的HTML页面应该有nav，section，article等等新出现的标签，之所以会有这些标签，是因为他们都非常的语义化，不仅工程师能快速阅读，也更有利于SEO。如果你还需要考虑到神奇的IE，那就需要加上一个<a href="https://github.com/aFarkas/html5shiv" target="_blank" rel="external">html5.shiv.js</a>.</p>
-<h3 id="HTML5_u5B58_u50A8"><a href="#HTML5_u5B58_u50A8" class="headerlink" title="HTML5存储"></a>HTML5存储</h3><p>由于HTML4时代Cookie的大小、格式、存储数据格式等限制，网站应用如果想在浏览器端存储用户的部分信息，那么只能借助于Cookie。但是Cookie的限制较多，比如cookie最多只能有4k，每个网站只能存放30或者50个cookie，但是随着网站的复杂性升级，HTML5存储是大势所趋。HTML5通过JS的新的API就能直接存储大量的数据到客户端浏览器，而且支持复杂的本地数据库，让JS更有效率</p>
-<p>先说说cookie的一些用法吧<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 设置cookie</span><br><span class="line">$.cookie(<span class="string">"example"</span>, <span class="string">"foo"</span>); // Sample <span class="number">1</span></span><br><span class="line">$.cookie(<span class="string">"example"</span>, <span class="string">"foo"</span>, &#123; expires: <span class="number">7</span> &#125;); // Sample <span class="number">2</span></span><br><span class="line">$.cookie(<span class="string">"example"</span>, <span class="string">"foo"</span>, &#123; path: <span class="string">'/admin'</span>, expires: <span class="number">7</span> &#125;); // Sample <span class="number">3</span></span><br><span class="line">$.cookie(<span class="string">"basket-data"</span>, JSON.stringify($(<span class="string">"#ArticlesHolder"</span>).data()));</span><br><span class="line">// 获取cookie</span><br><span class="line">$.cookie(<span class="string">"example"</span>);</span><br><span class="line">$(<span class="string">"#ArticlesHolder"</span>).data(JSON.parse($.cookie(<span class="string">"basket-data"</span>)));</span><br><span class="line">// 删除cookie</span><br><span class="line">$.removeCookie(<span class="string">"example"</span>);</span><br></pre></td></tr></table></figure></p>
-<p>cookie普及的程度也是蛮高的，要完全的停用也是需要一段时间的。毕竟每一项技术都有它存在的理由吧，你可以在这里继续<a href="https://github.com/carhartl/jquery-cookie" target="_blank" rel="external">研究</a></p>
-<h4 id="u6C38_u4E45_u6027_u7684_u672C_u5730_u5B58_u50A8_uFF08localStorage_uFF09"><a href="#u6C38_u4E45_u6027_u7684_u672C_u5730_u5B58_u50A8_uFF08localStorage_uFF09" class="headerlink" title="永久性的本地存储（localStorage）"></a>永久性的本地存储（localStorage）</h4><p>localStorage是HTML5本地存储的API，使用键值对的方式进行存取数据，存取的数据只能是字符串。不同浏览器对该API支持情况有所差异，如使用方法、最大存储空间等。它可以长期存储数据，没有时间限制。<br>首先可以先检测一下浏览器的支持情况。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(!!<span class="built_in">window</span>.localStorage)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"bingo"</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"您的浏览器不支持localStorage特性，请更新您的浏览器!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> jsonObj = &#123;<span class="string">"id"</span>: <span class="number">123</span>, <span class="string">"name"</span>: <span class="string">"darcy"</span>, <span class="string">"attr"</span>: <span class="string">"hello"</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">setJson</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    localStorage.setItem(<span class="string">"json"</span>, <span class="built_in">JSON</span>.stringify(jsonObj));</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getJson</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> v = <span class="built_in">JSON</span>.parse(localStorage.getItem(<span class="string">"json"</span>));</span><br><span class="line">    <span class="built_in">console</span>.log(v);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">listAllData</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> list = [];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;localStorage.length; i++ )&#123;</span><br><span class="line">        <span class="keyword">var</span> key = localStorage.key(i);</span><br><span class="line">        <span class="keyword">var</span> value = localStorage.getItem(key);</span><br><span class="line"></span><br><span class="line">        list.push(&#123;<span class="string">"key"</span>:key, <span class="string">"value"</span>:value&#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> list;</span><br><span class="line">&#125;;</span><br><span class="line">showData();</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">showData</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> data = listAllData();</span><br><span class="line">    <span class="keyword">var</span> html = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;data.length; i++)&#123;</span><br><span class="line">        html += data[i].key + <span class="string">"="</span> + data[i].value + <span class="string">"&lt;button onclick=\"del('"</span>+ data[i].key +<span class="string">"')\"&gt;删除&lt;/button&gt;&lt;br /&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">document</span>.querySelector(<span class="string">"#div"</span>).innerHTML = html;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">del</span>(<span class="params">key</span>)</span>&#123;</span><br><span class="line">    localStorage.removeItem(key);</span><br><span class="line">    showData();</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> src = <span class="string">"Just-for-fun/images/tgl_check.png"</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">cacheExternalImage</span>(<span class="params">url</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> img = <span class="keyword">new</span> Image,</span><br><span class="line">    src = url,</span><br><span class="line">    cvs = <span class="built_in">document</span>.createElement(<span class="string">'canvas'</span>),</span><br><span class="line">    ctx = cvs.getContext(<span class="string">'2d'</span>);</span><br><span class="line">    img.crossOrigin = <span class="string">"Anonymous"</span>;</span><br><span class="line">    img.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="comment">//ctx.drawImage( img, 0, 0 );</span></span><br><span class="line">    &#125;</span><br><span class="line">    img.src = src;</span><br><span class="line">    <span class="keyword">if</span> ( img.complete || img.complete === <span class="literal">undefined</span> ) &#123;</span><br><span class="line">        img.src = <span class="string">"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="</span>;</span><br><span class="line">        img.src = src;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> img;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">set</span>(<span class="params">key</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> img = <span class="built_in">document</span>.createElement(<span class="string">"img"</span>);</span><br><span class="line">    <span class="comment">// img.crossOrigin = "Anonymous";</span></span><br><span class="line">    img.addEventListener(<span class="string">"load"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> imgCanvas = <span class="built_in">document</span>.createElement(<span class="string">"canvas"</span>),</span><br><span class="line">            imgContext = imgCanvas.getContext(<span class="string">"2d"</span>);</span><br><span class="line">        imgCanvas.width = <span class="keyword">this</span>.width;</span><br><span class="line">        imgCanvas.height = <span class="keyword">this</span>.height;</span><br><span class="line">        </span><br><span class="line">        imgContext.drawImage(<span class="keyword">this</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="keyword">this</span>.width, <span class="keyword">this</span>.height);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> imgAsDataURL = imgCanvas.toDataURL(<span class="string">"image/png"</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span>&#123;</span><br><span class="line">            localStorage.setItem(key, imgAsDataURL);</span><br><span class="line">        &#125;<span class="keyword">catch</span>(e)&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"Storage failed: "</span> + e)</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;, <span class="literal">false</span>);</span><br><span class="line">    img.src = src;</span><br><span class="line">    img.crossOrigin = <span class="string">"Anonymous"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">get</span>(<span class="params">key</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> srcStr = localStorage.getItem(key);</span><br><span class="line">    <span class="keyword">var</span> imgObj = <span class="built_in">document</span>.createElement(<span class="string">'img'</span>);</span><br><span class="line"></span><br><span class="line">    imgObj.src = srcStr;</span><br><span class="line">    <span class="built_in">document</span>.body.appendChild(imgObj);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="u4F1A_u8BDD_u7EA7_u522B_u7684_u672C_u5730_u5B58_u50A8_uFF08sessionStorage_uFF09"><a href="#u4F1A_u8BDD_u7EA7_u522B_u7684_u672C_u5730_u5B58_u50A8_uFF08sessionStorage_uFF09" class="headerlink" title="会话级别的本地存储（sessionStorage）"></a>会话级别的本地存储（sessionStorage）</h4><h4 id="u4F7F_u7528_u6CE8_u610F_u4E8B_u9879"><a href="#u4F7F_u7528_u6CE8_u610F_u4E8B_u9879" class="headerlink" title="使用注意事项"></a>使用注意事项</h4><ol>
-<li>不要存放敏感信息。</li>
-<li>选择合适的域存放合适的信息，比如一次过期的信息就放在sessionstorage中。</li>
-<li>对存放在其中的信息最好能够在服务端进行加密。</li>
-</ol>
-<p>参考资料<br><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage</a><br><a href="http://www.douban.com/note/510331750/" target="_blank" rel="external">http://www.douban.com/note/510331750/</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>这篇文章主要讲的是HTML5的一些新特性和相应的探索。</p>
-<h3 id="HTML5_u8BED_u4E49_u5316"><a href="#HTML5_u8BED_u4E49_u5316" class="headerlink" title="HTML5语义化"><]]>
-    </summary>
-    
-      <category term="HTML5" scheme="http://www.darcywang.com/tags/HTML5/"/>
     
       <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
     

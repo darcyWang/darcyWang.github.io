@@ -54,16 +54,22 @@
 
 
 
-<meta name="description" content="Stay Hungry Stay Foolish">
+<meta name="description" content="在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。
+如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参考的文章链接在底部。
+创建字符串创建字符串是非常简单的，跟js差不多，但是也让我们来看一下几种不同的创建方式，有一点需要注意的是3个双引号或">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python-string">
 <meta property="og:url" content="http://www.darcywang.com/2017/09/09/Python-string/index.html">
 <meta property="og:site_name" content="Mr' Darcy">
-<meta property="og:description" content="Stay Hungry Stay Foolish">
-<meta property="og:updated_time" content="2017-09-09T05:16:51.000Z">
+<meta property="og:description" content="在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。
+如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参考的文章链接在底部。
+创建字符串创建字符串是非常简单的，跟js差不多，但是也让我们来看一下几种不同的创建方式，有一点需要注意的是3个双引号或">
+<meta property="og:updated_time" content="2017-09-09T06:06:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python-string">
-<meta name="twitter:description" content="Stay Hungry Stay Foolish">
+<meta name="twitter:description" content="在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。
+如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参考的文章链接在底部。
+创建字符串创建字符串是非常简单的，跟js差不多，但是也让我们来看一下几种不同的创建方式，有一点需要注意的是3个双引号或">
 
 
 
@@ -292,7 +298,67 @@
       
 
       
-        <span itemprop="articleBody"></span>
+        <span itemprop="articleBody"><p>在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。</p>
+<p>如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参考的文章链接在底部。</p>
+<h2 id="u521B_u5EFA_u5B57_u7B26_u4E32"><a href="#u521B_u5EFA_u5B57_u7B26_u4E32" class="headerlink" title="创建字符串"></a>创建字符串</h2><p>创建字符串是非常简单的，跟js差不多，但是也让我们来看一下几种不同的创建方式，有一点需要注意的是3个双引号或者单引号是可以创建多行字符创，类似于js中的``符号</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python string examples - all assignments are identical.</span></span><br><span class="line">String_var = <span class="string">'Python'</span></span><br><span class="line">String_var = <span class="string">"Python"</span></span><br><span class="line">String_var = <span class="string">"""Python"""</span></span><br><span class="line"><span class="comment"># with Triple quotes Strings can extend to multiple lines</span></span><br><span class="line">String_var = <span class="string">""" This document will help you to</span><br><span class="line">explore all the concepts</span><br><span class="line">of Python Strings!!! """</span></span><br><span class="line"><span class="comment"># Replace "document" with "tutorial" and store in another variable</span></span><br><span class="line">substr_var = String_var.replace(<span class="string">"document"</span>, <span class="string">"tutorial"</span>)</span><br><span class="line"><span class="keyword">print</span> (substr_var)</span><br></pre></td></tr></table></figure>
+<h2 id="u904D_u5386_u5B57_u7B26_u4E32_u4E2D_u7684_u6BCF_u4E2A_u5143_u7D20"><a href="#u904D_u5386_u5B57_u7B26_u4E32_u4E2D_u7684_u6BCF_u4E2A_u5143_u7D20" class="headerlink" title="遍历字符串中的每个元素"></a>遍历字符串中的每个元素</h2><p>Python对字符串不仅支持正向索引，还会支持反向索引，什么概念，看看下面的table就知道了</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">P</th>
+<th style="text-align:center">Y</th>
+<th style="text-align:center">T</th>
+<th style="text-align:center">H</th>
+<th style="text-align:center">O</th>
+<th style="text-align:center">N</th>
+<th style="text-align:center">–</th>
+<th style="text-align:center">S</th>
+<th style="text-align:center">T</th>
+<th style="text-align:center">R</th>
+<th style="text-align:center">I</th>
+<th style="text-align:center">N</th>
+<th style="text-align:center">G</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:center">-13</td>
+<td style="text-align:center">-12</td>
+<td style="text-align:center">-11</td>
+<td style="text-align:center">-10</td>
+<td style="text-align:center">-9</td>
+<td style="text-align:center">-8</td>
+<td style="text-align:center">-7</td>
+<td style="text-align:center">-6</td>
+<td style="text-align:center">-5</td>
+<td style="text-align:center">-4</td>
+<td style="text-align:center">-3</td>
+<td style="text-align:center">-2</td>
+<td style="text-align:center">-1</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">'Python String'</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">0</span>])       <span class="comment"># 返回首字母</span></span><br><span class="line"><span class="comment"># output: P</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[-<span class="number">1</span>])      <span class="comment"># 返回最后一个字母</span></span><br><span class="line"><span class="comment"># output: g</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[-<span class="number">2</span>])      <span class="comment"># 返回倒数第二个字母</span></span><br><span class="line"><span class="comment"># output: n</span></span><br></pre></td></tr></table></figure>
+<p>为了截取字符串，我们会用到截取操作符，就是冒号，对，你没有听错。有一点需要注意的是[a,b]，实际返回的是索引a到所以b-1，所以是不包括下标b的。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">'Python String'</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">3</span>:<span class="number">5</span>])	    <span class="comment">#return a range of character</span></span><br><span class="line"><span class="comment"># ho</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">7</span>:])      <span class="comment"># return all characters from index 7</span></span><br><span class="line"><span class="comment"># String</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[:<span class="number">6</span>])      <span class="comment"># return all characters before index 6</span></span><br><span class="line"><span class="comment"># Python</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">7</span>:-<span class="number">4</span>])</span><br><span class="line"><span class="comment"># St</span></span><br></pre></td></tr></table></figure>
+<h2 id="u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32"><a href="#u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32" class="headerlink" title="修改/删除字符串"></a>修改/删除字符串</h2><h2 id="u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26" class="headerlink" title="字符串操作符"></a>字符串操作符</h2><h2 id="u5B57_u7B26_u4E32_u683C_u5F0F_u5316"><a href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316" class="headerlink" title="字符串格式化"></a>字符串格式化</h2><p>### </p>
+</span>
       
     </div>
 
@@ -303,13 +369,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/02/how-flexboxs-works/" rel="next" title="聊聊CSS的Flexboxs吧">
-                <i class="fa fa-chevron-left"></i> 聊聊CSS的Flexboxs吧
+              <a href="/2017/06/21/myapply/" rel="next" title="The road to USA">
+                <i class="fa fa-chevron-left"></i> The road to USA
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/07/sphinx/" rel="prev" title="sphinx语法小记">
+                sphinx语法小记 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -381,7 +451,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">42</span>
+              <span class="site-state-item-count">48</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -467,7 +537,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u521B_u5EFA_u5B57_u7B26_u4E32"><span class="nav-number">1.</span> <span class="nav-text">创建字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u904D_u5386_u5B57_u7B26_u4E32_u4E2D_u7684_u6BCF_u4E2A_u5143_u7D20"><span class="nav-number">2.</span> <span class="nav-text">遍历字符串中的每个元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32"><span class="nav-number">3.</span> <span class="nav-text">修改/删除字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26"><span class="nav-number">4.</span> <span class="nav-text">字符串操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316"><span class="nav-number">5.</span> <span class="nav-text">字符串格式化</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
