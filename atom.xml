@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2017-10-07T11:29:37.000Z</updated>
+  <updated>2017-10-11T06:03:09.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.darcywang.com/2017/10/07/sphinx/"/>
     <id>http://www.darcywang.com/2017/10/07/sphinx/</id>
     <published>2017-10-07T01:47:43.000Z</published>
-    <updated>2017-10-07T11:29:37.000Z</updated>
+    <updated>2017-10-11T06:03:09.000Z</updated>
     <content type="html"><![CDATA[<p>在刷LeetCode的时候，发现用博客来记录太麻烦，所以选择了Python的免费文档readthedocs来记录自己的刷题记录，博客还是用来记录自己的所学和感悟。</p>
 <p>第一次接触rst语法的时候还很不习惯，毕竟以前都是用Markdown来写文章，现在突然换一种方式还是有点措手不及，写过一阵子后发现也还行，现在在这里给大家分享一下自己的认识，也方便自己以后查阅。</p>
 <p>在写文档的时候，跟Markdown的来走，首先是标题的分级，Python的语法很奇怪，自己感觉最主要还是格式的要求，对于空格space是非常严格的</p>
@@ -28,6 +28,31 @@
 <figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.. attention::</span><br><span class="line">      不在于刷了多少题目，一定要理解每一次刷的题目</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">caution、danger、<span class="keyword">error</span>、hint、important、note、tip、<span class="keyword">warning</span>、admonition</span><br></pre></td></tr></table></figure>
 <p>需要说一下最后一个admonition的用法，这个就是属于自定义标签的感觉, 用法如下<br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">.. admonition::</span> 保爷语录</span><br><span class="line">    </span><br><span class="line">    <span class="number">10</span>不在于刷了多少题目，一定要理解每一次刷的题目</span><br><span class="line"></span><br><span class="line"><span class="label">.. admonition::</span> <span class="literal">And</span>, by the way...</span><br><span class="line"></span><br><span class="line">   You can make up your own admonition too.</span><br></pre></td></tr></table></figure></p>
 <p><img src="http://oxfndh7v0.bkt.clouddn.com/color.png?imageView2/1/q/75|imageslim" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>标记</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*emphasis*</td>
+<td>def</td>
+</tr>
+<tr>
+<td>**strong emphasis**</td>
+<td>def2</td>
+</tr>
+<tr>
+<td>`interpreted text`</td>
+<td>dsfsdf</td>
+</tr>
+<tr>
+<td>reference_</td>
+</tr>
+</tbody>
+</table>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">.. metadata-placeholder</span><br><span class="line"></span><br><span class="line">   :DC.Title: </span><br><span class="line">      Generic links to be available in all documents</span><br><span class="line">   :DC.Creator: </span><br><span class="line">      Nery, Fernanda</span><br><span class="line">   :DC.Language:</span><br><span class="line">      en</span><br><span class="line">   :DC.Format:</span><br><span class="line">      text/x-rst </span><br><span class="line">   :DC.Description</span><br><span class="line">      This is a partial file at::</span><br><span class="line">         /docs/source/On_Documentation/Z_GenericLinks.txt</span><br><span class="line">         </span><br><span class="line">      Link it to the master file at:: </span><br><span class="line">      </span><br><span class="line">         /docs/source/Z_SharedFiles/Z_GenericLinks.txt</span><br><span class="line">         </span><br><span class="line">      with the following directive::</span><br><span class="line">      </span><br><span class="line">         .. include:: ../On_Documentation/Z_GenericLinks.txt</span><br><span class="line">         </span><br><span class="line">.. links-placeholder</span><br><span class="line"></span><br><span class="line">.. _add Distribute and Pip to the Python installation: https://python-guide.readthedocs.org/en/latest/starting/install/win.html#distribute-pip</span><br><span class="line"></span><br><span class="line">.. _Sphinx's reStructuredText Primer: http://sphinx-doc.org/_sources/rest.txt</span><br><span class="line">.. _reStructuredText User Documentation: http://docutils.sourceforge.net/rst.html</span><br></pre></td></tr></table></figure>
 <p>用sphinx写好的文档可以转成pdf格式，以前不是说自己要写一本书么，现在就可以实现了，而且都是可以按照自己的风格来排版，到时候自己出钱就可以出书了，是不是感觉特别棒。</p>
 <ol>
@@ -49,7 +74,9 @@
 <li><p>Generate pdf<br>sphinx-build -b pdf source build/pdf<br>The generated pdf will be in the build/pdf directory. </p>
 </li>
 </ol>
+<p><a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html" target="_blank" rel="external">http://docutils.sourceforge.net/docs/ref/rst/directives.html</a></p>
 <p><a href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions" target="_blank" rel="external">http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions</a></p>
+<p><a href="https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst" target="_blank" rel="external">https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>在刷LeetCode的时候，发现用博客来记录太麻烦，所以选择了Python的免费文档readthedocs来记录自己的刷题记录，博客还是用来记录自己的所学和感悟。</p>
@@ -63,7 +90,7 @@
     <link href="http://www.darcywang.com/2017/09/09/Python-string/"/>
     <id>http://www.darcywang.com/2017/09/09/Python-string/</id>
     <published>2017-09-09T05:16:51.000Z</published>
-    <updated>2017-09-09T06:06:09.000Z</updated>
+    <updated>2017-10-18T09:24:20.000Z</updated>
     <content type="html"><![CDATA[<p>在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。</p>
 <p>如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参考的文章链接在底部。</p>
 <h2 id="u521B_u5EFA_u5B57_u7B26_u4E32"><a href="#u521B_u5EFA_u5B57_u7B26_u4E32" class="headerlink" title="创建字符串"></a>创建字符串</h2><p>创建字符串是非常简单的，跟js差不多，但是也让我们来看一下几种不同的创建方式，有一点需要注意的是3个双引号或者单引号是可以创建多行字符创，类似于js中的``符号</p>
@@ -123,8 +150,82 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">'Python String'</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">0</span>])       <span class="comment"># 返回首字母</span></span><br><span class="line"><span class="comment"># output: P</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[-<span class="number">1</span>])      <span class="comment"># 返回最后一个字母</span></span><br><span class="line"><span class="comment"># output: g</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[-<span class="number">2</span>])      <span class="comment"># 返回倒数第二个字母</span></span><br><span class="line"><span class="comment"># output: n</span></span><br></pre></td></tr></table></figure>
 <p>为了截取字符串，我们会用到截取操作符，就是冒号，对，你没有听错。有一点需要注意的是[a,b]，实际返回的是索引a到所以b-1，所以是不包括下标b的。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">'Python String'</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">3</span>:<span class="number">5</span>])	    <span class="comment">#return a range of character</span></span><br><span class="line"><span class="comment"># ho</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">7</span>:])      <span class="comment"># return all characters from index 7</span></span><br><span class="line"><span class="comment"># String</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[:<span class="number">6</span>])      <span class="comment"># return all characters before index 6</span></span><br><span class="line"><span class="comment"># Python</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">7</span>:-<span class="number">4</span>])</span><br><span class="line"><span class="comment"># St</span></span><br></pre></td></tr></table></figure>
-<h2 id="u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32"><a href="#u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32" class="headerlink" title="修改/删除字符串"></a>修改/删除字符串</h2><h2 id="u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26" class="headerlink" title="字符串操作符"></a>字符串操作符</h2><h2 id="u5B57_u7B26_u4E32_u683C_u5F0F_u5316"><a href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316" class="headerlink" title="字符串格式化"></a>字符串格式化</h2><p>### </p>
-]]></content>
+<h3 id="u7406_u89E3_u975E_u6CD5_u5B57_u7B26_u4E32_u4F7F_u7528_u53CA_u62A5_u9519_u63D0_u793A"><a href="#u7406_u89E3_u975E_u6CD5_u5B57_u7B26_u4E32_u4F7F_u7528_u53CA_u62A5_u9519_u63D0_u793A" class="headerlink" title="理解非法字符串使用及报错提示"></a>理解非法字符串使用及报错提示</h3><p>索引值不能大于字符串的长度</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">"Python Supports Machine Learning."</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">1024</span>])      <span class="comment">#index must be in range</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># IndexError: string index out of range</span></span><br></pre></td></tr></table></figure>
+<p>索引必须是整数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">"Welcome post"</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">1.25</span>])      <span class="comment">#index must be an integer</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># TypeError: string indices must be integers</span></span><br></pre></td></tr></table></figure>
+<h2 id="u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32"><a href="#u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32" class="headerlink" title="修改/删除字符串"></a>修改/删除字符串</h2><p>Python字符串设计是不可变的，意思是你不能修改字符串的内容，但是可以通过重新赋值来改变字符串的值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">'Python String'</span></span><br><span class="line">sample_str[<span class="number">2</span>] = <span class="string">'a'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># TypeError: 'str' object does not support item assignment</span></span><br><span class="line"></span><br><span class="line">sample_str = <span class="string">'Programming String'</span></span><br><span class="line"><span class="keyword">print</span> (sample_str)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Output=&gt; Programming String</span></span><br></pre></td></tr></table></figure>
+<p>同样，我们也不能删除字符串的某些内容</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">"Python is the best scripting language."</span></span><br><span class="line"><span class="keyword">del</span> sample_str[<span class="number">1</span>]</span><br><span class="line"><span class="comment"># TypeError: 'str' object doesn't support item deletion</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> sample_str</span><br><span class="line"><span class="keyword">print</span> (sample_str)</span><br><span class="line"><span class="comment"># NameError: name 'sample_str' is not defined</span></span><br></pre></td></tr></table></figure>
+<h2 id="u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26" class="headerlink" title="字符串操作符"></a>字符串操作符</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">操作符</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">描述</th>
+<th style="text-align:left">示例代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">+</td>
+<td style="text-align:center">合并</td>
+<td style="text-align:center">将两个字符串合并为一个</td>
+<td style="text-align:left">var1 = ‘Python’<br>var2 = ‘String’<br>print (var1+var2)<br># PythonString</td>
+</tr>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:center">重复</td>
+<td style="text-align:center">将字符串重复N遍</td>
+<td style="text-align:left">var1 = ‘Python’<br>print (var1*3)<br># PythonPythonPython</td>
+</tr>
+<tr>
+<td style="text-align:center">[ ]</td>
+<td style="text-align:center">裁切</td>
+<td style="text-align:center">打印某一个裁切的元素</td>
+<td style="text-align:left">var1 = ‘Python’<br>print (var1[2])<br># t</td>
+</tr>
+<tr>
+<td style="text-align:center">[ : ]</td>
+<td style="text-align:center">范围裁切</td>
+<td style="text-align:center">打印某一串裁切的元素</td>
+<td style="text-align:left">var1 = ‘Python’<br>print (var1[2:5])<br># tho</td>
+</tr>
+<tr>
+<td style="text-align:center">in</td>
+<td style="text-align:center">包含关系</td>
+<td style="text-align:center">判断字符串是否包含所给元素, 类似于js的indexof</td>
+<td style="text-align:left">var1 = ‘Python’<br>print (‘n’ in var1)<br># True</td>
+</tr>
+<tr>
+<td style="text-align:center">not in</td>
+<td style="text-align:center">包含关系</td>
+<td style="text-align:center">判断字符串是否包含所给元素</td>
+<td style="text-align:left">var1 = ‘Python’<br>print (‘N’ not in var1)<br># True</td>
+</tr>
+<tr>
+<td style="text-align:center">for</td>
+<td style="text-align:center">循环</td>
+<td style="text-align:center">熟悉的for循环啦</td>
+<td style="text-align:left">var1 = ‘Python’<br>for var in var1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (var)<br># P<br># y<br># t<br># h<br># o<br># n</td>
+</tr>
+<tr>
+<td style="text-align:center">r/R</td>
+<td style="text-align:center">原生字符串标识</td>
+<td style="text-align:center">在字符串前面加这样一个标识，字符串里面的反斜杠就不会被转义</td>
+<td style="text-align:left">print (r’\n’)<br># \n<br>print (R’\n’)<br># \n</td>
+</tr>
+</tbody>
+</table>
+<!-- | [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           | -->
+<h2 id="u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26" class="headerlink" title="字符串格式化操作符"></a>字符串格式化操作符</h2><h2 id="u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301"><a href="#u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301" class="headerlink" title="统一码字符串的支持"></a>统一码字符串的支持</h2><h2 id="Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570"><a href="#Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570" class="headerlink" title="Python内置字符串操作函数"></a>Python内置字符串操作函数</h2><h3 id="u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570" class="headerlink" title="字符串转换函数"></a>字符串转换函数</h3><h3 id="u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570" class="headerlink" title="字符串对比函数"></a>字符串对比函数</h3>]]></content>
     <summary type="html">
     <![CDATA[<p>在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。</p>
 <p>如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参]]>

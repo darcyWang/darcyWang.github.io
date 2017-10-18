@@ -64,7 +64,7 @@
 <meta property="og:description" content="在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。
 如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参考的文章链接在底部。
 创建字符串创建字符串是非常简单的，跟js差不多，但是也让我们来看一下几种不同的创建方式，有一点需要注意的是3个双引号或">
-<meta property="og:updated_time" content="2017-09-09T06:06:09.000Z">
+<meta property="og:updated_time" content="2017-10-18T09:24:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python-string">
 <meta name="twitter:description" content="在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。
@@ -357,8 +357,82 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">'Python String'</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">0</span>])       <span class="comment"># 返回首字母</span></span><br><span class="line"><span class="comment"># output: P</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[-<span class="number">1</span>])      <span class="comment"># 返回最后一个字母</span></span><br><span class="line"><span class="comment"># output: g</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[-<span class="number">2</span>])      <span class="comment"># 返回倒数第二个字母</span></span><br><span class="line"><span class="comment"># output: n</span></span><br></pre></td></tr></table></figure>
 <p>为了截取字符串，我们会用到截取操作符，就是冒号，对，你没有听错。有一点需要注意的是[a,b]，实际返回的是索引a到所以b-1，所以是不包括下标b的。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">'Python String'</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">3</span>:<span class="number">5</span>])	    <span class="comment">#return a range of character</span></span><br><span class="line"><span class="comment"># ho</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">7</span>:])      <span class="comment"># return all characters from index 7</span></span><br><span class="line"><span class="comment"># String</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[:<span class="number">6</span>])      <span class="comment"># return all characters before index 6</span></span><br><span class="line"><span class="comment"># Python</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">7</span>:-<span class="number">4</span>])</span><br><span class="line"><span class="comment"># St</span></span><br></pre></td></tr></table></figure>
-<h2 id="u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32"><a href="#u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32" class="headerlink" title="修改/删除字符串"></a>修改/删除字符串</h2><h2 id="u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26" class="headerlink" title="字符串操作符"></a>字符串操作符</h2><h2 id="u5B57_u7B26_u4E32_u683C_u5F0F_u5316"><a href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316" class="headerlink" title="字符串格式化"></a>字符串格式化</h2><p>### </p>
-</span>
+<h3 id="u7406_u89E3_u975E_u6CD5_u5B57_u7B26_u4E32_u4F7F_u7528_u53CA_u62A5_u9519_u63D0_u793A"><a href="#u7406_u89E3_u975E_u6CD5_u5B57_u7B26_u4E32_u4F7F_u7528_u53CA_u62A5_u9519_u63D0_u793A" class="headerlink" title="理解非法字符串使用及报错提示"></a>理解非法字符串使用及报错提示</h3><p>索引值不能大于字符串的长度</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">"Python Supports Machine Learning."</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">1024</span>])      <span class="comment">#index must be in range</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># IndexError: string index out of range</span></span><br></pre></td></tr></table></figure>
+<p>索引必须是整数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">"Welcome post"</span></span><br><span class="line"><span class="keyword">print</span> (sample_str[<span class="number">1.25</span>])      <span class="comment">#index must be an integer</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># TypeError: string indices must be integers</span></span><br></pre></td></tr></table></figure>
+<h2 id="u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32"><a href="#u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32" class="headerlink" title="修改/删除字符串"></a>修改/删除字符串</h2><p>Python字符串设计是不可变的，意思是你不能修改字符串的内容，但是可以通过重新赋值来改变字符串的值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">'Python String'</span></span><br><span class="line">sample_str[<span class="number">2</span>] = <span class="string">'a'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># TypeError: 'str' object does not support item assignment</span></span><br><span class="line"></span><br><span class="line">sample_str = <span class="string">'Programming String'</span></span><br><span class="line"><span class="keyword">print</span> (sample_str)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Output=&gt; Programming String</span></span><br></pre></td></tr></table></figure>
+<p>同样，我们也不能删除字符串的某些内容</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sample_str = <span class="string">"Python is the best scripting language."</span></span><br><span class="line"><span class="keyword">del</span> sample_str[<span class="number">1</span>]</span><br><span class="line"><span class="comment"># TypeError: 'str' object doesn't support item deletion</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> sample_str</span><br><span class="line"><span class="keyword">print</span> (sample_str)</span><br><span class="line"><span class="comment"># NameError: name 'sample_str' is not defined</span></span><br></pre></td></tr></table></figure>
+<h2 id="u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26" class="headerlink" title="字符串操作符"></a>字符串操作符</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">操作符</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">描述</th>
+<th style="text-align:left">示例代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">+</td>
+<td style="text-align:center">合并</td>
+<td style="text-align:center">将两个字符串合并为一个</td>
+<td style="text-align:left">var1 = ‘Python’<br>var2 = ‘String’<br>print (var1+var2)<br># PythonString</td>
+</tr>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:center">重复</td>
+<td style="text-align:center">将字符串重复N遍</td>
+<td style="text-align:left">var1 = ‘Python’<br>print (var1*3)<br># PythonPythonPython</td>
+</tr>
+<tr>
+<td style="text-align:center">[ ]</td>
+<td style="text-align:center">裁切</td>
+<td style="text-align:center">打印某一个裁切的元素</td>
+<td style="text-align:left">var1 = ‘Python’<br>print (var1[2])<br># t</td>
+</tr>
+<tr>
+<td style="text-align:center">[ : ]</td>
+<td style="text-align:center">范围裁切</td>
+<td style="text-align:center">打印某一串裁切的元素</td>
+<td style="text-align:left">var1 = ‘Python’<br>print (var1[2:5])<br># tho</td>
+</tr>
+<tr>
+<td style="text-align:center">in</td>
+<td style="text-align:center">包含关系</td>
+<td style="text-align:center">判断字符串是否包含所给元素, 类似于js的indexof</td>
+<td style="text-align:left">var1 = ‘Python’<br>print (‘n’ in var1)<br># True</td>
+</tr>
+<tr>
+<td style="text-align:center">not in</td>
+<td style="text-align:center">包含关系</td>
+<td style="text-align:center">判断字符串是否包含所给元素</td>
+<td style="text-align:left">var1 = ‘Python’<br>print (‘N’ not in var1)<br># True</td>
+</tr>
+<tr>
+<td style="text-align:center">for</td>
+<td style="text-align:center">循环</td>
+<td style="text-align:center">熟悉的for循环啦</td>
+<td style="text-align:left">var1 = ‘Python’<br>for var in var1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (var)<br># P<br># y<br># t<br># h<br># o<br># n</td>
+</tr>
+<tr>
+<td style="text-align:center">r/R</td>
+<td style="text-align:center">原生字符串标识</td>
+<td style="text-align:center">在字符串前面加这样一个标识，字符串里面的反斜杠就不会被转义</td>
+<td style="text-align:left">print (r’\n’)<br># \n<br>print (R’\n’)<br># \n</td>
+</tr>
+</tbody>
+</table>
+<!-- | [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           |
+| [ ] | are neat      |    $1 |           | -->
+<h2 id="u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26" class="headerlink" title="字符串格式化操作符"></a>字符串格式化操作符</h2><h2 id="u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301"><a href="#u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301" class="headerlink" title="统一码字符串的支持"></a>统一码字符串的支持</h2><h2 id="Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570"><a href="#Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570" class="headerlink" title="Python内置字符串操作函数"></a>Python内置字符串操作函数</h2><h3 id="u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570" class="headerlink" title="字符串转换函数"></a>字符串转换函数</h3><h3 id="u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570" class="headerlink" title="字符串对比函数"></a>字符串对比函数</h3></span>
       
     </div>
 
@@ -537,7 +611,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u521B_u5EFA_u5B57_u7B26_u4E32"><span class="nav-number">1.</span> <span class="nav-text">创建字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u904D_u5386_u5B57_u7B26_u4E32_u4E2D_u7684_u6BCF_u4E2A_u5143_u7D20"><span class="nav-number">2.</span> <span class="nav-text">遍历字符串中的每个元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32"><span class="nav-number">3.</span> <span class="nav-text">修改/删除字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26"><span class="nav-number">4.</span> <span class="nav-text">字符串操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316"><span class="nav-number">5.</span> <span class="nav-text">字符串格式化</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u521B_u5EFA_u5B57_u7B26_u4E32"><span class="nav-number">1.</span> <span class="nav-text">创建字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u904D_u5386_u5B57_u7B26_u4E32_u4E2D_u7684_u6BCF_u4E2A_u5143_u7D20"><span class="nav-number">2.</span> <span class="nav-text">遍历字符串中的每个元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7406_u89E3_u975E_u6CD5_u5B57_u7B26_u4E32_u4F7F_u7528_u53CA_u62A5_u9519_u63D0_u793A"><span class="nav-number">2.1.</span> <span class="nav-text">理解非法字符串使用及报错提示</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4FEE_u6539/_u5220_u9664_u5B57_u7B26_u4E32"><span class="nav-number">3.</span> <span class="nav-text">修改/删除字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B57_u7B26_u4E32_u64CD_u4F5C_u7B26"><span class="nav-number">4.</span> <span class="nav-text">字符串操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26"><span class="nav-number">5.</span> <span class="nav-text">字符串格式化操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301"><span class="nav-number">6.</span> <span class="nav-text">统一码字符串的支持</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570"><span class="nav-number">7.</span> <span class="nav-text">Python内置字符串操作函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570"><span class="nav-number">7.1.</span> <span class="nav-text">字符串转换函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570"><span class="nav-number">7.2.</span> <span class="nav-text">字符串对比函数</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
