@@ -64,7 +64,7 @@
 <meta property="og:description" content="在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。
 如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参考的文章链接在底部。
 创建字符串创建字符串是非常简单的，跟js差不多，但是也让我们来看一下几种不同的创建方式，有一点需要注意的是3个双引号或">
-<meta property="og:updated_time" content="2017-10-18T09:24:20.000Z">
+<meta property="og:updated_time" content="2017-10-25T09:59:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python-string">
 <meta name="twitter:description" content="在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。
@@ -432,7 +432,78 @@
 | [ ] | are neat      |    $1 |           |
 | [ ] | are neat      |    $1 |           |
 | [ ] | are neat      |    $1 |           | -->
-<h2 id="u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26" class="headerlink" title="字符串格式化操作符"></a>字符串格式化操作符</h2><h2 id="u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301"><a href="#u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301" class="headerlink" title="统一码字符串的支持"></a>统一码字符串的支持</h2><h2 id="Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570"><a href="#Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570" class="headerlink" title="Python内置字符串操作函数"></a>Python内置字符串操作函数</h2><h3 id="u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570" class="headerlink" title="字符串转换函数"></a>字符串转换函数</h3><h3 id="u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570" class="headerlink" title="字符串对比函数"></a>字符串对比函数</h3></span>
+<h2 id="u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26" class="headerlink" title="字符串格式化操作符"></a>字符串格式化操作符</h2><p>转义符的使用，看看下面示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (<span class="string">"Python is "</span>widely<span class="string">" used language"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># SyntaxError: invalid syntax</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># After escaping with double-quotes</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> (<span class="string">"Python is \"widely\" used language"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Output: Python is “widely” used language</span></span><br></pre></td></tr></table></figure>
+<p>百分号的使用，各种各样的对应</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (<span class="string">"Employee Name: %s,\nEmployee Age:%d"</span> % (<span class="string">'Ashish'</span>,<span class="number">25</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Employee Name: Ashish, </span></span><br><span class="line"><span class="comment"># Employee Age: 25</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">规范字符</th>
+<th style="text-align:left">对应使用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">%c</td>
+<td style="text-align:left">单个字符</td>
+</tr>
+<tr>
+<td style="text-align:left">%s</td>
+<td style="text-align:left">字符串 (采用str()的显示)</td>
+</tr>
+<tr>
+<td style="text-align:left">%i</td>
+<td style="text-align:left">十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:left">%d</td>
+<td style="text-align:left">十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:left">%u</td>
+<td style="text-align:left">非十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:left">%o</td>
+<td style="text-align:left">八进制整数</td>
+</tr>
+<tr>
+<td style="text-align:left">%x</td>
+<td style="text-align:left">十六进制整数(小写)</td>
+</tr>
+<tr>
+<td style="text-align:left">%X</td>
+<td style="text-align:left">十六进制整数(大写)</td>
+</tr>
+<tr>
+<td style="text-align:left">%e</td>
+<td style="text-align:left">指数 (基底写为 e)</td>
+</tr>
+<tr>
+<td style="text-align:left">%E</td>
+<td style="text-align:left">指数 (基底写为 E)</td>
+</tr>
+<tr>
+<td style="text-align:left">%f</td>
+<td style="text-align:left">浮点数</td>
+</tr>
+<tr>
+<td style="text-align:left">%F</td>
+<td style="text-align:left">浮点数，与上相同</td>
+</tr>
+<tr>
+<td style="text-align:left">%g</td>
+<td style="text-align:left">指数(e)或浮点数 (根据显示长度)</td>
+</tr>
+<tr>
+<td style="text-align:left">%G</td>
+<td style="text-align:left">指数(E)或浮点数 (根据显示长度)</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (<span class="string">u' Hello Python!!'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Hello Python</span></span><br></pre></td></tr></table></figure>
+<h2 id="u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301"><a href="#u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301" class="headerlink" title="统一码字符串的支持"></a>统一码字符串的支持</h2><h2 id="Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570"><a href="#Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570" class="headerlink" title="Python内置字符串操作函数"></a>Python内置字符串操作函数</h2><h3 id="u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570" class="headerlink" title="字符串转换函数"></a>字符串转换函数</h3><h3 id="u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570" class="headerlink" title="字符串对比函数"></a>字符串对比函数</h3></span>
       
     </div>
 

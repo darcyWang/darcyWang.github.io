@@ -90,7 +90,7 @@
     <link href="http://www.darcywang.com/2017/09/09/Python-string/"/>
     <id>http://www.darcywang.com/2017/09/09/Python-string/</id>
     <published>2017-09-09T05:16:51.000Z</published>
-    <updated>2017-10-18T09:24:20.000Z</updated>
+    <updated>2017-10-25T09:59:08.000Z</updated>
     <content type="html"><![CDATA[<p>在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。</p>
 <p>如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参考的文章链接在底部。</p>
 <h2 id="u521B_u5EFA_u5B57_u7B26_u4E32"><a href="#u521B_u5EFA_u5B57_u7B26_u4E32" class="headerlink" title="创建字符串"></a>创建字符串</h2><p>创建字符串是非常简单的，跟js差不多，但是也让我们来看一下几种不同的创建方式，有一点需要注意的是3个双引号或者单引号是可以创建多行字符创，类似于js中的``符号</p>
@@ -225,7 +225,78 @@
 | [ ] | are neat      |    $1 |           |
 | [ ] | are neat      |    $1 |           |
 | [ ] | are neat      |    $1 |           | -->
-<h2 id="u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26" class="headerlink" title="字符串格式化操作符"></a>字符串格式化操作符</h2><h2 id="u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301"><a href="#u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301" class="headerlink" title="统一码字符串的支持"></a>统一码字符串的支持</h2><h2 id="Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570"><a href="#Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570" class="headerlink" title="Python内置字符串操作函数"></a>Python内置字符串操作函数</h2><h3 id="u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570" class="headerlink" title="字符串转换函数"></a>字符串转换函数</h3><h3 id="u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570" class="headerlink" title="字符串对比函数"></a>字符串对比函数</h3>]]></content>
+<h2 id="u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26"><a href="#u5B57_u7B26_u4E32_u683C_u5F0F_u5316_u64CD_u4F5C_u7B26" class="headerlink" title="字符串格式化操作符"></a>字符串格式化操作符</h2><p>转义符的使用，看看下面示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (<span class="string">"Python is "</span>widely<span class="string">" used language"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># SyntaxError: invalid syntax</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># After escaping with double-quotes</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> (<span class="string">"Python is \"widely\" used language"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Output: Python is “widely” used language</span></span><br></pre></td></tr></table></figure>
+<p>百分号的使用，各种各样的对应</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (<span class="string">"Employee Name: %s,\nEmployee Age:%d"</span> % (<span class="string">'Ashish'</span>,<span class="number">25</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Employee Name: Ashish, </span></span><br><span class="line"><span class="comment"># Employee Age: 25</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">规范字符</th>
+<th style="text-align:left">对应使用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">%c</td>
+<td style="text-align:left">单个字符</td>
+</tr>
+<tr>
+<td style="text-align:left">%s</td>
+<td style="text-align:left">字符串 (采用str()的显示)</td>
+</tr>
+<tr>
+<td style="text-align:left">%i</td>
+<td style="text-align:left">十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:left">%d</td>
+<td style="text-align:left">十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:left">%u</td>
+<td style="text-align:left">非十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:left">%o</td>
+<td style="text-align:left">八进制整数</td>
+</tr>
+<tr>
+<td style="text-align:left">%x</td>
+<td style="text-align:left">十六进制整数(小写)</td>
+</tr>
+<tr>
+<td style="text-align:left">%X</td>
+<td style="text-align:left">十六进制整数(大写)</td>
+</tr>
+<tr>
+<td style="text-align:left">%e</td>
+<td style="text-align:left">指数 (基底写为 e)</td>
+</tr>
+<tr>
+<td style="text-align:left">%E</td>
+<td style="text-align:left">指数 (基底写为 E)</td>
+</tr>
+<tr>
+<td style="text-align:left">%f</td>
+<td style="text-align:left">浮点数</td>
+</tr>
+<tr>
+<td style="text-align:left">%F</td>
+<td style="text-align:left">浮点数，与上相同</td>
+</tr>
+<tr>
+<td style="text-align:left">%g</td>
+<td style="text-align:left">指数(e)或浮点数 (根据显示长度)</td>
+</tr>
+<tr>
+<td style="text-align:left">%G</td>
+<td style="text-align:left">指数(E)或浮点数 (根据显示长度)</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (<span class="string">u' Hello Python!!'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Hello Python</span></span><br></pre></td></tr></table></figure>
+<h2 id="u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301"><a href="#u7EDF_u4E00_u7801_u5B57_u7B26_u4E32_u7684_u652F_u6301" class="headerlink" title="统一码字符串的支持"></a>统一码字符串的支持</h2><h2 id="Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570"><a href="#Python_u5185_u7F6E_u5B57_u7B26_u4E32_u64CD_u4F5C_u51FD_u6570" class="headerlink" title="Python内置字符串操作函数"></a>Python内置字符串操作函数</h2><h3 id="u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u8F6C_u6362_u51FD_u6570" class="headerlink" title="字符串转换函数"></a>字符串转换函数</h3><h3 id="u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570"><a href="#u5B57_u7B26_u4E32_u5BF9_u6BD4_u51FD_u6570" class="headerlink" title="字符串对比函数"></a>字符串对比函数</h3>]]></content>
     <summary type="html">
     <![CDATA[<p>在刷题的过程中，发现自己使用Python时候很多东西东西都不太熟悉，说句实在话，可能我连答案都看不明吧。所以在这个过程中我会去看一些好的文章，然后在这里分享，也是方便自己以后的查阅以及知识的巩固。</p>
 <p>如题所示，这篇文章我将主要聊一聊Python中字符串的搞法，参]]>
@@ -529,7 +600,7 @@
     <link href="http://www.darcywang.com/2016/02/23/Chrome%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     <id>http://www.darcywang.com/2016/02/23/Chrome调试工具/</id>
     <published>2016-02-23T09:36:54.000Z</published>
-    <updated>2016-02-29T12:59:56.000Z</updated>
+    <updated>2017-11-28T07:30:17.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://www.google.com/chrome/browser/desktop/" target="_blank" rel="external">Chrome Developer Tools</a>是一件非常棒的艺术品。</p>
 <h3 id="Chrome_DevTools_Overview"><a href="#Chrome_DevTools_Overview" class="headerlink" title="Chrome DevTools Overview"></a>Chrome DevTools Overview</h3><p><img src="http://7xr8la.com1.z0.glb.clouddn.com/panl.png" alt=""><br>Elements：查看和编辑当前页面中的 HTML 和 CSS 元素。标签页的左侧就是对页面HTML结构的查看与编辑，<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以直接在某个元素上双击修改元素的属性，右侧可以对元素的CSS进行查看与编辑修改。<br>Console：用于显示异常错误信息，脚本中所输出的调试信息，或运行测试脚本等。<br>Sources：查看和调试当前页面所加载的脚本的源文件。<br>Network：监控当前网页所有的http请求的面版，主体部分展示每个http请求，每个字段表示着该请求的不同属性<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;和状态，当点击某一个具体请求URL，可以看到该请求的详细HTTP请求情况：</p>
 <pre><code>1. Headers:  请求头信息和响应头信息
@@ -577,6 +648,7 @@
 </ol>
 <p>相类似的检测工具有PageSpeed和YSlow<br><a href="http://yslow.org/" target="_blank" rel="external">http://yslow.org/</a><br><a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" rel="external">https://developers.google.com/speed/pagespeed/insights/</a></p>
 <p>火狐浏览器可以使用下面这个插件来测试页面性能<br><a href="https://addons.mozilla.org/en-US/firefox/addon/dust-me-selectors/" target="_blank" rel="external">https://addons.mozilla.org/en-US/firefox/addon/dust-me-selectors/</a></p>
+<p>很多时候都是事与愿违的，往往特别想得到什么，往往结果却是一场空，<br>没有理由和原委，结果就是这样，没有其它的选择。当我一次次努力想要<br>达到自己的追求，一次次的被打回来。没有任何防备，无论是工作还是<br>生活上的，没有一点点是自己顺心的，反过来想想也不知道是为什么或者<br>什么导致了现在这种状态，我没有办法去反抗，因为除了接受还是接受。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p><a href="https://www.google.com/chrome/browser/desktop/" target="_blank" rel="external">Chrome Developer Tools</a>是一件非常棒的艺术品。</p>

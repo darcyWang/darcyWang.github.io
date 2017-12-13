@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.darcywang.com/2015/12/14/AWS-%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2017-11-28T07:48:57.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.darcywang.com/2016/02/23/Chrome%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2017-11-28T07:30:17.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.darcywang.com/2017/09/09/Python-string/</loc>
-    <lastmod>2017-10-18T09:24:20.000Z</lastmod>
+    <lastmod>2017-10-25T09:59:08.000Z</lastmod>
   </url>
   
   <url>
@@ -227,11 +237,6 @@
   </url>
   
   <url>
-    <loc>http://www.darcywang.com/2015/12/14/AWS-%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2016-03-10T08:39:10.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.darcywang.com/2015/12/11/About-Self-Learning/</loc>
     <lastmod>2016-03-10T08:36:50.000Z</lastmod>
   </url>
@@ -239,11 +244,6 @@
   <url>
     <loc>http://www.darcywang.com/2015/12/17/CSS-3/</loc>
     <lastmod>2016-03-01T12:38:44.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.darcywang.com/2016/02/23/Chrome%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2016-02-29T12:59:56.000Z</lastmod>
   </url>
   
   <url>
