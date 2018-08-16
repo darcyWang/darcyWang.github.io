@@ -2,8 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.darcywang.com/2018/08/16/reactone/</loc>
+    <lastmod>2018-08-16T05:39:44.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.darcywang.com/2018/08/16/reactthree/</loc>
+    <lastmod>2018-08-16T05:39:43.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.darcywang.com/2018/08/16/reacttwo/</loc>
+    <lastmod>2018-08-16T05:39:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.darcywang.com/2015/12/11/GRE-and-TOEFL/</loc>
+    <lastmod>2018-08-16T05:39:06.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.darcywang.com/2016/11/04/TOEFL/</loc>
+    <lastmod>2018-08-16T05:38:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.darcywang.com/2017/10/07/sphinx/</loc>
+    <lastmod>2018-08-16T05:36:37.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.darcywang.com/2015/12/11/About-Self-Learning/</loc>
-    <lastmod>2018-08-16T02:57:57.000Z</lastmod>
+    <lastmod>2018-08-16T05:35:21.000Z</lastmod>
   </url>
   
   <url>
@@ -47,11 +77,6 @@
   </url>
   
   <url>
-    <loc>http://www.darcywang.com/2017/10/07/sphinx/</loc>
-    <lastmod>2017-10-11T06:03:09.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.darcywang.com/2015/11/21/Hello-Tianbao/</loc>
     <lastmod>2017-10-07T02:30:53.000Z</lastmod>
   </url>
@@ -59,11 +84,6 @@
   <url>
     <loc>http://www.darcywang.com/2016/06/17/React/</loc>
     <lastmod>2017-10-07T02:30:34.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.darcywang.com/2016/11/04/TOEFL/</loc>
-    <lastmod>2017-10-07T02:30:11.000Z</lastmod>
   </url>
   
   <url>
@@ -144,11 +164,6 @@
   <url>
     <loc>http://www.darcywang.com/2016/05/25/H5-vs-native/</loc>
     <lastmod>2017-07-05T02:11:23.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.darcywang.com/2015/12/11/GRE-and-TOEFL/</loc>
-    <lastmod>2017-07-05T02:11:00.000Z</lastmod>
   </url>
   
   <url>
