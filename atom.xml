@@ -373,19 +373,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[vue项目实战]]></title>
-    <link href="http://www.darcywang.com/2017/03/16/vue-learning/"/>
-    <id>http://www.darcywang.com/2017/03/16/vue-learning/</id>
-    <published>2017-03-16T02:50:23.000Z</published>
-    <updated>2017-12-25T01:57:39.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[聊聊CSS的Flexboxs吧]]></title>
     <link href="http://www.darcywang.com/2017/03/02/how-flexboxs-works/"/>
     <id>http://www.darcywang.com/2017/03/02/how-flexboxs-works/</id>
@@ -519,8 +506,8 @@
   
   <entry>
     <title><![CDATA[性能优化之CSS部分]]></title>
-    <link href="http://www.darcywang.com/2016/02/23/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8BCSS%E9%83%A8%E5%88%86/"/>
-    <id>http://www.darcywang.com/2016/02/23/性能优化之CSS部分/</id>
+    <link href="http://www.darcywang.com/2016/02/23/my-css/"/>
+    <id>http://www.darcywang.com/2016/02/23/my-css/</id>
     <published>2016-02-23T09:40:54.000Z</published>
     <updated>2016-03-24T09:28:20.000Z</updated>
     <content type="html"><![CDATA[<p>在上一篇chrome调试里面讲到了渲染对页面的性能是非常关键的，其中就包括CSS。</p>
@@ -732,8 +719,8 @@
   
   <entry>
     <title><![CDATA[移动端开发]]></title>
-    <link href="http://www.darcywang.com/2015/12/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    <id>http://www.darcywang.com/2015/12/22/移动端开发/</id>
+    <link href="http://www.darcywang.com/2015/12/22/mobile-side-develop/"/>
+    <id>http://www.darcywang.com/2015/12/22/mobile-side-develop/</id>
     <published>2015-12-22T03:14:17.000Z</published>
     <updated>2017-07-05T01:59:45.000Z</updated>
     <content type="html"><![CDATA[<p>首先需要明确的是移动端开发是建立在PC端的基础上的。为什么这么说，最开始是笔记本的普及，随着技术的更新和迭代，配置一般的上网本价格都是大众消费能力以内，所以每个人都可以轻松的通过笔记本电脑阅读，购物。但就是最近几年，得益于国内某些”知名”手机制造商，让一部4英寸的智能机在1000元以内就能到手，所以可以想象的是国内智能手机普及是多么的吓人，更不用说潜在的群体学生和老人也加入到其中。</p>
@@ -756,8 +743,8 @@
   
   <entry>
     <title><![CDATA[在路上]]></title>
-    <link href="http://www.darcywang.com/2015/12/22/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
-    <id>http://www.darcywang.com/2015/12/22/在路上/</id>
+    <link href="http://www.darcywang.com/2015/12/22/The-Road/"/>
+    <id>http://www.darcywang.com/2015/12/22/The-Road/</id>
     <published>2015-12-22T03:11:24.000Z</published>
     <updated>2017-06-08T00:50:36.000Z</updated>
     <content type="html"><![CDATA[<p>现在的计划大的框架用Django，然后前台展示的页面嵌入自己前端框架，使用node.js为环境加上gulp实现工作流，后端API使用Django的restframework。</p>
@@ -774,25 +761,6 @@
       <category term="fullstack" scheme="http://www.darcywang.com/tags/fullstack/"/>
     
       <category term="life" scheme="http://www.darcywang.com/tags/life/"/>
-    
-      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Django Advanced]]></title>
-    <link href="http://www.darcywang.com/2015/12/21/Django-Advanced/"/>
-    <id>http://www.darcywang.com/2015/12/21/Django-Advanced/</id>
-    <published>2015-12-21T01:48:43.000Z</published>
-    <updated>2017-07-05T02:08:50.000Z</updated>
-    <content type="html"><![CDATA[<p>持续更新中······</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>持续更新中······</p>
-]]>
-    </summary>
-    
-      <category term="Data" scheme="http://www.darcywang.com/tags/Data/"/>
     
       <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
     
@@ -836,10 +804,6 @@
 <p><a href="https://www.youtube.com/user/DevTipsForDesigners/playlists" target="_blank" rel="external">https:/]]>
     </summary>
     
-      <category term="life" scheme="http://www.darcywang.com/tags/life/"/>
-    
-      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
-    
   </entry>
   
   <entry>
@@ -858,6 +822,57 @@
       <category term="Javascript" scheme="http://www.darcywang.com/tags/Javascript/"/>
     
       <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Django for Webapp]]></title>
+    <link href="http://www.darcywang.com/2015/12/18/Django-for-Webapp/"/>
+    <id>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</id>
+    <published>2015-12-18T01:42:33.000Z</published>
+    <updated>2017-07-05T02:09:08.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xr8la.com1.z0.glb.clouddn.com/djangoIcon.png?imageView2/2/h/400" alt=""></p>
+<p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一看名字Django Unchained，还真的是一样的啊。</p>
+<p>Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于<strong> Django 1.7 </strong>上的。重要的事情说3遍，看文档，看文档，看文档首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个<a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank" rel="external">web框架</a>, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不多咯。</p>
+<p>OK，Let’s get our hands dirty。</p>
+<p>在最开始先说明自己是用的Linux系统，已经安装好了Python 2.7，<a href="https://docs.djangoproject.com/en/1.7/" target="_blank" rel="external">Django 1.7</a></p>
+<p>先介绍一个神奇的东西–<a href="https://virtualenv.readthedocs.org/en/latest/" target="_blank" rel="external">virtualenv</a>，它的作用是可以给你一个独立的开发环境。简单说一下，比如你用Django 1.7版本，然后你又想用Django 1.8版本试一下手，这个时候就是virtualenv的用武之地，它可以让你在电脑上建N多个开发环境，它们都互不干扰。安装也是非常简单<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ [sudo] pip install virtualenv</span><br></pre></td></tr></table></figure></p>
+<p>使用起来也是灰常简单，最先开始你得先给你的环境起一个非常有逼格的名字，记住是环境的名字。环境造好以后就是启动环境，接着就是造项目了，项目的名字可以和环境的名字一样，因为这样就可以让你搞不明白是什么意思，装逼一下啊。事实是无论你项目名字是什么，接下来都会把它修改为src。因为src文件名称在你脑海里面就有那么一种意思，对，就是那个作用。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ virtualenv YourProjectName</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> YourProjectName</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">source</span> bin/activate</span><br><span class="line"></span><br><span class="line">$ django-admin.py startproject YourProjectName</span><br></pre></td></tr></table></figure></p>
+<p>完成上面几个步骤以后有几点你需要注意的，启动环境以后你会看到$符号前面包含你环境名字的双括号，另外关闭环境就是deactivate，是不是非常easy。最后你看到的目录是 bin/ include/ lib/ src/<br>还有几点优化可以做，比如说可以添加一个start.sh文件，然后你就每次直接 . ./start。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span><br><span class="line"></span></span><br><span class="line"><span class="built_in">source</span> bin/activate</span><br><span class="line"><span class="built_in">cd</span> src</span><br></pre></td></tr></table></figure></p>
+<p>在以后的开发中会经常用到以下的命令行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ pip freeze 查看当前环境里面都安装了些什么东东</span><br><span class="line"></span><br><span class="line">$ python manage.py startapp NewAppName 安装新的App</span><br><span class="line"></span><br><span class="line">$ python manage.py runserver <span class="number">12344</span></span><br></pre></td></tr></table></figure></p>
+<p>现在可以放下手中的代码，一起来想想这个问题。当一个开发环境搭好，可以开始做项目了，需要注意什么，从什么地方开始呢？<br>当你用Django新创建好一个新项目的时候，它就自己带好了一个admin的模块。里面有4个python文件，<strong>init</strong>.py  settings.py  urls.py  wsgi.py，一个一个来分析一下。</p>
+<h4 id="init-py"><a href="#init-py" class="headerlink" title="<strong>init</strong>.py"></a><strong>init</strong>.py</h4><p>任何时候只要新建了一个app，就一定会带有这个文件。它的作用是相当于class中的def <strong>init</strong>(self):函数，用来初始化模块。并且把所在目录当作一个package处理，还有from-import 语句导入子包时需要用到它。 如果没有用到, 他们可以是空文件。就比如package.module下的所有模块from package.module import * </p>
+<h4 id="settings-py"><a href="#settings-py" class="headerlink" title="settings.py"></a>settings.py</h4><p>它是整个Django的核心文件，任何重要的配置都需要在这里面进行修改。但是记得不搞乱搞它哦</p>
+<h4 id="urls-py"><a href="#urls-py" class="headerlink" title="urls.py"></a>urls.py</h4><p>在Django中，每一个request都通过urls.py指向一个view。这种松散的耦合有着非常大的灵活性，但是需要注意的是设置路径</p>
+<h4 id="wsgi-py"><a href="#wsgi-py" class="headerlink" title="wsgi.py"></a>wsgi.py</h4><p>wsgi(Python Web Server Gateway Interface)服务器网关接口，是Python语言定义的web服务器和web服务程序或者框架之间的一种简单而通用的接口。说得简单一点，就是服务器配置的文件，你可以在这个<a href="http://epicserve-docs.readthedocs.org/en/latest/django/ubuntu-server-django-guide.html" target="_blank" rel="external">demo</a>里面用到它</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xr8la.com1.z0.glb.clouddn.com/djangoIcon.png?imageView2/2/h/400" alt=""></p>
+<p>刚刚开始接触Django时让我想到了一部电影<a href="http://m]]>
+    </summary>
+    
+      <category term="Django" scheme="http://www.darcywang.com/tags/Django/"/>
+    
+      <category term="Python" scheme="http://www.darcywang.com/tags/Python/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Python and Django]]></title>
+    <link href="http://www.darcywang.com/2015/12/18/Python-and-Django/"/>
+    <id>http://www.darcywang.com/2015/12/18/Python-and-Django/</id>
+    <published>2015-12-18T01:41:02.000Z</published>
+    <updated>2017-07-05T02:17:41.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Data" scheme="http://www.darcywang.com/tags/Data/"/>
+    
+      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
     
   </entry>
   
