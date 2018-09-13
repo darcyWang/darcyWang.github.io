@@ -4,8 +4,45 @@
 
     
   <url>
+    <loc>http://www.darcywang.com/2015/12/11/About-Self-Learning/</loc>
+    <lastmod>2018-08-16T05:40:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>About Self-Learning</title>
+        <pubTime>2015-12-10T23:44:02.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.darcywang.com/2016/06/17/React/</loc>
+    <lastmod>2018-08-16T05:39:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端开发之入门工具箱</title>
+        <pubTime>2016-06-17T07:52:48.000Z</pubTime>
+        
+        <tag>React</tag>
+         
+         
+           
+             
+              <breadCrumb title="Techniques" url="http://www.darcywang.com/categories/Techniques/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.darcywang.com/2018/08/16/reactone/</loc>
-    <lastmod>2018-08-16T05:39:44.000Z</lastmod>
+    <lastmod>2018-08-16T05:39:45.000Z</lastmod>
     <data>
         <display>
         <title>React 第一弹</title>
@@ -60,7 +97,7 @@
     
   <url>
     <loc>http://www.darcywang.com/2015/12/11/GRE-and-TOEFL/</loc>
-    <lastmod>2018-08-16T05:39:06.000Z</lastmod>
+    <lastmod>2018-08-16T05:39:08.000Z</lastmod>
     <data>
         <display>
         <title>GRE and TOEFL</title>
@@ -80,7 +117,7 @@
     
   <url>
     <loc>http://www.darcywang.com/2016/11/04/TOEFL/</loc>
-    <lastmod>2018-08-16T05:38:09.000Z</lastmod>
+    <lastmod>2018-08-16T05:38:17.000Z</lastmod>
     <data>
         <display>
         <title>GRE and Toefl</title>
@@ -100,7 +137,7 @@
     
   <url>
     <loc>http://www.darcywang.com/2017/10/07/sphinx/</loc>
-    <lastmod>2018-08-16T05:36:37.000Z</lastmod>
+    <lastmod>2018-08-16T05:36:40.000Z</lastmod>
     <data>
         <display>
         <title>sphinx语法小记</title>
@@ -112,45 +149,6 @@
            
              
               <breadCrumb title="Python3" url="http://www.darcywang.com/categories/Python3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2015/12/11/About-Self-Learning/</loc>
-    <lastmod>2018-08-16T05:35:21.000Z</lastmod>
-    <data>
-        <display>
-        <title>About Self-Learning</title>
-        <pubTime>2015-12-10T23:44:02.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2018/08/15/newdarcy/</loc>
-    <lastmod>2018-08-15T13:05:12.000Z</lastmod>
-    <data>
-        <display>
-        <title>致27岁的天保</title>
-        <pubTime>2018-08-15T10:11:05.000Z</pubTime>
-        
-        <tag>idea</tag>
-         
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="Life" url="http://www.darcywang.com/categories/Life/"/>
           
         </display>
     </data>
@@ -305,26 +303,6 @@
            
              
               <breadCrumb title="TOEFL" url="http://www.darcywang.com/categories/TOEFL/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.darcywang.com/2016/06/17/React/</loc>
-    <lastmod>2017-10-07T02:30:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>前端开发之入门工具箱</title>
-        <pubTime>2016-06-17T07:52:48.000Z</pubTime>
-        
-        <tag>React</tag>
-         
-         
-           
-             
-              <breadCrumb title="Techniques" url="http://www.darcywang.com/categories/Techniques/"/>
           
         </display>
     </data>

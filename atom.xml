@@ -51,7 +51,7 @@
     <link href="http://www.darcywang.com/2018/08/16/reactone/"/>
     <id>http://www.darcywang.com/2018/08/16/reactone/</id>
     <published>2018-08-16T02:59:41.000Z</published>
-    <updated>2018-08-16T05:39:44.000Z</updated>
+    <updated>2018-08-16T05:39:45.000Z</updated>
     <content type="html"></content>
     <summary type="html">
     
@@ -64,38 +64,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[致27岁的天保]]></title>
-    <link href="http://www.darcywang.com/2018/08/15/newdarcy/"/>
-    <id>http://www.darcywang.com/2018/08/15/newdarcy/</id>
-    <published>2018-08-15T10:11:05.000Z</published>
-    <updated>2018-08-15T13:05:12.000Z</updated>
-    <content type="html"><![CDATA[<p>很抱歉的要对你说一声对不起，天保。</p>
-<p>今年在你的人生注定是不平凡的一年，8月13日是你生命中不平常的一天，因为这一天预示你去美国读书赚钱的计划彻底失败了，没有任何理由。</p>
-<p>从2016开年后到18年8月13日，接近30个月的努力奋斗通过的考试和拿到的学校通知书都变得毫无意义，对，这一次你输了，一切归零。什么都是从头开始，哈哈哈。到现在写文章的我还不愿意相信这是真的，而且每天人过得都不是那么真实，因为不知道接下来该干什么，以后的日子应该怎么过，没有任何头绪。</p>
-<p>从计划的第一天开始就告诫过自己，大家都是成年人，不论后面的结果怎么样，都会对自己做的事情负责任。但是现在看来结果确实是自己所不能承受的，但又不得不接受。每天花时间抄的单词，一边去补习班还要一边上班的那段经历，到最后考过toefl的那一刻，太多的太多，都无法用言语来表达天保这段时间的感受，为的就是一个自己想要的结果，可是现实却又辣么骨感，也许慢慢明白努力了都不一定会有结果吧。</p>
-<p>以前你总是信心满满对待每一天的生活，每天都会开心的笑几次，因为一直坚信自己出去后可以会有更美好的生活，直到现在才突然发现都是泡影，迎接自己的还是日复一日，年复一年重复的工作。为什么会这样呢，我一直在问自己是什么导致了现在的结果，可是也给不出来理由啊，因为天保已经尽了自己最大的努力了。</p>
-<p>没有了重心的生活是过的这么慢，却也不知道该怎么去改变，好失败。在美好的青春里投资了不少的时间和精力，得到的结果居然就是什么都没有，恩，什么都没有 Nothing at all，心里面真的很痛啊，到底是怎么了嘛，有没有人可以给我一个答案呢，也许只有时间可以把。天保真的很累了，真的该好好放松一下了，活的好辛苦，辛苦的都不知道该怎么去放松，眼泪一滴滴的落在键盘上，没有任何保留，真的不应该这样啊！</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>很抱歉的要对你说一声对不起，天保。</p>
-<p>今年在你的人生注定是不平凡的一年，8月13日是你生命中不平常的一天，因为这一天预示你去美国读书赚钱的计划彻底失败了，没有任何理由。</p>
-<p>从2016开年后到18年8月13日，接近30个月的努力奋斗通过的考试和拿到的学]]>
-    </summary>
-    
-      <category term="idea" scheme="http://www.darcywang.com/tags/idea/"/>
-    
-      <category term="life" scheme="http://www.darcywang.com/tags/life/"/>
-    
-      <category term="Life" scheme="http://www.darcywang.com/categories/Life/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[sphinx语法小记]]></title>
     <link href="http://www.darcywang.com/2017/10/07/sphinx/"/>
     <id>http://www.darcywang.com/2017/10/07/sphinx/</id>
     <published>2017-10-07T01:47:43.000Z</published>
-    <updated>2018-08-16T05:36:37.000Z</updated>
+    <updated>2018-08-16T05:36:40.000Z</updated>
     <content type="html"><![CDATA[<p>在刷LeetCode的时候，发现用博客来记录太麻烦，所以选择了Python的免费文档readthedocs来记录自己的刷题记录，博客还是用来记录自己的所学和感悟。</p>
 <p>第一次接触rst语法的时候还很不习惯，毕竟以前都是用Markdown来写文章，现在突然换一种方式还是有点措手不及，写过一阵子后发现也还行，现在在这里给大家分享一下自己的认识，也方便自己以后查阅。</p>
 <p>在写文档的时候，跟Markdown的来走，首先是标题的分级，Python的语法很奇怪，自己感觉最主要还是格式的要求，对于空格space是非常严格的</p>
@@ -525,7 +498,7 @@
     <link href="http://www.darcywang.com/2016/11/04/TOEFL/"/>
     <id>http://www.darcywang.com/2016/11/04/TOEFL/</id>
     <published>2016-11-04T11:44:42.000Z</published>
-    <updated>2018-08-16T05:38:09.000Z</updated>
+    <updated>2018-08-16T05:38:17.000Z</updated>
     <content type="html"><![CDATA[<p>从2016年9月24日到2017年5月13日，一共经历了四次考试。最开始的68分到86分，这个过程还是非常艰辛的。我在这里想分享自己的几点心得。</p>
 <ol>
 <li>参加考试的时候真的不要想太多，认真考试就行了。</li>
@@ -551,7 +524,7 @@
     <link href="http://www.darcywang.com/2016/06/17/React/"/>
     <id>http://www.darcywang.com/2016/06/17/React/</id>
     <published>2016-06-17T07:52:48.000Z</published>
-    <updated>2017-10-07T02:30:34.000Z</updated>
+    <updated>2018-08-16T05:39:55.000Z</updated>
     <content type="html"><![CDATA[<p>在开始任何项目时候，我们先需要列这样一个清单。你需要将代码压缩，捆绑打包，这就意味着你需要生成sourcemap来debug，当然你想自动化测试，想知道代码覆盖率，想检查JavaScript语法，不要忘了编译你的Sass或者是PostCSS中的toss。快速的重新加载是非常棒的，但，不要期望你们团队来手动处理这些，我们需要所有以上的优点只需要一行命令就能实现，而且每次Ctrl+s时都能重新运转。(此处应该有掌声…..)</p>
 <p>同时，这里似乎有着许多的的库、框架和模式来处理不一样的事情。选择第一</p>
 <p>是不是有一种被淹没的赶脚，我们现在正式步入JavaScript<a href="https://en.wikipedia.org/wiki/Decision_fatigue" target="_blank" rel="external">选择疲劳</a>时代</p>
@@ -846,6 +819,30 @@
     </summary>
     
       <category term="Javascript" scheme="http://www.darcywang.com/tags/Javascript/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[移动端开发]]></title>
+    <link href="http://www.darcywang.com/2015/12/22/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    <id>http://www.darcywang.com/2015/12/22/移动端开发/</id>
+    <published>2015-12-22T03:14:17.000Z</published>
+    <updated>2017-07-05T01:59:45.000Z</updated>
+    <content type="html"><![CDATA[<p>首先需要明确的是移动端开发是建立在PC端的基础上的。为什么这么说，最开始是笔记本的普及，随着技术的更新和迭代，配置一般的上网本价格都是大众消费能力以内，所以每个人都可以轻松的通过笔记本电脑阅读，购物。但就是最近几年，得益于国内某些”知名”手机制造商，让一部4英寸的智能机在1000元以内就能到手，所以可以想象的是国内智能手机普及是多么的吓人，更不用说潜在的群体学生和老人也加入到其中。</p>
+<p>从笔记本电脑到移动智能设备的过渡是如此之快，以至于商家有些猝不及防，自己的产品不仅能在PC端能很好地展示，相应的在手机上也是正常展示，这就催生了移动端开发。</p>
+<p>自己一开始就是做的移动端，所以对PC端开发不是那么的熟悉，不能很好的说出两者的区别和相似点，如果你有好的建议和意见可以在下面留言给我。</p>
+<p>现在一个成功的互联网产品离不开3个部分的开发，PC、Android、iOS。移动APP的开发有两种不同的路线，NativeAPP和Web APP。这两种路线的区别类似于PC时代开发应用程序时的C/S架构和 B/S架构。更流行一些的是hybrid app开发，这是一个什么概念呢？后台提供API接口可以给三方使用，在原生的APP内嵌套H5页面，安卓和iOS都可以使用。</p>
+<p>Native APP，即所有的程序都由本地组件渲染完成。这类APP优点是显而易见的，渲染速度快、用户体验好；缺点同时也十分突出：出现了错误一定要等待下一次用户进行APP更新才能够修复，而且开发成本高。Web APP的优点恰好就是Native APP的缺点所在，其页面全部采用H5撰写并存放在服务器端。每次进行页面渲染时都从服务器请求最新的页面。一旦页面有错误，服务器端进行更新便能立刻解决。不过其弊端也容易窥见：每次页面都需要请求服务器，造成渲染时等待时间过长，从而导致的用户体验不够完美，并且性能上较Native APP慢了1-2个数量级；与此同时还会导致更多的用户流量消耗。另一个缺点则在于，Web APP在移动端上调用本地的硬件设备存在一定的不便。不过这些弊端也都有相应的解决方案，如PhoneGap将网页提前打包在本地以减少网络的请求时间；同时也提供一系列的插件来访问本地的硬件设备。然而，尽管如此，其渲染速度上还是存在一定的差距。</p>
+<p>Hybrid APP则是综合了二者优缺点的解决方案。饿了么移动对于此二类APP的观点在于，纯粹展示性的模块会更适合使用Web页面来达到渲染的目的；而更多的数据操作性、动画渲染性的模块则更适合采用Native的方式。</p>
+<p>经过这些年的业务发展，Hybrid提供的展示界面更新方案也逐渐地无法满足APP更新迭代的需要。因此越来越多的动态部署的方案被提了出来，比如iOS下的JSPatch, waxPatch，Android下的Dexpose,AndFix, ClassLoader，都是比较成熟Hot Patch动态部署解决方案。这些方案的思路都是通过下载远程服务器的代码来动态更新本地的代码行为。<br>React-Native则属于另一种动态部署的方案，其核心原理在于通过JavaScript来调用本地组件进行界面的渲染。<br>而饿了么移动APP发展到今天，各个APP综合用户量已经过亿。因此一个非常小的Bug所带来的问题都可能会直接影响到几万人的使用。为了保证APP的稳定性和健壮性，Hot Patch方案也就成了当下最有待解决的问题。<br>根据80%的用户访问20%页面这一80/20原则，保证这20%访问最频繁的页面的稳定性就是保证了80%的APP的稳定性。因此，饿了么移动对于部分访问最频繁的模块进行了React-Native备份。当这部分页面出现问题时，APP可以通过服务器的配置，自动切换成React-Native的备份页面；而与此同时开发人员开发一个小而精的Hot Patch来修复出现的问题。当Hot Patch完成修补后，再切换回Native APP的原生功能。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>首先需要明确的是移动端开发是建立在PC端的基础上的。为什么这么说，最开始是笔记本的普及，随着技术的更新和迭代，配置一般的上网本价格都是大众消费能力以内，所以每个人都可以轻松的通过笔记本电脑阅读，购物。但就是最近几年，得益于国内某些”知名”手机制造商，让一部4英寸的智能机在1]]>
+    </summary>
+    
+      <category term="移动端" scheme="http://www.darcywang.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
     
       <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
     
