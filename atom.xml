@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2018-09-13T05:29:39.000Z</updated>
+  <updated>2018-08-16T05:36:40.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -13,19 +13,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[React 第一弹]]></title>
-    <link href="http://www.darcywang.com/2018/08/16/reactone/"/>
-    <id>http://www.darcywang.com/2018/08/16/reactone/</id>
-    <published>2018-08-16T02:59:41.000Z</published>
-    <updated>2018-09-13T05:29:39.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[sphinx语法小记]]></title>
@@ -382,19 +369,6 @@
       <category term="life" scheme="http://www.darcywang.com/tags/life/"/>
     
       <category term="TOEFL" scheme="http://www.darcywang.com/categories/TOEFL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[NodeJS]]></title>
-    <link href="http://www.darcywang.com/2017/05/25/NodeJS/"/>
-    <id>http://www.darcywang.com/2017/05/25/NodeJS/</id>
-    <published>2017-05-25T11:43:29.000Z</published>
-    <updated>2017-10-07T02:27:10.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
     
   </entry>
   
@@ -841,6 +815,47 @@
     </summary>
     
       <category term="Django" scheme="http://www.darcywang.com/tags/Django/"/>
+    
+      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Zero To Hero]]></title>
+    <link href="http://www.darcywang.com/2015/12/19/Zero-To-Hero/"/>
+    <id>http://www.darcywang.com/2015/12/19/Zero-To-Hero/</id>
+    <published>2015-12-19T06:58:56.000Z</published>
+    <updated>2017-07-05T02:19:50.000Z</updated>
+    <content type="html"><![CDATA[<p>来来来，我们来说说的关于自己的技术成长历程吧</p>
+<p><a href="https://www.youtube.com/user/DevTipsForDesigners/playlists" target="_blank" rel="external">https://www.youtube.com/user/DevTipsForDesigners/playlists</a></p>
+<p><a href="https://www.youtube.com/user/learncodeacademy/playlists?sort=dd&amp;view=1" target="_blank" rel="external">https://www.youtube.com/user/learncodeacademy/playlists?sort=dd&amp;view=1</a></p>
+<p><a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/playlists" target="_blank" rel="external">https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/playlists</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>来来来，我们来说说的关于自己的技术成长历程吧</p>
+<p><a href="https://www.youtube.com/user/DevTipsForDesigners/playlists" target="_blank" rel="external">https:/]]>
+    </summary>
+    
+      <category term="life" scheme="http://www.darcywang.com/tags/life/"/>
+    
+      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[JS learned]]></title>
+    <link href="http://www.darcywang.com/2015/12/19/JS-learned/"/>
+    <id>http://www.darcywang.com/2015/12/19/JS-learned/</id>
+    <published>2015-12-19T06:55:27.000Z</published>
+    <updated>2017-07-05T02:16:44.000Z</updated>
+    <content type="html"><![CDATA[<p>Javascript是一门非常容易上手的语言，但是想要使用的恰到好处，还是需要费点时间。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Javascript是一门非常容易上手的语言，但是想要使用的恰到好处，还是需要费点时间。</p>
+]]>
+    </summary>
+    
+      <category term="Javascript" scheme="http://www.darcywang.com/tags/Javascript/"/>
     
       <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
     
