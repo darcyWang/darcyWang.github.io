@@ -4,7 +4,7 @@
   <subtitle><![CDATA[hello]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.darcywang.com/"/>
-  <updated>2018-12-24T06:17:04.000Z</updated>
+  <updated>2019-05-30T05:42:30.000Z</updated>
   <id>http://www.darcywang.com/</id>
   
   <author>
@@ -13,6 +13,109 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[正则的简单使用]]></title>
+    <link href="http://www.darcywang.com/2019/05/30/reg/"/>
+    <id>http://www.darcywang.com/2019/05/30/reg/</id>
+    <published>2019-05-30T05:40:12.000Z</published>
+    <updated>2019-05-30T05:42:30.000Z</updated>
+    <content type="html"><![CDATA[<p>前段时间在smashing magazine上面看到了一篇关于正则使用的文章，将里面的代码自己敲了一遍。</p>
+<p>const re = /Item(?= 10)/;</p>
+<p>console.log(re.exec(‘Item’));<br>// → null</p>
+<p>console.log(re.exec(‘Item5’));<br>// → null</p>
+<p>console.log(re.exec(‘Item 5’));<br>// → null</p>
+<p>console.log(re.exec(‘Item 10’));<br>// → [“Item”, index: 0, input: “Item 10”, groups: undefined]</p>
+<p>const re = /Red(?!head)/;</p>
+<p>console.log(re.exec(‘Redhead’));<br>// → null</p>
+<p>console.log(re.exec(‘Redberry’));<br>// → [“Red”, index: 0, input: “Redberry”, groups: undefined]</p>
+<p>console.log(re.exec(‘Redjay’));<br>// → [“Red”, index: 0, input: “Redjay”, groups: undefined]</p>
+<p>console.log(re.exec(‘Red’));<br>// → [“Red”, index: 0, input: “Red”, groups: undefined]</p>
+<p>const re = /(?&lt;=€)\d+(.\d*)?/;</p>
+<p>console.log(re.exec(‘199’));<br>// → null</p>
+<p>console.log(re.exec(‘$199’));<br>// → null</p>
+<p>console.log(re.exec(‘€199’));<br>// → [“199”, undefined, index: 1, input: “€199”, groups: undefined]</p>
+<p>const re = /(?&lt;!\d{3}) meters/;</p>
+<p>console.log(re.exec(‘10 meters’));<br>// → [“ meters”, index: 2, input: “10 meters”, groups: undefined]</p>
+<p>console.log(re.exec(‘100 meters’));<br>// → null</p>
+<p>const re = /(?&lt;=\d{2})(?&lt;!35) meters/;</p>
+<p>console.log(re.exec(‘35 meters’));<br>// → null</p>
+<p>console.log(re.exec(‘meters’));<br>// → null</p>
+<p>console.log(re.exec(‘4 meters’));<br>// → null</p>
+<p>console.log(re.exec(‘14 meters’));<br>// → [“meters”, index: 2, input: “14 meters”, groups: undefined]</p>
+<p>const re = /(\w+).jpg/;<br>const str = ‘File name: cat.jpg’;<br>const match = re.exec(str);<br>const fileName = match[1];</p>
+<p>// The second element in the resulting array holds the portion of the string that parentheses matched<br>console.log(match);<br>// → [“cat.jpg”, “cat”, index: 11, input: “File name: cat.jpg”, groups: undefined]</p>
+<p>console.log(fileName);<br>// → cat</p>
+<p>const re = /(\d{4})-(\d{2})-(\d{2})/;<br>const match = re.exec(‘2020-03-04’);</p>
+<p>console.log(match[0]);    // → 2020-03-04<br>console.log(match[1]);    // → 2020<br>console.log(match[2]);    // → 03<br>console.log(match[3]);    // → 04</p>
+<p>const re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/;<br>const match = re.exec(‘2020-03-04’);</day></month></year></p>
+<p>console.log(match.groups);          // → {year: “2020”, month: “03”, day: “04”}<br>console.log(match.groups.year);     // → 2020<br>console.log(match.groups.month);    // → 03<br>console.log(match.groups.day);      // → 04</p>
+<p>const re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/;<br>const match = re.exec(‘2020-03-04’);</day></month></year></p>
+<p>console.log(match[0]);    // → 2020-03-04<br>console.log(match[1]);    // → 2020<br>console.log(match[2]);    // → 03<br>console.log(match[3]);    // → 04</p>
+<p>const re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/;<br>const [match, year, month, day] = re.exec(‘2020-03-04’);</day></month></year></p>
+<p>console.log(match);    // → 2020-03-04<br>console.log(year);     // → 2020<br>console.log(month);    // → 03<br>console.log(day);      // → 04</p>
+<p>const re = /\d+/;<br>const match = re.exec(‘123’);</p>
+<p>console.log(‘groups’ in match);    // → true</p>
+<p>const re = /\d+(?<ordinal>st|nd|rd|th)?/;</ordinal></p>
+<p>let match = re.exec(‘2nd’);</p>
+<p>console.log(‘ordinal’ in match.groups);    // → true<br>console.log(match.groups.ordinal);         // → nd</p>
+<p>match = re.exec(‘2’);</p>
+<p>console.log(‘ordinal’ in match.groups);    // → true<br>console.log(match.groups.ordinal);         // → undefined</p>
+<p>console.log(/(\w\w)\1/.test(‘abab’));    // → true</p>
+<p>// if the last two letters are not the same<br>// as the first two, the match will fail<br>console.log(/(\w\w)\1/.test(‘abcd’));    // → false</p>
+<p>const re = /\b(?<dup>\w+)\s+\k<dup>\b/;</dup></dup></p>
+<p>const match = re.exec(“I’m not lazy, I’m on on energy saving mode”);        </p>
+<p>console.log(match.index);    // → 18<br>console.log(match[0]);       // → on on</p>
+<p>const re = /\b(?<dup>\w+)\s+\1\b/;</dup></p>
+<p>const match = re.exec(“I’m not lazy, I’m on on energy saving mode”);        </p>
+<p>console.log(match.index);    // → 18<br>console.log(match[0]);       // → on on </p>
+<p>const re = /(?<digit>\d):\1:\k<digit>/;</digit></digit></p>
+<p>const match = re.exec(‘5:5:5’);        </p>
+<p>console.log(match[0]);    // → 5:5:5</p>
+<p>const str = ‘War &amp; Peace’;</p>
+<p>console.log(str.replace(/(War) &amp; (Peace)/, ‘$2 &amp; $1’));<br>// → Peace &amp; War</p>
+<p>console.log(str.replace(/(?<war>War) &amp; (?<peace>Peace)/, ‘$<peace> &amp; $<war>‘));<br>// → Peace &amp; War</war></peace></peace></war></p>
+<p>const str = ‘War &amp; Peace’;</p>
+<p>const result = str.replace(/(?<war>War) &amp; (?<peace>Peace)/, function(match, group1, group2, offset, string) {<br>    return group2 + ‘ &amp; ‘ + group1;<br>});</peace></war></p>
+<p>console.log(result);    // → Peace &amp; War</p>
+<p>console.log(/./.test(‘\n’));    // → false<br>console.log(/./.test(‘\r’));    // → false</p>
+<p>console.log(/[\w\W]/.test(‘\n’));    // → true<br>console.log(/[\w\W]/.test(‘\r’));    // → true</p>
+<p>console.log(/./s.test(‘\n’));    // → true<br>console.log(/./s.test(‘\r’));    // → true</p>
+<p>const str = ‘𝟠’;</p>
+<p>console.log(/\d/.test(str));     // → false<br>console.log(/\d/u.test(str));    // → false</p>
+<p>const str = ‘𝟠’;<br>console.log(/\p{Number}/u.test(str));     // → true</p>
+<p>const str = ‘漢’;</p>
+<p>console.log(/\p{Alphabetic}/u.test(str));     // → true</p>
+<p>// the \w shorthand cannot match 漢<br>console.log(/\w/u.test(str));    // → false</p>
+<p>console.log(/\P{Number}/u.test(‘𝟠’));    // → false<br>console.log(/\P{Number}/u.test(‘漢’));    // → true</p>
+<p>console.log(/\P{Alphabetic}/u.test(‘𝟠’));    // → true<br>console.log(/\P{Alphabetic}/u.test(‘漢’));    // → false</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>前段时间在smashing magazine上面看到了一篇关于正则使用的文章，将里面的代码自己敲了一遍。</p>
+<p>const re = /Item(?= 10)/;</p>
+<p>console.log(re.exec(‘Item’));<br>// → null</]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[你好 陆月]]></title>
+    <link href="http://www.darcywang.com/2019/05/21/mayone/"/>
+    <id>http://www.darcywang.com/2019/05/21/mayone/</id>
+    <published>2019-05-21T07:42:18.000Z</published>
+    <updated>2019-05-30T05:39:03.000Z</updated>
+    <content type="html"><![CDATA[<p>时间一晃过得真快，还有几天就是高考了，还有一个月左右就是19年下半年了。也许可以记录一下发生在自己身上的趣事了。</p>
+<p>这段时间主要是老爹来北京的经历，从开始大学生活以后从来没有这么长时间一起相处过。虽说这次只有短短的50天吧，确实对我来说是一个不小的考验。主要是我两的脾气性格不和，除了争吵还是争吵，当然都是一些小事情咯，最大的一次就是在会泰国的那一天，积压了很多的不爽在一起爆发了。想想一个60岁的老人，而且还有有这么大的病，我也不知道是什么了，一直气他，也许也解释不清楚把。</p>
+<p>还有一件事情就是对象的，很开心找到了一个自己喜欢而且有喜欢自己的菇凉。一枚北方菇凉，沟通能力非常不错而且身材特别棒，恩，身高非常满意。说起来真的是很奇葩的经历，第一次见面是在清明节，那天非常热，但是我两居然吃了一个鱼火锅。第一次看到这个妹纸的时候有种说不出来的一种感觉，说不上有多漂亮，给我一种很真实的感觉。主要是第一次遇上相亲居然不化妆的，并且上来的要求就把我给乐了。</p>
+<p>然后下半年的计划就是好好与这个妹纸相处着，然后开始准备面试，看看9月份能不能换一个更好的工作。主要是在一个地方呆久了就废掉了，还有就是自己想要更高的薪水。</p>
+<p>后面的路还有很多开心的事情，所以呢，用心去体验就好了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>时间一晃过得真快，还有几天就是高考了，还有一个月左右就是19年下半年了。也许可以记录一下发生在自己身上的趣事了。</p>
+<p>这段时间主要是老爹来北京的经历，从开始大学生活以后从来没有这么长时间一起相处过。虽说这次只有短短的50天吧，确实对我来说是一个不小的考验。主要是我]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello 2019]]></title>
@@ -827,57 +930,6 @@
       <category term="Javascript" scheme="http://www.darcywang.com/tags/Javascript/"/>
     
       <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Django for Webapp]]></title>
-    <link href="http://www.darcywang.com/2015/12/18/Django-for-Webapp/"/>
-    <id>http://www.darcywang.com/2015/12/18/Django-for-Webapp/</id>
-    <published>2015-12-18T01:42:33.000Z</published>
-    <updated>2017-07-05T02:09:08.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xr8la.com1.z0.glb.clouddn.com/djangoIcon.png?imageView2/2/h/400" alt=""></p>
-<p>刚刚开始接触Django时让我想到了一部电影<a href="http://movie.douban.com/subject/6307447/?source=new_aladdin" target="_blank" rel="external">《被解救的姜戈》</a>，一看名字Django Unchained，还真的是一样的啊。</p>
-<p>Django有很多版本，我自己学习并使用在项目里面的是1.7.11，所以我接下来的要讲的东西是基于<strong> Django 1.7 </strong>上的。重要的事情说3遍，看文档，看文档，看文档首先需要明白的是Django是个什么东西，对吧？说白了，它就是一个<a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank" rel="external">web框架</a>, 它只是一个被人做好的一个工具，跟那些bootstrap什么之类的差不多咯。</p>
-<p>OK，Let’s get our hands dirty。</p>
-<p>在最开始先说明自己是用的Linux系统，已经安装好了Python 2.7，<a href="https://docs.djangoproject.com/en/1.7/" target="_blank" rel="external">Django 1.7</a></p>
-<p>先介绍一个神奇的东西–<a href="https://virtualenv.readthedocs.org/en/latest/" target="_blank" rel="external">virtualenv</a>，它的作用是可以给你一个独立的开发环境。简单说一下，比如你用Django 1.7版本，然后你又想用Django 1.8版本试一下手，这个时候就是virtualenv的用武之地，它可以让你在电脑上建N多个开发环境，它们都互不干扰。安装也是非常简单<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ [sudo] pip install virtualenv</span><br></pre></td></tr></table></figure></p>
-<p>使用起来也是灰常简单，最先开始你得先给你的环境起一个非常有逼格的名字，记住是环境的名字。环境造好以后就是启动环境，接着就是造项目了，项目的名字可以和环境的名字一样，因为这样就可以让你搞不明白是什么意思，装逼一下啊。事实是无论你项目名字是什么，接下来都会把它修改为src。因为src文件名称在你脑海里面就有那么一种意思，对，就是那个作用。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ virtualenv YourProjectName</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> YourProjectName</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">source</span> bin/activate</span><br><span class="line"></span><br><span class="line">$ django-admin.py startproject YourProjectName</span><br></pre></td></tr></table></figure></p>
-<p>完成上面几个步骤以后有几点你需要注意的，启动环境以后你会看到$符号前面包含你环境名字的双括号，另外关闭环境就是deactivate，是不是非常easy。最后你看到的目录是 bin/ include/ lib/ src/<br>还有几点优化可以做，比如说可以添加一个start.sh文件，然后你就每次直接 . ./start。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span><br><span class="line"></span></span><br><span class="line"><span class="built_in">source</span> bin/activate</span><br><span class="line"><span class="built_in">cd</span> src</span><br></pre></td></tr></table></figure></p>
-<p>在以后的开发中会经常用到以下的命令行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ pip freeze 查看当前环境里面都安装了些什么东东</span><br><span class="line"></span><br><span class="line">$ python manage.py startapp NewAppName 安装新的App</span><br><span class="line"></span><br><span class="line">$ python manage.py runserver <span class="number">12344</span></span><br></pre></td></tr></table></figure></p>
-<p>现在可以放下手中的代码，一起来想想这个问题。当一个开发环境搭好，可以开始做项目了，需要注意什么，从什么地方开始呢？<br>当你用Django新创建好一个新项目的时候，它就自己带好了一个admin的模块。里面有4个python文件，<strong>init</strong>.py  settings.py  urls.py  wsgi.py，一个一个来分析一下。</p>
-<h4 id="init-py"><a href="#init-py" class="headerlink" title="<strong>init</strong>.py"></a><strong>init</strong>.py</h4><p>任何时候只要新建了一个app，就一定会带有这个文件。它的作用是相当于class中的def <strong>init</strong>(self):函数，用来初始化模块。并且把所在目录当作一个package处理，还有from-import 语句导入子包时需要用到它。 如果没有用到, 他们可以是空文件。就比如package.module下的所有模块from package.module import * </p>
-<h4 id="settings-py"><a href="#settings-py" class="headerlink" title="settings.py"></a>settings.py</h4><p>它是整个Django的核心文件，任何重要的配置都需要在这里面进行修改。但是记得不搞乱搞它哦</p>
-<h4 id="urls-py"><a href="#urls-py" class="headerlink" title="urls.py"></a>urls.py</h4><p>在Django中，每一个request都通过urls.py指向一个view。这种松散的耦合有着非常大的灵活性，但是需要注意的是设置路径</p>
-<h4 id="wsgi-py"><a href="#wsgi-py" class="headerlink" title="wsgi.py"></a>wsgi.py</h4><p>wsgi(Python Web Server Gateway Interface)服务器网关接口，是Python语言定义的web服务器和web服务程序或者框架之间的一种简单而通用的接口。说得简单一点，就是服务器配置的文件，你可以在这个<a href="http://epicserve-docs.readthedocs.org/en/latest/django/ubuntu-server-django-guide.html" target="_blank" rel="external">demo</a>里面用到它</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://7xr8la.com1.z0.glb.clouddn.com/djangoIcon.png?imageView2/2/h/400" alt=""></p>
-<p>刚刚开始接触Django时让我想到了一部电影<a href="http://m]]>
-    </summary>
-    
-      <category term="Django" scheme="http://www.darcywang.com/tags/Django/"/>
-    
-      <category term="Python" scheme="http://www.darcywang.com/tags/Python/"/>
-    
-      <category term="Techniques" scheme="http://www.darcywang.com/categories/Techniques/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Python and Django]]></title>
-    <link href="http://www.darcywang.com/2015/12/18/Python-and-Django/"/>
-    <id>http://www.darcywang.com/2015/12/18/Python-and-Django/</id>
-    <published>2015-12-18T01:41:02.000Z</published>
-    <updated>2017-07-05T02:17:41.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Data" scheme="http://www.darcywang.com/tags/Data/"/>
-    
-      <category term="FullStack" scheme="http://www.darcywang.com/categories/FullStack/"/>
     
   </entry>
   
